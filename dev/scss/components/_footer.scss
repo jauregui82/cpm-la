@@ -1,0 +1,54 @@
+.footer, .sub-footer{
+	.container{
+		max-width: 775px;
+	}
+}
+
+.footer{
+	font-size: 0.675rem;
+
+	ul{
+		// list-style: outside;
+		// margin-right: 1rem;
+		color: #fff;
+
+		a{
+			color: #fff;
+		}
+	}
+
+	.sm-b-dashed-right{
+		border-color: #fff;
+	}
+
+	&__info{
+		font-family: $Helvetica;
+		font-size: 0.675rem;
+		font-weight: bold;
+	}
+
+	&__menu{
+		a{
+			font-family: $TradeGothic;
+			font-size: .725rem;
+			font-weight: bold;
+		}
+	}
+
+	.i-phone{
+		padding-bottom: 1rem;
+		transform: rotateZ(-27.5deg);
+	}
+}
+
+.sub-footer{
+	.copyright{
+		font-family: $TradeGothic;
+    font-weight: lighter;
+    font-size: 1rem;
+	}
+
+	.copyright-sub, .copyright-sub:hover{
+		color: #fff;
+	}
+}

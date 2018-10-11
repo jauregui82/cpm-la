@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Trade Gothic LT Std';
+  src: url('../fonts/TradeGothicLTStd-Cn18.woff2') format('woff2'),
+      url('../fonts/TradeGothicLTStd-Cn18.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT Std';
+  src: url('../fonts/TradeGothicLTStd-BdCn20.woff2') format('woff2'),
+      url('../fonts/TradeGothicLTStd-BdCn20.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trade Gothic LT Std';
+  src: url('../fonts/TradeGothicLTStd-Bold.woff2') format('woff2'),
+      url('../fonts/TradeGothicLTStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  src: url('../fonts/HelveticaNeueLTStd-ThCnO.woff2') format('woff2'),
+      url('../fonts/HelveticaNeueLTStd-ThCnO.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura Std';
+  src: url('../fonts/FuturaStd-Condensed.woff2') format('woff2'),
+      url('../fonts/FuturaStd-Condensed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bullstander';
+  src: url('../fonts/Bullstander.woff2') format('woff2'),
+      url('../fonts/Bullstander.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/*FONTS*/
+
+$TradeGothic: 'Trade Gothic LT Std', sans-serif;
+$Futura: 'Futura Std', sans-serif;
+$Helvetica: 'Helvetica Neue LT Std', sans-serif;
+$Bullstander: 'Bullstander', sans-serif;
+
+.tradeGothic{
+  font-family: $TradeGothic;
+}
+
+.futura{
+  font-family: $Futura;
+}
+
+.helvetica{
+  font-family: $Helvetica;
+}
+
+.bullstander{
+  font-family: $Bullstander;
+}

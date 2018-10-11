@@ -1,0 +1,309 @@
+
+////////////// MEDIA QUERYS
+
+// $grid-breakpoints
+@each $bp, $size in $grid-breakpoints {
+
+  @media screen and (min-width: map-get($grid-breakpoints,$bp)) {
+		.#{$bp}-bold{
+			font-weight: $weight-b;
+		}
+
+		.#{$bp}-block{
+			display: block;
+		}
+
+		.#{$bp}-i-block{
+			display: inline-block;
+		}
+
+		.#{$bp}-v-align-top{
+			vertical-align: top;
+		}
+
+		.#{$bp}-center{
+			text-align: center;
+		}
+
+		.#{$bp}-italic{
+			font-style: italic;
+		}
+
+		.#{$bp}-justify{
+			text-align: justify;
+		}
+
+		.#{$bp}-left{
+			text-align: left;
+		}
+
+		.#{$bp}-lighter{
+			font-weight: lighter;
+		}
+
+		.#{$bp}-m-auto{
+			margin: auto;
+		}
+
+		.#{$bp}-m-left-auto{
+			margin-left: auto;
+		}
+
+		.#{$bp}-m-right-auto{
+			margin-right: auto;
+		}
+
+		.#{$bp}-m-unset{
+			margin: unset;
+		}
+
+		.#{$bp}-o-hidden{
+			overflow: hidden;
+		}
+
+		.#{$bp}-o-x-auto{
+			overflow-x: auto;
+		}
+
+		.#{$bp}-right{
+			text-align: right;
+		}
+
+		.#{$bp}-relative{
+			position: relative;
+		}
+
+		.#{$bp}-pt-0{
+			padding-top: 0 !important;
+		}
+
+		.#{$bp}-pb-0{
+			padding-bottom: 0 !important;
+		}
+
+		.#{$bp}-py-0{
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+		}
+
+		.#{$bp}-mt-0{
+			margin-top: 0 !important;
+		}
+
+		.#{$bp}-mb-0{
+			margin-bottom: 0 !important;
+		}
+
+		.#{$bp}-my-0{
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+
+		.#{$bp}-my-auto{
+			margin-top: auto !important;
+			margin-bottom: auto !important;
+		}
+
+		.#{$bp}-mx-auto{
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.pl-#{$bp}-45{
+			padding-left: 2rem;
+		}
+
+		.pr-#{$bp}-45{
+			padding-right: 2rem;
+		}
+
+		.px-#{$bp}-45{
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		.py-#{$bp}-45{
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+		}
+  }
+}
+
+// @include media-breakpoint-up(sm) {
+
+// 	.sm-bold{
+// 		font-weight: $weight-b;
+// 	}
+
+// 	.sm-block{
+// 		display: block;
+// 	}
+
+// 	.sm-center{
+// 		text-align: center;
+// 	}
+
+// 	.sm-italic{
+// 		font-style: italic;
+// 	}
+
+// 	.sm-justify{
+// 		text-align: justify;
+// 	}
+
+// 	.sm-left{
+// 		text-align: left;
+// 	}
+
+// 	.sm-lighter{
+// 		font-weight: lighter;
+// 	}
+
+// 	.sm-m-auto{
+// 		margin: auto;
+// 	}
+
+// 	.sm-m-left-auto{
+// 		margin: unset;
+// 		margin-left: auto;
+// 	}
+
+// 	.sm-m-right-auto{
+// 		margin: unset;
+// 		margin-right: auto;
+// 	}
+
+// 	.sm-m-unset{
+// 		margin: unset;
+// 	}
+
+// 	.sm-o-hidden{
+// 		overflow: hidden;
+// 	}
+
+// 	.sm-right{
+// 		text-align: right;
+// 	}
+
+// 	.sm-relative{
+// 		position: relative;
+// 	}
+// }
+
+// @include media-breakpoint-up(md) {
+
+// 	.md-bold{
+// 		font-weight: $weight-b;
+// 	}
+
+// 	.md-block{
+// 		display: block;
+// 	}
+
+// 	.md-center{
+// 		text-align: center;
+// 	}
+
+// 	.md-italic{
+// 		font-style: italic;
+// 	}
+
+// 	.md-justify{
+// 		text-align: justify;
+// 	}
+
+// 	.md-left{
+// 		text-align: left;
+// 	}
+
+// 	.md-lighter{
+// 		font-weight: lighter;
+// 	}
+
+// 	.md-m-auto{
+// 		margin: auto;
+// 	}
+
+// 	.md-m-left-auto{
+// 		margin-left: auto;
+// 	}
+
+// 	.md-m-right-auto{
+// 		margin-right: auto;
+// 	}
+
+// 	.md-m-unset{
+// 		margin: unset;
+// 	}
+
+// 	.md-o-hidden{
+// 		overflow: hidden;
+// 	}
+
+// 	.md-right{
+// 		text-align: right;
+// 	}
+
+// 	.md-relative{
+// 		position: relative;
+// 	}
+// }
+
+// @include media-breakpoint-up(lg) {
+
+// 	.lg-bold{
+// 		font-weight: $weight-b;
+// 	}
+
+// 	.lg-block{
+// 		display: block;
+// 	}
+
+// 	.lg-center{
+// 		text-align: center;
+// 	}
+
+// 	.lg-italic{
+// 		font-style: italic;
+// 	}
+
+// 	.lg-justify{
+// 		text-align: justify;
+// 	}
+
+// 	.lg-left{
+// 		text-align: left;
+// 	}
+
+// 	.lg-lighter{
+// 		font-weight: lighter;
+// 	}
+
+// 	.lg-m-auto{
+// 		margin: auto;
+// 	}
+
+// 	.lg-m-left-auto{
+// 		margin-left: auto;
+// 	}
+
+// 	.lg-m-right-auto{
+// 		margin-right: auto;
+// 	}
+
+// 	.lg-m-unset{
+// 		margin: unset;
+// 	}
+
+// 	.lg-o-hidden{
+// 		overflow: hidden;
+// 	}
+
+// 	.lg-right{
+// 		text-align: right;
+// 	}
+
+// 	.lg-relative{
+// 		position: relative;
+// 	}
+// }

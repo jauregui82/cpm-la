@@ -1,0 +1,34 @@
+header
+	nav#nav-menu.nav-menu
+		.container
+			.main-menu.d-flex.justify-content-center
+				.d-flex.flex-column.justify-content-center.xs-m-auto.md-m-unset
+					a(href="./")
+						img.logo.pb-2(src="./img/logo.png", alt="Inicio")
+				ul#menu.menu.d-flex.flex-column.flex-md-row.justify-content-center.tradeGothic
+					li
+						a(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+							span NOSOTROS
+					li
+						a(href="./products.html", class=`${paginaActual==="products" ? "active": ""}`)
+							span PRODUCTOS
+					li
+						a(href="./quality.html", class=`${paginaActual==="recipes" ? "active": ""}`)
+							span RECETAS
+					li
+						a(href="./news.html", class=`${paginaActual==="blog" ? "active": ""}`)
+							span BLOG
+					li
+						a(href="#")
+							span CONTÁCTANOS
+					li
+						a(href="#")
+							i.fab.fa-youtube.color1
+					li
+						a(href="#")
+							i.fab.fa-facebook-f.color1
+					li
+						a(href="#")
+							i.fab.fa-instagram.color1
+	div#toggle-menu.toggle-menu.shadow
+		span.hamburger

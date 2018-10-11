@@ -1,0 +1,45 @@
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+// Config
+@import "config/_fonts";
+@import "config/_variables";
+@import "config/_mixins";
+
+/* ========= Bootstrap 4.1 ===============*/
+@import "config/_custom-bootstrap";
+@import "bootstrap";
+
+// Base and elements (generic)
+// @import "base/normalize";
+@import "base/_base";
+
+// LAYOUT
+  // Escribe solo los estilos de layout (division en regiones del viewport)
+// @import "layout/grid";
+
+// HELPERS
+// Elementos de ayuda para tus estilos
+@import "helpers/_commons";
+
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+  // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
+  // Crea los archivos adicionales que necesites (uno por componente)
+@import "components/_customs";
+// @import "components/_inputs";
+@import "components/_social";
+@import "components/_main";
+@import "components/_section";
+@import "components/_toggle-menu";
+@import "components/_menu";
+@import "components/_footer";
+// @import "components/_logos";
+
+// Theme (colors and fonts)
+@import "theme/_home";
+// @import "theme/_about";
+// @import "theme/_products";
+// @import "theme/_contact-us";
+// @import "theme/_terms-and-conditions";
+// @import "theme/_new-article";

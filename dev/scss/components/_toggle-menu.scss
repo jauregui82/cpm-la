@@ -1,0 +1,59 @@
+.toggle-menu{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 22px;
+  padding: 30px 17.5px;
+  // background-color: darken(map-get($my-colors, color3), 7.5%);
+  background-color: map-get($my-colors, color3);
+  color: #fff;
+  cursor: pointer;
+  z-index: $z-fixed;
+  border-radius: 50%;
+
+  .hamburger {
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+
+    &:after,
+    &:before {
+      transition: .5s ease-in-out;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+    }
+    &:before {
+      top: -10px;
+    }
+    &:after {
+      bottom: -10px;
+    }
+  }
+
+  &.menu-close{
+    // border-radius: 0;
+    .hamburger {
+      transform: rotate(45deg);
+      &:after {
+        transform: rotate(90deg);
+        bottom: 0;
+      }
+      &:before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md){
+    display: none !important;
+  }
+}

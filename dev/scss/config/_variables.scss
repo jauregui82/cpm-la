@@ -1,0 +1,65 @@
+// PALETA DE COLORES
+	$my-colors: (
+	 	color1: #003D5D,
+	 	color2: #DADADA,
+	 	color3: #FFCB00,
+	 	// color3: #b47e00,
+	 	color4: #fff,
+		default: #bdc3c7,
+		primary: #3498db,
+		success: #2ecc71,
+		info:		 #1abc9c,
+		warning: #f1c40f,
+		danger:  #e74c3c,
+		text-color: #53575a,
+		dark-color: #282d31,
+		border-color: #efefef
+	);
+
+// body: #fcfcfc,
+
+.bg-white{ background-color: #fff; }
+.white{ color: #fff; }
+
+.bg-black{ background-color: #000; }
+.black{ color: #000; }
+
+.bg-transparent{
+	background-color: transparent;
+}
+
+	// IMPRIMIR COLORES COMO CLASES
+	@each $color, $value in $my-colors{
+		.#{$color}{
+			color: $value;
+		}
+		.bg-#{$color}{
+			background-color: $value;
+		}
+	}
+
+// FUENTES
+	// TIPOS DE FUENTES
+	// $main-font: 'Lato';
+	// $main-font: 'Montserrat';
+
+	// TAMAÑOS DE FUENTES
+
+	$size-xs: 11px;
+	$size-s: 13px;
+	$size-sm: 14px;
+	$size-m: 16px;
+	$size-l: 20px;
+	$size-xl: 24px;
+	$size-xxl: 28px;
+
+	// ANCHO DE FUENTES
+	$weight-n: 400;
+	$weight-m: 700;
+	$weight-b: 700;
+
+// Z-INDEX
+	$z-normal: 1;
+	$z-tooltip: 10;
+	$z-fixed: 100;
+	$z-modal: 1000;

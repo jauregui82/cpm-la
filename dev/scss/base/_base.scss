@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// :root {
+//   --h1-font-size    : 2rem;
+//   --h2-font-size    : 1.5rem;
+//   --h3-font-size    : 1.25rem;
+//   --h4-font-size    : .75rem;
+//   --h5-font-size    : .5rem;
+//   --body-font-size  : 1rem;
+//   --small-font-size : .8rem;
+
+//   @media screen and (min-width: 1024px) {
+//     --h1-font-size    : 2.5rem;
+//     --h2-font-size    : 2rem;
+//     --h3-font-size    : 1.75rem;
+//     --h4-font-size    : 1.5rem;
+//     --h5-font-size    : 1.25rem;
+//     --body-font-size  : 1.2rem;
+//     --small-font-size : 1rem;
+//   }
+// }
+
+body{
+  font-size: $size-m;
+  font-family: $Helvetica;
+  background-color: #fff;
+  // background-image: url('../../img/fondo.png');
+  // // background-size: cover;
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  color: map-get($my-colors, dark-color);
+  overflow-x: hidden;
+  min-height: 1200px;
+  // font-size : var(--body-font-size);
+  // @include scrollMinimal(map-get($my-colors, color1));
+  @include scrollMinimal(darken(map-get($my-colors, color1), 7.5%), 12px);
+
+  &.o-hidden-y{
+    overflow-y: hidden;
+
+    @include media-breakpoint-up(md) {
+      overflow-y: unset;
+    }
+  }
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a, a:hover{
+  text-decoration:none;
+  color: map-get($my-colors, dark-color);
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, section{
+  position: relative;
+}
+
+// h1 {
+//   font-size : var(--h1-font-size);
+// }
+
+// h2 {
+//   font-size : var(--h2-font-size);
+// }
+
+// h3 {
+//   font-size : var(--h3-font-size);
+// }
+
+// h4 {
+//   font-size : var(--h4-font-size);
+// }
+
+// h5 {
+//   font-size : var(--h5-font-size);
+// }
+
+p{
+  font-size: $size-sm;
+  word-break: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: unset;
+}

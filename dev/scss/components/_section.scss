@@ -1,0 +1,495 @@
+// jauregui
+.section-box-home{
+  background-image: url(../../img/home/hoja.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 2%;
+  width: 80vw;
+  /* max-width: 783px; */
+  /* max-height: 400px; */
+  height: 56vh;
+  text-align: center;
+  position: relative;
+  left: 12%;
+}
+.logo-blue-intext{
+  width: 7.4vh;
+    margin-right: 3px;
+    float: left;
+}
+.logo-blue-intext-equipo{
+  width: 7.4vh;
+    margin-right: 3px;
+    float: left;
+    border-right: solid #fff;
+}
+.logo-blue-intext1{
+  width: 9.6vh;
+  margin-right: 3px;
+  float: left;
+}
+.text-box.home{
+  font-size: 1.6vh;
+}
+p.recetas{
+  line-height: 1.6;
+  font-size: 1.8vh;
+}
+
+
+
+.section-box-home-blue{
+  background: #072049d9;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2%;
+  width: 50%;
+}
+
+// .section-box-home-cel{
+//   background-image: url(../../img/home/cel2.png);
+//   background-repeat: no-repeat;
+//   background-size: 581px 336px;
+//   padding: 14% 7% 10% 8%;
+//   width: 100%;
+//   max-width: 546px;
+//   height: 100%;
+//   max-height: 300px;
+//   /* max-height: 233px; */
+//   /* height: 428px; */
+// }
+div>.section-box-home-cel{
+  margin-top: 11%
+}
+.section-box-home-cel{
+  background-image: url(../../img/home/cel2.png);
+    background-repeat: no-repeat;
+    background-size: 581px 336px;
+    padding: 2% 6% 3% 5%;
+    width: 100%;
+    max-width: 595px;
+    height: 345px;
+    max-height: 354px;
+    position: relative;
+  /* max-height: 233px; */
+  /* height: 428px; */
+}
+.pantalla{
+  // background-image: url(../../img/home/pantalla.png);
+  // background-repeat: no-repeat;
+  // background-origin: padding-box;
+  margin-top: 17%;
+}
+.text-pantalla{
+  position: relative;
+  top: 69%;
+  cursor: pointer;
+  // color: #3e3328;
+  font-size: 1.5rem;
+}
+.link-pantalla{
+  opacity: 0.2;
+  width: 17%;
+  margin: 0;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  cursor: pointer;
+}
+
+.section-box-papel{
+  background-image: url(../../img/sections/papel.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 2%;
+    width: 60vw;
+    height: 74vh;
+    position: relative;
+    left: 12%;
+}
+
+.text-box-home{
+  padding: 3% 19% 6% 22%;
+}
+.text-box-blue{
+  padding: 6% 17% 10% 32%;
+}
+
+// jauregui
+
+
+
+
+/* ant*/
+
+.section-top{
+	width: 100%;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+
+	@include media-breakpoint-up(lg){
+		padding-top: 7rem;
+		padding-bottom: 4rem;
+	}
+
+	&__img{
+		top: -1px;
+		height: calc(100% + 1px);
+		opacity: 1;
+		// position:
+	}
+
+	&__data{
+		h3{
+			color: #fff;
+			text-align: center;
+			position: relative;
+			font-size: 2.1875rem;
+			// font-family: $miloOT;
+
+			&::before{
+				content: '';
+				position: absolute;
+				bottom: -.75rem;
+				left: 50%;
+				width: 100px;
+				height: 2px;
+				background-color: #fff;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.section-title{
+	// font-family: $miloOT;
+	font-size: 1.875rem;
+	font-weight: $weight-b;
+	text-transform: uppercase;
+}
+
+.section{
+	position: relative;
+
+	.line-curve-top, .line-curve-bottom{
+		position: absolute;
+		width: 40.5px;
+		height: 39.5px;
+	}
+
+	.line-curve-top{
+    top: 2.5rem;
+    left: 1rem;
+		border-top: 1px solid #fff;
+		border-left: 1px solid #fff;
+
+		@include media-breakpoint-up(md) {
+	    top: 4rem;
+	    left: 4rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+	    left: 20%;
+		}
+	}
+
+	.line-curve-bottom{
+    bottom: 2.5rem;
+    right: 1rem;
+		border-bottom: 1px solid #fff;
+		border-right: 1px solid #fff;
+
+		@include media-breakpoint-up(md) {
+			bottom: 4rem;
+    	right: 4rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+    	right: 20%;
+		}
+	}
+
+
+	.line-bottom{
+		position: absolute;
+    bottom: -2rem;
+    right: 50%;
+    width: 100px;
+    height: 1.75px;
+    background-color: #555;
+    transform: translateX(50%);
+	}
+}
+
+.wow{
+  animation-delay: .6s;
+}
+
+// SECTIONS THEMES
+.section-theme{
+
+	&__bg-banner{
+    position: absolute;
+		@extend .bg-color1;
+		opacity: .8;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    width: 50%;
+    height: 100%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+	}
+
+	&__content-banner{
+		font-family: $Helvetica;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #fff;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		// max-width: 400px;
+		max-width: calc(50% - 4rem);
+		min-height: 620px;
+		// z-index: 10;
+
+		@include media-breakpoint-down(md) {
+			margin: auto;
+			max-width: 100%;
+		}
+
+		&.big{
+			// min-height: 665px;
+			min-height: unset;
+			max-height: calc(960px - var(--height-nav));
+			height: calc(100vh - var(--height-nav));
+		}
+
+		// @include media-breakpoint-up(lg) {
+		// 	padding-left: 30%;
+		// 	padding-right: 10%;
+		// 	max-width: 100%;
+		// }
+
+		// @include media-breakpoint-up(xl) {
+		// 	padding-left: 45%;
+		// }
+	}
+
+	&__title{
+		font-weight: bold;
+		font-size: 2.625rem;
+		margin-bottom: 0;
+	}
+
+	&__description{
+		margin-bottom: 0;
+		font-size: 1.5rem;
+	}
+}
+
+.section-theme-info{
+	&__title{
+		font-family: $Helvetica;
+		// font-size: 2.1rem;
+		font-size: 1.75rem;
+		font-weight: bold;
+		@extend .color1;
+
+
+		@include media-breakpoint-down(xs){
+			font-size: 1.25rem;
+		}
+	}
+
+	&__content{
+		font-family: $TradeGothic;
+
+		p{
+			font-weight: 400;
+			// font-size: 1.155rem;
+			font-size: 1.125rem;
+			// font-size: 1.125rem;
+		}
+	}
+
+	&__subtitle{
+		font-family: $Helvetica;
+		font-size: 1.35rem;
+		font-weight: bold;
+	}
+
+	&__subtitle1{
+		font-family: $TradeGothic;
+		font-size: 1.125rem;
+		font-weight: bold;
+	}
+
+	&__subtitle2{
+		font-family: $TradeGothic;
+		// font-size: 1.3rem;
+		font-size: 1.1875rem;
+		font-weight: bold;
+	}
+}
+
+.section-theme-comillas{
+
+	&__description{
+		font-family: $TradeGothic;
+		font-style: italic;
+		font-size: 2.425rem;
+		// font-size: 2.625rem;
+		color: #fff;
+		text-align: center;
+		line-height: 1;
+		position: relative;
+		display: inline;
+	}
+
+	.fix-comillas-left{
+		transform: translateY(-1.75rem);
+	}
+}
+
+// SECTIONS PAGES
+.section-info-icons{
+	&__subtitle{
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	@include media-breakpoint-down(xs) {
+		.b-dashed-right {
+		  border-right: none;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		&__subtitle{
+			font-size: .75rem;
+		}
+	}
+}
+
+
+// CAROUSEL
+
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider-wrapper{
+	.slider-item {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  background-position: center;
+	  background-size: cover;
+	}
+
+	.slick-dots {
+	  bottom: 15px;
+	}
+}
+
+
+.slick-dots li button:before{
+	content: '';
+	background-color: red;
+	width: 12.5px;
+	height: 12.5px;
+	border-radius: 50%;
+	border: 2px solid map-get($my-colors, color1);
+	background-color: transparent;
+	opacity: 1;
+}
+
+.slick-dots li.slick-active button:before{
+	background-color: map-get($my-colors, color1);
+}
+
+.slick-prev:before,.slick-next:before {
+  content: '';
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	width: 20px;
+ 	height: 20px;
+ 	background-repeat: no-repeat;
+ 	background-position: 50%;
+ 	cursor: pointer;
+ 	background-size: contain;
+ 	opacity: 1;
+}
+
+.slick-prev{
+	left: -35px;
+}
+
+.slick-next{
+	right: -35px;
+}
+
+// @media (min-width: 576px)
+
+@include media-breakpoint-down(xs){
+	.slick-prev{
+		left: -15px;
+	}
+
+	.slick-next{
+		right: -15px;
+	}
+}
+
+
+.slick-prev:before {
+  background-image: url('../img/sections/arrow-left.png');
+}
+
+.slick-next:before {
+  background-image: url('../img/sections/arrow-right.png');
+}
+
+
+.slick-slider{
+	margin: .5rem;
+}
+
+.slick-list{
+	margin: -.5rem;
+
+	.slick-slide{
+	  // padding-right: 1rem;
+	  padding: .5rem;
+	}
+}
+
+
+
+
+// TABLE SECTIONS TOGGLE
+
+div[id*='table-show']{
+	max-height: 0;
+	opacity: 0;
+	transition: all .4s;
+
+	&.active{
+		max-height: 1000px;
+		opacity: 1;
+	}
+}
+
+
+
+

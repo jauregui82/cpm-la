@@ -1,0 +1,16 @@
+:root{
+	--height-nav: 4.5rem;
+}
+
+.main{
+  background-image: url('../../img/fondo.png');
+  // background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+	@include media-breakpoint-up(lg) {
+		// padding-top: 4.5rem;
+		padding-top: var(--height-nav);
+		min-height: calc(100vh - 16.5rem);
+  }
+}

@@ -1,0 +1,13 @@
+.fas, .fab{
+	width: 27.5px;
+  height: 27.5px;
+  font-size: 1.25rem;
+  // color: #fff;
+  color: #071f48;
+  background: #fff;
+  border-radius: 50%;
+  padding: 12%;
+  &.big{
+  	font-size: 2.25rem;
+  }
+}

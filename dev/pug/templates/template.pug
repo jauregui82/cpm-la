@@ -1,0 +1,79 @@
+block config
+  include ../config/variables
+
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content='ie=edge,IE=8,IE=9,IE=10,IE=11')
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+
+    title #{titulo} | #{sitio}
+    meta(name="description" content=`${descripcion}`)
+    meta(name='autor', content=`${autor}`)
+
+    //- Chrome, Firefox y Opera
+    meta(name='theme-color', content=`${theme_color}`)
+
+    //- iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content=`${theme_color}`)
+
+    //- Windows Phone
+    meta(name='msapplication-navbutton-color', content=`${theme_color}`)
+
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+
+    //- Slick
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?ver=4.9.7")
+    //- slick theme
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css?ver=4.9.7")
+    //-owl
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css")
+
+    //- ui
+    //- link(rel="stylesheet", href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css")
+
+    //- Librería CSS animate.css
+    //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+
+    //- Fancybox
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css")
+
+    //- Style
+    link(rel="stylesheet", href="./css/styles.css")
+    link(rel="shortcut icon", type="image/png", href="../img/fav.png")
+  body
+
+    //- menu
+    include ../blocks/menu
+
+    //- main
+    main.main
+      block main
+
+    if show_logos
+      include ../blocks/logos
+
+    //- footer
+    include ../blocks/footer
+
+    //- JQuery
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    //- Fancybox
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+    //- ui
+    //- script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+    //- slick
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?ver=4.9.7")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js")
+    //- Wow
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+    //- Scrips
+    script(src="js/scripts.min.js")
+
+    script.
+      toggleMenu()
+      sliderMultipleItems()
+      //- new WOW().init();
+
+    block script

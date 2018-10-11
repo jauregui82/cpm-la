@@ -1,0 +1,67 @@
+
+.col-form-label{
+	font-family: $TradeGothic;
+	@extend .color1;
+	// font-size: 0.9rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.form-control{
+	// background-color: #fff;
+	// border-color: #fff;
+	// border-radius: 10px 5px;
+	// @extend .color1;
+	color: map-get($my-colors, color1);
+	border-radius: 0;
+	border: 2px solid map-get($my-colors, color1);
+
+	&:focus,&:active{
+		box-shadow: none;
+		color: map-get($my-colors, color1);
+		border: 3px solid map-get($my-colors, color1);
+	}
+}
+
+.btn{
+	// padding: .25rem 1.25rem;
+	padding: .15rem 1rem;
+  color: #fff;
+
+  &.btn-theme{
+	  background-color: map-get($my-colors, color1);
+	  border-color: map-get($my-colors, color1);
+	  color: #fff;
+	  border-radius: .45rem;
+	  padding: .15rem 2.75rem;
+
+	  &:hover{
+	  	background-color: darken(map-get($my-colors, color1), 5%);
+	  }
+
+	  &--light{
+	  	color: map-get($my-colors, color1);
+	  	background-color: #fff;
+	  	padding: .15rem 2.75rem;
+
+		  &:hover{
+		  	background-color: #f0f0f0;
+		  }
+	  }
+  }
+
+  &.w-100{
+  	width: 100%;
+  }
+}
+
+
+a.form-control{
+	color: #000;
+
+	&:hover, &.active{
+		color: #fff;
+		background-color: map-get($my-colors, color1);
+		border-color:  map-get($my-colors, color1);
+	}
+}
