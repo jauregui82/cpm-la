@@ -35,7 +35,7 @@ body{
   min-height: 1200px;
   // font-size : var(--body-font-size);
   // @include scrollMinimal(map-get($my-colors, color1));
-  @include scrollMinimal(darken(map-get($my-colors, color1), 7.5%), 12px);
+  // @include scrollMinimal(darken(map-get($my-colors, color1), 7.5%), 12px);
 
   &.o-hidden-y{
     overflow-y: hidden;
