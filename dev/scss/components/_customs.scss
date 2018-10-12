@@ -167,10 +167,13 @@ h1.tradeGothic{
 
 
 .input-mailing{
-  width: 40vw;
+  width: 30vw;
   height: 5vh;
   border-color: #071f48;
   border-width: 1.2px;
+}
+.input-mailing>input{
+  width: 84%;
 }
 // BACKGROUND
 	// HOVER DARK
