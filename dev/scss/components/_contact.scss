@@ -29,6 +29,17 @@
     right: -23%;
     z-index: 0;
   }
+  @include media-breakpoint-up(xl) {
+    &__limon{
+      width: 30%;
+      right: -39%;
+    }
+    &__ajies{
+      width: 35%;
+      bottom: -5%;
+      left: -41%;
+    }
+  }
 
 }
 
