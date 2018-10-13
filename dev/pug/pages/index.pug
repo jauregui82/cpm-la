@@ -61,6 +61,7 @@ block main
             .row
               .col-6
                 h1.tradeGothic.color1 RECETAS
+                hr.title.ml-2
                 .text-justify.float-left
                   p.float-left.mr-2.color1.tradeGothic.recetas Con
                   img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
@@ -81,7 +82,8 @@ block main
       img.img-plato-atun(src="./img/home/img/plato-atun.png", alt="")
       .row
         .col.mt-5
-          h1.tradeGothic.color1 BLOG SALUDABLE
+          h1.title.tradeGothic.color1 BLOG SALUDABLE
+          hr.title
           .slide-blog
             .slider-content
               .slide-img
@@ -124,10 +126,11 @@ block main
         .row
           .col-4
             h1.tradeGothic.color1 REGÍSTRATE
+            hr.title.ml-2
           .col-8
             p.tradeGothic.color1 Si deseas estar actualizado sobre el contenido que publicamos en nuestro BLOG, suscríbete en nuestra base de datos
-            .row.mt-2
-              .col-6
-                input.input-mailing(type="text",placeholder="Ingresa tu correo electrónico ")
-              .col-4
-                span.btn.btn-blue.white.tradeGothic.mt-1.align-self-end ENVIAR
+            .row.mt-2.pb-2.border-mail
+              .col-9.pl-0
+                input.input-mailing.ml-0(type="text",placeholder="Ingresa tu correo electrónico ")
+              .col-3
+                span.btn.btn-blue.white.tradeGothic.mt-1.align-self-end.w-100 ENVIAR

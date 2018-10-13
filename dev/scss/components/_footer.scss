@@ -1,6 +1,7 @@
 .footer, .sub-footer{
 	.container{
-		max-width: 775px;
+		// max-width: 775px;
+		max-width: 1000px;
 	}
 }
 
@@ -22,18 +23,38 @@
 	}
 
 	&__info{
-		font-family: $Helvetica;
+		font-family: $TradeGothic;
 		font-size: 0.675rem;
-		font-weight: bold;
-	}
+    font-weight: bold;
+    span{
+      font-size: 1rem;
+    }
+  }
+
 
 	&__menu{
-		a{
-			font-family: $TradeGothic;
-			font-size: .725rem;
-			font-weight: bold;
-		}
-	}
+    a{
+      font-family: $TradeGothic;
+      font-size: 1.325rem;
+      margin-left: 0.9rem;
+      letter-spacing: 2px;
+    }
+    a.centro{
+      border-right: solid;
+      padding-right: 0.6rem;
+    }
+    // &:hover,&.active{
+    //   span{
+    //     color: map-get($my-colors, color3);
+    //     // &::before{
+    //     // 	max-width: 100%;
+    //     // }
+    //   }
+    // }
+  }
+
+
+
 
 	.i-phone{
 		padding-bottom: 1rem;
