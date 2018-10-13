@@ -1,12 +1,12 @@
 {
-  "name": "haiduk",
+  "name": "campomar",
   "version": "1.0.0",
-  "description": "Web Haiduk",
+  "description": "Web Campomar",
   "main": "gulpfile.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aldair Ormeño",
+  "author": "Jauregui Crespo",
   "license": "GPL-2.0",
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,0 +1,125 @@
+extends ../templates/template
+
+append config
+  -titulo = "CONTACTO"
+  -paginaActual = "contac"
+  -show_logos= false
+
+block main
+
+  //- section.section-info-icons.py-5.mt-5
+  section.section-info-icons.py-5.mt-5
+    .section-box-home.p-3.text-center
+      img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="")
+      img.img-bg.img-bg__plato(src="./img/contact/plato.png", alt="")
+      img.img-bg.img-bg__table(src="./img/contact/table.png", alt="")
+      //- h1.tradeGothic.color1 CONTÁCTANOS
+      //- hr.title.ml-2
+      //- img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="")
+      //- img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="")
+      span.d-flex.justify-content-center
+        img.img-box-contact(src="./img/contact/ini.png", alt="")
+      //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
+      .text-justify.text-box-home.text-justify
+        img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+        p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+        br
+        p.tradeGothic.color1.text-box.home.float-left Si tienes un negocio y quieres distribuir productos
+        img.logo-blue-intext.ml-2(src="./img/logo-blue.png", alt="")
+        p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+
+  section.section-form.mt-5
+    .container.mt-5
+      .row
+        .col-2
+        .col-10
+          h1.tradeGothic.color1 ¿POR QUÉ CONTÁCTARNOS?
+          hr.title.ml-2.mt-4
+          //- .btn-contac__coments
+          //-   div
+          //-     span#btn-coments.btn-contac__contenedor(type="botton") Quiero distribuir productos
+          //-       i.fa.fa-chevron-circle-down.ml-5.arrow-dow
+  section
+    .container-fuid
+      .container
+        .row
+          .col-2
+          .col-10
+            .btn-contac__coments
+              div
+                span#btn-coments.mb-5.mt-5.btn-contac__contenedor(type="botton") Quiero distribuir productos
+                  i.fa.fa-chevron-circle-down.ml-5.arrow-dow
+        form#comments.pl-5.pr-5.mt-5
+          img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="")
+          img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="")
+          .form-row.d-flex.justify-content-center
+            .form-group.col-md-12
+              label( for="inputName") Nombres
+              input(type="text" class="form-control" id="inputName")
+            .form-group.col-md-6
+              label( for="inputLastName") Apellido Paterno
+              input(type="text" class="form-control" id="inputLastName")
+
+            .form-group.col-md-6
+              label(for="InputLasName_m") Apellido Materno
+              input(type="text" class="form-control" id="InputLasName_m")
+
+            .form-group.col-md-6
+              label( for="inputEmail") E-mail
+              input(type="text" class="form-control" id="inputEmail")
+
+            .form-group.col-md-6
+              label(for="InputPhone") Teléfono
+              input(type="text" class="form-control" id="InputPhone")
+
+            .form-group.col-md-6
+              label( for="inputArea") ¿Con qué área deseas comunicarte?
+              input(type="text" class="form-control" id="inputArea")
+
+            .form-group.col-md-6
+              label(for="InputLasAddress") Dirección domiciliaria
+              input(type="text" class="form-control" id="InputLasAddress")
+
+            .form-group.col-md-12
+              label(for="comments") Escríbenos tu comentario
+              textarea(class="form-control" id="comments" rows="3")
+
+            button(type="submit" class="btn btn-contac white tradeGothic") Enviar
+
+  section
+    .container-fuid
+      .container
+        .row
+          .col-2
+          .col-10
+            span.mb-5
+              p#btn-distribute.tradeGothic.white.text-box.home.float-left.btn-contac__contenedor2.mt-4.mb-5 Quiero distribuir productos
+                i.fa.fa-chevron-circle-down.ml-5.arrow-dow.float-right
+                img.logo-blue-button.ml-2(src="./img/logo.png", alt="")
+
+        form#distribute.pl-5.pr-5.mb-5.mt-5
+          .form-row.d-flex.justify-content-center
+            .form-group.col-md-12
+              label( for="inputNames") Nombres y Apellidos
+              input(type="text" class="form-control" id="inputNames")
+            .form-group.col-md-6
+              label( for="inputCompany") Nombre de la empresa
+              input(type="text" class="form-control" id="inputCompany")
+
+            .form-group.col-md-6
+              label(for="InputRuc") RUC
+              input(type="text" class="form-control" id="InputRuc")
+
+            .form-group.col-md-6
+              label( for="inputEmail") E-mail
+              input(type="text" class="form-control" id="inputEmail")
+
+            .form-group.col-md-6
+              label(for="InputNumber") Teléfono
+              input(type="text" class="form-control" id="InputNumber")
+
+            .form-group.col-md-12
+              label(for="comments2") Escríbenos tu comentario
+              textarea(class="form-control" id="comments2" rows="3")
+
+            button(type="submit" class="btn btn-contac white tradeGothic") Enviar

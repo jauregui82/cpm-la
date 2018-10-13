@@ -165,16 +165,30 @@ h1.tradeGothic{
 }
 
 
-
+.border-mail{
+  border: solid 2px map-get($my-colors, color1)
+}
 .input-mailing{
-  width: 30vw;
-  height: 5vh;
-  border-color: #071f48;
+  width: 100%;
+  height: 120%;
+  // border-color: #071f48;
+  border-color: transparent;
   border-width: 1.2px;
 }
 .input-mailing>input{
   width: 84%;
 }
+
+//veremos
+hr.title{
+    width: 10.4rem;
+    left: 1.4%;
+    position: absolute;
+    top: 30px;
+    border: solid 2px;
+    color: map-get($my-colors,color1 );
+}
+
 // BACKGROUND
 	// HOVER DARK
 		.hover-dark{

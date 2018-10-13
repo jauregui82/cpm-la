@@ -1,0 +1,119 @@
+.img-bg{
+  position: absolute;
+  z-index: 1;
+
+  &__salad{
+    width: 19%;
+    top: 4%;
+    left: -15%;
+  }
+  &__plato{
+    width: 31%;
+    top: 4%;
+    right: -23%;
+  }
+  &__table{
+    width: 30%;
+    top: 72%;
+    left: -19%;
+  }
+  &__ajies{
+    width: 30%;
+    bottom: -9%;
+    left: -22%;
+    z-index: 0;
+  }
+  &__limon{
+    width: 20%;
+    top: 0%;
+    right: -23%;
+    z-index: 0;
+  }
+
+}
+
+.img-box-contact{
+  width: 54vw;
+  height: 0%;
+}
+
+.btn-contac{
+  border-radius: 0;
+  background: map-get($my-colors, color1 );
+  border-color: map-get($my-colors, color1 );
+  width: 8rem;
+  &__coments{
+    position: relative;
+    margin-top: 5rem;
+  }
+  &__contenedor{
+    background: map-get($my-colors, color1 );
+    color: #fff;
+    padding: 2% 1% 2% 7%;
+    border-radius: 8px;
+    font-family: $TradeGothic;
+    transition: transform 1s;
+    cursor: pointer;
+    // &:hover {
+    //   transform: scale(1.1);
+    // }
+  }
+  &__contenedor2{
+    background: #061e48;
+    color: #fff;
+    padding: 2% 1% 2% 3%;
+    border-radius: 8px;
+    font-family: Trade Gothic LT Std,sans-serif;
+    transition: transform 1s;
+    cursor: pointer;
+    // margin-left: 12rem;
+    // margin-top: 7rem;
+    // margin-bottom: 2rem;
+  }
+}
+form#comments{
+  position: relative;
+  display: none;
+}
+
+form#distribute{
+  position: relative;
+  // margin-top: 14rem!important;
+  display: none;
+}
+
+.form-group{
+  label{
+    font-family: $TradeGothic;
+    color: map-get($my-colors, color1 );
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  input.form-control{
+    font-family: $TradeGothic;
+    background: #ffffff69;
+    border: solid 2px map-get($my-colors, color1);
+  }
+  textarea.form-control{
+    font-family: $TradeGothic;
+    background: #ffffff69;
+    border: solid 2px map-get($my-colors, color1);
+    height: 70%;
+    margin-bottom: 7rem;
+  }
+  input.form-control:focus{
+    background: #ffffff69;
+    box-shadow: 0px 0px 0px 1px rgba(1,40,87,1);
+  }
+  textarea.form-control:focus{
+    background: #ffffff69;
+    box-shadow: 0px 0px 0px 1px rgba(1,40,87,1);
+  }
+}
+.logo-blue-button{
+  width: 7.4vh;
+  margin-right: 3px;
+  float: right;
+}
+
+
