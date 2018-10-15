@@ -1,0 +1,179 @@
+extends ../templates/template
+
+append config
+  -titulo = "NOSOTROS"
+  -paginaActual = "about"
+  -show_logos= false
+
+block main
+
+    //- section.section-info-icons.py-5.mt-5
+    section.section-info-icons.py-5.mt-5
+        div.section-box-home.p-3.text-center
+            img.img-croque(src="./img/home/img/solido.png", alt="")
+            img.img-bg.img-bg__table-about(src="./img/home/img/plato.png", alt="")
+            .text-justify.text-box-home.text-justify
+            h1.tradeGothic.color1.position-relative NOSOTROS
+            //- hr.title.ml-2
+            img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+            p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición. 
+            //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
+            .container.inline
+                .row
+                    .col-lg-10.sm-mx-auto
+                        .row
+                            .col-xs-12
+                                .filtrer.mt-3 
+                                    span.calidad
+                                        a(href="#") CALIDAD
+                                    span.ml-2.sabor
+                                        a(href="#") SABOR
+                                    span.ml-2.nutricion
+                                        a(href="#") NUTRICION
+                                    span.ml-2.practicidad
+                                        a(href="#") PRACTICIDAD
+                                    span.ml-2.origrn
+                                        a(href="#") ORIGEN
+                                .d-flex.logos.slider-about
+                                    .slider-about__item.calidad
+                                        .row
+                                            .col
+                                                img.slider-about__img(src="./img/home/img/solido.png")
+                                            .col 
+                                                .slider-about__text
+                                                    h2.color1.tradeGothic CALIDAD
+                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                                    .slider-about__item.sabor
+                                        .row
+                                            .col
+                                                img.slider-about__img(src="./img/home/img/solido.png")
+                                            .col 
+                                                .slider-about__text
+                                                    h2.color1.tradeGothic SABOR
+                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                                    .slider-about__item.nutricion
+                                        .row
+                                            .col
+                                                img.slider-about__img(src="./img/home/img/solido.png")
+                                            .col 
+                                                .slider-about__text
+                                                    h2.color1.tradeGothic NUTRICION
+                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                                    .slider-about__item.practicidad
+                                        .row
+                                            .col
+                                                img.slider-about__img(src="./img/home/img/solido.png")
+                                            .col 
+                                                .slider-about__text
+                                                    h2.color1.tradeGothic PRACTICIDAD
+                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                                    .slider-about__item.origrn
+                                        .row
+                                            .col
+                                                img.slider-about__img(src="./img/home/img/solido.png")
+                                            .col 
+                                                .slider-about__text
+                                                    h2.color1.tradeGothic ORIGEN
+                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                    .mb-5
+    section.mt-2.mb-5
+        .container-fluid
+            .container.pl-5.ml-5
+                .text-justify.ml-5
+                    h2.tradeGothic.color1.position-relative BENEFICIOS DE CONSUMIR PESCADO
+                    //- hr.title.ml-2  
+                .row.ml-5.mr-5
+                    .col
+                        .beneficios__content.bg-color1.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/heart.png", alt="")
+                            p.white Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.bg-color2.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/heart.png", alt="")
+                            p.white Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.bg-color3.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/heart.png", alt="")
+                            p.white Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.bg-color1.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/heart.png", alt="")
+                            p.white Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+    section.mt-2.mb-5
+        .container-fluid
+            .container.pl-5.ml-5
+                .text-justify.ml-5
+                    h2.tradeGothic.color1.position-relative BENEFICIOS DE CONSUMIR PESCADO
+                    //- hr.title.ml-2  
+                .row.ml-5.mr-5
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+    section.mt-2.mb-5
+        .container-fluid
+            .container.pl-5.ml-5
+                .text-justify.ml-5
+                    h2.tradeGothic.color1.position-relative BENEFICIOS DE CONSUMIR PESCADO
+                    //- hr.title.ml-2  
+                .row.ml-5.mr-5
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+                    .col
+                        .beneficios__content.text-center.pl-2.pr-2.pb-5
+                            img(src="./img/icon/camera.png", alt="")
+                            h1.colo1 title
+                            p.color1 Rico en minerales esenciales como el hierro, el magnesio, el fósforo y el potasio.
+    section.mt-2.mb-5
+        .container-fluid
+            .container.pl-5.ml-5
+                .text-justify.ml-5
+                    h2.tradeGothic.color1.position-relative ¿DÓNDE ESTAMOS?
+                    //- hr.title.ml-2  
+                .row.ml-5.mr-5
+                    .col-3
+                        img(src="./img/icon/camera.png", alt="")
+                    .col-5
+                        .cont.pt-5
+                            img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+                            p.tradeGothic.color1.text-box.home es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!                
+                                        

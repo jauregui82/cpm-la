@@ -188,7 +188,40 @@ hr.title{
     border: solid 2px;
     color: map-get($my-colors,color1 );
 }
-
+a.slide-tabs{
+	color: map-get($my-colors, color1)!important;
+	font-family: $TradeGothic!important;
+}
+a.slide-tabs.active{
+	font-weight: bold!important;
+	color: map-get($my-colors, color1)!important;
+	background: transparent!important;
+}
+.cambiarpestana{
+	position: absolute;
+	cursor: pointer;
+}
+.tabs-prev{
+	background-image: url(../../img/sections/arrow-left.png);
+    background-repeat: no-repeat;	
+	width: 35px;
+    height: 35px;
+	top: 50%;
+    left: -1%;
+	z-index: 999999!important;
+}
+.tabs-next{
+	background-image: url(../../img/sections/arrow-right.png);
+    background-repeat: no-repeat;	
+	width: 35px;
+    height: 35px;
+	top: 50%;
+    right: -1%;
+	z-index: 999999!important;
+}
+// a.slide-tabs.active:focus{
+// 	box-shadow: 0 0 0 0!important;
+// }
 // BACKGROUND
 	// HOVER DARK
 		.hover-dark{

@@ -1,0 +1,36 @@
+.img-bg{
+    &__table-about{
+        width: 42%;
+        top: 0%;
+        left: -26%;
+    }
+    @include media-breakpoint-up(xl) {
+        &__limon{
+        width: 30%;
+        right: -39%;
+        }
+        &__ajies{
+        width: 35%;
+        bottom: -5%;
+        left: -41%;
+        }
+    }
+
+}
+.slider-about{
+    &__img{
+        // display: inline;
+        width: 100%;
+        // float: left;
+    }
+}
+.inline{
+    display: inline;
+}
+
+.beneficios{
+    &__content{
+
+    }
+    
+}
