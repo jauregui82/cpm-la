@@ -48,7 +48,8 @@
 			span{
 				position: relative;
 				color: map-get($my-colors, color4);
-				transition: all .3s;
+        transition: all .3s;
+        letter-spacing: 0.3rem;
 
 				&::before{
 					content: '';

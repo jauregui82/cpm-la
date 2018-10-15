@@ -20,11 +20,11 @@ block main
                 .col-2
                 .col-4
                     img.logo-blue-intext(src="./img/logo-blue.png", alt="")
-                    p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición. 
+                    p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
                 .col-4
                     img.w-50(src="./img/icon/camera.png", alt="")
     section
-        div        
+        div
             .container.inline
                 .row
                     .col-lg-10.sm-mx-auto
@@ -32,7 +32,7 @@ block main
                             .col-2
                             .col-xs-10
                                 h1.tradeGothic.color1.position-relative ATÚN
-                                .filtrer.mt-3 
+                                .filtrer.mt-3
                                     span.calidad
                                         a(href="#") CALIDAD
                                     span.ml-2.sabor
@@ -48,7 +48,7 @@ block main
                                         .row
                                             .col-4
                                                 img.w-50.slider-about__img(src="./img/icon/camera.png", alt="")
-                                            .col-8 
+                                            .col-8
                                                 .slider-about__text
                                                     h2.color1.tradeGothic CALIDAD
                                                     p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
@@ -61,15 +61,15 @@ block main
                                                         i.fa.fa-chevron-circle-down.ml-5.arrow-dow
                                                     .btn-icon
                                                         img(src="./img/icon/book.png", alt="")
-                                                div(class="btn white btn-contac__contenedor" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1") 
-                                                    //- a(class="btn white" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1") 
+                                                div(class="btn white btn-contac__contenedor" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1")
+                                                    //- a(class="btn white" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1")
                                                     |Toggle first element
                                                 .row
                                                     .col
                                                         .collapse.multi-collapse#multiCollapseExample1
                                                             .card.card-body
                                                                 |Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                            .col 
+                                            .col
                                                 .slider-about__text
                                                     span.mb-5.mt-5.btn-contac__contenedor(type="botton") Quiero distribuir productos
                                                         i.fa.fa-chevron-circle-down.ml-5.arrow-dow
@@ -82,12 +82,20 @@ block main
                                                 li.nav-item
                                                     a(class="nav-link slide-tabs" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false") Contact
                                             .tab-content#pills-tabContent.pl-5.pr-5
-                                                div(class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab") 
-                                                    |1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, distinctio, earum accusamus officiis in similique quis repudiandae incidunt voluptatum delectus totam at! Dolorum expedita quis labore, possimus voluptatum repellendus earum!
-                                                div(class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab") 
+                                                div(class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab")
+                                                  .row
+                                                    .col
+                                                        img.slider-about__img(src="./img/home/img/solido.png")
+                                                    .col
+                                                        .slider-about__text
+                                                            h2.color1.tradeGothic CALIDAD
+                                                            p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
+                                                            p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
+                                                            p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
+                                                div(class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab")
                                                     |2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam debitis quia dolores quibusdam laborum voluptatibus provident corporis consequatur dignissimos iusto deserunt ratione at, ut a asperiores pariatur quam magnam?
-                                                div(class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab") 
+                                                div(class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab")
                                                     |3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt minima eius et odio labore porro harum non dolore! Cum ipsum quibusdam in voluptates quas. Eligendi vel aut reiciendis architecto modi.
-                                            span.cambiarpestana.tabs-prev(data-accion="prev") 
-                                            span.cambiarpestana.tabs-next(data-accion="next") 
-                    .mb-5                    
+                                            span.cambiarpestana.tabs-prev(data-accion="prev")
+                                            span.cambiarpestana.tabs-next(data-accion="next")
+                    .mb-5
