@@ -9,93 +9,1047 @@ block main
 
     //- section.section-info-icons.py-5.mt-5
     section.section-info-icons.py-5.mt-5
-        div.section-box-products.p-3.text-center
-            img.img-croque(src="./img/home/img/solido.png", alt="")
-            img.img-bg.img-bg__table-about(src="./img/home/img/plato.png", alt="")
-            .text-justify.text-box-home.text-justify
-            h1.tradeGothic.color1.position-relative NOSOTROS
-            span.d-flex.justify-content-center
-                img.img-nutri(src="./img/home/nutricion.png", alt="")
+        div.section-box-products.p-3.text-justify
+            img.img-bg.img-bg__pasta-pro(src="./img/produts/pasta.png", alt="")
+            img.img-bg.img-bg__limon-pro(src="./img/produts/limon.png", alt="")
+            img.img-bg.img-bg__ceviche-pro(src="./img/produts/ceviche.png", alt="")
+            .text-justify.text-box-product
+              h1.tradeGothic.color1.position-relative NOSOTROS
+              hr.raya
+            span.d-flex.justify-content-center.position-relative
+                img.img-llevamos(src="./img/produts/text.png", alt="")
             .row.pt-5
                 .col-2
+                .col-6
+                    p.tradeGothic.color1 <b>Saludables, prácticos y deliciosos!</b> En
+                      img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
+                      |contamos con una amplia variedad de conservas <b>a base de atún y caballa 100% peruana</b> y elaboradas bajo los más altos estándares de calidad.<br><br> Descubre los beneficios de cada uno.
                 .col-4
-                    img.logo-blue-intext(src="./img/logo-blue.png", alt="")
-                    p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
-                .col-4
-                    img.w-50(src="./img/icon/camera.png", alt="")
-    section
-        div
-            .container.inline
-                .row
-                    .col-lg-10.sm-mx-auto
-                        .row
-                            .col-2
-                            .col-xs-10
-                                h1.tradeGothic.color1.position-relative ATÚN
-                                .filtrer.mt-3
-                                    span.calidad
-                                        a(href="#") CALIDAD
-                                    span.ml-2.sabor
-                                        a(href="#") SABOR
-                                    span.ml-2.nutricion
-                                        a(href="#") NUTRICION
-                                    span.ml-2.practicidad
-                                        a(href="#") PRACTICIDAD
-                                    span.ml-2.origrn
-                                        a(href="#") ORIGEN
-                                .d-flex.logos.slider-about
-                                    .slider-about__item.calidad
-                                        .row
-                                            .col-4
-                                                img.w-50.slider-about__img(src="./img/icon/camera.png", alt="")
-                                            .col-8
-                                                .slider-about__text
-                                                    h2.color1.tradeGothic CALIDAD
-                                                    p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
-                                                    p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
-                                                    p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
-                                        .row
-                                            .col
-                                                div
-                                                    span.mb-5.mt-5.btn-contac__contenedor(type="botton") Quiero distribuir productos
-                                                        i.fa.fa-chevron-circle-down.ml-5.arrow-dow
-                                                    .btn-icon
-                                                        img(src="./img/icon/book.png", alt="")
-                                                div(class="btn white btn-contac__contenedor" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1")
-                                                    //- a(class="btn white" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1")
-                                                    |Toggle first element
-                                                .row
-                                                    .col
-                                                        .collapse.multi-collapse#multiCollapseExample1
-                                                            .card.card-body
-                                                                |Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                            .col
-                                                .slider-about__text
-                                                    span.mb-5.mt-5.btn-contac__contenedor(type="botton") Quiero distribuir productos
-                                                        i.fa.fa-chevron-circle-down.ml-5.arrow-dow
-                                        div.position-relative
-                                            ul(class="nav nav-pills pills-tab mb-3" role="tablist")
-                                                li.nav-item
-                                                    a(class="nav-link slide-tabs active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true") Home
-                                                li.nav-item
-                                                    a(class="nav-link slide-tabs" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false") Profile
-                                                li.nav-item
-                                                    a(class="nav-link slide-tabs" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false") Contact
-                                            .tab-content#pills-tabContent.pl-5.pr-5
-                                                div(class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab")
-                                                  .row
-                                                    .col
-                                                        img.slider-about__img(src="./img/home/img/solido.png")
-                                                    .col
-                                                        .slider-about__text
-                                                            h2.color1.tradeGothic CALIDAD
-                                                            p.color1.tradeGothic ¡Hecho por peruanos y para peruanos! <br><br>
-                                                            p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad. <br><br>
-                                                            p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
-                                                div(class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab")
-                                                    |2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam debitis quia dolores quibusdam laborum voluptatibus provident corporis consequatur dignissimos iusto deserunt ratione at, ut a asperiores pariatur quam magnam?
-                                                div(class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab")
-                                                    |3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt minima eius et odio labore porro harum non dolore! Cum ipsum quibusdam in voluptates quas. Eligendi vel aut reiciendis architecto modi.
-                                            span.cambiarpestana.tabs-prev(data-accion="prev")
-                                            span.cambiarpestana.tabs-next(data-accion="next")
-                    .mb-5
+                  .position-relative
+                    img(src="./img/produts/mapa.png", alt="")
+
+    section.mb-5
+      .container-fluid
+        .container.about.position-relative
+          img.img-bg.img-bg__cebolla-pro(src="./img/produts/cebolla.png", alt="")
+          img.img-bg.img-bg__palta-pro(src="./img/produts/palta.png", alt="")
+          .row
+              .col-lg-10.sm-mx-auto
+                  .row
+                      .col-xs-12
+                        h1.color1.tradeGothic ATÚN
+                        hr.raya
+                        //-Tabs nav
+                        div.position-relative
+                          ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                              li.nav-item
+                                  a(class="nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-f-claro-tab" data-toggle="pill" href="#pills-f-claro" role="tab" aria-controls="pills-f-claro" aria-selected="false") Filete Claro
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-lomos-tab" data-toggle="pill" href="#pills-lomos" role="tab" aria-controls="pills-lomos" aria-selected="false") Lomos
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-lomos-l-tab" data-toggle="pill" href="#pills-lomos-l" role="tab" aria-controls="pills-lomos-l" aria-selected="false") Lomos Light
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-trozos-tab" data-toggle="pill" href="#pills-trozos" role="tab" aria-controls="pills-trozos" aria-selected="false") Trozos
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-grated-tab" data-toggle="pill" href="#pills-grated" role="tab" aria-controls="pills-grated" aria-selected="false") Grated
+                          .tab-content#pills-tabContent.pl-5.pr-5
+                              //- tab-1
+                              div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-5.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Filete de Atún Artesanal
+                                          p.color1.tradeGothic Seleccionado a mano. Elaborado con aceite vegetal en envase de vidrio. <br><br>
+                                          p.color1.tradeGothic ¡Una experiencia gourmet! Atún Artesanal Campomar está hecho con nuestra receta especial, que resalta el sabor de nuestro producto estrella y hará de tus platos una experiencia inolvidable<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-5.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                                                hr.hr-card
+                                                |(*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+                              //- tab 2
+                              div(class="tab-pane fade" id="pills-f-claro" role="tabpanel" aria-labelledby="pills-f-claro-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-6.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Filete de Atún Claro
+                                          p.color1.tradeGothic Filete de atún aleta amarilla elaborado con aceite vegetal en lata litografiada.  <br><br>
+                                          p.color1.tradeGothic Lo tiene todo: increíble textura y es rico en vitaminas del grupo B. Además, el exquisito sabor del atún aleta amarilla le dará un toque único a tus preparaciones.<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-6.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-3
+                              div(class="tab-pane fade" id="pills-filete" role="tabpanel" aria-labelledby="pills-filete-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-7.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Filete de atún
+                                          p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada y hecho a base de exquisito atún del mar peruano. <br><br>
+                                          p.color1.tradeGothic Una gran fuente de vitaminas, es el complemento perfecto para toda alimentación saludable y, sobre todo, ¡deliciosa!<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-7.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-4
+                              div(class="tab-pane fade" id="pills-lomos" role="tabpanel" aria-labelledby="pills-lomos-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-4.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Lomos de Atún
+                                          p.color1.tradeGothic Seleccionado a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
+                                          p.color1.tradeGothic ¡Un clásico de toda la vida! Disfrútalo en tus guisos o pruébalo en tu sándwich favorito. ¡Trozos grandes y jugosos que harán de tus recetas platillos espectaculares!<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-4.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-5
+                              div(class="tab-pane fade" id="pills-lomos-l" role="tabpanel" aria-labelledby="pills-lomos-l-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-11.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Lomos de Atún Light
+                                          p.color1.tradeGothic Lomos de atún seleccionado a mano y elaborados con agua y sal. <br><br>
+                                          p.color1.tradeGothic Delicioso y saludable. Son la opción perfecta para quienes quieren disfrutar un producto exquisito pero sin culpas.<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-11.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-6
+                              div(class="tab-pane fade" id="pills-trozos" role="tabpanel" aria-labelledby="pills-trozos-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-3.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Trozos de Atún
+                                          p.color1.tradeGothic Elaborados con aceite vegetal en lata litografiada <br><br>
+                                          p.color1.tradeGothic Llegando del trabajo o del colegio. De día o de noche. En un desayuno nutritivo o para disfrutar en la cena. Son el aliado ideal para una comida rápida y deliciosa en cualquier momento. <br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-3.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-7
+                              div(class="tab-pane fade" id="pills-grated" role="tabpanel" aria-labelledby="pills-grated-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-7.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Grated de Atún
+                                          p.color1.tradeGothic Elaborado con aceite vegetal. <br><br>
+                                          p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial.<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-7.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                          span.cambiarpestana.tabs-prev-top(data-accion="prev")
+                          span.cambiarpestana.tabs-next-top(data-accion="next")
+    //- tabs-caballa
+    section.mt-5
+      .container-fluid
+        .container.about.position-relative
+          .row
+              .col-lg-10.sm-mx-auto
+                  .row
+                      .col-xs-12
+                        h1.color1.tradeGothic CABALLA
+                        hr.raya
+                        //-Tabs nav
+                        div.position-relative
+                          ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                              li.nav-item
+                                  a(class="nav-link slide-tabs active" id="pills-solido-tab" data-toggle="pill" href="#pills-solido" role="tab" aria-controls="pills-solido" aria-selected="false") Sólido
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-lomos-c-tab" data-toggle="pill" href="#pills-lomos-c" role="tab" aria-controls="pills-lomos-c" aria-selected="false") Lomitos
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-trozos-c-tab" data-toggle="pill" href="#pills-trozos-c" role="tab" aria-controls="pills-trozos-c" aria-selected="false") Trozos
+                              li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-grated-c-tab" data-toggle="pill" href="#pills-grated-c" role="tab" aria-controls="pills-grated-c" aria-selected="false") Grated
+                          .tab-content#pills-tabContent.pl-5.pr-5
+                              //- tab-4
+                              div(class="tab-pane fade show active" id="pills-solido" role="tabpanel" aria-labelledby="pills-solido-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-10.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Sólido de Caballa
+                                          p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada. <br><br>
+                                          p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial con nuestro exquisito <b> Sólido de Caballa.</b>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-10.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-5
+                              div(class="tab-pane fade" id="pills-lomos-c" role="tabpanel" aria-labelledby="pills-lomos-c-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-11.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Lomos de Atún Light
+                                          p.color1.tradeGothic Lomos de atún seleccionado a mano y elaborados con agua y sal. <br><br>
+                                          p.color1.tradeGothic Delicioso y saludable. Son la opción perfecta para quienes quieren disfrutar un producto exquisito pero sin culpas.<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-11.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-6
+                              div(class="tab-pane fade" id="pills-trozos-c" role="tabpanel" aria-labelledby="pills-trozos-c-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-3.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Trozos de Atún
+                                          p.color1.tradeGothic Elaborados con aceite vegetal en lata litografiada <br><br>
+                                          p.color1.tradeGothic Llegando del trabajo o del colegio. De día o de noche. En un desayuno nutritivo o para disfrutar en la cena. Son el aliado ideal para una comida rápida y deliciosa en cualquier momento. <br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-3.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                              //- tab-7
+                              div(class="tab-pane fade" id="pills-grated-c" role="tabpanel" aria-labelledby="pills-grated-c-tab")
+                                .row
+                                  .col
+                                      img.slider-product__img(src="./img/produts/pro-7.png")
+                                  .col
+                                      .slider-about__text
+                                          h2.color1.tradeGothic Grated de Atún
+                                          p.color1.tradeGothic Elaborado con aceite vegetal. <br><br>
+                                          p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial.<br><br>
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white no-pointer btn-product__contenedor")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-7.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p Lata con abre fácil de 170g
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      h4 Ver Recetas
+                                .row.mt-5
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes1
+                                              .card.card-body.card-product
+                                                table
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores1
+                                              .card.card-body.card-product
+                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table
+                                                  thead
+                                                    tr
+                                                      th( scope="col")
+                                                      th( scope="col") 100 g
+                                                      th( scope="col") % Valor <br>Diario
+                                                  tbody
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td 341.1
+                                                      td 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td 28.9
+                                                      td 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td 4.7
+                                                      td 24%
+                          span.cambiarpestana.tabs-prev-top(data-accion="prev")
+                          span.cambiarpestana.tabs-next-top(data-accion="next")

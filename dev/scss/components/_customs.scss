@@ -1,3 +1,19 @@
+//card product
+.card-product{
+  border: solid 2px map-get($my-colors, color1 );
+  border-radius: 10px;
+  font-family: $TradeGothic;
+  color: map-get($my-colors, color1 );
+  table{
+    // margin-left: 2rem;
+  }
+}
+.pointer{
+  cursor: pointer;
+}
+.no-pointer{
+  cursor: auto!important;
+}
 .raya{
   margin-top: 0;
   margin-bottom: 1rem;
@@ -5,6 +21,12 @@
   border-top: 6px solid map-get($my-colors, color1 );
   width: 10rem;
   display: inline-block;
+}
+.hr-card{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid #061e4894;
 }
 .btn-blue{
   border-radius: 0;
@@ -226,6 +248,24 @@ a.slide-tabs.active{
 	top: 50%;
     right: -1%;
 	z-index: 2!important;
+}
+.tabs-prev-top{
+  background-image: url(../../img/sections/arrow-left.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  top: 20%;
+  left: -1%;
+  z-index: 2!important;
+}
+.tabs-next-top{
+  background-image: url(../../img/sections/arrow-right.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  top: 20%;
+  right: -1%;
+  z-index: 2!important;
 }
 // a.slide-tabs.active:focus{
 // 	box-shadow: 0 0 0 0!important;
