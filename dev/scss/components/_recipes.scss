@@ -1,0 +1,150 @@
+.recipes-sec{
+  margin-top: 10rem;
+}
+.section-box-recipes {
+  background-image: url(../img/home/hoja.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 2%;
+  width: 70vw;
+  height: 53vh;
+  text-align: center;
+  position: relative;
+  left: 14%;
+}
+
+.img-bg{
+  &__cebolla-rec{
+    width: 16%;
+    top: -4%;
+    left: -7%;
+  }
+  &__plato-rec{
+    width: 37%;
+    bottom: -60%;
+    left: -26%;
+  }
+  &__salad-rec{
+    width: 37%;
+    top: -115px;
+    right: -24%;
+  }
+  &__lata-rec{
+    width: 24%;
+    bottom: -35%;
+    right: 20%;
+  }
+  &__limon-rec{
+    width: 18%;
+    bottom: -34%;
+    right: 3%;
+    // width: 18%;
+    // bottom: -12vh;
+    // right: 1vw;
+  }
+  &__tomate-rec{
+    width: 18%;
+    bottom: 0vh;
+    left: -4%;
+  }
+  &__tomate-rec2{
+    width: 18%;
+    top: 50vh;
+    left: -3vw;
+  }
+  &__palta-rec{
+    width: 18%;
+    bottom: 6vh;
+    left: -5vw;
+  }
+  &__tenedor-rec{
+    width: 12%;
+    bottom: 65vh;
+    right: 0vw;
+  }
+  &__tomate2-rec{
+    width: 16%;
+    bottom: 16vh;
+    right: -13vh;
+  }
+}
+
+.recipes-grid{
+  &__content{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  &__img-vertical{
+    width: 100%;
+  }
+  &__img-horizontal{
+    width: 89.7%;
+  }
+  &__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $TradeGothic;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  &__text-horizontal{
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    transform: translateX(-50%);
+    font-family: $TradeGothic;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+}
+
+.btn-recipes{
+  &__contenedor {
+    background: #061e48;
+    color: #fff;
+    padding: 2% 1% 2% 20%;
+    border-radius: 8px;
+    font-family: Trade Gothic LT Std,sans-serif;
+    width: 100%;
+    height: 3.1rem;
+    position: relative;
+    text-align: left;
+    p {
+      padding-left: 1rem;
+    }
+  }
+  &__fa{
+    float: right;
+    position: absolute;
+    right: 5%;
+  }
+  &__cont-img{
+    position: absolute;
+    top: 9%;
+    width: 3.6rem;
+    left: -7%;
+  }
+}
+.hr-recipes{
+  border-top: 4px solid #061e488f;
+  width: 90%;
+}
+.ul-recipes{
+  list-style: unset;
+}
+.card-recipes{
+  padding-left: 2.7rem;
+}
+.img-icon-tabs{
+  width: 4rem;
+}
+.img-icon-up{
+  top: 17%;
+  position: absolute;
+  right: 0;
+  width: 1.5rem;
+}

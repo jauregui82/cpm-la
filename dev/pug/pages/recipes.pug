@@ -1,0 +1,50 @@
+extends ../templates/template
+
+append config
+  -titulo = "RECETAS"
+  -paginaActual = "recipes"
+  -show_logos= false
+
+block main
+
+    //- section.section-info-icons.py-5.mt-5
+    section.section-info-icons.py-5.mt-5
+        div.section-box-recipes.p-3.text-justify
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            .text-justify.text-box-product
+              h1.tradeGothic.color1.position-relative RECETAS
+              hr.raya
+            span.d-flex.justify-content-center.position-relative
+                img.img-llevamos(src="./img/recipes/text.png", alt="")
+            .row.pt-5
+                .col-2
+                .col-5
+                    p.tradeGothic.color1 Con
+                      img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
+                      |puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
+    section.mb-5.position-relative
+      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
+      .container-fluid
+        .container.recipes-sec
+          .row
+            .col-8
+              .recipes-grid__content
+                a(href="recipes-entradas.html")
+                  img.recipes-grid__img-vertical(src="./img/recipes/rec-ent.png", alt="")
+                  h1.recipes-grid__text ENTRADAS
+              .row
+                .col.pt-4
+                  .recipes-grid__content
+                    a(href="recipes-fondo.html")
+                      img.recipes-grid__img-vertical(src="./img/recipes/rec-snack.png", alt="")
+                      h1.recipes-grid__text NIÑOS &amp; SNACKS
+            .col-4
+              .recipes-grid__content
+                a(href="recipes-snack.html")
+                  img.recipes-grid__img-horizontal(src="./img/recipes/rec-fond.png", alt="")
+                  h1.recipes-grid__text-horizontal PLATOS <br>DE<br> FONDO

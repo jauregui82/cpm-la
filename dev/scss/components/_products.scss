@@ -36,6 +36,11 @@
     top: 28%;
     right: -42%;
   }
+  &__tomate-pro{
+    width: 31%;
+    top: 29%;
+    left: -16%;
+  }
 }
 .slider-product{
   &__img{
@@ -90,4 +95,24 @@
 .img-llevamos {
   width: 44vw;
   height: 0%;
+}
+.img-icon-prev{
+  background-image: url(../../img/sections/arrow-left.png);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 35px;
+  top: 20%;
+  right: -1%;
+  z-index: 2!important;
+  // display: inline-block;
+}
+.img-icon-next{
+  background-image: url(../../img/sections/arrow-right.png);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 35px;
+  top: 20%;
+  right: -1%;
+  z-index: 2!important;
+  // display: inline-block;
 }

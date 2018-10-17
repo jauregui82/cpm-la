@@ -1,0 +1,578 @@
+extends ../templates/template
+
+append config
+  -titulo = "RECETAS-ENTRADAS"
+  -paginaActual = "recipes-entradas"
+  -show_logos= false
+
+block main
+
+  //- section.section-info-icons.py-5.mt-5
+  section.section-info-icons.py-5.mt-5
+      div.section-box-recipes.p-3.text-justify
+          img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
+          img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
+          img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+          img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+          img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+          img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+          .text-justify.text-box-product
+            h1.tradeGothic.color1.position-relative RECETAS
+            hr.raya
+          span.d-flex.justify-content-center.position-relative
+              img.img-llevamos(src="./img/recipes/text.png", alt="")
+          .row.pt-5
+              .col-2
+              .col-5
+                  p.tradeGothic.color1 Con
+                    img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
+                    |puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
+  section.mb-5.position-relative
+    img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="")
+    img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="")
+    img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="")
+    img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="")
+    .container-fluid
+      .container.recipes-sec
+         .row
+            .col-lg-8.sm-mx-auto
+              .row
+                .col-xs-12
+                  //-Tabs nav
+                  div.position-relative
+                    div(class="btn white pointer d-flex align-items-center" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                      .row.position-relative
+                        img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
+                        .col-6
+                          h1.color1.tradeGothic Entradas
+                          hr.raya
+                    .row
+                      .col
+                          .collapse.multi-collapse#entradas
+                            ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                                li.nav-item
+                                    a(class="nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
+                                li.nav-item
+                                    a(class="nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Templada de atún &nbsp;|
+                                li.nav-item
+                                    a(class="nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Caprichosa con atún &nbsp;|
+                                li.nav-item
+                                    a(class="nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Campomar &nbsp;|
+                                li.nav-item
+                                  a(class="nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Pastel de Caballa  &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-lomos-tab" data-toggle="pill" href="#pills-lomos" role="tab" aria-controls="pills-lomos" aria-selected="false") Lomos &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-lomos-l-tab" data-toggle="pill" href="#pills-lomos-l" role="tab" aria-controls="pills-lomos-l" aria-selected="false") Lomos Light &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-trozos-tab" data-toggle="pill" href="#pills-trozos" role="tab" aria-controls="pills-trozos" aria-selected="false") Trozos &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-grated-tab" data-toggle="pill" href="#pills-grated" role="tab" aria-controls="pills-grated" aria-selected="false") Grated
+                    .tab-content#pills-tabContent.pl-5.pr-5
+                        //- tab-1
+                        //- hr.hr-recipes
+                        div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-01.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Cebiche de filete de atún
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 15 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 4 unidades de <b>Filete de Atún</b> Campomar
+                                            li
+                                              p 2 ajíes amarillos picados
+                                            li
+                                              p 4 tomates pelados y picados
+                                            li
+                                              p 2 cebollas picadas
+                                            li
+                                              p 12 limones
+                                            li
+                                              p Sal y pimienta al gusto
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Mezclar el <b>Filete de Atún</b> Campomar con los ajíes, los tomates y las cebollas.
+                                            li
+                                              p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
+                                            li
+                                              p Salpimentar y servir en plato hondo.
+                                            li
+                                              p Decorar con papa sancochada y lechugas (opcional)
+                          //- tab-2
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-02.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Templada de atún
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 40 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Filete de Atún  Artesanal
+                                            li
+                                              p 20 aceitunas negras
+                                            li
+                                              p 1 cebolla grande cortada en juliana
+                                            li
+                                              p 12 tomates cherry
+                                            li
+                                              p Perejil al gusto
+                                            li
+                                              p 2 limones
+                                            li
+                                              p Arroz (opcional)
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
+                                            li
+                                              p Agregar el jugo de los limones y salpimentar al gusto.
+                                            li
+                                              p Mezclar, decorar con perejil y servir
+                          //- tab-3
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-03.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Caprichosa con atún
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 10 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Filete de Atún Claro
+                                            li
+                                              p 12 tomates cherry
+                                            li
+                                              p 1 lechuga
+                                            li
+                                              p 1 pepino
+                                            li
+                                              p 1 taza de alverjitas
+                                            li
+                                              p 1 limón
+                                            li
+                                              p Aceite de oliva
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar las alverjitas y el choclo.
+                                            li
+                                              p Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
+                                            li
+                                              p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
+                                            li
+                                              p Mover y servir.
+                          //- tab-4
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-04.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Campomar
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 15 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 1 unidad de Filete de Atún Light
+                                            li
+                                              p 1/2 taza de alverjitas
+                                            li
+                                              p 1/4 de taza de habas
+                                            li
+                                              p 2 papas
+                                            li
+                                              p 2 zanahorias
+                                            li
+                                              p Hojas de Lechuga
+                                            li
+                                              p 2 cucharadas de mayonesa
+                                            li
+                                              p 1 limón
+                                            li
+                                              p Perejil al gusto
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
+                                            li
+                                              p Agregar el Filete de Atún Light
+                                            li
+                                              p Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
+                                            li
+                                              p Decorar con lechugas
+                        //- tab--1
+                        //- hr.hr-recipes
+                        div(class="tab-pane fade" id="pills-pastel-caballa" role="tabpanel" aria-labelledby="pills-pastel-caballa-tab")
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-01.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Pastel de Caballa
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 15 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 4 unidades de <b>Filete de Atún</b> Campomar
+                                            li
+                                              p 2 ajíes amarillos picados
+                                            li
+                                              p 4 tomates pelados y picados
+                                            li
+                                              p 2 cebollas picadas
+                                            li
+                                              p 12 limones
+                                            li
+                                              p Sal y pimienta al gusto
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Mezclar el <b>Filete de Atún</b> Campomar con los ajíes, los tomates y las cebollas.
+                                            li
+                                              p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
+                                            li
+                                              p Salpimentar y servir en plato hondo.
+                                            li
+                                              p Decorar con papa sancochada y lechugas (opcional)
+                          //- tab-2
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-02.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Templada de atún
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 40 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Filete de Atún  Artesanal
+                                            li
+                                              p 20 aceitunas negras
+                                            li
+                                              p 1 cebolla grande cortada en juliana
+                                            li
+                                              p 12 tomates cherry
+                                            li
+                                              p Perejil al gusto
+                                            li
+                                              p 2 limones
+                                            li
+                                              p Arroz (opcional)
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
+                                            li
+                                              p Agregar el jugo de los limones y salpimentar al gusto.
+                                            li
+                                              p Mezclar, decorar con perejil y servir
+                          //- tab-3
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-03.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Caprichosa con atún
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 10 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Filete de Atún Claro
+                                            li
+                                              p 12 tomates cherry
+                                            li
+                                              p 1 lechuga
+                                            li
+                                              p 1 pepino
+                                            li
+                                              p 1 taza de alverjitas
+                                            li
+                                              p 1 limón
+                                            li
+                                              p Aceite de oliva
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar las alverjitas y el choclo.
+                                            li
+                                              p Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
+                                            li
+                                              p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
+                                            li
+                                              p Mover y servir.
+                          //- tab-4
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center
+                            .col
+                                img.slider-product__img(src="./img/recipes/rec/rec-04.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic Ensalada Campomar
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic 15 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 1 unidad de Filete de Atún Light
+                                            li
+                                              p 1/2 taza de alverjitas
+                                            li
+                                              p 1/4 de taza de habas
+                                            li
+                                              p 2 papas
+                                            li
+                                              p 2 zanahorias
+                                            li
+                                              p Hojas de Lechuga
+                                            li
+                                              p 2 cucharadas de mayonesa
+                                            li
+                                              p 1 limón
+                                            li
+                                              p Perejil al gusto
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-5
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-2.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
+                                            li
+                                              p Agregar el Filete de Atún Light
+                                            li
+                                              p Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
+                                            li
+                                              p Decorar con lechugas
+              .row.d-flex.justify-content-center.mt-5
+                .col.d-flex.justify-content-end.cambiarpestana.position-relative(data-accion="prev")
+                  .row
+                    .col-4
+                      img.img-icon-tabs(src="./img/icon/arrow-left.png", alt="")
+                    .col-8
+                      h3.color1.tradeGothic  Anterior
+                .col.d-flex.justify-content-start.cambiarpestana.position-relative(data-accion="next")
+                  .row
+                    .col-8
+                      h3.color1.tradeGothic Siguiente
+                    .col-4
+                      img.img-icon-tabs(src="./img/icon/arrow-right.png", alt="")
