@@ -1,0 +1,47 @@
+extends ../templates/template
+
+append config
+  -titulo = "BLOG"
+  -paginaActual = "blog"
+  -show_logos= false
+
+block main
+
+    //- section.section-info-icons.py-5.mt-5
+    section.section-info-icons.py-5.mt-5
+        div.section-box-recipes.p-3.text-justify
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            .text-justify.text-box-product
+              h1.tradeGothic.color1.position-relative RECETAS
+              hr.raya
+            span.d-flex.justify-content-center.position-relative
+                img.img-llevamos(src="./img/recipes/text.png", alt="")
+            .row.pt-5
+                .col-2
+                .col-5
+                    p.tradeGothic.color1 Con
+                      img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
+                      |nos preocupamos por ofrecer a todos los peruanos <b>productos de calidad altamente nutritivos.</b> Por eso, queremos compartir algunos artículos sobre cómo llevar una vida y una alimentación saludables, así como contenidos sobre los productos que elaboramos.<br><br> ¡Inspírate y acompáñanos en nuestra tarea de <b>mejorar la alimentación de todos los peruanos!</b> Revisa las siguientes notas y artículos:
+    section.mb-5.position-relative
+      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
+      .container-fluid
+        .container.recipes-sec
+          .row
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
+          .row.mt-5
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
+            .col
+                img.w-100(src="./img/home/slide/slide1.png", alt="")
