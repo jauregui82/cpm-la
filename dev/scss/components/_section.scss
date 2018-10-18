@@ -1,32 +1,4 @@
 // jauregui
-.section-box-home{
-  background-image: url(../img/home/hoja.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-  padding: 2%;
-  width: 80vw;
-  /* max-width: 783px; */
-  /* max-height: 400px; */
-  height: 56vh;
-  text-align: center;
-  position: relative;
-  left: 12%;
-}
-.section-box-about{
-  background-image: url(../img/sections/papel2.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-  width: 80vw;
-  /* max-width: 783px; */
-  /* max-height: 400px; */
-  height: 88vh;
-  text-align: center;
-  position: relative;
-  left: 12%;
-  padding: 3% 3% 0 8%;
-}
 .logo-blue-intext{
   width: 7.4vh;
     margin-right: 3px;
@@ -49,23 +21,8 @@
   margin-left: 10px;
   display: inline;
 }
-.text-box.home{
-  font-size: 1.6vh;
-}
-p.recetas{
-  line-height: 1.6;
-  font-size: 1.8vh;
-}
 
 
-
-.section-box-home-blue{
-  background: #072049d9;
-  background-repeat: no-repeat;
-  display: inline-block;
-  padding: 2%;
-  width: 50%;
-}
 
 // .section-box-home-cel{
 //   background-image: url(../img/home/cel2.png);
@@ -125,9 +82,9 @@ div>.section-box-home-cel{
     display: inline-block;
     padding: 2%;
     width: 60vw;
-    height: 74vh;
+    // height: 74vh;
     position: relative;
-    left: 12%;
+    // left: 12%;
 }
 
 .text-box-home{

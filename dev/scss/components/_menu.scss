@@ -1,6 +1,7 @@
 
 .nav-menu{
-	background-color: #fff;
+	// background-color: #fff;
+	background-color: map-get($my-colors, color1);
 	// border-bottom: 1px solid #f0f0f0;
 
 	.logo{
@@ -47,7 +48,7 @@
 
 			span{
 				position: relative;
-				color: map-get($my-colors, color4);
+				// color: #fff;
         transition: all .3s;
         letter-spacing: 0.3rem;
 
@@ -96,7 +97,15 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				font-size: 1.15rem;
+        font-size: 1.15rem;
+        color: map-get($my-colors, color1);
+			}
+		}
+	}
+	@include media-breakpoint-up(md) {
+		li{
+			a{
+        color: #fff;
 			}
 		}
 	}
@@ -128,7 +137,7 @@
 		width: 100%;
 		height: 100%;
 		z-index: $z-fixed;
-		background-color: #fff;
+    background-color: #fff;
 		margin-left: 0;
 		opacity: 0;
 		// transform: translateY(-100%);

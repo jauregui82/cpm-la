@@ -1,0 +1,62 @@
+.fondo-row{
+  background-image: url(../img/sections/papel.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 6% 11% 10% 7%;
+}
+.box-index{
+  &__horizontal{
+    // max-width: 295px;
+    max-width: 82%;
+  }
+
+}
+.section-box-home-blue{
+  background: #072049d9;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 2%;
+  // width: 50%;
+}
+.section-box-home{
+  background-image: url(../img/home/hoja.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 2%;
+  width: 80vw;
+  /* max-width: 783px; */
+  /* max-height: 400px; */
+  // height: 56vh;
+  text-align: center;
+  position: relative;
+  left: 12%;
+}
+.text-box.home{
+  font-size: 1.6vh;
+}
+p.recetas{
+  line-height: 1.6;
+  font-size: large;
+}
+
+// .pc-version{
+//   @include media-breakpoint-up(sm){
+//     display: none;
+//   }
+// }
+// .mobile-version{
+//   @include media-breakpoint-up(md){
+//     display: none;
+//   }
+// }
+.mobile-version{
+  @include media-breakpoint-up(md){
+    display: none;
+  }
+}
+.pc-version{
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+}

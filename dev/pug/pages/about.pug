@@ -26,7 +26,7 @@ block main
             .container.inline
                 .row
                     .col-lg-10.sm-mx-auto
-                        .row
+                        .row.mb-5
                             .col-xs-12
                                 div.position-relative
                                   ul(class="nav nav-pills pills-tab mb-3" role="tablist")
@@ -101,19 +101,19 @@ block main
                     hr.raya
                     //- hr.title.ml-2
                 .row
-                    .col
+                    .col-md-6.col-lg-3
                         .beneficios__content.bg-ab-orange.text-center
                             img.beneficios__img(src="./img/icon/ab-11.png", alt="")
                             p.white <b>Rico en minerales</b> esenciales como el hierro, el magnesio, el fósforo y el potasio.
-                    .col
+                    .col-md-6.col-lg-3
                         .beneficios__content.bg-ab-purple.text-center
                             img.beneficios__img(src="./img/icon/ab-12.png", alt="")
                             p.white Posee grandes cantidades de yodo, que <b>protege los sistemas nervioso, digestivo y muscular</b>
-                    .col
+                    .col-md-6.col-lg-3
                         .beneficios__content.bg-ab-red.text-center
                             img.beneficios__img(src="./img/icon/ab-13.png", alt="")
                             p.white Parte importante de una <b>alimentación cardiosaludable.</b>
-                    .col
+                    .col-md-6.col-lg-3
                         .beneficios__content.bg-ab-green.text-center
                             img.beneficios__img(src="./img/icon/ab-14.png", alt="")
                             p.white <b>Posee vitaminas</b> de los grupos A, D y E, y es particularmente rico en las del grupo B.
@@ -127,28 +127,28 @@ block main
                   hr.raya
                   //- hr.title.ml-2
               .row
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img(src="./img/icon/ab-1.png", alt="")
                           .position-relative.mt-4
                             h3 NIÑOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text Ideal para el desarrollo cerebral y aporta nutrientes importantes para el crecimiento.
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img(src="./img/icon/ab-2.png", alt="")
                           .position-relative.mt-4
                             h3 ADOLESCENTES
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text Fundamental para la formación de tejido muscular y ayuda al fortalecimiento de los huesos.
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.ab-3(src="./img/icon/ab-3.png", alt="")
                           .position-relative.mt-4
                             h3 ADULTOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text Perfecto para una buena salud cardiaca, y ayuda controlar los niveles de colesterol y triglicéridos.
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.ab-4(src="./img/icon/ab-4.png", alt="")
                           .position-relative.mt-4
@@ -162,28 +162,28 @@ block main
                   hr.raya
                   //- hr.title.ml-2
               .row
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.ab-5(src="./img/icon/ab-5.png", alt="")
                           .position-relative
                             h3 PESCAMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text Nuestros barcos realizan la pesca en el litoral peruano, respetando todas las regulaciones para <b>preservar el ecosistema marino y sus especies.</b>
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.mt-1(src="./img/icon/ab-6.png", alt="")
                           .position-relative.mt-4
                             h3 PRODUCIMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text La pesca es trasladada a nuestras plantas de procesamiento ubicadas en Áncash, donde elaboramos las conservas bajo <b>los más estrictos controles de calidad.</b>
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.ab-3(src="./img/icon/ab-7.png", alt="")
                           .position-relative.mt-4
                             h3 DISTRIBUIMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.beneficios__text Manteniendo <b>los más altos estándares de calidad,</b> las conservas son almacenadas y luego distribuidas por el país.
-                  .col
+                  .col-md-6.col-lg-3
                       .beneficios__content.text-center
                           img.beneficios__img.ab-4(src="./img/icon/ab-8.png", alt="")
                           .position-relative.mt-4
@@ -192,6 +192,7 @@ block main
                             p.float-left.mr-2.color1.tradeGothic.recetas Finalmente, nuestras Conservas
                               img.logo-blue-intext2(src="./img/logo-blue.png", alt="")
                               |<b>están presentes en las mesas de todos los peruanos</b> llevando calidad y nutrición. ¡Disfrútalas en deliciosos platos que también tú puedes preparar!
+    hr.transparent
     section
         .container-fluid
             .container.about.position-relative
@@ -200,10 +201,11 @@ block main
                   h2.tradeGothic.color1.position-relative ¿DÓNDE ESTAMOS?
                   hr.raya
                   //- hr.title.ml-2
-              .row
-                  .col-3
+              .row.de-flex.justify-content-center
+                  .col-sm-8.col-md-6.col-3
                       img(src="./img/icon/ab-9.png", alt="")
-                  .col-7
+                  .col-sm-8.col-md-6.col-7
                       .cont.pt-5
                           img.logo-blue-intext(src="./img/logo-blue.png", alt="")
                           p.tradeGothic.color1.text-box.home es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
+    hr.transparent

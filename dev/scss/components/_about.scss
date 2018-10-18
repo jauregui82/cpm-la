@@ -1,3 +1,17 @@
+.section-box-about{
+  background-image: url(../img/sections/papel2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 80vw;
+  /* max-width: 783px; */
+  /* max-height: 400px; */
+  // height: 88vh;
+  text-align: center;
+  position: relative;
+  left: 12%;
+  padding: 3% 3% 0 8%;
+}
 .about{
   padding: 0rem 5.2rem 0rem 6.1rem;
 }

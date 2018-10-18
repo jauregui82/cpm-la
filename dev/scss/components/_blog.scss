@@ -1,5 +1,5 @@
 .section-box-blog{
-    background-image: url(../img/home/hoja.png);
+    background-image: url(../img/sections/hoja-blog.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
@@ -9,4 +9,42 @@
     text-align: center;
     position: relative;
     left: 14%;
+}
+.img-bg{
+  &__trozos-blog{
+    width: 21%;
+    top: 0%;
+    left: -7%;
+  }
+  &__salad-blog{
+    width: 37%;
+    top: -4%;
+    right: -24%;
+  }
+  &__club-blog{
+    width: 67%;
+    top: 34vh;
+    left: -39vw;
+  }
+  &__tomate-blog{
+    width: 20%;
+    bottom: 0vh;
+    right: -18vw;
+  }
+  &__salad2-blog{
+    width: 40%;
+    top: 0vh;
+    right: -17vw;
+  }
+  &__lata-blog{
+    width: 20%;
+    top: 0;
+    right: -6vw;
+  }
+  &__sda-blog{
+    width: 50%;
+    top: 34vh;
+    left: -24vw;
+  }
+
 }

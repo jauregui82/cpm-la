@@ -21,27 +21,31 @@ block main
       .text-justify.text-box-home.text-justify
         img.logo-blue-intext(src="./img/logo-blue.png", alt="")
         p.tradeGothic.color1.text-box.home es una marca peruana con 15 años en el mercado, es <b>elaborada por y para peruanos</b>, con los mejores estándares de producción locales e internacionales y con insumos de nuestro mar <br>
-      span.btn.btn-blue.white.tradeGothic CONÓCENOS
+      span.btn.btn-blue.white.tradeGothic.mb-4
+        a.white(href="about.html") CONÓCENOS
+  section
     .container-fluid
-      .row
-        .col.d-flex.justify-content-center.mt-5
-          div.section-box-home-blue.text-center.pt-5.position-relative
-            img.img-filete(src="./img/home/img/filete2.png", alt="")
-            img.img-solido-blue(src="./img/home/img/solido.png", alt="")
-            h4.white.tradeGothic EL PESCADO ES UN ALIMENTO RICO Y NUTRITIVO, IDEAL PARA TODAS LAS ETAPAS DE LA VIDA.
-            span.btn.btn-white-home.mt-4.tradeGothic.color1 DESCUBRE NUESTROS PRODUCTOS
-            //- h2.white.mt-4 ¡100% peruano!
-            span.d-flex.justify-content-center.mt-2
-              img(src="./img/home/flecha.png", alt="")
-              img(src="./img/home/100peruano.png", alt="")
-            //- .row
-            //-   .col
-            .text-justify.text-box-blue.text-justify
-              img.logo-blue-intext-equipo(src="./img/home/escudo.png", alt="")
-              p.tradeGothic.text-box.home.white Auspiciador oficial del <br> Comité Olímpico Peruano
-              //- img.w-25.logo-equipo(src="./img/home/escudo.png", alt="")
-              //- p.white.tradeGothic Auspiciador oficial del <br> Comité Olímpico Peruan
-              //- .col
+      .container
+        .row.d-flex.justify-content-center
+          .col-sm-8.col-md-6.col-lg-6.mt-5
+            div.section-box-home-blue.text-center.pt-5.position-relative
+              img.img-filete(src="./img/home/img/filete2.png", alt="")
+              img.img-solido-blue(src="./img/home/img/solido.png", alt="")
+              h4.white.tradeGothic EL PESCADO ES UN ALIMENTO RICO Y NUTRITIVO, IDEAL PARA TODAS LAS ETAPAS DE LA VIDA.
+              span.btn.btn-white-home.mt-4.tradeGothic.color1
+                a.color1(href="about.html") DESCUBRE NUESTROS PRODUCTOS
+              //- h2.white.mt-4 ¡100% peruano!
+              span.d-flex.justify-content-center.mt-2
+                img(src="./img/home/flecha.png", alt="")
+                img(src="./img/home/100peruano.png", alt="")
+              //- .row
+              //-   .col
+              .text-justify.text-box-blue.text-justify
+                img.logo-blue-intext-equipo(src="./img/home/escudo.png", alt="")
+                p.tradeGothic.text-box.home.white Auspiciador oficial del <br> Comité Olímpico Peruano
+                //- img.w-25.logo-equipo(src="./img/home/escudo.png", alt="")
+                //- p.white.tradeGothic Auspiciador oficial del <br> Comité Olímpico Peruan
+                //- .col
 
       div.position-relative
         img.img-tomate(src="./img/home/img/tomate.png", alt="")
@@ -52,85 +56,129 @@ block main
             img(src="", alt="")
             img.link-pantalla(src="./img/home/icon.png", alt="")
             span.d-flex.justify-content-center.text-pantalla.white.futura ver video
+  section
     .container-fluid.mt-5
       //- .col.d-flex.align-self-baseline
         //- .row.section-box-papel.p-3.text-center
-      .row.section-box-papel.justify-content-start
-        .row
-          .col-8
-            .row
-              .col-6
-                h1.tradeGothic.color1 RECETAS
-                hr.title.ml-2
-                .text-justify.float-left
-                  p.float-left.mr-2.color1.tradeGothic.recetas Con
-                  img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
-                  p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
-              .col-6
-                img.w-100(src="./img/home/sec3-2.png", alt="")
-              .col-12
-                .contenedor
-                  img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
-                  .fondo-box-img
-                  .tex-box-img.tradeGothic.white ALMUERZOS
-          .col-4.position-relative
-            img.img-sec3-1.position-absolute(src="./img/home/sec3-1.png", alt="")
-
+      .container
+        //- .row.section-box-papel.justify-content-center
+        .fondo-row
+          .row.pc-version
+            .col-8
+              .row
+                .col-6
+                  h1.tradeGothic.color1 RECETAS
+                  hr.title.ml-2
+                  .text-justify.float-left
+                    p.float-left.mr-2.color1.tradeGothic.recetas Con
+                    img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
+                    p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
+                .col-6
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-2.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+            .col-4.position-relative
+              //- img.img-sec3-1.position-absolute(src="./img/home/sec3-1.png", alt="")
+              .contenedor.box-index__horizontal
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-1.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+          .row.mobile-version
+            .col-12
+              .row
+                .col-12
+                  h1.tradeGothic.color1 RECETAS
+                  hr.title.ml-2
+                  .text-justify.float-left
+                    p.float-left.mr-2.color1.tradeGothic.recetas Con
+                    img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
+                    p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+  section
     .container.position-relative
       img.img-limon(src="./img/home/img/limon.png", alt="")
       img.img-cebolla(src="./img/home/img/cebolla.png", alt="")
       img.img-plato-atun(src="./img/home/img/plato-atun.png", alt="")
-      .row
-        .col.mt-5
-          h1.title.tradeGothic.color1 BLOG SALUDABLE
-          hr.title
-          .slide-blog
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide1.png", alt="")
-              .slide-text
-                .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide2.png", alt="")
-              .slide-text
-                .white.tradeGothic ¿TUS HIJOS <br>COMEN PESCADO?
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide3.png", alt="")
-              .slide-text
-                .white.tradeGothic CONSUMIR PESCADO <br> CONTRIBUYE AL ESTADO <br> DE ÁNIMO.
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide1.png", alt="")
-              .slide-text
-                .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide2.png", alt="")
-              .slide-text
-                .white.tradeGothic ¿TUS HIJOS <br>COMEN PESCADO?
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
-            .slider-content
-              .slide-img
-                img(src="./img/home/slide/slide3.png", alt="")
-              .slide-text
-                .white.tradeGothic CONSUMIR PESCADO <br> CONTRIBUYE AL ESTADO <br> DE ÁNIMO.
-                span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+      .container
+        .row
+          .col.mt-5
+            h1.title.tradeGothic.color1 BLOG SALUDABLE
+            hr.title
+            .slide-blog
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide1.png", alt="")
+                .slide-text
+                  .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide2.png", alt="")
+                .slide-text
+                  .white.tradeGothic ¿TUS HIJOS <br>COMEN PESCADO?
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide3.png", alt="")
+                .slide-text
+                  .white.tradeGothic CONSUMIR PESCADO <br> CONTRIBUYE AL ESTADO <br> DE ÁNIMO.
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide1.png", alt="")
+                .slide-text
+                  .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide2.png", alt="")
+                .slide-text
+                  .white.tradeGothic ¿TUS HIJOS <br>COMEN PESCADO?
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+              .slider-content
+                .slide-img
+                  img(src="./img/home/slide/slide3.png", alt="")
+                .slide-text
+                  .white.tradeGothic CONSUMIR PESCADO <br> CONTRIBUYE AL ESTADO <br> DE ÁNIMO.
+                  span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  ver más
+  section
     .container-fluid.mt-5
       .container
         .row
-          .col-4
+          .col-sm-12.col-md-6.col-lg-4
             h1.tradeGothic.color1 REGÍSTRATE
             hr.title.ml-2
-          .col-8
+          .col-sm-12.col-md-6.col-lg-8
             p.tradeGothic.color1 Si deseas estar actualizado sobre el contenido que publicamos en nuestro BLOG, suscríbete en nuestra base de datos
             .row.mt-2.pb-2.border-mail
               .col-9.pl-0
                 input.input-mailing.ml-0(type="text",placeholder="Ingresa tu correo electrónico ")
               .col-3
                 span.btn.btn-blue.white.tradeGothic.mt-1.align-self-end.w-100 ENVIAR
+  hr.transparent

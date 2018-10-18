@@ -1,62 +1,73 @@
 footer.footer.bg-color1
   .container.pt-5.pb-4.white
-    .row
-      .col-xs-7.col-sm-8.xs-mx-auto.col-md-12
-        .row
-          //- .col-sm-6.col-md-3.mb-3.md-mb-0.d-flex.justify-content-center.d-sm-inline
-          .col-3.d-flex.align-items-center
-            a(href="./")
-              img(src="./img/logo.png", alt="Logo")
-          //- .col-sm-6.col-md-6.mb-6.md-mb-0
-          .col-6-pl-0.pr-0
-            //- p.footer__info.xs-center.sm-left.pt-3
-            //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-            //-     |NOSOTROS &nbsp;|
-            //- p.footer__info.xs-center.sm-left.pt-3
-            //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-            //-     |NOSOTROS &nbsp;|
-            //- p.footer__info.xs-center.sm-left.pt-3
-            //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-            //-     |NOSOTROS &nbsp;|
-            //- p.footer__info.xs-center.sm-left.pt-3
-            //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-            //-     |NOSOTROS
-            div.d-flex.align-items-center.mt-3
-              ul.footer__menu.d-flex.flex-column.flex-md-row.justify-content-center.tradeGothic
-                li
-                  a.centro.ml-0(href="./home.html", class=`${paginaActual==="home" ? "active": ""}`)
-                    span INICIO
-                li
-                  a.centro(.centrohref="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-                    span NOSOTROS
-                li
-                  a.centro(href="./products.html", class=`${paginaActual==="products" ? "active": ""}`)
-                    span PRODUCTOS
-                li
-                  a.centro(href="./recipes.html", class=`${paginaActual==="recipes" ? "active": ""}`)
-                    span RECETAS
-                li
-                  a(href="./news.html", class=`${paginaActual==="blog" ? "active": ""}`)
-                    span BLOG
-            div
-              .footer__info.xs-center.white.d-flex.align-items-center.mt-1
-                span Síguenos en:
-                  span.mt-2
-                    a(href="#")
-                      i.fab.fa-youtube.color1.ml-2.pr-1
-                    a(href="#")
-                      i.fab.fa-facebook-f.color1.ml-2
-                    a(href="#")
-                      i.fab.fa-instagram.color1.mr-2.ml-2
-                  |01 - 2487523 | Av. Manuel Olguín 501 Surco
+    //- .row
+    //-   .col-xs-7.col-sm-8.xs-mx-auto.col-md-12
+    .row.d-flex.justify-content-center
+      //- .col-sm-6.col-md-3.mb-3.md-mb-0.d-flex.justify-content-center.d-sm-inline
+      .col-xs-6.col-sm-6.col-md-8.col-lg-3.d-flex.align-items-center
+        a(href="./")
+          img(src="./img/logo.png", alt="Logo")
+      //- .col-sm-6.col-md-6.mb-6.md-mb-0
+      .col-xs-12.col-sm-10.col-md-8.col-lg-6.pl-0.pr-0
+        //- p.footer__info.xs-center.sm-left.pt-3
+        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+        //-     |NOSOTROS &nbsp;|
+        //- p.footer__info.xs-center.sm-left.pt-3
+        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+        //-     |NOSOTROS &nbsp;|
+        //- p.footer__info.xs-center.sm-left.pt-3
+        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+        //-     |NOSOTROS &nbsp;|
+        //- p.footer__info.xs-center.sm-left.pt-3
+        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+        //-     |NOSOTROS
+        div.d-flex.align-items-center.mt-3
+          //- ul.footer__menu.d-flex.flex-column.flex-md-row.justify-content-center.tradeGothic
+          ul.footer__menu.d-inherit.tradeGothic.ul-footer
+            li
+              a.centro.ml-0(href="./home.html", class=`${paginaActual==="home" ? "active": ""}`)
+                span INICIO
+            li
+              a.centro(.centrohref="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
+                span NOSOTROS
+            li
+              a.centro(href="./products.html", class=`${paginaActual==="products" ? "active": ""}`)
+                span PRODUCTOS
+            li
+              a.centro(href="./recipes.html", class=`${paginaActual==="recipes" ? "active": ""}`)
+                span RECETAS
+            li
+              a(href="./news.html", class=`${paginaActual==="blog" ? "active": ""}`)
+                span BLOG
+        div
+          .footer__info.xs-center.white.d-flex.align-items-center.mt-1
+            span Síguenos en:
+              span.mt-2
+                a(href="#")
+                  i.fab.fa-youtube.color1.ml-2.pr-1
+                a(href="#")
+                  i.fab.fa-facebook-f.color1.ml-2
+                a(href="#")
+                  i.fab.fa-instagram.color1.mr-2.ml-2
+              |01 - 2487523 | Av. Manuel Olguín 501 Surco
 
-                  //- |Síguenos en: 01 - 2487523 | Av. Manuel Olguín 501 Surco
-          .col-3
-            .row
-              .col
-                img(src="./img/home/dolphin.png", alt="")
-              .col
-                img(src="./img/home/escudo.png", alt="")
+              //- |Síguenos en: 01 - 2487523 | Av. Manuel Olguín 501 Surco
+      .col-xs-5.col-sm-4.col-sm-align-self-center.col-md-8.col-lg-3
+        .row
+          .col
+            img(src="./img/home/dolphin.png", alt="")
+          .col
+            img(src="./img/home/escudo.png", alt="")
+
+    //- .sub-footer.bg-color1
+    //-   .container
+    //-     .row
+    //-       .col-xs-10.col-sm-9.xs-mx-auto.col-md-12
+    //-         .footer__copyright.xs-center.white
+    //-           span.copyright
+    //-             //- ©2018. Todos los derechos reservados. Diseño y desarrollo por
+    //-             a.copyright-sub.white(href="http://la-agencia.pe/", target="_blank")
+    //-               |  Términos y Condiciones
           //- .col-sm-12.col-md-4
           //- 	.row
           //- 		.col-sm-6
@@ -86,12 +97,3 @@ footer.footer.bg-color1
           //- 						span.fab.fa-youtube.mt-1
           //- 					a(href="#")
           //- 						span.fab.fa-linkedin-in(style="padding-left: 2.5px")
-
-//- .sub-footer.bg-color1
-//- 	.container.pt-2.pb-4
-//- 		.row
-//- 			.col-xs-10.col-sm-9.xs-mx-auto.col-md-12
-//- 				.footer__copyright.xs-center.white
-//- 					span.copyright ©2018. Todos los derechos reservados. Diseño y desarrollo por
-//- 						a.copyright-sub.white(href="http://la-agencia.pe/", target="_blank")
-//- 							|  La Agencia®

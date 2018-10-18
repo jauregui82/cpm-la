@@ -1,3 +1,14 @@
+.section-box-cont{
+  background-image: url(../img/sections/hoja-blog.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 2%;
+  width: 80vw;
+  text-align: center;
+  position: relative;
+  left: 12%;
+}
 .img-bg{
   position: absolute;
   z-index: 1;
@@ -84,13 +95,13 @@
 }
 form#comments{
   position: relative;
-  display: none;
+  // display: none;
 }
 
 form#distribute{
   position: relative;
   // margin-top: 14rem!important;
-  display: none;
+  // display: none;
 }
 
 .form-group{
@@ -126,5 +137,9 @@ form#distribute{
   margin-right: 3px;
   float: right;
 }
-
-
+.text-box-cont{
+  padding: 3% 19% 0 14%;
+}
+.section-contact{
+  padding: 2rem 0 0 13.8rem;
+}
