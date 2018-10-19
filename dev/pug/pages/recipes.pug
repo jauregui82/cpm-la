@@ -9,6 +9,7 @@ block main
 
     //- section.section-info-icons.py-5.mt-5
     section.section-info-icons.py-5.mt-5
+      .container-fluid.d-flex.justify-content-center
         div.section-box-recipes.p-3.text-justify
             img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
             img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
@@ -21,13 +22,12 @@ block main
               hr.raya
             span.d-flex.justify-content-center.position-relative
                 img.img-llevamos(src="./img/recipes/text.png", alt="")
-            .row.pt-5
-                .col-2
-                .col-5
+            .row.pt-5.mb-5
+                .offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
                     p.tradeGothic.color1 Con
                       img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
                       |puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
-    section.mb-5.position-relative
+    section.mb-5.position-relative.pc-version
       img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
       .container-fluid
         .container.recipes-sec
@@ -48,3 +48,37 @@ block main
                 a(href="recipes-snack.html")
                   img.recipes-grid__img-horizontal(src="./img/recipes/rec-fond.png", alt="")
                   h1.recipes-grid__text-horizontal PLATOS <br>DE<br> FONDO
+    section.mb-5.position-relative.mobile-version
+      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
+      .container-fluid
+        .container.recipes-sec
+          .row
+            .col-12
+              .row
+                .col-12
+                  h1.tradeGothic.color1 RECETAS
+                  hr.title.ml-2
+                  .text-justify.float-left
+                    p.float-left.mr-2.color1.tradeGothic.recetas Con
+                    img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
+                    p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+                .col-12
+                  .contenedor
+                    a(href="recipes-entradas.html")
+                      img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
+                      .fondo-box-img
+                        .tex-box-img.tradeGothic.white ALMUERZOS
+    hr.transparent
+

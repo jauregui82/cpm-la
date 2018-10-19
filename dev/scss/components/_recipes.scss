@@ -7,41 +7,78 @@
   background-size: 100% 100%;
   display: inline-block;
   padding: 2%;
-  width: 70vw;
-  height: 53vh;
+  width: 100%;
+  // height: 53vh;
   text-align: center;
   position: relative;
-  left: 14%;
+  // left: 14%;
+  @include media-breakpoint-down(lg){
+    width: 90%
+  }
+  @include media-breakpoint-down(md){
+    width: 100%
+  }
 }
-
+.text-box-recipes {
+  padding: 0% 0% 0 3.5%;
+}
 .img-bg{
   &__cebolla-rec{
     width: 16%;
     top: -4%;
     left: -7%;
+    @include media-breakpoint-down(md){
+      top: 21%;
+    }
   }
   &__plato-rec{
     width: 37%;
     bottom: -60%;
     left: -26%;
+    @include media-breakpoint-down(md){
+      width: 100%;
+      bottom: -60%;
+      left: -12rem;
+      max-width: 305px;
+    }
   }
   &__salad-rec{
     width: 37%;
     top: -115px;
     right: -24%;
+    @include media-breakpoint-down(md){
+      width: 48%;
+    }
   }
   &__lata-rec{
     width: 24%;
     bottom: -35%;
     right: 20%;
+    @include media-breakpoint-down(md){
+      width: 24%;
+      bottom: -6rem;
+      right: 22rem;
+    }
+    @include media-breakpoint-down(sm){
+      width: 24%;
+      bottom: -2rem;
+      right: 37%;
+    }
   }
   &__limon-rec{
     width: 18%;
     bottom: -34%;
     right: 3%;
-    // width: 18%;
-    // bottom: -12vh;
-    // right: 1vw;
+    @include media-breakpoint-down(md){
+      width: 24%;
+      bottom: -7rem;
+      right: 7rem;
+    }
+    @include media-breakpoint-down(sm){
+      width: 24%;
+      bottom: -5rem;
+      right: 4rem;
+    }
   }
   &__tomate-rec{
     width: 18%;
@@ -52,6 +89,9 @@
     width: 18%;
     top: 50vh;
     left: -3vw;
+    @include media-breakpoint-down(md){
+      display: none;
+    }
   }
   &__palta-rec{
     width: 18%;
@@ -59,9 +99,20 @@
     left: -5vw;
   }
   &__tenedor-rec{
-    width: 12%;
-    bottom: 65vh;
-    right: 0vw;
+    width: 100%;
+    top: 26vh;
+    right: -19rem;
+    max-width: 664px;
+    @include media-breakpoint-down(lg){
+      bottom: -5rem;
+      right: -13rem;
+      max-width: 500px;
+    }
+    @include media-breakpoint-down(md){
+      bottom: -5rem;
+      right: -13rem;
+      max-width: 408px
+    }
   }
   &__tomate2-rec{
     width: 16%;
@@ -147,4 +198,13 @@
   position: absolute;
   right: 0;
   width: 1.5rem;
+}
+.recipes{
+  &__img{
+    max-width: 428px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9E9E9E;
+  }
+
 }

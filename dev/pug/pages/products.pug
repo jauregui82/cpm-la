@@ -8,7 +8,7 @@ append config
 block main
 
     //- section.section-info-icons.py-5.mt-5
-    section.section-info-icons.py-5.mt-5
+    section.section-info-icons.py-5.mt-5.d-flex.justify-content-center
         div.section-box-products.p-3.text-justify
             img.img-bg.img-bg__pasta-pro(src="./img/produts/pasta.png", alt="")
             img.img-bg.img-bg__limon-pro(src="./img/produts/limon.png", alt="")
@@ -19,26 +19,26 @@ block main
             span.d-flex.justify-content-center.position-relative
                 img.img-llevamos(src="./img/produts/text.png", alt="")
             .row.pt-5.mb-5
-                .col-2
-                .col-6
+                .col-sm-10.offset-sm-1.offset-md-2.col-md-6
                     p.tradeGothic.color1 <b>Saludables, prácticos y deliciosos!</b> En
                       img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
                       |contamos con una amplia variedad de conservas <b>a base de atún y caballa 100% peruana</b> y elaboradas bajo los más altos estándares de calidad.<br><br> Descubre los beneficios de cada uno.
-                .col-4
+                .offset-sm-4.offset-md-0.col-sm-4.col-sm-8.col-md-4
                   .position-relative
                     img(src="./img/produts/mapa.png", alt="")
 
-    section.mb-5
+    section.mb-5.section-product
       .container-fluid
-        .container.about.position-relative
+        .container.position-relative
           img.img-bg.img-bg__cebolla-pro(src="./img/produts/cebolla.png", alt="")
           img.img-bg.img-bg__palta-pro(src="./img/produts/palta.png", alt="")
           .row
-              .col-lg-10.sm-mx-auto
+              .col-sm-12.col-md-10.col-lg-12.sm-mx-auto
                   .row
                       .col-xs-12
-                        h1.color1.tradeGothic ATÚN
-                        hr.raya
+                        .title-product
+                          h1.color1.tradeGothic ATÚN
+                          hr.raya
                         //-Tabs nav
                         div.position-relative
                           ul(class="nav nav-pills pills-tab mb-3" role="tablist")
@@ -60,29 +60,29 @@ block main
                               //- tab-1
                               div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-5.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Filete de Atún Artesanal
                                           p.color1.tradeGothic Seleccionado a mano. Elaborado con aceite vegetal en envase de vidrio. <br><br>
                                           p.color1.tradeGothic ¡Una experiencia gourmet! Atún Artesanal Campomar está hecho con nuestra receta especial, que resalta el sabor de nuestro producto estrella y hará de tus platos una experiencia inolvidable<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-5.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -114,7 +114,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -150,29 +150,29 @@ block main
                               //- tab 2
                               div(class="tab-pane fade" id="pills-f-claro" role="tabpanel" aria-labelledby="pills-f-claro-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-6.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Filete de Atún Claro
                                           p.color1.tradeGothic Filete de atún aleta amarilla elaborado con aceite vegetal en lata litografiada.  <br><br>
                                           p.color1.tradeGothic Lo tiene todo: increíble textura y es rico en vitaminas del grupo B. Además, el exquisito sabor del atún aleta amarilla le dará un toque único a tus preparaciones.<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-6.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -204,7 +204,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -238,29 +238,29 @@ block main
                               //- tab-3
                               div(class="tab-pane fade" id="pills-filete" role="tabpanel" aria-labelledby="pills-filete-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-7.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Filete de atún
                                           p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada y hecho a base de exquisito atún del mar peruano. <br><br>
                                           p.color1.tradeGothic Una gran fuente de vitaminas, es el complemento perfecto para toda alimentación saludable y, sobre todo, ¡deliciosa!<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-7.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -292,7 +292,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -326,29 +326,29 @@ block main
                               //- tab-4
                               div(class="tab-pane fade" id="pills-lomos" role="tabpanel" aria-labelledby="pills-lomos-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-4.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Lomos de Atún
                                           p.color1.tradeGothic Seleccionado a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
                                           p.color1.tradeGothic ¡Un clásico de toda la vida! Disfrútalo en tus guisos o pruébalo en tu sándwich favorito. ¡Trozos grandes y jugosos que harán de tus recetas platillos espectaculares!<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-4.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -380,7 +380,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -414,29 +414,29 @@ block main
                               //- tab-5
                               div(class="tab-pane fade" id="pills-lomos-l" role="tabpanel" aria-labelledby="pills-lomos-l-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-11.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Lomos de Atún Light
                                           p.color1.tradeGothic Lomos de atún seleccionado a mano y elaborados con agua y sal. <br><br>
                                           p.color1.tradeGothic Delicioso y saludable. Son la opción perfecta para quienes quieren disfrutar un producto exquisito pero sin culpas.<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-11.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -468,7 +468,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -502,29 +502,29 @@ block main
                               //- tab-6
                               div(class="tab-pane fade" id="pills-trozos" role="tabpanel" aria-labelledby="pills-trozos-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-3.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Trozos de Atún
                                           p.color1.tradeGothic Elaborados con aceite vegetal en lata litografiada <br><br>
                                           p.color1.tradeGothic Llegando del trabajo o del colegio. De día o de noche. En un desayuno nutritivo o para disfrutar en la cena. Son el aliado ideal para una comida rápida y deliciosa en cualquier momento. <br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-3.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -556,7 +556,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -590,29 +590,29 @@ block main
                               //- tab-7
                               div(class="tab-pane fade" id="pills-grated" role="tabpanel" aria-labelledby="pills-grated-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-7.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Grated de Atún
                                           p.color1.tradeGothic Elaborado con aceite vegetal. <br><br>
                                           p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial.<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-7.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -644,7 +644,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -678,12 +678,12 @@ block main
                           span.cambiarpestana.tabs-prev-top(data-accion="prev")
                           span.cambiarpestana.tabs-next-top(data-accion="next")
     //- tabs-caballa
-    section.mt-5
+    section.mt-5.section-product
       .container-fluid
-        .container.about.position-relative
+        .container.position-relative
           img.img-bg.img-bg__tomate-pro(src="./img/produts/tomate.png", alt="")
           .row
-              .col-lg-10.sm-mx-auto
+              .col.sm-mx-auto
                   .row
                       .col-xs-12
                         h1.color1.tradeGothic CABALLA
@@ -703,29 +703,29 @@ block main
                               //- tab-4
                               div(class="tab-pane fade show active" id="pills-solido" role="tabpanel" aria-labelledby="pills-solido-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-10.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Sólido de Caballa
                                           p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada. <br><br>
                                           p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial con nuestro exquisito <b> Sólido de Caballa.</b>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-10.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -757,7 +757,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -791,29 +791,29 @@ block main
                               //- tab-5
                               div(class="tab-pane fade" id="pills-lomos-c" role="tabpanel" aria-labelledby="pills-lomos-c-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-2.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Lomitos de Caballa
                                           p.color1.tradeGothic Seleccionados a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
                                           p.color1.tradeGothic ¡Absolutamente jugosos! Son la alternativa perfecta para los que quieran disfrutar de una comida rápida, exquisita y nutritiva.<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-2.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -845,7 +845,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -879,29 +879,29 @@ block main
                               //- tab-6
                               div(class="tab-pane fade" id="pills-trozos-c" role="tabpanel" aria-labelledby="pills-trozos-c-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-1.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Trozos de Caballa
                                           p.color1.tradeGothic Elaborados con aceite vegetal <br><br>
                                           p.color1.tradeGothic Todo el sabor de la caballa peruana, con el toque especial de nuestra receta y la suavidad del aceite. Descubre nuestros Trozos de Caballa en todo tipo de preparaciones que la familia adorará. <br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-1.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -933,7 +933,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")
@@ -967,29 +967,29 @@ block main
                               //- tab-7
                               div(class="tab-pane fade" id="pills-grated-c" role="tabpanel" aria-labelledby="pills-grated-c-tab")
                                 .row
-                                  .col
+                                  .col-md-12.col-lg-6
                                       img.slider-product__img(src="./img/produts/pro-9.png")
-                                  .col
+                                  .col-md-12.col-lg-6
                                       .slider-about__text
                                           h2.color1.tradeGothic Grated de Caballa
                                           p.color1.tradeGothic Elaborado con agua y sal.<br><br>
                                           p.color1.tradeGothic Perfecto para salir de problemas de manera nutritiva, deliciosa, ¡y saludable! Prueba nuestro <b>Grated de Caballa</b> y disfruta de un producto delicioso y rendidor.<br><br>
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-9.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p Lata con abre fácil de 170g
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-2.png", alt="")
                                       i.fa.fa-chevron-circle-right.btn-product__fa
                                       h4 Ver Recetas
-                                .row.mt-5
-                                  .col.mb-3
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-md-6.col-lg-4.mb-3
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
@@ -1021,7 +1021,7 @@ block main
                                                         img(src="./img/icon/salt.png", alt="")
                                                       td
                                                         b Sal
-                                  .col
+                                  .col-md-6.col-lg-4
                                     div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-4.png", alt="")

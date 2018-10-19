@@ -21,9 +21,17 @@ window.sliderMultipleItems = sliderMultipleItems;
 window.handleItemArticleProducts = handleItemArticleProducts;
 window.handleItemMenuMapProducts = handleItemMenuMapProducts;
 window.handleItemsMenuTerms = handleItemsMenuTerms;
-
 // console.log('123456');
+
 $(document).ready(function () {
+  var vh = window.innerHeight;
+  var vw = window.innerWidth;
+  if (vw < 991) {
+    $('.pc-version').css('display', 'none')
+  }
+  else if (vw > 991) {
+    $('.mobile-version').css('display', 'none')
+  }
   $('.filtering').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -139,4 +147,24 @@ $(document).ready(function () {
       });
     }
   });
+});
+$(window).resize(function () {
+  var vh = window.innerHeight;
+  var vw = window.innerWidth;
+  if (vw < 991) {
+    $('.pc-version').css('display', 'none')
+    $('.mobile-version').css('display', '')
+  }
+  else if (vw > 991) {
+    $('.mobile-version').css('display', 'none')
+    $('.pc-version').css('display', '')
+  }
+  $('.filtering').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    arrows: true,
+    slide: 'img'
+  });
+
 });

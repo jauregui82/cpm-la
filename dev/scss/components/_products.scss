@@ -4,11 +4,12 @@
   background-size: 100% 100%;
   display: inline-block;
   padding: 2%;
-  width: 77vw;
+  // width: 77vw;
+  width: 80%;
   // height: 72vh;
   text-align: center;
   position: relative;
-  left: 14%;
+  // left: 14%;
 }
 .img-bg{
   &__limon-pro{
@@ -22,9 +23,26 @@
     right: -13%;
   }
   &__ceviche-pro{
-    width: 37%;
+    width: 100%;
     bottom: -29%;
-    left: -28%;
+    left: -29%;
+    max-width: 461px;
+    @include media-breakpoint-up(lg){
+      width: 100%;
+      bottom: -29%;
+      left: -22%;
+      max-width: 512px;
+    }
+    @include media-breakpoint-down(lg){
+      max-width: 361px;
+      left: -15rem;
+      bottom: -4rem;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 294px;
+      left: -15rem;
+      bottom: -4rem;
+    }
   }
   &__cebolla-pro{
     width: 30%;
@@ -39,7 +57,7 @@
   &__tomate-pro{
     width: 31%;
     top: 29%;
-    left: -16%;
+    left: -32%;
   }
 }
 .slider-product{
@@ -115,4 +133,13 @@
   right: -1%;
   z-index: 2!important;
   // display: inline-block;
+}
+.section-product{
+  padding: 7% 19% 0 19%;
+  @include media-breakpoint-down(lg){
+    padding: 0 6% 0 15%;
+  }
+  @include media-breakpoint-down(md){
+    padding: 0% 3% 0 4%;
+  }
 }

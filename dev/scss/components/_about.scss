@@ -3,14 +3,21 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  width: 80vw;
+  // width: 80vw;
+  width: 80%;
   /* max-width: 783px; */
   /* max-height: 400px; */
   // height: 88vh;
   text-align: center;
   position: relative;
-  left: 12%;
+  // left: 12%;
   padding: 3% 3% 0 8%;
+  @include media-breakpoint-up(xl){
+    width: 70%;
+  }
+  @include media-breakpoint-down(md){
+    width: 95%;
+  }
 }
 .about{
   padding: 0rem 5.2rem 0rem 6.1rem;
@@ -30,42 +37,90 @@
       right: -9%;
     }
     &__plato-about{
-      width: 39%;
-      bottom: -30%;
-      right: -23%;
+      width: 100%;
+      bottom: -22%;
+      right: -28rem;
+      max-width: 523px;
+      @include media-breakpoint-down(lg){
+        bottom: -14%;
+        right: -40%;
+        max-width: 472px;
+      }
+      @include media-breakpoint-down(md){
+        bottom: -25%;
+        right: -34%;
+        max-width: 421px;
+      }
+      @include media-breakpoint-down(sm){
+        bottom: -26%;
+        right: -17rem;
+        max-width: 354px;
+      }
     }
     &__limon-about{
-      width: 20%;
-      top: 20%;
-      left: -22%;
+      width: 100%;
+      top: 0rem;
+      left: -24rem;
+      max-width: 450px;
+      @include media-breakpoint-down(lg){
+        width: 100%;
+        top: 4rem;
+        left: -8rem;
+        max-width: 266px;
+      }
+      // @include media-breakpoint-down(md){
+      //   bottom: -25%;
+      //   right: -34%;
+      //   max-width: 421px;
+      // }
+      // @include media-breakpoint-down(sm){
+      //   bottom: -26%;
+      //   right: -17rem;
+      //   max-width: 354px;
+      // }
     }
     &__pimenton-about{
-      width: 40%;
-      bottom: -50%;
-      right: -18%;
+      width: 100%;
+      bottom: -18rem;
+      right: -21rem;
+      max-width: 500px;
+      @include media-breakpoint-down(lg){
+        bottom: -12rem;
+        right: -10rem;
+        max-width: 386px;
+      }
     }
     &__perejil-about{
-      width: 35%;
-      top: -100%;
-      left: -43%;
+      width: 100%;
+      bottom: -4rem;
+      left: -34rem;
+      max-width: 500px;
+      @include media-breakpoint-down(lg){
+        width: 100%;
+        bottom: 6rem;
+        left: -18rem;
+        max-width: 350px;
+      }
     }
-    @include media-breakpoint-up(xl) {
-        &__limon{
-        width: 30%;
-        right: -39%;
-        }
-        &__ajies{
-        width: 35%;
-        bottom: -5%;
-        left: -41%;
-        }
-    }
+
+    // @include media-breakpoint-up(xl) {
+    //     &__limon{
+    //     width: 30%;
+    //     right: -39%;
+    //     }
+    //     &__ajies{
+    //     width: 35%;
+    //     bottom: -5%;
+    //     left: -41%;
+    //     }
+    // }
 
 }
 .slider-about{
     &__img{
         // display: inline;
         width: 100%;
+        max-width: 290px;
         // float: left;
     }
 }

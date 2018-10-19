@@ -8,7 +8,7 @@ append config
 block main
 
   //- section.section-info-icons.py-5.mt-5
-  section.section-info-icons.py-5.mt-5
+  section.section-info-icons.py-5.mt-5.d-flex.justify-content-center
     div.section-box-home.p-3.text-center
       img.img-solido1(src="./img/home/img/solido1.png", alt="")
       img.img-croque(src="./img/home/img/croquetas1.png", alt="")
@@ -27,7 +27,7 @@ block main
     .container-fluid
       .container
         .row.d-flex.justify-content-center
-          .col-sm-8.col-md-6.col-lg-6.mt-5
+          .col-sm-8.col-md-8.col-lg-8
             div.section-box-home-blue.text-center.pt-5.position-relative
               img.img-filete(src="./img/home/img/filete2.png", alt="")
               img.img-solido-blue(src="./img/home/img/solido.png", alt="")
@@ -48,14 +48,18 @@ block main
                 //- .col
 
       div.position-relative
+        hr.transparent.mobile-version
         img.img-tomate(src="./img/home/img/tomate.png", alt="")
         img.img-atun(src="./img/home/img/atun.png", alt="")
         .d-flex.justify-content-center.mt-10
           div.section-box-home-cel.justify-content-center
+            .video-content
             img.w-100.pantalla.d-none(src="./img/home/pantalla.png", alt="")
             img(src="", alt="")
             img.link-pantalla(src="./img/home/icon.png", alt="")
             span.d-flex.justify-content-center.text-pantalla.white.futura ver video
+            //-.video
+              <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/BICqBZ8c5xw?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">Find Out More</a></small></div><div><small><a href="https://misshowtostartablog.com/how-to-configure-your-blog/">https://misshowtostartablog.com/how-to-configure-your-blog/</a></small></div></iframe>
   section
     .container-fluid.mt-5
       //- .col.d-flex.align-self-baseline
@@ -120,6 +124,7 @@ block main
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
                       .fondo-box-img
                         .tex-box-img.tradeGothic.white ALMUERZOS
+              hr.transparent
   section
     .container.position-relative
       img.img-limon(src="./img/home/img/limon.png", alt="")

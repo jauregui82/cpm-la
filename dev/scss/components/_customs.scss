@@ -32,6 +32,7 @@
   border-radius: 0;
   background: #071f48;
   border-color: #071f48;
+  width: 10rem;
 }
 .btn-white-home{
   border-radius: 0;
@@ -47,27 +48,7 @@
   top: -14%;
   left: -4%;
 }
-.img-plato{
-  width: 50%;
-  top: 47%;
-  left: -26%;
-  position: absolute;
-  z-index: 1;
-}
-.img-croque{
-  width: 28%;
-  top: -12%;
-  position: absolute;
-  z-index: 1;
-  right: -18%;
-}
-.img-salad{
-  width: 36%;
-  top: 66%;
-  right: -20%;
-  position: absolute;
-  z-index: 1;
-}
+
 .img-pimenton{
   width: 15%;
   right: 7%;
@@ -82,20 +63,7 @@
   position: absolute;
   z-index: 1;
 }
-.img-tomate{
-  width: 60%;
-  top: -52%;
-  left: -18%;
-  position: absolute;
-  z-index: 1;
-}
-.img-atun{
-  width: 48%;
-  top: -14%;
-  right: -18%;
-  position: absolute;
-  z-index: 1;
-}
+
 .img-limon{
   width: 17%;
   top: 5%;
@@ -263,7 +231,7 @@ a.slide-tabs.active{
 	cursor: pointer;
 }
 .tabs-prev{
-	background-image: url(../../img/sections/arrow-left.png);
+	background-image: url(../img/sections/arrow-left.png);
     background-repeat: no-repeat;
 	width: 35px;
     height: 35px;
@@ -272,7 +240,7 @@ a.slide-tabs.active{
 	z-index: 2!important;
 }
 .tabs-next{
-	background-image: url(../../img/sections/arrow-right.png);
+	background-image: url(../img/sections/arrow-right.png);
     background-repeat: no-repeat;
 	width: 35px;
     height: 35px;
@@ -281,7 +249,7 @@ a.slide-tabs.active{
 	z-index: 2!important;
 }
 .tabs-prev-top{
-  background-image: url(../../img/sections/arrow-left.png);
+  background-image: url(../img/sections/arrow-left.png);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -290,7 +258,7 @@ a.slide-tabs.active{
   z-index: 2!important;
 }
 .tabs-next-top{
-  background-image: url(../../img/sections/arrow-right.png);
+  background-image: url(../img/sections/arrow-right.png);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;

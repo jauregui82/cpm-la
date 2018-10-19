@@ -1,3 +1,7 @@
+// section{
+//   max-width: 1300px;
+// }
+
 // jauregui
 .logo-blue-intext{
   width: 7.4vh;
@@ -21,7 +25,16 @@
   margin-left: 10px;
   display: inline;
 }
-
+// .mobile-version{
+//   @include media-breakpoint-up(md){
+//     display: none;
+//   }
+// }
+// .pc-version{
+//   @include media-breakpoint-down(md){
+//     display: none;
+//   }
+// }
 
 
 // .section-box-home-cel{
@@ -36,44 +49,7 @@
 //   /* max-height: 233px; */
 //   /* height: 428px; */
 // }
-div>.section-box-home-cel{
-  margin-top: 11%
-}
-.section-box-home-cel{
-  background-image: url(../img/home/cel2.png);
-    background-repeat: no-repeat;
-    background-size: 581px 336px;
-    padding: 2% 6% 3% 5%;
-    width: 100%;
-    max-width: 595px;
-    height: 345px;
-    max-height: 354px;
-    position: relative;
-  /* max-height: 233px; */
-  /* height: 428px; */
-}
-.pantalla{
-  // background-image: url(../img/home/pantalla.png);
-  // background-repeat: no-repeat;
-  // background-origin: padding-box;
-  margin-top: 17%;
-}
-.text-pantalla{
-  position: relative;
-  top: 69%;
-  cursor: pointer;
-  // color: #3e3328;
-  font-size: 1.5rem;
-}
-.link-pantalla{
-  opacity: 0.2;
-  width: 17%;
-  margin: 0;
-  position: absolute;
-  left: 40%;
-  top: 30%;
-  cursor: pointer;
-}
+
 
 .section-box-papel{
   background-image: url(../img/sections/papel.png);
@@ -85,10 +61,13 @@ div>.section-box-home-cel{
     // height: 74vh;
     position: relative;
     // left: 12%;
+    @include media-breakpoint-down(sm){
+
+    }
 }
 
 .text-box-home{
-  padding: 3% 19% 6% 22%;
+  padding: 3% 19% 1% 22%;
 }
 .text-box-blue{
   padding: 6% 17% 10% 32%;
