@@ -1,7 +1,9 @@
 
 .nav-menu{
 	// background-color: #fff;
-	background-color: map-get($my-colors, color1);
+  background-color: map-get($my-colors, color1);
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
 	// border-bottom: 1px solid #f0f0f0;
 
 	.logo{
@@ -16,10 +18,12 @@
 	@include media-breakpoint-up(lg) {
 	  position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
-    z-index: $z-fixed;
-    background: #071F48;
+    z-index: 100;
+    background: #071f48;
+    transform: translateX(-50%);
+    max-width: 1440px;
 	}
 }
 
@@ -50,7 +54,7 @@
 				position: relative;
 				// color: #fff;
         transition: all .3s;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
 
 				&::before{
 					content: '';

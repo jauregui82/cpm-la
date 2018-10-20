@@ -3,14 +3,17 @@
 }
 
 .main{
-  // background-image: url('../img/fondo.png');
-  // // background-size: cover;
-  // background-size: 100% 100%;
-  // background-repeat: no-repeat;
+  background-image: url('../img/fondo.png');
+  // background-size: cover;
+  background-size: 100% 100%;
+  // background-position: center top;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
 	@include media-breakpoint-up(lg) {
 		// padding-top: 4.5rem;
-		padding-top: var(--height-nav);
+		// padding-top: var(--height-nav);
+		margin-top: var(--height-nav);
 		min-height: calc(100vh - 16.5rem);
   }
 }

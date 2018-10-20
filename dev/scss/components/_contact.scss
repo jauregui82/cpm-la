@@ -16,50 +16,6 @@
     width: 100%
   }
 }
-.img-bg{
-  position: absolute;
-  z-index: 1;
-
-  &__salad{
-    width: 30%;
-    top: 4%;
-    left: -15%;
-  }
-  &__plato{
-    width: 31%;
-    top: 4%;
-    right: -23%;
-  }
-  &__table{
-    width: 30%;
-    top: 72%;
-    left: -19%;
-  }
-  &__ajies{
-    width: 30%;
-    bottom: -9%;
-    left: -22%;
-    z-index: 0;
-  }
-  &__limon{
-    width: 20%;
-    top: 0%;
-    right: -23%;
-    z-index: 0;
-  }
-  @include media-breakpoint-up(xl) {
-    &__limon{
-      width: 30%;
-      right: -39%;
-    }
-    &__ajies{
-      width: 35%;
-      bottom: -5%;
-      left: -41%;
-    }
-  }
-
-}
 
 .img-box-contact{
   width: 54vw;

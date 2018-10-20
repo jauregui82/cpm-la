@@ -46,10 +46,12 @@ html(lang="es")
 
     //- menu
     include ../blocks/menu
+    .container-fluid.p-0
+      .container
 
-    //- main
-    main.main
-      block main
+      //- main
+      main.main
+        block main
 
     if show_logos
       include ../blocks/logos

@@ -1,0 +1,319 @@
+// index
+.section-info-icons{
+
+  margin: 7rem 0rem 0rem 4rem;
+}
+.section-box-home{
+  background-image: url(../img/home/hoja.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 2%;
+  // width: 80vw;
+  width: 100%;
+  /* max-width: 783px; */
+  /* max-height: 400px; */
+  // height: 56vh;
+  text-align: center;
+  position: relative;
+  // left: 12%;
+  @include media-breakpoint-up(lg){
+    // margin: 0% 10% 0% 10%;
+    // width: 70vw;
+  }
+}
+.fondo-row{
+  background-image: url(../img/sections/papel.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 6% 11% 10% 7%;
+}
+.img-plato{
+  left: -37.2%;
+  top: 17rem;
+  max-width: 38.3rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.img-croque{
+  right: -22.2%;
+  top: -6.7rem;
+  max-width: 24.6rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.img-salad{
+  max-width: 38.6rem;
+  right: -35.2%;
+  bottom: -25.7rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.img-tomate{
+  width: 100%;
+  top: 0;
+  left: -18%;
+  max-width: 500px;
+  position: absolute;
+  z-index: 1;
+  @include media-breakpoint-up(lg){
+    top: 24%;
+    left: -27%;
+    max-width: 466px;
+  }
+  @include media-breakpoint-down(lg){
+    max-width: 300px;
+    left: -11%;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 234px;
+    left: -11%;
+    top: 22%;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 200px;
+    left: -30%;
+    top: 46%;
+  }
+
+}
+.img-atun{
+  width: 100%;
+  top: 0;
+  right:-18%;
+  max-width: 500px;
+  position: absolute;
+  z-index: 1;
+
+  @include media-breakpoint-up(lg){
+    top: 24%;
+    right: -32%;
+    max-width: 550px;
+  }
+  @include media-breakpoint-down(lg){
+    max-width: 300px;
+    right: -11%;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 234px;
+    right: -11%;
+    top: 22%;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 200px;
+    right: -30%;
+    top: 46%;
+  }
+}
+
+
+
+//
+
+.img-solido1{
+  left: -14.2%;
+  top: -7.7rem;
+  max-width: 22.3rem;
+  width: 100%;
+  position: absolute;
+  // z-index: 1;
+}
+.img-filete{
+  left: -9rem;
+  bottom: -38%;
+  max-width: 22.3rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.img-solido-blue{
+  right:  -9.4rem;
+  bottom: -38%;
+  max-width: 22.3rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-pimenton{
+  width: 100%;
+  right: 3.3rem;
+  bottom: 5.9rem;
+  max-width: 9.5rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-limon{
+  width: 100%;
+  top: 3rem;
+  left: -9rem;
+  max-width: 272px;
+  position: absolute;
+  z-index: 1;
+}
+.img-cebolla{
+  width: 100%;
+  bottom: -11rem;
+  left: -20rem;
+  max-width: 335px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.img-plato-atun{
+  width: 100%;
+  bottom: -14%;
+  right: -35%;
+  max-width: 500px;
+  position: absolute;
+}
+// about
+.section-box-about{
+  background-image: url(../img/sections/papel2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  // width: 80vw;
+  width: 80%;
+  /* max-width: 783px; */
+  /* max-height: 400px; */
+  // height: 88vh;
+  text-align: center;
+  position: relative;
+  // left: 12%;
+  padding: 3% 3% 0 8%;
+  @include media-breakpoint-up(xl){
+    width: 70%;
+  }
+  @include media-breakpoint-down(md){
+    width: 95%;
+  }
+}
+.img-bg{
+  &__100peru{
+    width: 100%;
+    max-width: 349px;
+    bottom: 6.7rem;
+    left: 8rem;
+  }
+  &__lata{
+
+  }
+  &__table-about{
+    width: 42%;
+    top: 0%;
+    left: -26%;
+  }
+  &__solido-about{
+    width: 33%;
+    top: -1%;
+    right: -9%;
+  }
+  &__plato-about{
+    width: 100%;
+    bottom: -22%;
+    right: -28rem;
+    max-width: 523px;
+    @include media-breakpoint-down(lg){
+      bottom: -14%;
+      right: -40%;
+      max-width: 472px;
+    }
+    @include media-breakpoint-down(md){
+      bottom: -25%;
+      right: -34%;
+      max-width: 421px;
+    }
+    @include media-breakpoint-down(sm){
+      bottom: -26%;
+      right: -17rem;
+      max-width: 354px;
+    }
+  }
+  &__limon-about{
+    width: 100%;
+    top: 0rem;
+    left: -24rem;
+    max-width: 450px;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      top: 4rem;
+      left: -8rem;
+      max-width: 266px;
+    }
+  }
+  &__pimenton-about{
+    width: 100%;
+    bottom: -18rem;
+    right: -21rem;
+    max-width: 500px;
+    @include media-breakpoint-down(lg){
+      bottom: -12rem;
+      right: -10rem;
+      max-width: 386px;
+    }
+  }
+  &__perejil-about{
+    width: 100%;
+    bottom: -4rem;
+    left: -34rem;
+    max-width: 500px;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      bottom: 6rem;
+      left: -18rem;
+      max-width: 350px;
+    }
+  }
+}
+
+
+// contac
+.img-bg{
+  position: absolute;
+  z-index: 1;
+
+  &__salad{
+    width: 30%;
+    top: 4%;
+    left: -15%;
+  }
+  &__plato{
+    width: 31%;
+    top: 4%;
+    right: -23%;
+  }
+  &__table{
+    width: 30%;
+    top: 72%;
+    left: -19%;
+  }
+  &__ajies{
+    width: 30%;
+    bottom: -9%;
+    left: -22%;
+    z-index: 0;
+  }
+  &__limon{
+    width: 20%;
+    top: 0%;
+    right: -23%;
+    z-index: 0;
+  }
+  @include media-breakpoint-up(xl) {
+    &__limon{
+      width: 30%;
+      right: -39%;
+    }
+    &__ajies{
+      width: 35%;
+      bottom: -5%;
+      left: -41%;
+    }
+  }
+
+}

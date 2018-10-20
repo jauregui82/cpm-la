@@ -25,11 +25,11 @@
 body{
   font-size: $size-m;
   font-family: $Helvetica;
-  background-color: #fff;
-  background-image: url('../img/fondo2.jpg');
-  // background-size: cover;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-color: map-get($my-colors, color1 );
+  // background-image: url('../img/fondo2.jpg');
+  // // background-size: cover;
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
   color: map-get($my-colors, dark-color);
   overflow-x: hidden;
   min-height: 1200px;

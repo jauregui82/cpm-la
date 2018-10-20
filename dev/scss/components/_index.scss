@@ -1,28 +1,3 @@
-.section-box-home{
-  background-image: url(../img/home/hoja.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-  padding: 2%;
-  // width: 80vw;
-  width: 100%;
-  /* max-width: 783px; */
-  /* max-height: 400px; */
-  // height: 56vh;
-  text-align: center;
-  position: relative;
-  // left: 12%;
-  @include media-breakpoint-up(lg){
-    margin: 0% 10% 0% 10%;
-    width: 70vw;
-  }
-}
-.fondo-row{
-  background-image: url(../img/sections/papel.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 6% 11% 10% 7%;
-}
 .box-index{
   &__horizontal{
     // max-width: 295px;
@@ -31,15 +6,26 @@
 
 }
 .section-box-home-blue{
-  background: #071f48ed;
-  background-repeat: no-repeat;
-  display: inline-block;
-  padding: 2%;
+  background: rgba(7, 31, 72, 0.9294117647058824);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 9% 14% 0% 14%;
+    max-width: 43rem;
+    left: 50%;
+    transform: translate(-46%);
+  h4{
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
   // width: 50%;
 }
 .text-box.home{
-  font-size: 1.6vh;
+  font-size: 19.6px;
+  line-height: 1.2;
 }
+// .text-box.home{
+//   font-size: 16px;
+// }
 p.recetas{
   line-height: 1.6;
   font-size: large;
@@ -92,9 +78,11 @@ div>.section-box-home-cel{
   position: absolute;
   top: 13rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 15px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  letter-spacing: 3px;
   @include media-breakpoint-down(md){
     top: 9rem;
     font-size: 1.3rem;
@@ -123,81 +111,46 @@ div>.section-box-home-cel{
   }
 }
 
-.img-tomate{
+
+
+.img-nutri{
   width: 100%;
-  top: 0;
-  left: -18%;
-  max-width: 500px;
-  position: absolute;
-  z-index: 1;
-  @include media-breakpoint-up(lg){
-    top: 24%;
-    left: -32%;
-    max-width: 550px;
-  }
-  @include media-breakpoint-down(lg){
-    max-width: 300px;
-    left: -11%;
-  }
-  @include media-breakpoint-down(md){
-    max-width: 234px;
-    left: -11%;
-    top: 22%;
-  }
-  @include media-breakpoint-down(sm){
-    max-width: 200px;
-    left: -30%;
-    top: 46%;
-  }
-
+  max-width: 734px;
 }
-.img-atun{
+
+.text-box-home{
+  // padding: 3% 19% 1% 22%;
+}
+.text-box-blue{
+  padding: 6% 17% 10% 18%;
+}
+.text-mailing{
+  font-size: 16px;
+  font-weight: bold;
+}
+.contenedor{
+  position: relative;
+  display: inline-block;
+}
+.fondo-box-img{
+  position: absolute;
   width: 100%;
-  top: 0;
-  right:-18%;
-  max-width: 500px;
-  position: absolute;
-  z-index: 1;
-
-  @include media-breakpoint-up(lg){
-    top: 24%;
-    right: -32%;
-    max-width: 550px;
+  height: 99%;
+  top: 4px;
+  display: none;
+  &__1{
+    background: rgba(6, 30, 72, 0.58);
   }
-  @include media-breakpoint-down(lg){
-    max-width: 300px;
-    right: -11%;
+  &__2{
+    background: rgba(221, 124, 0, 0.5411764705882353);
   }
-  @include media-breakpoint-down(md){
-    max-width: 234px;
-    right: -11%;
-    top: 22%;
-  }
-  @include media-breakpoint-down(sm){
-    max-width: 200px;
-    right: -30%;
-    top: 46%;
+  &__3{
+    background: rgba(255, 203, 0, 0.59);;
   }
 }
-
-.img-plato{
-  width: 50%;
-  top: 47%;
-  left: -35%;
-  position: absolute;
-  z-index: 1;
-}
-.img-croque{
-  width: 28%;
-  top: -12%;
-  position: absolute;
-  z-index: 1;
-  right: -18%;
-}
-.img-salad{
-  width: 36%;
-  top: 66%;
-  right: -20%;
-  position: absolute;
-  z-index: 1;
+div.contenedor:hover{
+  .fondo-box-img{
+    display: block;
+    transition-delay: 1s;
+  }
 }

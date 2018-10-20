@@ -39,59 +39,9 @@
   background: #fff;
   border-color: #fff;
   color: #071f48!important;
-}
-.img-solido1{
-  position: absolute;
-  z-index: 1;
-  top: -31px;
-  width: 20%;
-  top: -14%;
-  left: -4%;
+  margin-bottom: 4rem;
 }
 
-.img-pimenton{
-  width: 15%;
-  right: 7%;
-  bottom: 7%;
-  position: absolute;
-  z-index: 1;
-}
-.img-filete{
-  width: 49%;
-  left: -13%;
-  bottom: -24%;
-  position: absolute;
-  z-index: 1;
-}
-
-.img-limon{
-  width: 17%;
-  top: 5%;
-  left: -27%;
-  position: absolute;
-  z-index: 1;
-}
-.img-cebolla{
-  width: 40%;
-  bottom: -7%;
-  left: -53%;
-  position: absolute;
-  z-index: 1;
-}
-.img-plato-atun{
-  width: 50%;
-  bottom: -14%;
-  right: -59%;
-  position: absolute;
-  z-index: 1;
-}
-.img-solido-blue{
-  width: 51%;
-  right: -25%;
-  bottom: -24%;
-  position: absolute;
-  z-index: 1;
-}
 .img-icon-left{
   display: inline;
   float: left;
@@ -109,10 +59,6 @@
   height: 72%
 }
 
-.img-nutri{
-  width: 36vw;
-  height: 0%;
-}
 
 h1.tradeGothic{
   // border-bottom: solid;
@@ -124,32 +70,16 @@ h1.tradeGothic{
   // }
 
 }
-.contenedor{
-  position: relative;
-  display: inline-block;
-}
-.fondo-box-img{
-  background: #dd7c008a;
-  position: absolute;
-  width: 100%;
-  height: 99%;
-  top: 4px;
-  display: none;
-}
-div.contenedor:hover{
-  .fondo-box-img{
-    display: block;
-    transition-delay: 1s;
-  }
-}
+
 
 .tex-box-img{
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   letter-spacing: 3px;
   font-size: 1.5rem;
-  transform: translateX(-50%);
+  transform: translate(-50%);
+  text-align: center;
 }
 
 #owl-demo.item{

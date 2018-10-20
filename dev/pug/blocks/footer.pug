@@ -1,4 +1,4 @@
-.cookies
+.cookies.d-none
   .cookies__content
     .row.d-flex.justify-content-center
       .col-8.mt-3.mb-3
@@ -48,23 +48,26 @@ footer.footer.bg-color1
                 span BLOG
         div
           .footer__info.xs-center.white.d-flex.align-items-center.mt-1
-            span Síguenos en:
-              span.mt-2
-                a(href="#")
-                  i.fab.fa-youtube.color1.ml-2.pr-1
-                a(href="#")
-                  i.fab.fa-facebook-f.color1.ml-2
-                a(href="#")
-                  i.fab.fa-instagram.color1.mr-2.ml-2
-              |01 - 2487523 | Av. Manuel Olguín 501 Surco
+            div
+              span.float-left.tradeGothic Síguenos en:
+              .img-fa-content.ml-2.mr-2.float-left
+                .img-fa
+                  a(href="#")
+                    img(src="./img/icon/fa-youtube.png", alt="")
+                .img-fa
+                  a(href="#")
+                    img(src="./img/icon/fa-facebook.png", alt="")
+                .img-fa
+                  a(href="#")
+                    img(src="./img/icon/fa-instagram.png", alt="")
+              span.tradeGothic 01 - 2487523 | Av. Manuel Olguín 501 Surco
 
               //- |Síguenos en: 01 - 2487523 | Av. Manuel Olguín 501 Surco
       .col-xs-5.col-sm-4.col-sm-align-self-center.col-md-8.col-lg-3
         .row
           .col
-            img(src="./img/home/dolphin.png", alt="")
-          .col
-            img(src="./img/home/escudo.png", alt="")
+            img.footer__logos(src="./img/home/dolphin.png", alt="")
+            img.footer__logos(src="./img/home/escudo.png", alt="")
 
     //- .sub-footer.bg-color1
     //-   .container
