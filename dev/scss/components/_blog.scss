@@ -46,7 +46,9 @@
         max-width: 10.3rem;
       }
       @include media-breakpoint-down(xs){
-        max-width: 5.3rem;
+        left: -9.2%;
+        top: -5.7rem;
+        max-width: 9.3rem;
       }
     }
     &__salad-blog{
@@ -63,11 +65,16 @@
         max-width: 17rem;
         top: 3rem;
       }
+      @include media-breakpoint-down(xs){
+        right: -12rem;
+        top: 12rem;
+      }
     }
   &__club-blog{
-    width: 67%;
-    top: 34vh;
-    left: -39vw;
+    width: 100%;
+    top: 34rem;
+    left: -41rem;
+    max-width: 50rem;
   }
   &__tomate-blog{
     width: 20%;
@@ -103,10 +110,18 @@
     @include media-breakpoint-down(md){
       max-width: 27rem;
     }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
   }
 
 }
 .blog-content{
   position: relative;
 
+}
+.img_blog{
+  img{
+    width: 100%;
+  }
 }
