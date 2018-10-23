@@ -1,7 +1,9 @@
 // index
 .section-info-icons{
-
   margin: 7rem 0rem 0rem 4rem;
+  @include media-breakpoint-down(md){
+    margin: 4rem 0 0 0rem;
+  }
 }
 .section-box-home{
   background-image: url(../img/home/hoja.png);
@@ -35,6 +37,22 @@
   width: 100%;
   position: absolute;
   z-index: 1;
+  @include media-breakpoint-down(lg){
+    max-width: 35.3rem;
+    left: -39.2%;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 31.3rem;
+    left: -55.2%;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 25.3rem;
+    left: -51.2%;
+    top: 23rem;
+  }
+  @include media-breakpoint-down(xs){
+   display: none;
+  }
 }
 .img-croque{
   right: -22.2%;
@@ -43,6 +61,17 @@
   width: 100%;
   position: absolute;
   z-index: 1;
+  @include media-breakpoint-down(lg){
+    max-width: 21.6rem;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 17.6rem;
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 12.6rem;
+    right: -22.2%;
+    top: -5.9rem;
+  }
 }
 .img-salad{
   max-width: 38.6rem;
@@ -51,6 +80,24 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+  @include media-breakpoint-down(lg){
+    max-width: 35.6rem;
+    bottom: -23.7rem;
+    right: -37.2%;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 31.6rem;
+    bottom: -16.7rem;
+    right: -50.2%;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 26.6rem;
+    bottom: -15.4rem;
+    right: -59.2%;
+  }
+  @include media-breakpoint-down(xs){
+    display: none;
+  }
 }
 .img-tomate{
   width: 100%;
@@ -78,6 +125,9 @@
     left: -30%;
     top: 46%;
   }
+  @include media-breakpoint-down(xs){
+    display: none;
+   }
 
 }
 .img-atun{
@@ -107,6 +157,9 @@
     right: -30%;
     top: 46%;
   }
+  @include media-breakpoint-down(xs){
+   display: none;
+  }
 }
 
 
@@ -119,6 +172,17 @@
   max-width: 22.3rem;
   width: 100%;
   position: absolute;
+  @include media-breakpoint-down(lg){
+    max-width: 19.3rem;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 15.3rem;
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 10.3rem;
+    left: -5.2%;
+    top: -4.7rem;
+  }
   // z-index: 1;
 }
 .img-filete{
@@ -128,24 +192,71 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-}
-.img-solido-blue{
-  right:  -9.4rem;
-  bottom: -38%;
-  max-width: 22.3rem;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-}
+    @include media-breakpoint-down(lg){
+      max-width: 19.3rem;
+      left: -6.9rem;
+      bottom: -29%;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 15.3rem;
+      left: -6.9rem;
+      bottom: -24%;
+    }
+    @include media-breakpoint-down(xs){
+      max-width: 8.1rem;
+      left: -3.7rem;
+      bottom: 10%;
+    }
+  }
+  .img-solido-blue{
+    right:  -9.4rem;
+    bottom: -38%;
+    max-width: 22.3rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+      max-width: 19.3rem;
+      right: -7.9rem;
+      bottom: -29%;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 15.3rem;
+      right: -7.9rem;
+      bottom: -24%;
+    }
+    @include media-breakpoint-down(xs){
+      max-width: 10.3rem;
+      right: -1.9rem;
+      bottom: -7%;
+    }
+    @include media-breakpoint-down(xs){
+      max-width: 8.1rem;
+      right: -3.7rem;
+      bottom: 10%;
+    }
+  }
 
-.img-pimenton{
-  width: 100%;
-  right: 3.3rem;
-  bottom: 5.9rem;
-  max-width: 9.5rem;
-  position: absolute;
-  z-index: 1;
-}
+  .img-pimenton{
+    width: 100%;
+    right: 3.3rem;
+    bottom: 5.9rem;
+    max-width: 9.5rem;
+    position: absolute;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+      right: 3.3rem;
+      bottom: 7.9rem;
+      max-width: 6.5rem;
+    }
+    @include media-breakpoint-down(md){
+      right: 1.3rem;
+      bottom: 9.9rem;
+    }
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+  }
 
 .img-limon{
   width: 100%;
@@ -163,6 +274,9 @@
   overflow: hidden;
   position: absolute;
   z-index: 1;
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
 }
 .img-plato-atun{
   width: 100%;
@@ -171,26 +285,30 @@
   max-width: 500px;
   position: absolute;
 }
+
 // about
 .section-box-about{
   background-image: url(../img/sections/papel2.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  // width: 80vw;
-  width: 80%;
-  /* max-width: 783px; */
-  /* max-height: 400px; */
-  // height: 88vh;
-  text-align: center;
-  position: relative;
-  // left: 12%;
+  width: 100%;
   padding: 3% 3% 0 8%;
-  @include media-breakpoint-up(xl){
-    width: 70%;
+  max-width: 1200px;
+  height: 60rem;
+  // @include media-breakpoint-up(xl){
+  //   width: 70%;
+  // }
+  @include media-breakpoint-down(lg){
+    padding: 3% 1% 0 0%;
+    max-width: 927px;
   }
   @include media-breakpoint-down(md){
-    width: 95%;
+    max-width: 686px;
+    height: 64rem;
+  }
+  @include media-breakpoint-down(sm){
+    height: 72rem;
   }
 }
 .img-bg{
@@ -199,39 +317,75 @@
     max-width: 349px;
     bottom: 6.7rem;
     left: 8rem;
+    @include media-breakpoint-down(md){
+      bottom: 5.7rem;
+      left: 2rem;
+    }
+    @include media-breakpoint-down(xs){
+      bottom: 8.7rem;
+      left: 0.8rem;
+      max-width: 253px;
+    }
   }
   &__lata{
 
   }
   &__table-about{
-    width: 42%;
-    top: 0%;
-    left: -26%;
+    width: 35%;
+    top: 0;
+    left: -12rem;
+    @include media-breakpoint-down(lg){
+      left: -13rem;
+      max-width: 29rem;
+    }
+    @include media-breakpoint-down(md){
+      left: -10.2rem;
+    }
   }
   &__solido-about{
-    width: 33%;
+    max-width: 22.3rem;
+    width: 100%;
     top: -1%;
-    right: -9%;
+    right: 0%;
+    @include media-breakpoint-down(lg){
+      max-width: 19.3rem;
+      right: -2rem;
+      top: -3%;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 15.3rem;
+      right: -1.6rem;
+      top: -4.6%;
+    }
+    @include media-breakpoint-down(sm){
+      top: -3.6%;
+    }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
   }
   &__plato-about{
     width: 100%;
-    bottom: -22%;
-    right: -28rem;
+    bottom: -19%;
+    right: -10rem;
     max-width: 523px;
     @include media-breakpoint-down(lg){
-      bottom: -14%;
-      right: -40%;
+      bottom: -18%;
+      right: -9rem;
       max-width: 472px;
     }
     @include media-breakpoint-down(md){
-      bottom: -25%;
-      right: -34%;
-      max-width: 421px;
+      bottom: -15%;
+      right: -23%;
+      max-width: 414px;
     }
     @include media-breakpoint-down(sm){
-      bottom: -26%;
-      right: -17rem;
-      max-width: 354px;
+      right: -9rem;
+      bottom: -6rem;
+      max-width: 364px;
+    }
+    @include media-breakpoint-down(sm){
+      display: none;
     }
   }
   &__limon-about{

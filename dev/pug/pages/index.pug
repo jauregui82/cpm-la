@@ -10,7 +10,7 @@ block main
   //- section.section-info-icons.py-5.mt-5
   section.section-info-icons.py-5.d-flex.justify-content-center
     .container-fluid
-      .container
+      .rm_container.container
         div.section-box-home.p-3.text-center
           img.img-solido1.img-bg__lata(src="./img/home/img/solido1.png", alt="")
           img.img-croque(src="./img/home/img/croquetas1.png", alt="")
@@ -21,7 +21,7 @@ block main
             img.img-nutri(src="./img/home/nutricion.png", alt="")
           //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
           .row.mt-2
-            .offset-2.col-8
+            .offset-md-2.col-md-8
               .text-justify.text-box-home.text-justify-center
                 img.logo-blue-intext(src="./img/logo-blue.png", alt="")
                 p.tradeGothic.color1.text-box.home es una marca peruana con 15 años en el mercado, es <b>elaborada por y para peruanos</b>, con los mejores estándares de producción locales e internacionales y con insumos de nuestro mar <br>
@@ -30,9 +30,9 @@ block main
           //- hr.transparent
   section
     .container-fluid
-      .container
+      .rm_container.container
         .row.d-flex.justify-content-center
-          .col-sm-8.col-md-8.col-lg-8.mt-4
+          .col-sm-10.col-md-10.col-lg-8.mt-4
             div.section-box-home-blue.text-center.pt-5.position-relative
               img.img-filete.img-bg__lata(src="./img/home/img/filete2.png", alt="")
               img.img-solido-blue.img-bg__lata(src="./img/home/img/solido.png", alt="")
@@ -46,7 +46,7 @@ block main
                 img.img-bg.img-bg__100peru(src="./img/home/100peruano.png", alt="")
               //- .row
               //-   .col
-              .text-justify.text-box-blue.text-justify
+              .text-left.text-box-blue
                 img.logo-blue-intext-equipo(src="./img/home/escudo.png", alt="")
                 p.tradeGothic.text-box.home.white.pt-3 Auspiciador oficial del <br> Comité Olímpico Peruano
                 //- img.w-25.logo-equipo(src="./img/home/escudo.png", alt="")
@@ -81,7 +81,7 @@ block main
                 .col-6
                   h1.tradeGothic.color1 RECETAS
                   hr.title.ml-2
-                  .text-justify.float-left
+                  .text-left.float-left
                     p.float-left.mr-2.color1.tradeGothic.recetas Con
                     img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
                     p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
@@ -118,19 +118,19 @@ block main
                   .contenedor
                     a(href="recipes-entradas.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
-                      .fondo-box-img
-                        .tex-box-img.tradeGothic.white ALMUERZOS
+                      .fondo-box-img.fondo-box-img__1
+                        .tex-box-img.tradeGothic.white ENTRADAS
                 .col-12
                   .contenedor
                     a(href="recipes-entradas.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
-                      .fondo-box-img
-                        .tex-box-img.tradeGothic.white ALMUERZOS
+                      .fondo-box-img.fondo-box-img__2
+                        .tex-box-img.tradeGothic.white NIÑOSNIÑOS &amp; SNACKS
                 .col-12
                   .contenedor
                     a(href="recipes-entradas.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
-                      .fondo-box-img
+                      .fondo-box-img.fondo-box-img__3
                         .tex-box-img.tradeGothic.white ALMUERZOS
               hr.transparent
   section
@@ -141,7 +141,7 @@ block main
       .container
         .row
           .col-8.offset-1.pl-0
-            h1.title.tradeGothic.color1 BLOG SALUDABLE
+            h1.title.tradeGothic.color1 PLATOS DE FONDO
             hr.raya
         .row.d-flex.justify-content-center
           .col-10.mt-5

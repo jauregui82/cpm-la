@@ -7,6 +7,12 @@
   width: 7.4vh;
     margin-right: 3px;
     float: left;
+    @include media-breakpoint-down(sm){
+      width: 4.3rem;
+      margin-right: 2%;
+      margin-left: 6%;
+      float: left;
+    }
 }
 .logo-blue-intext-equipo{
   width: 7.4vh;

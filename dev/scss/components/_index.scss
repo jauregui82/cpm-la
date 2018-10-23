@@ -16,12 +16,39 @@
   h4{
     letter-spacing: 0.5px;
     line-height: 1.3;
+    @include media-breakpoint-down(xs){
+      font-size: 21px;
+    }
+  }
+  @include media-breakpoint-down(md){
+    transform: translate(-50%);
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 19.9rem;
   }
   // width: 50%;
 }
 .text-box.home{
   font-size: 19.6px;
   line-height: 1.2;
+  @include media-breakpoint-down(sm){
+    padding: 0 6% 0 6%;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 15.9px;
+  }
+}
+.btn-white-home{
+  border-radius: 0;
+  background: #fff;
+  border-color: #fff;
+  color: #071f48!important;
+  margin-bottom: 4rem;
+    a{
+      h4{
+        font-size: 16px;
+      }
+    }
 }
 // .text-box.home{
 //   font-size: 16px;
@@ -43,7 +70,10 @@ p.recetas{
 // }
 
 div>.section-box-home-cel{
-  margin-top: 11%
+  margin-top: 11%;
+  @include media-breakpoint-down(xs){
+    margin-top: 0%;
+  }
 }
 .section-box-home-cel{
   background-image: url(../img/home/cel2.png);
@@ -54,17 +84,19 @@ div>.section-box-home-cel{
     width: 100%;
     max-width: 595px;
     height: 345px;
-    max-height: 354px;
+    // max-height: 354px;
     position: relative;
   /* max-height: 233px; */
   /* height: 428px; */
   @include media-breakpoint-down(md){
     max-width: 400px;
-    padding: 1.2rem 3.2rem 9.9rem 3.3rem;
+    padding: 1.2rem 3.2rem 1.6rem 3.3rem;
+    height: 212px;
   }
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(xs){
     max-width: 300px;
-    padding: 0.9rem 2.5rem 12.8rem 2.3rem;
+    padding: 0.9rem 2.5rem 1.4rem 2.3rem;
+    height: 161px;
   }
 }
 
@@ -116,6 +148,19 @@ div>.section-box-home-cel{
 .img-nutri{
   width: 100%;
   max-width: 734px;
+  @include media-breakpoint-down(lg){
+    max-width: 655px;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 551px;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 456px;
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 308px;
+    height: 136px;
+  }
 }
 
 .text-box-home{
@@ -123,6 +168,12 @@ div>.section-box-home-cel{
 }
 .text-box-blue{
   padding: 6% 17% 10% 18%;
+  @include media-breakpoint-down(sm){
+    padding: 3% 17% 6% 10%;
+  }
+  @include media-breakpoint-down(xs){
+    padding: 20% 2% 17% 8%;
+  }
 }
 .text-mailing{
   font-size: 16px;
@@ -131,6 +182,7 @@ div>.section-box-home-cel{
 .contenedor{
   position: relative;
   display: inline-block;
+  transition: 0.3s;
 }
 .fondo-box-img{
   position: absolute;
@@ -151,6 +203,6 @@ div>.section-box-home-cel{
 div.contenedor:hover{
   .fondo-box-img{
     display: block;
-    transition-delay: 1s;
   }
 }
+

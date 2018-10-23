@@ -1,3 +1,23 @@
+// texts
+.text{
+  &__p{
+    font-size: 19px;
+    line-height: 1.2;
+    @include media-breakpoint-down(sm){
+      font-size: 16px;
+    }
+  }
+}
+.border{
+  &__right{
+    border-top: 4px solid rgb(6, 30, 72);
+    width: 2rem;
+    transform: rotateZ(90deg);
+    float: right;
+  }
+}
+// texts
+
 //card product
 .card-product{
   border: solid 2px map-get($my-colors, color1 );
@@ -34,13 +54,7 @@
   border-color: #071f48;
   width: 10rem;
 }
-.btn-white-home{
-  border-radius: 0;
-  background: #fff;
-  border-color: #fff;
-  color: #071f48!important;
-  margin-bottom: 4rem;
-}
+
 
 .img-icon-left{
   display: inline;

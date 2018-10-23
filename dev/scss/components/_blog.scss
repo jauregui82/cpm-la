@@ -3,30 +3,67 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
-    padding: 2%;
     width: 100%;
-    // height: 53vh;
-    text-align: center;
+    max-width: 1250px;
     position: relative;
-    // left: 14%;
     @include media-breakpoint-down(lg){
       width: 90%
     }
     @include media-breakpoint-down(md){
       width: 100%
     }
-}
-.img-bg{
-  &__trozos-blog{
-    width: 21%;
-    top: 0%;
-    left: -7%;
   }
-  &__salad-blog{
-    width: 37%;
-    top: -4%;
-    right: -24%;
+  .img-text-pro{
+    width: 100%;
+    height: 0%;
+    max-width: 39rem;
+    @include media-breakpoint-down(lg){
+      max-width: 31rem
+    }
+    @include media-breakpoint-down(sm){
+      max-width: 24rem;
+    }
   }
+  .text-box-blog {
+    padding: 3% 19% 0 20%;
+  }
+  .img-bg{
+    &__trozos-blog{
+      left: -6.2%;
+      top: 3.3rem;
+      max-width: 22.3rem;
+      @include media-breakpoint-down(lg){
+        max-width: 19.3rem;
+        left: -17.2%;
+        top: 3.3rem;
+      }
+      @include media-breakpoint-down(md){
+        max-width: 15.3rem;
+        left: -7.2%;
+        top: 6.3rem;
+      }
+      @include media-breakpoint-down(sm){
+        max-width: 10.3rem;
+      }
+      @include media-breakpoint-down(xs){
+        max-width: 5.3rem;
+      }
+    }
+    &__salad-blog{
+      width: 100%;
+      top: 3rem;
+      right: -15rem;
+      max-width: 31rem;
+      @include media-breakpoint-down(lg){
+        right: -16rem;
+        max-width: 27rem;
+      }
+      @include media-breakpoint-down(md){
+        right: -11rem;
+        max-width: 17rem;
+        top: 3rem;
+      }
+    }
   &__club-blog{
     width: 67%;
     top: 34vh;
@@ -47,19 +84,25 @@
     top: 0;
     right: -6vw;
     @include media-breakpoint-down(lg){
-      width: 23%;
-      top: -20vh;
+      display: none;
     }
-    @include media-breakpoint-down(sm){
-      right: -10vw;
-      width: 40%;
-      top: -20vh;
+    @include media-breakpoint-down(md){
+      display: none;
     }
   }
   &__sda-blog{
-    width: 50%;
-    top: 24vh;
-    left: -24vw;
+    width: 100%;
+    top: 22rem;
+    left: -24rem;
+    max-width: 37rem;
+    @include media-breakpoint-down(lg){
+      top: 24rem;
+      left: -17rem;
+      max-width: 31rem;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 27rem;
+    }
   }
 
 }

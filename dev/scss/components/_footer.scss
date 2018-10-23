@@ -46,6 +46,8 @@
       font-size: 1.325rem;
       margin-left: 0.9rem;
       letter-spacing: 2px;
+    }
+    .hide_md{
       @include media-breakpoint-down(md){
         display: none;
       }
@@ -66,8 +68,8 @@
 
 
   &__logos{
-    max-width: 80px;
     width: 100%;
+    max-width: 70px;
     display: inline;
   }
 

@@ -2,25 +2,49 @@
   margin-top: 10rem;
 }
 .section-box-recipes {
-  background-image: url(../img/home/hoja.png);
+  background-image: url(../img/sections/hoja-blog.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline-block;
-  padding: 2%;
+  // padding: 2%;
   width: 100%;
   // height: 53vh;
   text-align: center;
   position: relative;
+  max-width: 1246px;
   // left: 14%;
   @include media-breakpoint-down(lg){
-    width: 90%
+    // width: 90%
   }
   @include media-breakpoint-down(md){
-    width: 100%
+    // width: 100%
   }
 }
 .text-box-recipes {
   padding: 0% 0% 0 3.5%;
+}
+.img-text-rec{
+  width: 100%;
+  height: 0%;
+  max-width: 52rem;
+  @include media-breakpoint-down(lg){
+    max-width: 38rem;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 34rem;
+  }
+  @include media-breakpoint-down(sm){
+    max-width: 30rem;
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 24rem;
+  }
+}
+.content-box-rec{
+
+  @include media-breakpoint-down(sm){
+    padding: 0% 6% 0% 6%;
+  }
 }
 .img-bg{
   &__cebolla-rec{
@@ -32,14 +56,24 @@
     }
   }
   &__plato-rec{
-    width: 37%;
-    bottom: -60%;
-    left: -26%;
+    width: 100%;
+    bottom: -45%;
+    left: -20%;
+    max-width: 467px;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      bottom: -29%;
+      left: -12%;
+      max-width: 305px;
+    }
     @include media-breakpoint-down(md){
       width: 100%;
-      bottom: -60%;
-      left: -12rem;
+      bottom: -41%;
+      left: -11rem;
       max-width: 305px;
+    }
+    @include media-breakpoint-down(sm){
+      max-width: 268px;
     }
   }
   &__salad-rec{
@@ -47,7 +81,7 @@
     top: -115px;
     right: -24%;
     @include media-breakpoint-down(md){
-      width: 48%;
+      width: 40%;
     }
   }
   &__lata-rec{
@@ -56,18 +90,18 @@
     right: 20%;
     @include media-breakpoint-down(md){
       width: 24%;
-      bottom: -6rem;
+      bottom: -4rem;
       right: 22rem;
     }
     @include media-breakpoint-down(sm){
       width: 24%;
-      bottom: -2rem;
+      bottom: -4rem;
       right: 37%;
     }
   }
   &__limon-rec{
     width: 18%;
-    bottom: -34%;
+    bottom: -28%;
     right: 3%;
     @include media-breakpoint-down(md){
       width: 24%;
@@ -120,7 +154,27 @@
     right: -13vh;
   }
 }
-
+// .fondo-box-img{
+//   position: absolute;
+//   width: 100%;
+//   height: 99%;
+//   top: 4px;
+//   display: none;
+//   &__1{
+//     background: rgba(6, 30, 72, 0.58);
+//   }
+//   &__2{
+//     background: rgba(221, 124, 0, 0.5411764705882353);
+//   }
+//   &__3{
+//     background: rgba(255, 203, 0, 0.59);;
+//   }
+// }
+div.recipes-grid__content:hover{
+  .fondo-box-img{
+    display: block;
+  }
+}
 .recipes-grid{
   &__content{
     position: relative;

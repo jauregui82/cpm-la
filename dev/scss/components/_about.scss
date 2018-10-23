@@ -1,8 +1,20 @@
 .about{
   padding: 0rem 5.2rem 0rem 6.1rem;
+  @include media-breakpoint-down(lg){
+    padding: 0 3.2rem 0 6.1rem;
+  }
+  @include  media-breakpoint-down(sm){
+    padding: 0;
+  }
 }
 .text-box-about{
   padding: 3% 28% 0% 10%;
+  @include  media-breakpoint-down(lg){
+    padding: 2% 23% 0 9%;
+  }
+  @include  media-breakpoint-down(md){
+    padding: 2% 9% 0 9%;
+  }
 }
 
 .slider-about{
@@ -10,6 +22,12 @@
         // display: inline;
         width: 100%;
         max-width: 290px;
+        // float: left;
+    }
+    &__img2{
+        // display: inline;
+        width: 100%;
+        max-width: 200px;
         // float: left;
     }
 }

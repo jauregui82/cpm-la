@@ -32,6 +32,15 @@ $(document).ready(function () {
   else if (vw > 991) {
     $('.mobile-version').css('display', 'none')
   }
+
+  if (vw < 768) {
+    $('.rm_container').removeClass('container');
+  }
+  else if (vw > 768) {
+    if ($('.rm_container').hasClass('container') == false) {
+      $('.rm_container').addClass('container');
+    }
+  }
   $('.filtering').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -158,6 +167,14 @@ $(window).resize(function () {
   else if (vw > 991) {
     $('.mobile-version').css('display', 'none')
     $('.pc-version').css('display', '')
+  }
+  if (vw < 768) {
+    $('.rm_container').removeClass('container');
+  }
+  else if (vw > 768) {
+    if ($('.rm_container').hasClass('container') == false) {
+      $('.rm_container').addClass('container');
+    }
   }
   $('.filtering').slick({
     slidesToShow: 2,
