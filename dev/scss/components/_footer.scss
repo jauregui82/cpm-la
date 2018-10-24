@@ -112,3 +112,18 @@
 .img-fa{
   display: inline-block;
 }
+
+.centrar{
+  @include media-breakpoint-down(md){
+    &__1-footer{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__2-footer{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -21,7 +21,7 @@ block main
               hr.raya
             .content-box-rec
               span.d-flex.justify-content-center.position-relative
-                  img.img-text-rec(src="./img/recipes/text.svg", alt="")
+                  img.img-text-rec(src="./img/recipes/text.png", alt="")
               .row.pt-5.mb-5
                   .offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
                       p.text__p.tradeGothic.color1 Con
@@ -35,54 +35,59 @@ block main
     .container-fluid
       .container.recipes-sec
          .row
-            .col-lg-8.sm-mx-auto
+            .col-10.sm-mx-auto
               .row
                 .col-xs-12
-                  h1.color1.tradeGothic NIÑOS &amp; SNACKS
-                  hr.raya
                   //-Tabs nav
                   div.position-relative
+                    div(class="btn white pointer d-flex align-items-center" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                      .row.position-relative
+                        img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
+                        .col-6
+                          h1.color1.tradeGothic NIÑOS &amp; SNACKS
+                          hr.raya
                     .row
                       .col
-                        ul(class="nav nav-pills pills-tab mb-3" role="tablist")
-                            li.nav-item
-                                a(class="nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
-                            li.nav-item
-                                a(class="nav-link slide-tabs " id=""  href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Templada de atún &nbsp;|
-                            li.nav-item
-                                a(class="nav-link slide-tabs " id=""  href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Caprichosa con atún &nbsp;|
-                            li.nav-item
-                                a(class="nav-link slide-tabs " id=""  href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Campomar &nbsp;|
-                            li.nav-item
-                              a(class="nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Pastel de Caballa  &nbsp;|
-                        //- li.nav-item
-                        //-     a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete &nbsp;|
-                        //- li.nav-item
-                        //-     a(class="nav-link slide-tabs" id="pills-lomos-tab" data-toggle="pill" href="#pills-lomos" role="tab" aria-controls="pills-lomos" aria-selected="false") Lomos &nbsp;|
-                        //- li.nav-item
-                        //-     a(class="nav-link slide-tabs" id="pills-lomos-l-tab" data-toggle="pill" href="#pills-lomos-l" role="tab" aria-controls="pills-lomos-l" aria-selected="false") Lomos Light &nbsp;|
-                        //- li.nav-item
-                        //-     a(class="nav-link slide-tabs" id="pills-trozos-tab" data-toggle="pill" href="#pills-trozos" role="tab" aria-controls="pills-trozos" aria-selected="false") Trozos &nbsp;|
-                        //- li.nav-item
-                        //-     a(class="nav-link slide-tabs" id="pills-grated-tab" data-toggle="pill" href="#pills-grated" role="tab" aria-controls="pills-grated" aria-selected="false") Grated
-                    .tab-content#pills-tabContent.pl-5.pr-5
+                          .collapse.multi-collapse#entradas
+                            ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                                li.nav-item
+                                    a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
+                                li.nav-item
+                                  a(class="text__p nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Pastel de Caballa  &nbsp;|
+                                li.nav-item
+                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Templada de atún &nbsp;|
+                                li.nav-item
+                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Caprichosa con atún &nbsp;|
+                                li.nav-item
+                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Campomar &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-lomos-tab" data-toggle="pill" href="#pills-lomos" role="tab" aria-controls="pills-lomos" aria-selected="false") Lomos &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-lomos-l-tab" data-toggle="pill" href="#pills-lomos-l" role="tab" aria-controls="pills-lomos-l" aria-selected="false") Lomos Light &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-trozos-tab" data-toggle="pill" href="#pills-trozos" role="tab" aria-controls="pills-trozos" aria-selected="false") Trozos &nbsp;|
+                                //- li.nav-item
+                                //-     a(class="nav-link slide-tabs" id="pills-grated-tab" data-toggle="pill" href="#pills-grated" role="tab" aria-controls="pills-grated" aria-selected="false") Grated
+                    .tab-content#pills-tabContent
                         //- tab-1
                         //- hr.hr-recipes
                         div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-01.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Cebiche de filete de atún
+                                  h3.color1.tradeGothic <b>Cebiche de filete de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -105,7 +110,7 @@ block main
                                               p 12 limones
                                             li
                                               p Sal y pimienta al gusto
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
@@ -127,19 +132,19 @@ block main
                           //- tab-2
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-02.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-02.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Templada de atún
+                                  h3.color1.tradeGothic <b>Ensalada Templada de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 40 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 40 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -167,10 +172,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row
@@ -187,19 +192,19 @@ block main
                           //- tab-3
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-03.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-03.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Caprichosa con atún
+                                  h3.color1.tradeGothic <b>Ensalada Caprichosa con atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 10 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -227,10 +232,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row
@@ -249,19 +254,19 @@ block main
                           //- tab-4
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-04.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-04.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Campomar
+                                  h3.color1.tradeGothic <b>Ensalada Campomar</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -293,10 +298,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row
@@ -316,19 +321,19 @@ block main
                         //- hr.hr-recipes
                         div(class="tab-pane fade" id="pills-pastel-caballa" role="tabpanel" aria-labelledby="pills-pastel-caballa-tab")
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-01.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Pastel de Caballa
+                                  h3.color1.tradeGothic <b>Pastel de Caballa</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -351,7 +356,7 @@ block main
                                               p 12 limones
                                             li
                                               p Sal y pimienta al gusto
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
@@ -373,19 +378,19 @@ block main
                           //- tab-2
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-02.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-02.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Templada de atún
+                                  h3.color1.tradeGothic <b>Ensalada Templada de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 40 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 40 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -413,10 +418,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row
@@ -433,19 +438,19 @@ block main
                           //- tab-3
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-03.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-03.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Caprichosa con atún
+                                  h3.color1.tradeGothic <b>Ensalada Caprichosa con atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 10 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -473,10 +478,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row
@@ -495,19 +500,19 @@ block main
                           //- tab-4
                           hr.hr-recipes
                           .row.d-flex.justify-content-center
-                            .col
-                                img.slider-product__img(src="./img/recipes/rec/rec-04.jpg")
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-04.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic Ensalada Campomar
+                                  h3.color1.tradeGothic <b>Ensalada Campomar</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic 04 porc.
+                                    p.color1.tradeGothic.text__p 04 porc.
                           .row.mt-5.d-flex.justify-content-center
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
@@ -539,10 +544,10 @@ block main
                                             li
                                               p Sal y pimienta al gusto
 
-                            .col-5
+                            .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
                                 .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-2.png", alt="")
+                                  img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
                                 p Preparación
                               .row

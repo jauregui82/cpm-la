@@ -8,7 +8,7 @@ append config
 block main
 
   //- section.section-info-icons.py-5.mt-5
-  section.section-info-icons.py-5.mt-5
+  section.py-5.mt-5
     .container-fluid.d-flex.justify-content-center
       .section-box-cont.p-3.text-center
         img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="")
@@ -17,16 +17,19 @@ block main
         .text-justify.text-box-cont
           h1.tradeGothic.color1.position-relative CONTÁCTANOS
           hr.raya
-        span.d-flex.justify-content-center
-          img.img-box-contact(src="./img/contact/ini.png", alt="")
-        //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
-        .text-justify.text-box-home.text-justify
-          img.logo-blue-intext(src="./img/logo-blue.png", alt="")
-          p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
-          br
-          p.tradeGothic.color1.text-box.home.float-left Si tienes un negocio y quieres distribuir productos
-          img.logo-blue-intext.ml-2(src="./img/logo-blue.png", alt="")
-          p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+        .content-box-contact
+          span.d-flex.justify-content-center
+            img.img-box-contact(src="./img/contact/ini.png", alt="")
+          //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
+          .row.mb-5.mt-5
+            .col-sm-10.offset-sm-2.col-md-8
+              .text-justify.text-box-home.text-justify
+                img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+                p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+                br
+                p.tradeGothic.color1.text-box.home.float-left Si tienes un negocio y quieres distribuir productos
+                img.logo-blue-intext.ml-2(src="./img/logo-blue.png", alt="")
+                p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
 
   section.section-form.mt-5
     .container-fluid.mt-5

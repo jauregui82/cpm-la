@@ -8,6 +8,8 @@
   // height: 53vh;
   text-align: center;
   position: relative;
+  max-width:1250px;
+
   // left: 14%;
   @include media-breakpoint-down(lg){
     width: 90%
