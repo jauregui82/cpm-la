@@ -61,11 +61,15 @@ block main
           img.img-atun(src="./img/home/img/atun.png", alt="")
           .d-flex.justify-content-center.mt-10
             div.section-box-home-cel.justify-content-center
+              //- div(class="embed-responsive embed-responsive-16by9")
+                iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/JUAj31JmUgM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen)
               .video-content
               img.w-100.pantalla.d-none(src="./img/home/pantalla.png", alt="")
               img(src="", alt="")
-              img.link-pantalla(src="./img/home/icon.png", alt="")
-              span.d-flex.justify-content-center.text-pantalla.white.futura VER VIDEO
+              a(data-fancybox="", href="https://www.youtube.com/embed/JUAj31JmUgM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0")
+                img.link-pantalla(src="./img/home/icon.png", alt="")
+              span.d-flex.justify-content-center.text-pantalla.white.futura(data-fancybox="", href="https://www.youtube.com/embed/JUAj31JmUgM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0") VER VIDEO
+              //- span.d-flex.justify-content-center.text-pantalla.white.futura(data-toggle="modal" data-target="#md_video") VER VIDEO
             //-.video
               <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/BICqBZ8c5xw?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">Find Out More</a></small></div><div><small><a href="https://misshowtostartablog.com/how-to-configure-your-blog/">https://misshowtostartablog.com/how-to-configure-your-blog/</a></small></div></iframe>
   section
@@ -90,26 +94,29 @@ block main
                     a(href="recipes-entradas.html")
                       img.w-100.pt-1(src="./img/home/sec3-2.png", alt="")
                       .fondo-box-img.fondo-box-img__1
-                        .tex-box-img.tradeGothic.white ENTRADAS
+                        .tex-box-img.tradeGothic.white
+                          h2 ENTRADAS
                 .col-12
                   .contenedor
                     a(href="recipes-snack.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
                       .fondo-box-img.fondo-box-img__2
-                        .tex-box-img.tradeGothic.white NIÑOSNIÑOS &amp; SNACKS
+                        .tex-box-img.tradeGothic.white
+                          h2 NIÑOS &amp; SNACKS
             .col-4.position-relative
               //- img.img-sec3-1.position-absolute(src="./img/home/sec3-1.png", alt="")
               .contenedor.box-index__horizontal
                     a(href="recipes-fondo.html")
                       img.w-100.pt-1(src="./img/home/sec3-1.png", alt="")
                       .fondo-box-img.fondo-box-img__3
-                        .tex-box-img.tradeGothic.white  PLATOS <br> DE <br> FONDO
+                        .tex-box-img.tradeGothic.white
+                          h2  PLATOS <br> DE <br> FONDO
           .row.mobile-version
             .col-12
               .row
                 .col-12
                   h1.tradeGothic.color1 RECETAS
-                  hr.title.ml-2
+                  hr.raya
                   .text-justify.float-left
                     p.float-left.mr-2.color1.tradeGothic.recetas Con
                     img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
@@ -119,19 +126,22 @@ block main
                     a(href="recipes-entradas.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
                       .fondo-box-img.fondo-box-img__1
-                        .tex-box-img.tradeGothic.white ENTRADAS
+                        .tex-box-img.tradeGothic.white
+                          h2 ENTRADAS
                 .col-12
                   .contenedor
                     a(href="recipes-snack.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
                       .fondo-box-img.fondo-box-img__2
-                        .tex-box-img.tradeGothic.white NIÑOSNIÑOS &amp; SNACKS
+                        .tex-box-img.tradeGothic.white
+                          h2 NIÑOS &amp; SNACKS
                 .col-12
                   .contenedor
                     a(href="recipes-fondo.html")
                       img.w-100.pt-1(src="./img/home/sec3-3.png", alt="")
                       .fondo-box-img.fondo-box-img__3
-                        .tex-box-img.tradeGothic.white ALMUERZOS
+                        .tex-box-img.tradeGothic.white
+                          h2 ALMUERZOS
               hr.transparent
   section
     .container.position-relative
@@ -166,34 +176,39 @@ block main
                   span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  VER MÁS
               .slider-content
                 .slide-img
-                  img(src="./img/home/slide/slide1.png", alt="")
+                  img(src="./img/home/slide/slide4.png", alt="")
                 .slide-text
                   .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
                   span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  VER MÁS
               .slider-content
                 .slide-img
-                  img(src="./img/home/slide/slide2.png", alt="")
+                  img(src="./img/home/slide/slide5.png", alt="")
                 .slide-text
-                  .white.tradeGothic ¿TUS HIJOS <br>COMEN PESCADO?
+                  .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
                   span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  VER MÁS
               .slider-content
                 .slide-img
-                  img(src="./img/home/slide/slide3.png", alt="")
+                  img(src="./img/home/slide/slide6.png", alt="")
                 .slide-text
-                  .white.tradeGothic CONSUMIR PESCADO <br> CONTRIBUYE AL ESTADO <br> DE ÁNIMO.
+                  .white.tradeGothic EL CONSUMO DE PESCADO <br> ES IDEAL PARA DEPORTISTAS
                   span.btn.btn-white-home.mt-1.w-100.tradeGothic.color1  VER MÁS
   section
     .container-fluid.mt-5
       .container
         .row
-          .col-sm-12.col-md-6.col-lg-4.offset-lg-1
+          .col-sm-12.col-md-6.col-lg-4.offset-lg-1.mb-3
             h1.tradeGothic.color1 REGÍSTRATE
             hr.title.ml-2
           .col-sm-12.col-md-6.col-lg-6.pr-5
             p.tradeGothic.color1.text-mailing Si deseas estar actualizado sobre el contenido que publicamos en nuestro BLOG, suscríbete en nuestra base de datos
             .row.mt-2.pb-2.border-mail
-              .col-9.pl-0
+              .col-xs-8.col-md-9.pl-0
                 input.input-mailing.ml-0(type="text",placeholder="Ingresa tu correo electrónico ")
-              .col-3
+              .col-xs-4.col-md-3
                 span.btn.btn-blue.white.tradeGothic.mt-1.align-self-end.w-100 ENVIAR
   hr.transparent
+    //- <div id="md_video" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    //- <div class="modal-dialog modal-lg modal-dialog-centered">
+    //-   <div class="modal-content">
+  //-div(class="embed-responsive embed-responsive-16by9",data-fancybox="", href="https://www.youtube.com/embed/JUAj31JmUgM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0")
+  //-iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/JUAj31JmUgM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen)

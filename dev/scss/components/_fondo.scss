@@ -29,6 +29,9 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 6% 11% 10% 7%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-48%);
 }
 .img-plato{
   left: -37.2%;
@@ -112,13 +115,13 @@
     max-width: 466px;
   }
   @include media-breakpoint-down(lg){
-    max-width: 300px;
-    left: -11%;
+    max-width: 362px;
+    left: -27%;
   }
   @include media-breakpoint-down(md){
-    max-width: 234px;
-    left: -11%;
-    top: 22%;
+    max-width: 256px;
+    left: -29%;
+    top: 46%;
   }
   @include media-breakpoint-down(sm){
     max-width: 200px;
@@ -139,23 +142,22 @@
   z-index: 1;
 
   @include media-breakpoint-up(lg){
-    top: 24%;
-    right: -32%;
-    max-width: 550px;
+    top: 3%;
+    right: -54%;
+    max-width: 736px;
   }
   @include media-breakpoint-down(lg){
-    max-width: 300px;
-    right: -11%;
+    max-width: 629px;
   }
   @include media-breakpoint-down(md){
-    max-width: 234px;
-    right: -11%;
-    top: 22%;
+    top: 24%;
+    right: -54%;
+    max-width: 501px;
   }
   @include media-breakpoint-down(sm){
-    max-width: 200px;
-    right: -30%;
-    top: 46%;
+    top: 32%;
+    right: -54%;
+    max-width: 347px;
   }
   @include media-breakpoint-down(xs){
    display: none;
@@ -295,7 +297,7 @@
   width: 100%;
   padding: 3% 3% 0 8%;
   max-width: 1200px;
-  height: 60rem;
+  height: 63.5rem;
   // @include media-breakpoint-up(xl){
   //   width: 70%;
   // }

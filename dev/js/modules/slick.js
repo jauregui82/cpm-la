@@ -218,7 +218,16 @@ else if (window.location.hash == '#6') {
   $('#content_blog').html(content_blog);
   $('.img_blog').html(img_blog);
 }
-
+// collapse icons
+$('.collapse_icon').click(() => {
+  if ($('.collapse_icon').attr('aria-expanded') == 'false') {
+    $('.img-icon-up').attr('src', './img/icon/arrow-up.png');
+    $('.nav-interno').removeClass('hide')
+  } else {
+    $('.img-icon-up').attr('src', './img/icon/arrow-down.png');
+    $('.nav-interno').addClass('hide')
+  }
+});
 export {
   sliderWrapper,
   sliderMultipleItems

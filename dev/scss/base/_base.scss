@@ -66,6 +66,16 @@ ul{
 h1, h2, h3, h4, h5, section{
   position: relative;
 }
+h1{
+  @include media-breakpoint-down(sm){
+    font-size: 30px!important;
+  }
+}
+h2{
+  @include media-breakpoint-down(sm){
+    font-size: 25px!important;
+  }
+}
 
 // h1 {
 //   font-size : var(--h1-font-size);

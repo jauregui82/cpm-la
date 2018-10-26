@@ -41,7 +41,7 @@ block main
                 .col-xs-12
                   //-Tabs nav
                   div.position-relative
-                    div(class="btn white pointer d-flex align-items-center" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                    div(class="btn white pointer d-flex align-items-center collapse_icon" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
                       .row.position-relative
                         img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
                         .col-7
@@ -52,15 +52,9 @@ block main
                           .collapse.multi-collapse#entradas
                             ul(class="nav nav-pills pills-tab mb-3" role="tablist")
                                 li.nav-item
-                                    a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
+                                  a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
                                 li.nav-item
                                   a(class="text__p nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Pastel de Caballa  &nbsp;|
-                                li.nav-item
-                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Templada de atún &nbsp;|
-                                li.nav-item
-                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Caprichosa con atún &nbsp;|
-                                li.nav-item
-                                    a(class="text__p nav-link slide-tabs " id=""   role="tab" aria-controls="pills-f-atun" aria-selected="true") Ensalada Campomar &nbsp;|
                                 //- li.nav-item
                                 //-     a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete &nbsp;|
                                 //- li.nav-item
@@ -75,6 +69,13 @@ block main
                         //- tab-1
                         //- hr.hr-recipes
                         div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
+                          ul(class="nav nav-interno mb-3 hide" role="tablist")
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#ensalada-templada") Ensalada Templada de atún &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""  href="#ensalada-caprichosa") Ensalada Caprichosa con atún &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#ensalada-campomar") Ensalada Campomar &nbsp;|
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
                                 img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
@@ -93,7 +94,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes1
@@ -116,7 +117,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores1
@@ -131,7 +132,7 @@ block main
                                             li
                                               p Decorar con papa sancochada y lechugas (opcional)
                           //- tab-2
-                          hr.hr-recipes
+                          hr.hr-recipes#ensalada-templada
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
                                 img.recipes.recipes__img(src="./img/recipes/rec/rec-02.jpg")
@@ -150,7 +151,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes2
@@ -178,7 +179,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores2
@@ -191,7 +192,7 @@ block main
                                             li
                                               p Mezclar, decorar con perejil y servir
                           //- tab-3
-                          hr.hr-recipes
+                          hr.hr-recipes#ensalada-caprichosa
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
                                 img.recipes.recipes__img(src="./img/recipes/rec/rec-03.jpg")
@@ -210,7 +211,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes3
@@ -238,7 +239,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores3
@@ -254,7 +255,7 @@ block main
                                               p Mover y servir.
                           //- tab-4
                           hr.hr-recipes
-                          .row.d-flex.justify-content-center
+                          .row.d-flex.justify-content-center#ensalada-campomar
                             .col-xs-12.col-sm-6
                                 img.recipes.recipes__img(src="./img/recipes/rec/rec-04.jpg")
                             .col.d-flex.align-items-center
@@ -272,7 +273,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes4
@@ -304,7 +305,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores4
@@ -321,6 +322,13 @@ block main
                         //- tab--1
                         //- hr.hr-recipes
                         div(class="tab-pane fade" id="pills-pastel-caballa" role="tabpanel" aria-labelledby="pills-pastel-caballa-tab")
+                          ul(class="nav nav-interno mb-3 hide" role="tablist")
+                            li.nav-item
+                                a(class="text__p nav-link slide-tabs " id=""   href="#") Ensalada Templada de atún &nbsp;|
+                            li.nav-item
+                                a(class="text__p nav-link slide-tabs " id=""  href="#") Ensalada Caprichosa con atún &nbsp;|
+                            li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#") Ensalada Campomar &nbsp;|
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
                                 img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
@@ -339,7 +347,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes1
@@ -362,7 +370,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores1
@@ -396,7 +404,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes2
@@ -424,7 +432,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores2
@@ -456,7 +464,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes3
@@ -484,7 +492,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores3
@@ -518,7 +526,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/pro-3.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Ingredientes
+                                p.text__p Ingredientes
                               .row
                                 .col
                                     .collapse.multi-collapse#ingredientes4
@@ -550,7 +558,7 @@ block main
                                 .btn-recipes__cont-img
                                   img(src="./img/icon/rec-1.png", alt="")
                                 i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p Preparación
+                                p.text__p Preparación
                               .row
                                 .col
                                     .collapse.multi-collapse#valores4

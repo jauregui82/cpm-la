@@ -1,3 +1,18 @@
+// slick
+.slick-slide {
+  outline: none;
+}
+// hide
+.hide_md{
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+}
+.show_md{
+  @include media-breakpoint-up(md){
+    display: none;
+  }
+}
 // texts
 .text{
   &__p{
@@ -85,15 +100,8 @@ h1.tradeGothic{
 
 }
 
-
-.tex-box-img{
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  letter-spacing: 3px;
-  font-size: 1.5rem;
-  transform: translate(-50%);
-  text-align: center;
+.hide{
+  display: none;
 }
 
 #owl-demo.item{

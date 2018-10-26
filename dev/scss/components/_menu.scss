@@ -4,6 +4,9 @@
   background-color: map-get($my-colors, color1);
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
+  @include media-breakpoint-down(md){
+    border-color: map-get($my-colors, color1);
+  }
 	// border-bottom: 1px solid #f0f0f0;
 
 	.logo{
@@ -86,7 +89,14 @@
 	@include media-breakpoint-down(lg) {
 		li{
 			a{
-		    font-size: .625rem;
+		    font-size: 1.025rem;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		li{
+			a{
+		    font-size: 0.825rem;
 			}
 		}
 	}

@@ -27,15 +27,27 @@
     left: -13%;
   }
   &__pasta-pro{
-    width: 29%;
-    top: 0%;
-    right: -13%;
+    width: 100%;
+    top: 3rem;
+    right: -28%;
+    max-width: 600px;
+    @include media-breakpoint-down(lg){
+      max-width: 525px;
+      right: -31%;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 439px;
+      right: -38%;
+    }
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
   }
   &__ceviche-pro{
     width: 100%;
-    bottom: -29%;
-    left: -29%;
-    max-width: 461px;
+    bottom: -19%;
+    left: -18%;
+    max-width: 512px;
     @include media-breakpoint-up(lg){
       width: 100%;
       bottom: -29%;
@@ -58,7 +70,7 @@
   }
   &__palta-pro{
     width: 53%;
-    top: 28%;
+    top: 50%;
     right: -42%;
   }
   &__tomate-pro{
@@ -70,10 +82,14 @@
 .slider-product{
   &__img{
     width: 100%;
-    max-width: 389px;
+    max-width: 327px;
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+  }
+  &__text{
+    padding-top: 1.2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -109,6 +125,10 @@
     top: 5%;
     width: 5.5rem;
     left: -16%;
+    @include media-breakpoint-down(lg){
+      width: 4.5rem;
+      left: -7%;
+    }
   }
 }
 .logo-blue-box-product{
@@ -126,8 +146,12 @@
   height: 0%;
   max-width: 52rem;
   @include media-breakpoint-down(lg){
-    max-width: 44rem;
+    max-width: 40.5rem;
   }
+  @include media-breakpoint-down(md){
+    max-width: 31.5rem;
+  }
+
 }
 .img-icon-prev{
   background-image: url(../../img/sections/arrow-left.png);

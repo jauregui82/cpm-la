@@ -86,6 +86,10 @@ $(document).ready(function () {
     filtered = true;
   });
 
+  $('#btn_acepto').click(function () {
+    $('#cookies_content').hide();
+  });
+  // tabs- Slider
   $('.cambiarpestana').click(function (ev) {
     let accion = $(this).data('accion');
     let cantidadPestana = $('.pills-tab li').length;

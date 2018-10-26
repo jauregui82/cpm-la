@@ -46,6 +46,7 @@
     padding: 0% 6% 0% 6%;
   }
 }
+
 .img-bg{
   &__cebolla-rec{
     width: 16%;
@@ -170,11 +171,7 @@
 //     background: rgba(255, 203, 0, 0.59);;
 //   }
 // }
-div.recipes-grid__content:hover{
-  .fondo-box-img{
-    display: block;
-  }
-}
+
 .recipes-grid{
   &__content{
     position: relative;
@@ -206,7 +203,12 @@ div.recipes-grid__content:hover{
     letter-spacing: 4px;
   }
 }
-
+div.recipes-grid__content:hover{
+  .fondo-box-img{
+    // display: block;
+    height: 99%;
+  }
+}
 .btn-recipes{
   &__contenedor {
     background: #061e48;

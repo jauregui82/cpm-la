@@ -20,8 +20,15 @@ block main
               //- hr.title.ml-2
               img.logo-blue-intext(src="./img/logo-blue.png", alt="")
               p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
-              h1.tradeGothic.color1.mt-2 BENEFICIOS DE
-              hr.raya
+              //- .row.mt-5
+              //-   .col-xs-8.col-sm-10.col-md-9.col-lg-8
+              //-     h1.tradeGothic.color1 BENEFICIOS DE
+              //-       img.logo-blue-about(src="./img/logo-blue.png", alt="")
+              //-     hr.raya
+              .position-relative.mt-5
+                h1.tradeGothic.color1 BENEFICIOS DE
+                img.logo-blue-about(src="./img/logo-blue.png", alt="")
+                hr.raya
             //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
             .container.inline
                 .row
@@ -29,7 +36,7 @@ block main
                         .row.mb-5
                             .col-xs-12
                                 div.position-relative
-                                  ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                                  ul(class="nav nav-pills pills-tab mb-3 slider-about__tabs" role="tablist")
                                       li.nav-item
                                           a(class="nav-link slide-tabs text__p active" id="pills-calidad-tab" data-toggle="pill" href="#pills-calidad" role="tab" aria-controls="pills-calidad" aria-selected="true")
                                             |CALIDAD |
@@ -45,55 +52,60 @@ block main
                                   .tab-content#pills-tabContent.pl-5.pr-5
                                       div(class="tab-pane fade show active" id="pills-calidad" role="tabpanel" aria-labelledby="pills-calidad-tab")
                                         .row
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-6.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-1.png")
                                           .col-sm-12.col-md-6
                                               .slider-about__text
-                                                  h2.color1.tradeGothic CALIDAD
+                                                  h2.color1.tradeGothic
+                                                    b CALIDAD
                                                   p.text__p.color1.tradeGothic Nos encargamos de todas las etapas del proceso: desde la pesca, pasando por la elaboración, hasta llegar a tu hogar <br><br>
                                                   p.text__p.color1.tradeGothic Seleccionamos cuidadosamente todos los productos de nuestra pesca para asegurar un producto de máxima calidad. <br><br>
                                                   p.text__p.color1.tradeGothic Contamos con importantes certificaciones, como “Dolphin Safe”, que garantizan una labor de pesca responsable.<br><br>
                                                   img(src="./img/icon/dolphin-transp.png", alt="")
                                       div(class="tab-pane fade" id="pills-sabor" role="tabpanel" aria-labelledby="pills-sabor-tab")
                                         .row
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-6.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-2.png")
                                           .col-sm-12.col-md-6
                                               .slider-about__text
-                                                  h2.color1.tradeGothic SABOR
+                                                  h2.color1.tradeGothic
+                                                    b SABOR
                                                   p.text__p.color1.tradeGothic Nuestras conservas tienen ese toque especial que tanto nos gusta a los peruanos. <br><br>
                                                   p.text__p.color1.tradeGothic Son perfectas para preparar los más exquisitos platos de nuestra gastronomía. <br><br>
                                       div(class="tab-pane fade" id="pills-nutricion" role="tabpanel" aria-labelledby="pills-nutricion-tab")
                                         .row
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-6.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-3.png")
                                           .col-sm-12.col-md-6
                                               .slider-about__text
-                                                  h2.color1.tradeGothic NUTRICIÓN
+                                                  h2.color1.tradeGothic
+                                                    b NUTRICIÓN
                                                   p.text__p.color1.tradeGothic Rico en ácidos grasos y omegas como EPA y DHA. ¡Perfecto para los niños!  <br><br>
                                                   p.text__p.color1.tradeGothic ¡Recomendado por nutricionistas como parte de una alimentación saludable! <br><br>
                                                   p.text__p.color1.tradeGothic Un producto natural y sin añadidos artificiales.<br><br>
                                       div(class="tab-pane fade" id="pills-practicidad" role="tabpanel" aria-labelledby="pills-practicidad-tab")
                                         .row
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-6.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-4.png")
                                           .col-sm-12.col-md-6
                                               .slider-about__text
-                                                  h2.color1.tradeGothic PRACTICIDAD
+                                                  h2.color1.tradeGothic
+                                                    b PRACTICIDAD
                                                   p.text__p.color1.tradeGothic Cuando quieras y donde quieras, Campomar está listo para consumir. <br><br>
                                                   p.text__p.color1.tradeGothic Disfruta de una comida rápida y deliciosa y dile adiós a la comida chatarra.<br><br>
                                       div(class="tab-pane fade" id="pills-origen" role="tabpanel" aria-labelledby="pills-origen-tab")
                                         .row
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-6.mb-3
                                               img.slider-about__img2(src="./img/about/s-ab-5.png")
                                           .col-sm-12.col-md-6
                                               .slider-about__text
-                                                  h2.color1.tradeGothic ORIGEN
+                                                  h2.color1.tradeGothic
+                                                    b ORIGEN
                                                   p.text__p.color1.tradeGothic ¡Hecho por peruanos y para peruanos!  <br><br>
                                                   p.text__p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad.  <br><br>
                                                   p.text__p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!<br><br>
-                                  span.cambiarpestana.tabs-prev(data-accion="prev")
-                                  span.cambiarpestana.tabs-next(data-accion="next")
+                                  span.slider-about__arrows.slider-about__prev.cambiarpestana.tabs-prev(data-accion="prev")
+                                  span.slider-about__arrows.cambiarpestana.tabs-next(data-accion="next")
                     .mb-5
     hr.transparent
     section

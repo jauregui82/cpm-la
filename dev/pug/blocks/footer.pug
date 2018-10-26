@@ -1,10 +1,10 @@
-.cookies.d-none
+.cookies#cookies_content
   .cookies__content
     .row.d-flex.justify-content-center
-      .col-8.mt-3.mb-3
+      .col-xs-10.col-sm-8.mt-3
         span.white.cookies__text En Campomar trabajamos constantemente para que tu experiencia en nuestra web sea siempre la mejor. Para continuar navegando, por favor pulsa ACEPTAR confirmando que has leído y aceptado sus términos y condiciones. Después de hacerlo, no volveremos a mostrarte este mensaje.
         br
-        span.btn.btn-white-home.tradeGothic.color1  ACEPTO
+        span.btn.btn-white-footer.tradeGothic.color1.mb-2#btn_acepto  ACEPTO
 footer.footer.bg-color1
   .container.pt-5.pb-4.white
     //- .row
@@ -46,24 +46,44 @@ footer.footer.bg-color1
             li.hide_md
               a.centro.pr-1.pl-1.ml-0(href="./blog.html", class=`${paginaActual==="blog" ? "active": ""}`)
                 span BLOG
-            li
+            li.hide_md
               a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
                 span TÉRMINOS Y CONDICIONES
-        div
-          .footer__info.xs-center.white.d-flex.align-items-center.mt-1
-            div
-              span.float-left.tradeGothic Síguenos en:
-              .img-fa-content.ml-2.mr-2.float-left
-                .img-fa
-                  a(href="#")
-                    img(src="./img/icon/fa-youtube.png", alt="")
-                .img-fa
-                  a(href="#")
-                    img(src="./img/icon/fa-facebook.png", alt="")
-                .img-fa
-                  a(href="#")
-                    img(src="./img/icon/fa-instagram.png", alt="")
-              span.tradeGothic 01 - 2487523 | Av. Manuel Olguín 501 Surco
+
+        .footer__info.xs-center.white.d-flex.align-items-center.mt-1
+          div.pc-version
+            span.float-left.tradeGothic.hide_md Síguenos en:
+            .img-fa-content.ml-2.mr-2.float-left
+              .img-fa.hide_md
+                a.hide_md(href="#")
+                  img(src="./img/icon/fa-youtube.png", alt="")
+              .img-fa.hide_md
+                a.hide_md(href="#")
+                  img(src="./img/icon/fa-facebook.png", alt="")
+              .img-fa.hide_md
+                a.hide_md(href="#")
+                  img(src="./img/icon/fa-instagram.png", alt="")
+            span.tradeGothic.hide_md 01 - 2487523 | Av. Manuel Olguín 501 Surco
+          .row.ml-0.mr-0.mobile-version
+            .col-12
+              a.mobile-version.white.tradeGothic(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
+                span TÉRMINOS Y CONDICIONES
+            .col-12.mt-2
+              .row.ml-0.mr-0
+                .col-12.d-flex.justify-content-center
+                  span.float-left.tradeGothic Síguenos en:
+                  .img-fa-content.ml-2.mr-2.float-left
+                    .img-fa
+                      a(href="#")
+                        img(src="./img/icon/fa-youtube.png", alt="")
+                    .img-fa
+                      a(href="#")
+                        img(src="./img/icon/fa-facebook.png", alt="")
+                    .img-fa
+                      a(href="#")
+                        img(src="./img/icon/fa-instagram.png", alt="")
+                .col-12
+                  span.tradeGothic 01 - 2487523 | Av. Manuel Olguín 501 Surco
 
               //- |Síguenos en: 01 - 2487523 | Av. Manuel Olguín 501 Surco
       .col-xs-9.col-sm-8.col-sm-align-self-center.col-md-8.col-lg-2.centrar__1-footer
