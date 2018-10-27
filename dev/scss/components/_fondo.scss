@@ -401,6 +401,9 @@
       left: -8rem;
       max-width: 266px;
     }
+    @include media-breakpoint-down(md){
+      top: 17rem;
+    }
   }
   &__pimenton-about{
     width: 100%;
@@ -411,6 +414,9 @@
       bottom: -12rem;
       right: -10rem;
       max-width: 386px;
+    }
+    @include media-breakpoint-down(md){
+      bottom: -17rem;
     }
   }
   &__perejil-about{
@@ -423,6 +429,9 @@
       bottom: 6rem;
       left: -18rem;
       max-width: 350px;
+    }
+    @include media-breakpoint-down(md){
+      bottom: -3rem;
     }
   }
 }
@@ -447,6 +456,11 @@
     width: 30%;
     top: 72%;
     left: -19%;
+    @include media-breakpoint-down(sm){
+      width: 33%;
+      top: 83%;
+      left: -19%;
+    }
   }
   &__ajies{
     width: 30%;

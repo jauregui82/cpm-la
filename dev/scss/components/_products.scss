@@ -86,10 +86,34 @@
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+    @include media-breakpoint-down(sm){
+      max-width: 277px;
+    }
   }
   &__text{
     padding-top: 1.2rem;
     padding-right: 2rem;
+  }
+  &__nav{
+    @include media-breakpoint-down(lg){
+      padding: .5rem 0.5rem;
+    }
+    @include media-breakpoint-down(sm){
+      padding: .5rem 0.3rem;
+    }
+    @include media-breakpoint-down(sm){
+      padding: 0.2rem 0.1rem;
+    }
+  }
+  &__next{
+    // @include media-breakpoint-down(sm){
+      right: -8%;
+    // }
+  }
+  &__prev{
+    // @include media-breakpoint-down(sm){
+      left: -8%;
+    // }
   }
 }
 
