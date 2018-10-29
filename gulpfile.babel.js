@@ -19,93 +19,93 @@ import minify from 'gulp-minify';
 const server = browserSync.create();
 
 const postcssPlugins = [
-	cssnano({
-		core: false,
-		autoprefixer: {
-			add: true,
-			browsers: '> 1%, last 2 versions, Firefox ESR, Opera 12.1'
-		},
-		reduceIdents: false
-	})
+  cssnano({
+    core: false,
+    autoprefixer: {
+      add: true,
+      browsers: '> 1%, last 2 versions, Firefox ESR, Opera 12.1'
+    },
+    reduceIdents: false
+  })
 ];
 
 gulp.task('styles', () => {
-	gulp.src('./dev/scss/styles.scss')
-		.pipe(sourcemaps.init({ loadMaps: true }))
-		.pipe(plumber())
-		.pipe(
+  gulp.src('./dev/scss/styles.scss')
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(plumber())
+    .pipe(
       sass({
         includePaths: ["node_modules/bootstrap/scss"],
         outputStyle: "compressed"
       })
     )
-		.pipe(postcss(postcssPlugins))
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./public/css'))
-    .pipe(server.stream({match: '**/*.css'}))
+    .pipe(postcss(postcssPlugins))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/css'))
+    .pipe(server.stream({ match: '**/*.css' }))
 });
 
 gulp.task('pug', () => {
-	gulp.src('./dev/pug/pages/**/*.pug')
-		.pipe(plumber())
-		.pipe(
+  gulp.src('./dev/pug/pages/**/*.pug')
+    .pipe(plumber())
+    .pipe(
       pug({
         pretty: true
       })
-		)
+    )
     .pipe(gulp.dest('./public'))
     .pipe(server.stream())
 });
 
 gulp.task('scripts', () => {
-	browserify('./dev/js/index.js')
-		.transform(babelify)
-		.bundle()
-		.on('error', function(err){
-			console.error(err);
-			this.emit('end')
-		})
-		.pipe(source('scripts.js'))
-		.pipe(buffer())
-		.pipe(
-			minify({
-				ext: {
-					min: ".min.js"
-				},
-				exclude: ["tasks"],
-				ignoreFiles: [".combo.js", "-min.js"]
-			})
-		)
-		.pipe(sourcemaps.init({ loadMaps: true }))
-		.pipe(sourcemaps.write('.'))
+  browserify('./dev/js/index.js')
+    .transform(babelify)
+    .bundle()
+    .on('error', function (err) {
+      console.error(err);
+      this.emit('end')
+    })
+    .pipe(source('scripts.js'))
+    .pipe(buffer())
+    .pipe(
+      minify({
+        ext: {
+          min: ".min.js"
+        },
+        exclude: ["tasks"],
+        ignoreFiles: [".combo.js", "-min.js"]
+      })
+    )
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./public/js'))
     .pipe(server.stream())
 });
 
-gulp.task("images", ()=> {
- 	gulp.src("./dev/img/**/*")
-	.pipe(
-		cache(
-			imagemin({
-				optimizationLevel: 5,
-				progressive: true,
-				interlaced: true
-			})
-		)
-	)
-	.pipe(gulp.dest("./public/img/"))
+gulp.task("images", () => {
+  gulp.src("./dev/img/**/*")
+    .pipe(
+      cache(
+        imagemin({
+          optimizationLevel: 5,
+          progressive: true,
+          interlaced: true
+        })
+      )
+    )
+    .pipe(gulp.dest("./public/img/"))
 });
 
-gulp.task('default', ["styles", "scripts" , "pug"], () => {
-	server.init({
-		server: {
-			baseDir: './public'
-		},
-	});
+gulp.task('default', ["styles", "scripts", "pug"], () => {
+  server.init({
+    server: {
+      baseDir: './public'
+    },
+  });
 
-	watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
-	watch('./dev/js/**/*.js', () => gulp.start('scripts') );
-  watch('./dev/pug/**/*.pug', () => gulp.start('pug') );
+  watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
+  watch('./dev/js/**/*.js', () => gulp.start('scripts'));
+  watch('./dev/pug/**/*.pug', () => gulp.start('pug'));
 
   watch("./public/*.html").on("change", server.reload);
 });

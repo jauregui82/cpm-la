@@ -1,5 +1,11 @@
 .recipes-sec{
   margin-top: 10rem;
+  @include media-breakpoint-down(md){
+    margin-top: 4rem;
+  }
+  @include media-breakpoint-down(sm){
+    margin-top: 0rem;
+  }
 }
 .section-box-recipes {
   background-image: url(../img/sections/hoja-blog.png);

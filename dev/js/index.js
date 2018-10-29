@@ -10,6 +10,10 @@ import {
 
 import { handleItemsMenu as handleItemsMenuTerms } from "./modules/terms-and-conditions";
 
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+
 // handleShowNextSibling();
 // handleShowElement;
 
@@ -21,7 +25,11 @@ window.sliderMultipleItems = sliderMultipleItems;
 window.handleItemArticleProducts = handleItemArticleProducts;
 window.handleItemMenuMapProducts = handleItemMenuMapProducts;
 window.handleItemsMenuTerms = handleItemsMenuTerms;
+AOS.init();
 // console.log('123456');
+$(window).on('load', function () {
+  console.log("Cargo la pagina");
+});
 
 $(document).ready(function () {
   var vh = window.innerHeight;

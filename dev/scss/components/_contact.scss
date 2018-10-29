@@ -18,7 +18,30 @@
     width: 100%
   }
 }
-
+.contact-section{
+  padding: 0 20% 0 17%;
+  @include media-breakpoint-down(md){
+    padding: 0 10% 0 11%;
+  }
+  @include media-breakpoint-down(sm){
+    padding: 0 1% 0 3%;
+  }
+}
+.contact-section-title{
+  margin: 0 0 0 17%;
+  @include media-breakpoint-down(md){
+    margin: 0 0 0 11%;
+  }
+  @include media-breakpoint-down(sm){
+    margin: 0 0 0 13%;
+  }
+  @include media-breakpoint-down(xs){
+    margin: 0 0 0 4%;
+  }
+}
+.container-btn-contact{
+  padding-left: 6%;
+}
 .img-box-contact{
   width: 100%;
   height: 0%;
@@ -84,7 +107,10 @@ form#distribute{
     font-family: $TradeGothic;
     color: map-get($my-colors, color1 );
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    @include media-breakpoint-down(lg){
+      font-size: 1.1rem;
+    }
   }
   input.form-control{
     font-family: $TradeGothic;
@@ -117,4 +143,20 @@ form#distribute{
 }
 .section-contact{
   padding: 2rem 0 0 13.8rem;
+}
+.btn-contact{
+  &__contenedor {
+    background: #061e48;
+    color: #fff;
+    padding: 2% 1% 2% 7%;
+    border-radius: 8px;
+    font-family: Trade Gothic LT Std,sans-serif;
+    width: 100%;
+    height: 3.1rem;
+    position: relative;
+    text-align: left;
+    p {
+      padding-left: 1rem;
+    }
+  }
 }

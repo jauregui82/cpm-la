@@ -40,7 +40,7 @@ block main
                 .col-xs-12
                   //-Tabs nav
                   div.position-relative
-                    div(class="btn white pointer d-flex align-items-center" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                    div(class="btn white pointer d-flex align-items-center collapse_icon" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
                       .row.position-relative
                         img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
                         .col-6
@@ -51,9 +51,9 @@ block main
                           .collapse.multi-collapse#entradas
                             ul(class="nav nav-pills pills-tab mb-3" role="tablist")
                                 li.nav-item
-                                  a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
+                                  a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Tomates rellenos de caballa &nbsp;|
                                 li.nav-item
-                                  a(class="text__p nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Pastel de Caballa  &nbsp;|
+                                  a(class="text__p nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Cuatro estaciones con caballa  &nbsp;|
                                 //- li.nav-item
                                 //-     a(class="nav-link slide-tabs" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete &nbsp;|
                                 //- li.nav-item
@@ -70,23 +70,23 @@ block main
                         div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
                           ul(class="nav nav-interno mb-3 hide" role="tablist")
                               li.nav-item
-                                  a(class="text__p nav-link slide-tabs " id=""   href="#ensalada-templada") Ensalada Templada de atún &nbsp;|
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#pasta-colorida-con-trozos-de-atun") Pasta colorida con trozos de atún &nbsp;|
                               li.nav-item
-                                  a(class="text__p nav-link slide-tabs " id=""  href="#ensalada-caprichosa") Ensalada Caprichosa con atún &nbsp;|
+                                  a(class="text__p nav-link slide-tabs " id=""  href="#zapallito-italiano-relleno-de-atun") Zapallito italiano relleno de atún &nbsp;|
                               li.nav-item
                                   a(class="text__p nav-link slide-tabs " id=""   href="#ensalada-campomar") Ensalada Campomar &nbsp;|
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-01.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Cebiche de filete de atún</b>
+                                  h3.color1.tradeGothic <b>Tomates rellenos de caballa</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic.text__p 04 porc.
+                                    p.color1.tradeGothic.text__p 06 porc.
                           .row.mt-5.d-flex.justify-content-center
                             .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
@@ -100,15 +100,17 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 4 unidades de <b>Filete de Atún</b> Campomar
+                                              p 1 unidad de Grated de Caballa
                                             li
-                                              p 2 ajíes amarillos picados
+                                              p 1/4 de taza de mayonesa
                                             li
-                                              p 4 tomates pelados y picados
+                                              p 1 cebolla picada en cuadraditos
                                             li
-                                              p 2 cebollas picadas
+                                              p 1 tallo de apio cortado en cuadraditos
                                             li
-                                              p 12 limones
+                                              p 6 tomates pequeños
+                                            li
+                                              p 6 aceitunas
                                             li
                                               p Sal y pimienta al gusto
                             .col-lg-4.col-md-5.mt-2
@@ -123,24 +125,22 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p Mezclar el <b>Filete de Atún</b> Campomar con los ajíes, los tomates y las cebollas.
+                                              p Poner en un tazón el Grated Caballav y mezclar suavemente con la mayonesa, las cebollas, el apio, la sal y la pimienta. Reservar.
                                             li
-                                              p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
+                                              p Cortar la parte superior de los tomates, y retirar las semillas con una cuchara pequeña. LLenar los tomates con la mezcla de caballa.
                                             li
-                                              p Salpimentar y servir en plato hondo.
-                                            li
-                                              p Decorar con papa sancochada y lechugas (opcional)
+                                              p Decorar los bordes de los tomates con las aceitunas cortadas en tiras y servir.
                           //- tab-2
-                          hr.hr-recipes#ensalada-templada
+                          hr.hr-recipes#pasta-colorida-con-trozos-de-atun
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-02.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-02.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Templada de atún</b>
+                                  h3.color1.tradeGothic <b>Pasta colorida con trozos de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 40 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
                                     p.color1.tradeGothic.text__p 04 porc.
@@ -157,19 +157,13 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 2 unidades de Filete de Atún  Artesanal
+                                              p 2 unidades de Filete de Atún
                                             li
-                                              p 20 aceitunas negras
+                                              p 500 g de fideos de verduras
                                             li
-                                              p 1 cebolla grande cortada en juliana
+                                              p 3 zanahorias sancochadas
                                             li
-                                              p 12 tomates cherry
-                                            li
-                                              p Perejil al gusto
-                                            li
-                                              p 2 limones
-                                            li
-                                              p Arroz (opcional)
+                                              p 5 cucharadas de mantequilla
                                             li
                                               p Sal y pimienta al gusto
 
@@ -185,19 +179,19 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
+                                              p Sancochar los fideos, escurrirlos y reservar. Derretir la mantequilla en una olla a fuego bajo y agregar los fideos.
                                             li
-                                              p Agregar el jugo de los limones y salpimentar al gusto.
+                                              p Incorporar el Filete de Atún Campomarb , laszanahorias cortadas en rodajas.
                                             li
-                                              p Mezclar, decorar con perejil y servir
+                                              p Salpimentar al gusto y servir
                           //- tab-3
-                          hr.hr-recipes#ensalada-caprichosa
+                          hr.hr-recipes#club-sandwich-de-caballa
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-03.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-03.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Caprichosa con atún</b>
+                                  h3.color1.tradeGothic <b>Club sándwich de caballa</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
                                     p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
@@ -217,21 +211,23 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 2 unidades de Filete de Atún Claro
+                                              p 1 unidad de Trozos de Caballa
                                             li
-                                              p 12 tomates cherry
+                                              p 3 rebanadas de pan de molde grande
                                             li
-                                              p 1 lechuga
+                                              p Mayonesa
                                             li
-                                              p 1 pepino
+                                              p Mantequilla
                                             li
-                                              p 1 taza de alverjitas
+                                              p Tomate
                                             li
-                                              p 1 limón
+                                              p Lechuga
                                             li
-                                              p Aceite de oliva
+                                              p Queso
                                             li
-                                              p Sal y pimienta al gusto
+                                              p Tocino
+                                            li
+                                              p Palta
 
                             .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
@@ -245,24 +241,28 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p Sancochar las alverjitas y el choclo.
+                                              p Freír el tocino y reservar.
                                             li
-                                              p Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
+                                              p Untar un poco de mantequilla en cada rebanada y dorarlas sobre una plancha.
                                             li
-                                              p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
+                                              p Untar rebanada base con mayonesa, colocar la lechuga, unas rodajas de tomate y el tocino encima.
                                             li
-                                              p Mover y servir.
+                                              p Poner otra rebanada y agregar los Trozos de Caballa Campomar mezclados con un poco de mayonesa. Agregar el queso y la palta.
+                                            li
+                                              p Tapar con la tercera rebanada de pan untada de mayonesa.
+                                            li
+                                              p Cortar en cuatro triángulos y servir con papas fritas.
                           //- tab-4
                           hr.hr-recipes
-                          .row.d-flex.justify-content-center#ensalada-campomar
+                          .row.d-flex.justify-content-center#zapallito-italiano-relleno-de-atun
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-04.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-04.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Campomar</b>
+                                  h3.color1.tradeGothic <b>Zapallito italiano relleno de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 30 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
                                     p.color1.tradeGothic.text__p 04 porc.
@@ -279,23 +279,21 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 1 unidad de Filete de Atún Light
+                                              p 2 unidades de Grated de Atún
                                             li
-                                              p 1/2 taza de alverjitas
+                                              p 2 zapallitos italianos
                                             li
-                                              p 1/4 de taza de habas
+                                              p 1 cebolla
                                             li
-                                              p 2 papas
+                                              p 300 g de langostinos
                                             li
-                                              p 2 zanahorias
+                                              p 1 cucharada de harina
                                             li
-                                              p Hojas de Lechuga
+                                              p 1 vaso de leche
                                             li
-                                              p 2 cucharadas de mayonesa
+                                              p Queso rayado (tipo de queso de preferencia)
                                             li
-                                              p 1 limón
-                                            li
-                                              p Perejil al gusto
+                                              p Aceite de oliva extra virgen
                                             li
                                               p Sal y pimienta al gusto
 
@@ -311,32 +309,34 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
+                                              p Lavar los zapallitos, cortar las puntas y retirar las pepas con una cuchara. Reservar.
                                             li
-                                              p Agregar el Filete de Atún Light
+                                              p Freír la cebolla picada finamente en una sartén
                                             li
-                                              p Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
+                                              p con el aceite de oliva.
                                             li
-                                              p Decorar con lechugas
+                                              p Incorporar el Grated de Atún cuando la cebolla comience a dorar. Cocinar por 3 minutos.
+                                            li
+                                              p Añadir la harina, cocinar durante 2 minutos. Incorporar la leche poco a poco, mezclando.
+                                            li
+                                              p Por último, añadir los langostinos pelados y trozados. Salpimentar al gusto. Rellenar los zapallitos con la mezcla, agregar el queso por encima y llevar al horno a 180°C por 25 minutos. Servir.
                         //- tab--1
                         //- hr.hr-recipes
                         div(class="tab-pane fade" id="pills-pastel-caballa" role="tabpanel" aria-labelledby="pills-pastel-caballa-tab")
                           ul(class="nav nav-interno mb-3 hide" role="tablist")
                             li.nav-item
-                                a(class="text__p nav-link slide-tabs " id=""   href="#") Ensalada Templada de atún &nbsp;|
+                                a(class="text__p nav-link slide-tabs " id=""  href="#tornillos-con-atun-en-ensalada") Tornillos con atún en ensalada &nbsp;|
                             li.nav-item
-                                a(class="text__p nav-link slide-tabs " id=""  href="#") Ensalada Caprichosa con atún &nbsp;|
-                            li.nav-item
-                                  a(class="text__p nav-link slide-tabs " id=""   href="#") Ensalada Campomar &nbsp;|
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#girasoles-con-croquetas-de-atun") Girasoles con croquetas de atún
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-01.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-05.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Pastel de Caballa</b>
+                                  h3.color1.tradeGothic <b>Cuatro estaciones con caballa</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
                                     p.color1.tradeGothic.text__p 04 porc.
@@ -353,17 +353,19 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 4 unidades de <b>Filete de Atún</b> Campomar
+                                              p 2 unidades de Lomos de Caballa
                                             li
-                                              p 2 ajíes amarillos picados
+                                              p Lechuga
                                             li
-                                              p 4 tomates pelados y picados
+                                              p 250 g de aceitunas verdes
                                             li
-                                              p 2 cebollas picadas
+                                              p 8 huevos
                                             li
-                                              p 12 limones
+                                              p 2 cucharadas de aceite de oliva
                                             li
-                                              p Sal y pimienta al gusto
+                                              p 2 limones
+                                            li
+                                              p Sal y pimienta al gust
                             .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
                                 .btn-recipes__cont-img
@@ -376,24 +378,24 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p Mezclar el <b>Filete de Atún</b> Campomar con los ajíes, los tomates y las cebollas.
+                                              p Sancochar los huevos, pelarlos y cortarlos en cuatro.
                                             li
-                                              p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
+                                              p Partir la lechuga en trozos pequeños con la mano.
                                             li
-                                              p Salpimentar y servir en plato hondo.
+                                              p En un tazón, echar los Lomos de Caballa Campomar, añadir el jugo de los limones, y salpimentar al gusto.
                                             li
-                                              p Decorar con papa sancochada y lechugas (opcional)
+                                              p Servir formando cuatro divisiones: los huevos, la lechuga, las aceitunas y los filetes de caballa.
                           //- tab-2
-                          hr.hr-recipes
+                          hr.hr-recipes#tornillos-con-atun-en-ensalada
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-02.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-06.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Templada de atún</b>
+                                  h3.color1.tradeGothic <b>Tornillos con atún en ensalada</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 40 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
                                     p.color1.tradeGothic.text__p 04 porc.
@@ -410,21 +412,23 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 2 unidades de Filete de Atún  Artesanal
+                                              p 2 unidades de Lomos de Atún Light
                                             li
-                                              p 20 aceitunas negras
+                                              p 250 g de fideos tornillo
                                             li
-                                              p 1 cebolla grande cortada en juliana
+                                              p 200 g de aceitunas verdes despepitadas
                                             li
-                                              p 12 tomates cherry
+                                              p 200 g de aceitunas negras despepitadas
                                             li
-                                              p Perejil al gusto
+                                              p 500 g de tomates en picado en cuadraditos
+                                            li
+                                              p Hojas de lechuga
+                                            li
+                                              p Aceite de oliva
                                             li
                                               p 2 limones
                                             li
-                                              p Arroz (opcional)
-                                            li
-                                              p Sal y pimienta al gusto
+                                              p Sal al gusto
 
                             .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
@@ -438,22 +442,24 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
+                                              p Sancochar los fideos y dejar enfriar.
                                             li
-                                              p Agregar el jugo de los limones y salpimentar al gusto.
+                                              p En un recipiente, colocar las aceitunas cortadas en rodajas, la lechuga picada, los tomates y los Lomos de Atún Light Campomar.
                                             li
-                                              p Mezclar, decorar con perejil y servir
+                                              p Exprimir los limones y echar el jugo y el aceite de oliva, la sal y los fideos.
+                                            li
+                                              p Mezclar y servir.
                           //- tab-3
-                          hr.hr-recipes
+                          hr.hr-recipes#girasoles-con-croquetas-de-atun
                           .row.d-flex.justify-content-center
                             .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-03.jpg")
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-07.jpg")
                             .col.d-flex.align-items-center
                                 .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Caprichosa con atún</b>
+                                  h3.color1.tradeGothic <b>Girasoles con croquetas de atún</b>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
                                   span.d-flex.align-items-center
                                     img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
                                     p.color1.tradeGothic.text__p 04 porc.
@@ -470,22 +476,23 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p 2 unidades de Filete de Atún Claro
+                                              p 1 unidad de Lomos de Atún
                                             li
-                                              p 12 tomates cherry
+                                              p 500 g de papas
                                             li
-                                              p 1 lechuga
+                                              p 1 huevo
                                             li
-                                              p 1 pepino
+                                              p 3 cucharadas de harina
                                             li
-                                              p 1 taza de alverjitas
+                                              p 1 cucharadita de ajo molido
                                             li
-                                              p 1 limón
+                                              p Aceite
                                             li
-                                              p Aceite de oliva
+                                              p Mayonesa
+                                            li
+                                              p Aceitunas sin pepa
                                             li
                                               p Sal y pimienta al gusto
-
                             .col-lg-4.col-md-5.mt-2
                               div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
                                 .btn-recipes__cont-img
@@ -498,79 +505,11 @@ block main
                                         .card.card-body.card-product.card-recipes
                                           ul.ul-recipes
                                             li
-                                              p Sancochar las alverjitas y el choclo.
+                                              p Freír las papas en tiras.
                                             li
-                                              p Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
+                                              p En un recipiente, mezclar los Lomos de Atún Campomar, el huevo, la harina, el ajo, la sal y la pimienta. Armas unas croquetas y freír.
                                             li
-                                              p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
-                                            li
-                                              p Mover y servir.
-                          //- tab-4
-                          hr.hr-recipes
-                          .row.d-flex.justify-content-center
-                            .col-xs-12.col-sm-6
-                                img.recipes.recipes__img(src="./img/recipes/rec/rec-04.jpg")
-                            .col.d-flex.align-items-center
-                                .slider-about__text
-                                  h3.color1.tradeGothic <b>Ensalada Campomar</b>
-                                  span.d-flex.align-items-center
-                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
-                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
-                                  span.d-flex.align-items-center
-                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
-                                    p.color1.tradeGothic.text__p 04 porc.
-                          .row.mt-5.d-flex.justify-content-center
-                            .col-lg-4.col-md-5.mt-2
-                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
-                                .btn-recipes__cont-img
-                                  img(src="./img/icon/pro-3.png", alt="")
-                                i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p.text__p Ingredientes
-                              .row
-                                .col
-                                    .collapse.multi-collapse#ingredientes4
-                                        .card.card-body.card-product.card-recipes
-                                          ul.ul-recipes
-                                            li
-                                              p 1 unidad de Filete de Atún Light
-                                            li
-                                              p 1/2 taza de alverjitas
-                                            li
-                                              p 1/4 de taza de habas
-                                            li
-                                              p 2 papas
-                                            li
-                                              p 2 zanahorias
-                                            li
-                                              p Hojas de Lechuga
-                                            li
-                                              p 2 cucharadas de mayonesa
-                                            li
-                                              p 1 limón
-                                            li
-                                              p Perejil al gusto
-                                            li
-                                              p Sal y pimienta al gusto
-
-                            .col-lg-4.col-md-5.mt-2
-                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
-                                .btn-recipes__cont-img
-                                  img(src="./img/icon/rec-1.png", alt="")
-                                i.fa.fa-chevron-circle-down.btn-recipes__fa
-                                p.text__p Preparación
-                              .row
-                                .col
-                                    .collapse.multi-collapse#valores4
-                                        .card.card-body.card-product.card-recipes
-                                          ul.ul-recipes
-                                            li
-                                              p Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
-                                            li
-                                              p Agregar el Filete de Atún Light
-                                            li
-                                              p Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
-                                            li
-                                              p Decorar con lechugas
+                                              p Servir las papas y las croquetas de atún formando unos “girasoles”.
               .row.d-flex.justify-content-center.mt-5
                 .col.d-flex.justify-content-end.cambiarpestana.position-relative(data-accion="prev")
                   .row

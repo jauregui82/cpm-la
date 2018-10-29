@@ -33,20 +33,19 @@ block main
 
   section.section-form.mt-5
     .container-fluid.mt-5
-      .container
+      .container.contact-section-title
         h1.tradeGothic.color1 ¿POR QUÉ CONTÁCTARNOS?
         hr.raya
 
-  hr.transparent
-  section
+  section.contact-section
     .container-fuid
       .container
         <div id="accordion">
-          <div class="card-contact">
+          <div class="card-contact mb-4">
             .row
-              .col-md-8.col-lg-5
+              .col-md-8.col-lg-7.container-btn-contact
                 <div class="card-header-1" id="headingOne">
-                  div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                  div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
                     .btn-recipes__cont-img
                       img(src="./img/icon/cont-1.png", alt="")
                     i.fa.fa-chevron-circle-down.btn-recipes__fa
@@ -54,7 +53,7 @@ block main
                 </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
-                form#comments.pl-5.pr-5.mt-5
+                form#comments
                   img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="")
                   img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="")
                   .form-row.d-flex.justify-content-center
@@ -98,12 +97,11 @@ block main
               </div>
             </div>
           </div>
-          hr.transparent
           <div class="card-contact">
             .row
-              .col-md-8.col-lg-5
+              .col-md-8.col-lg-7.container-btn-contact
                 <div class="card-header-1" id="headingOne">
-                  div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                  div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
                     .btn-recipes__cont-img
                       img(src="./img/icon/cont-2.png", alt="")
                     i.fa.fa-chevron-circle-down.btn-recipes__fa
@@ -112,7 +110,7 @@ block main
                 </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
-                form#distribute.pl-5.pr-5.mb-5.mt-5
+                form#distribute.mb-5
                   img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="")
                   img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="")
                   .form-row.d-flex.justify-content-center
