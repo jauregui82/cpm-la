@@ -4,9 +4,9 @@
 
 // jauregui
 .logo-blue-intext{
-  width: 5rem;
-    margin-right: 3px;
-    float: left;
+  width: 4.3rem;
+  margin-right: -2px;
+  float: left;
     @include media-breakpoint-down(sm){
       width: 4.3rem;
       margin-right: 2%;
@@ -15,11 +15,11 @@
     }
 }
 .logo-blue-intext-equipo{
-  width: 100%;
-  margin-right: 3px;
-  float: left;
-  border-right: solid #fff;
-  max-width: 5rem;
+  max-width: 18rem;
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
   @include media-breakpoint-down(sm){
     max-width: 4.1rem;
   }
@@ -29,7 +29,8 @@
   }
 }
 .logo-blue-intext1{
-  width: 5.9rem;
+  // width: 5.9rem;
+  width: 4.2rem;
   margin-right: 3px;
   float: left;
 }

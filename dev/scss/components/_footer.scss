@@ -38,7 +38,8 @@
 		font-size: 0.675rem;
     font-weight: bold;
     span{
-      font-size: 1rem;
+      // font-size: 1rem;
+      font-size: 14px;
     }
   }
 
@@ -46,13 +47,14 @@
 	&__menu{
     a{
       font-family: $TradeGothic;
-      font-size: 1.325rem;
-      margin-left: 0.9rem;
+      // font-size: 1.325rem;
+      font-size: 15.4px;
+      margin-left: 0.4rem;
       letter-spacing: 2px;
     }
     a.centro{
-      border-right: solid;
-      padding-right: 0.6rem;
+      // border-right: solid;
+      // padding-right: 0.6rem;
     }
     // &:hover,&.active{
     //   span{

@@ -35,8 +35,8 @@
 }
 .img-plato{
   left: -37.2%;
-  top: 17rem;
-  max-width: 38.3rem;
+  top: 14rem;
+  max-width: 37.3rem;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -77,9 +77,9 @@
   }
 }
 .img-salad{
-  max-width: 38.6rem;
-  right: -35.2%;
-  bottom: -25.7rem;
+  max-width: 34.6rem;
+  right: -28.2%;
+  bottom: -22.7rem;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -169,9 +169,9 @@
 //
 
 .img-solido1{
-  left: -14.2%;
-  top: -7.7rem;
-  max-width: 22.3rem;
+  left: -11.8%;
+  top: -7.1rem;
+  max-width: 20.3rem;
   width: 100%;
   position: absolute;
   @include media-breakpoint-down(lg){
@@ -188,9 +188,9 @@
   // z-index: 1;
 }
 .img-filete{
-  left: -9rem;
+  left: -11rem;
   bottom: -38%;
-  max-width: 22.3rem;
+  max-width: 20.3rem;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -211,9 +211,9 @@
     }
   }
   .img-solido-blue{
-    right:  -9.4rem;
+    right: -12.4rem;
     bottom: -38%;
-    max-width: 22.3rem;
+    max-width: 20.3rem;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -262,7 +262,7 @@
 
 .img-limon{
   width: 100%;
-  top: 3rem;
+  top: 7rem;
   left: -9rem;
   max-width: 272px;
   position: absolute;
@@ -282,9 +282,9 @@
 }
 .img-plato-atun{
   width: 100%;
-  bottom: -14%;
-  right: -35%;
-  max-width: 500px;
+  bottom: -30%;
+  right: -37%;
+  max-width: 462px;
   position: absolute;
 }
 
@@ -316,9 +316,9 @@
 .img-bg{
   &__100peru{
     width: 100%;
-    max-width: 349px;
-    bottom: 6.7rem;
-    left: 8rem;
+    max-width: 365px;
+    bottom: 5.7rem;
+    left: 3.7rem;
     @include media-breakpoint-down(md){
       bottom: 5.7rem;
       left: 2rem;

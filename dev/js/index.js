@@ -25,11 +25,27 @@ window.sliderMultipleItems = sliderMultipleItems;
 window.handleItemArticleProducts = handleItemArticleProducts;
 window.handleItemMenuMapProducts = handleItemMenuMapProducts;
 window.handleItemsMenuTerms = handleItemsMenuTerms;
-AOS.init();
 // console.log('123456');
 $(window).on('load', function () {
-  console.log("Cargo la pagina");
+  if (hideLoadin() == true) {
+    setTimeout(function () {
+      hideLoadin();
+      $(".loading__content").hide();
+      AOS.init();
+    }, 1000);
+  }
+
 });
+
+function hideLoadin() {
+  $(".loading__content").attr("data-aos", "zoom-out-down")
+  // $(".img-solido1").attr("data-aos", "fade-right");
+  // $(".img-pimenton").attr("data-aos", "fade-up-left");
+  // $(".img-croque").attr("data-aos", "fade-down-left");
+  // $(".img-salad").attr("data-aos", "fade-up-left");
+  // $(".img-plato").attr("data-aos", "fade-up-right");
+  return true;
+}
 
 $(document).ready(function () {
   var vh = window.innerHeight;

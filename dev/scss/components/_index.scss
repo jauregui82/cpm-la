@@ -9,10 +9,11 @@
   background: rgba(7, 31, 72, 0.9294117647058824);
     background-repeat: no-repeat;
     display: inline-block;
-    padding: 9% 14% 0% 14%;
-    max-width: 43rem;
+    padding: 9% 14% 0;
+    max-width: 41rem;
+    height: 24rem;
     left: 50%;
-    transform: translate(-46%);
+    transform: translate(-50%);
   h4{
     letter-spacing: 0.5px;
     line-height: 1.3;
@@ -28,8 +29,11 @@
   }
   // width: 50%;
 }
+.text-box-home{
+  padding: 0 9% 0 6%;
+}
 .text-box.home{
-  font-size: 19.6px;
+  font-size: 16.6px;
   line-height: 1.2;
   @include media-breakpoint-down(sm){
     padding: 0 6% 0 6%;
@@ -80,10 +84,10 @@ div>.section-box-home-cel{
   background-repeat: no-repeat;
   // background-size: 581px 336px;
   background-size: 100%;
-  padding: 1.7rem 4.8rem 4.4rem 4.9rem;
+  padding: 2.2rem 6.1rem 3.5rem 6.1rem;
   width: 100%;
-  max-width: 595px;
-  height: 345px;
+  max-width: 748px;
+  height: 403px;
   // max-height: 354px;
   position: relative;
   /* max-height: 233px; */
@@ -112,7 +116,7 @@ div>.section-box-home-cel{
 }
 .section-box-home-cel:hover{
   .video-content:before {
-    height: 72.1%;
+    height: 74.1%;
     @include media-breakpoint-down(md){
       height: 79.1%;
     }
@@ -168,8 +172,10 @@ div>.section-box-home-cel{
 
 
 .img-nutri{
-  width: 100%;
-  max-width: 734px;
+  max-width: 42rem;
+  position: relative;
+  top: -1.3rem;
+  left: -2%;
   @include media-breakpoint-down(lg){
     max-width: 655px;
   }
@@ -243,4 +249,10 @@ div.contenedor:hover{
   }
 }
 
-
+.btn-mailing{
+  height: 2rem;
+  position: relative;
+  top: -2.8px;
+  line-height: 1;
+  right: -12%;
+}

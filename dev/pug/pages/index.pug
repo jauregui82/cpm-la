@@ -8,23 +8,23 @@ append config
 block main
 
   //- section.section-info-icons.py-5.mt-5
-  section.section-info-icons.py-5.d-flex.justify-content-center
+  section.section-info-icons.pt-3.pb-4.d-flex.justify-content-center
     .container-fluid
       .rm_container.container
         div.section-box-home.p-3.text-center
           img.img-solido1.img-bg__lata(src="./img/home/img/solido1.png", alt="", data-aos="fade-right")
-          img.img-croque(src="./img/home/img/croquetas1.png", alt="", data-aos="fade-left")
-          img.img-pimenton(src="./img/home/img/pimenton.png", alt="", data-aos="fade-up-left", data-aos-delay="70")
-          img.img-salad(src="./img/home/img/salad1.png", alt="")
-          img.img-plato(src="./img/home/img/plato.png", alt="")
+          img.img-pimenton(src="./img/home/img/pimenton.png", alt="", data-aos="fade-up-left")
+          img.img-croque(src="./img/home/img/croquetas1.png", alt="", data-aos="fade-down-left")
+          img.img-salad(src="./img/home/img/salad1.png", alt="", data-aos="fade-up-left")
+          img.img-plato(src="./img/home/img/plato.png", alt="", data-aos="fade-up-right")
           span.d-flex.justify-content-center.mt-5
             img.img-nutri(src="./img/home/nutricion.png", alt="")
           //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
           .row.mt-2
             .offset-md-2.col-md-8
-              .text-justify.text-box-home.text-justify-center
+              .text-center.text-box-home.text-justify-center
                 img.logo-blue-intext(src="./img/logo-blue.png", alt="")
-                p.tradeGothic.color1.text-box.home es una marca peruana con 15 años en el mercado, es <b>elaborada por y para peruanos</b>, con los mejores estándares de producción locales e internacionales y con insumos de nuestro mar <br>
+                p.tradeGothic.color1.text-box.home.text__p es una marca peruana con 15 años en el mercado, es <b>elaborada por y para peruanos</b>, con los mejores estándares de producción locales e internacionales y con insumos de nuestro mar <br>
           span.mt-3.btn.btn-blue.white.tradeGothic.mb-5
             a.white(href="about.html") CONÓCENOS
           //- hr.transparent
@@ -34,8 +34,8 @@ block main
         .row.d-flex.justify-content-center
           .col-sm-10.col-md-10.col-lg-8.mt-4
             div.section-box-home-blue.text-center.pt-5.position-relative
-              img.img-filete.img-bg__lata(src="./img/home/img/filete2.png", alt="")
-              img.img-solido-blue.img-bg__lata(src="./img/home/img/solido.png", alt="")
+              img.img-filete.img-bg__lata(src="./img/home/img/filete2.png", alt="", data-aos="fade-up-right", data-aos-delay="100")
+              img.img-solido-blue.img-bg__lata(src="./img/home/img/solido.png", alt="", data-aos="fade-up-left", data-aos-delay="100")
               h4.white.tradeGothic EL PESCADO ES UN ALIMENTO RICO Y NUTRITIVO, IDEAL PARA TODAS LAS ETAPAS DE LA VIDA.
               span.btn.btn-white-home.mt-4.tradeGothic.color1
                 a.color1(href="about.html")
@@ -47,8 +47,8 @@ block main
               //- .row
               //-   .col
               .text-left.text-box-blue
-                img.logo-blue-intext-equipo(src="./img/home/escudo.png", alt="")
-                p.tradeGothic.text-box.home.white.pt-3 Auspiciador oficial del <br> Comité Olímpico Peruano
+                img.logo-blue-intext-equipo(src="./img/home/logoPeru.png", alt="")
+                //- p.tradeGothic.text-box.home.white.pt-3 Auspiciador oficial del <br> Comité Olímpico Peruano
                 //- img.w-25.logo-equipo(src="./img/home/escudo.png", alt="")
                 //- p.white.tradeGothic Auspiciador oficial del <br> Comité Olímpico Peruan
                 //- .col
@@ -83,12 +83,12 @@ block main
             .col-8
               .row
                 .col-6
-                  h1.tradeGothic.color1 RECETAS
-                  hr.title.ml-2
+                  h1.tradeGothic.color1.mt-5 RECETAS
+                  hr.raya
                   .text-left.float-left
-                    p.float-left.mr-2.color1.tradeGothic.recetas Con
+                    p.float-left.mr-2.color1.tradeGothic.text__p Con
                     img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
-                    p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
+                    p.color1.tradeGothic.text__p puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
                 .col-6
                   .contenedor
                     a(href="recipes-entradas.html")
@@ -118,9 +118,9 @@ block main
                   h1.tradeGothic.color1 RECETAS
                   hr.raya
                   .text-justify.float-left
-                    p.float-left.mr-2.color1.tradeGothic.recetas Con
+                    p.float-left.mr-2.color1.tradeGothic.text__p Con
                     img.logo-blue-intext1(src="./img/logo-blue.png", alt="")
-                    p.color1.tradeGothic.recetas puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
+                    p.color1.tradeGothic.text__p puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo. ¡Descúbrelos!
                 .col-12
                   .contenedor
                     a(href="recipes-entradas.html")
@@ -145,13 +145,13 @@ block main
               hr.transparent
   section
     .container.position-relative
-      img.img-limon(src="./img/home/img/limon.png", alt="")
-      img.img-cebolla(src="./img/home/img/cebolla.png", alt="")
-      img.img-plato-atun(src="./img/home/img/plato-atun.png", alt="")
+      img.img-limon(src="./img/home/img/limon.png", alt="", data-aos="fade-up-right")
+      img.img-cebolla(src="./img/home/img/cebolla.png", alt="", data-aos="fade-up-right")
+      img.img-plato-atun(src="./img/home/img/plato-atun.png", alt="", data-aos="fade-up-left")
       .container
         .row
           .col-8.offset-1.pl-0
-            h1.title.tradeGothic.color1 PLATOS DE FONDO
+            h1.title.tradeGothic.color1 BLOG SALUDABLE
             hr.raya
         .row.d-flex.justify-content-center
           .col-10.mt-5
@@ -205,7 +205,7 @@ block main
               .col-xs-8.col-md-9.pl-0
                 input.input-mailing.ml-0(type="text",placeholder="Ingresa tu correo electrónico ")
               .col-xs-4.col-md-3
-                span.btn.btn-blue.white.tradeGothic.mt-1.align-self-end.w-100 ENVIAR
+                span.btn.btn-blue.btn-mailing.white.tradeGothic.mt-1.align-self-end.w-100 ENVIAR
   hr.transparent
     //- <div id="md_video" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     //- <div class="modal-dialog modal-lg modal-dialog-centered">
