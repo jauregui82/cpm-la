@@ -8,7 +8,7 @@
   // height: 53vh;
   text-align: center;
   position: relative;
-  max-width:1250px;
+  max-width:1041px;
 
   // left: 14%;
   @include media-breakpoint-down(lg){
@@ -19,7 +19,7 @@
   }
 }
 .contact-section{
-  padding: 0 20% 0 17%;
+  padding: 0 16% 0 22%;
   @include media-breakpoint-down(md){
     padding: 0 10% 0 11%;
   }
@@ -45,7 +45,7 @@
 .img-box-contact{
   width: 100%;
   height: 0%;
-  max-width: 56rem;
+  max-width: 43rem;
   @include media-breakpoint-down(lg){
     max-width: 40rem;
   }
@@ -142,7 +142,10 @@ form#distribute{
   padding: 3% 19% 0 14%;
 }
 .section-contact{
-  padding: 2rem 0 0 13.8rem;
+  padding: 0 16% 0 23.1%;
+}
+.section-form{
+  padding: 0 0rem 0 6.4rem;
 }
 .btn-contact{
   &__contenedor {

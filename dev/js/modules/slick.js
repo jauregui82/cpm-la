@@ -59,7 +59,7 @@ $('span.origen').on('click', function () {
 $('.slide-blog').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 1024,

@@ -8,17 +8,17 @@ append config
 block main
 
     //- section.section-info-icons.py-5.mt-5
-    section.section-info-about.py-5.mt-5.d-flex.justify-content-center
+    section.section-info-about.py-5.mt-2.d-flex.justify-content-center
         div.section-box-about.text-justify
             img.img-bg.img-bg__solido-about(src="./img/home/img/solido.png", alt="")
             img.img-bg.img-bg__table-about(src="./img/about/tabla.png", alt="")
             img.img-bg.img-bg__plato-about(src="./img/about/plato.png", alt="")
-            .text-justify.text-box-about
+            .text-left.text-box-about
               h1.tradeGothic.color1.position-relative NOSOTROS
               hr.raya
               br
               //- hr.title.ml-2
-              img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+              img.logo-blue-intext.mr-1(src="./img/logoBlue.svg", alt="")
               p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b>dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
               //- .row.mt-5
               //-   .col-xs-8.col-sm-10.col-md-9.col-lg-8
@@ -27,10 +27,10 @@ block main
               //-     hr.raya
               .position-relative.mt-5
                 h1.tradeGothic.color1 BENEFICIOS DE
-                img.logo-blue-about(src="./img/logo-blue.png", alt="")
+                img.logo-blue-about(src="./img/logoBlue.svg", alt="")
                 hr.raya
             //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
-            .container.inline
+            .container.inline.containerSlider
                 .row
                     .col-lg-10.sm-mx-auto
                         .row.mb-5
@@ -38,23 +38,23 @@ block main
                                 div.position-relative
                                   ul(class="nav nav-pills pills-tab mb-3 slider-about__tabs" role="tablist")
                                       li.nav-item
-                                          a(class="nav-link slide-tabs text__p active" id="pills-calidad-tab" data-toggle="pill" href="#pills-calidad" role="tab" aria-controls="pills-calidad" aria-selected="true")
-                                            |CALIDAD |
+                                          a(class="nav-link slider-about__nav-link slide-tabs text__p active" id="pills-calidad-tab" data-toggle="pill" href="#pills-calidad" role="tab" aria-controls="pills-calidad" aria-selected="true")
+                                            |CALIDAD &nbsp; |
                                             //- hr.border__right
                                       li.nav-item
-                                          a(class="nav-link slide-tabs text__p" id="pills-sabor-tab" data-toggle="pill" href="#pills-sabor" role="tab" aria-controls="pills-sabor" aria-selected="false") SABOR |
+                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-sabor-tab" data-toggle="pill" href="#pills-sabor" role="tab" aria-controls="pills-sabor" aria-selected="false") SABOR &nbsp;|
                                       li.nav-item
-                                          a(class="nav-link slide-tabs text__p" id="pills-nutricion-tab" data-toggle="pill" href="#pills-nutricion" role="tab" aria-controls="pills-nutricion" aria-selected="false") NUTRICIÓN |
+                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-nutricion-tab" data-toggle="pill" href="#pills-nutricion" role="tab" aria-controls="pills-nutricion" aria-selected="false") NUTRICIÓN &nbsp;|
                                       li.nav-item
-                                          a(class="nav-link slide-tabs text__p" id="pills-practicidad-tab" data-toggle="pill" href="#pills-practicidad" role="tab" aria-controls="pills-practicidad" aria-selected="false") PRACTICIDAD |
+                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-practicidad-tab" data-toggle="pill" href="#pills-practicidad" role="tab" aria-controls="pills-practicidad" aria-selected="false") PRACTICIDAD &nbsp;|
                                       li.nav-item
-                                          a(class="nav-link slide-tabs text__p" id="pills-origen-tab" data-toggle="pill" href="#pills-origen" role="tab" aria-controls="pills-origen" aria-selected="false") ORIGEN
+                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-origen-tab" data-toggle="pill" href="#pills-origen" role="tab" aria-controls="pills-origen" aria-selected="false") ORIGEN
                                   .tab-content#pills-tabContent.pl-5.pr-5
                                       div(class="tab-pane fade show active" id="pills-calidad" role="tabpanel" aria-labelledby="pills-calidad-tab")
                                         .row
-                                          .col-sm-12.col-md-6.mb-3
+                                          .col-sm-12.col-md-5.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-1.png")
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-7
                                               .slider-about__text
                                                   h2.color1.tradeGothic
                                                     b CALIDAD
@@ -64,9 +64,9 @@ block main
                                                   img(src="./img/icon/dolphin-transp.png", alt="")
                                       div(class="tab-pane fade" id="pills-sabor" role="tabpanel" aria-labelledby="pills-sabor-tab")
                                         .row
-                                          .col-sm-12.col-md-6.mb-3
+                                          .col-sm-12.col-md-5.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-2.png")
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-7
                                               .slider-about__text
                                                   h2.color1.tradeGothic
                                                     b SABOR
@@ -74,9 +74,9 @@ block main
                                                   p.text__p.color1.tradeGothic Son perfectas para preparar los más exquisitos platos de nuestra gastronomía. <br><br>
                                       div(class="tab-pane fade" id="pills-nutricion" role="tabpanel" aria-labelledby="pills-nutricion-tab")
                                         .row
-                                          .col-sm-12.col-md-6.mb-3
+                                          .col-sm-12.col-md-5.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-3.png")
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-7
                                               .slider-about__text
                                                   h2.color1.tradeGothic
                                                     b NUTRICIÓN
@@ -85,9 +85,9 @@ block main
                                                   p.text__p.color1.tradeGothic Un producto natural y sin añadidos artificiales.<br><br>
                                       div(class="tab-pane fade" id="pills-practicidad" role="tabpanel" aria-labelledby="pills-practicidad-tab")
                                         .row
-                                          .col-sm-12.col-md-6.mb-3
+                                          .col-sm-12.col-md-5.mb-3
                                               img.slider-about__img(src="./img/about/s-ab-4.png")
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-7
                                               .slider-about__text
                                                   h2.color1.tradeGothic
                                                     b PRACTICIDAD
@@ -95,9 +95,9 @@ block main
                                                   p.text__p.color1.tradeGothic Disfruta de una comida rápida y deliciosa y dile adiós a la comida chatarra.<br><br>
                                       div(class="tab-pane fade" id="pills-origen" role="tabpanel" aria-labelledby="pills-origen-tab")
                                         .row
-                                          .col-sm-12.col-md-6.mb-3
+                                          .col-sm-12.col-md-5.mb-3
                                               img.slider-about__img2(src="./img/about/s-ab-5.png")
-                                          .col-sm-12.col-md-6
+                                          .col-sm-12.col-md-7
                                               .slider-about__text
                                                   h2.color1.tradeGothic
                                                     b ORIGEN
@@ -107,8 +107,7 @@ block main
                                   span.slider-about__arrows.slider-about__prev.cambiarpestana.tabs-prev(data-accion="prev")
                                   span.slider-about__arrows.cambiarpestana.tabs-next(data-accion="next")
                     .mb-5
-    hr.transparent
-    section
+    section.mt-4
         .container-fluid
             .container.about
                 .text-justify
@@ -116,19 +115,19 @@ block main
                     hr.raya
                     //- hr.title.ml-2
                 .row
-                    .col-md-6.col-lg-3
+                    .col-md-6.col-lg-3.pl-1.pr-1
                         .beneficios__content.bg-ab-orange.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-11.png", alt="")
                             p.text__p.white <b>Rico en minerales</b> esenciales como el hierro, el magnesio, el fósforo y el potasio.
-                    .col-md-6.col-lg-3
+                    .col-md-6.col-lg-3.pl-1.pr-1
                         .beneficios__content.bg-ab-purple.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-12.png", alt="")
                             p.text__p.white Posee grandes cantidades de yodo, que <b>protege los sistemas nervioso, digestivo y muscular</b>
-                    .col-md-6.col-lg-3
+                    .col-md-6.col-lg-3.pl-1.pr-1
                         .beneficios__content.bg-ab-red.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-13.png", alt="")
                             p.text__p.white Parte importante de una <b>alimentación cardiosaludable.</b>
-                    .col-md-6.col-lg-3
+                    .col-md-6.col-lg-3.pl-1.pr-1
                         .beneficios__content.bg-ab-green.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-14.png", alt="")
                             p.text__p.white <b>Posee vitaminas</b> de los grupos A, D y E, y es particularmente rico en las del grupo B.
@@ -142,32 +141,32 @@ block main
                   hr.raya
                   //- hr.title.ml-2
               .row
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img(src="./img/icon/ab-1.png", alt="")
                           .position-relative.mt-4
-                            h3 NIÑOS
+                            h4 NIÑOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Ideal para el desarrollo cerebral y aporta nutrientes importantes para el crecimiento.
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img(src="./img/icon/ab-2.png", alt="")
                           .position-relative.mt-4
-                            h3 ADOLESCENTES
+                            h4 ADOLESCENTES
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Fundamental para la formación de tejido muscular y ayuda al fortalecimiento de los huesos.
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-3(src="./img/icon/ab-3.png", alt="")
                           .position-relative.mt-4
-                            h3 ADULTOS
+                            h4 ADULTOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Perfecto para una buena salud cardiaca, y ayuda controlar los niveles de colesterol y triglicéridos.
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-4(src="./img/icon/ab-4.png", alt="")
                           .position-relative.mt-4
-                            h3 ADULTOS MAYORES
+                            h4 ADULTOS MAYORES
                           p.text__p.beneficios__text Ayuda a prevenir la aparición de enfermedades cerebrales y fortalece el sistema circulatorio.
     section
         .container-fluid
@@ -177,38 +176,37 @@ block main
                   hr.raya
                   //- hr.title.ml-2
               .row
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-5(src="./img/icon/ab-5.png", alt="")
                           .position-relative
-                            h3 PESCAMOS
+                            h4 PESCAMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Nuestros barcos realizan la pesca en el litoral peruano, respetando todas las regulaciones para <b>preservar el ecosistema marino y sus especies.</b>
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.mt-1(src="./img/icon/ab-6.png", alt="")
                           .position-relative.mt-4
-                            h3 PRODUCIMOS
+                            h4 PRODUCIMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text La pesca es trasladada a nuestras plantas de procesamiento ubicadas en Áncash, donde elaboramos las conservas bajo <b>los más estrictos controles de calidad.</b>
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-3(src="./img/icon/ab-7.png", alt="")
                           .position-relative.mt-4
-                            h3 DISTRIBUIMOS
+                            h4 DISTRIBUIMOS
                             img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Manteniendo <b>los más altos estándares de calidad,</b> las conservas son almacenadas y luego distribuidas por el país.
-                  .col-md-6.col-lg-3
+                  .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-4(src="./img/icon/ab-8.png", alt="")
                           .position-relative.mt-4
-                            h3 DISFRUTAMOS
-                          .text-justify.float-left
-                            p.text__p.float-left.mr-2.color1.tradeGothic.recetas Finalmente, nuestras Conservas
-                              img.logo-blue-intext2(src="./img/logo-blue.png", alt="")
+                            h4 DISFRUTAMOS
+                          .text-center.float-left
+                            p.text__p.float-left.mr-2.color1.tradeGothic Finalmente, nuestras Conservas
+                              img.logo-blue-intext2(src="./img/logoBlue.svg", alt="")
                               |<b>están presentes en las mesas de todos los peruanos</b> llevando calidad y nutrición. ¡Disfrútalas en deliciosos platos que también tú puedes preparar!
-    hr.transparent
-    section
+    section.mt-3
         .container-fluid
             .container.about.position-relative
               img.img-bg.img-bg__perejil-about(src="./img/about/perejil.png", alt="")
@@ -216,13 +214,13 @@ block main
                   h2.tradeGothic.color1.position-relative ¿DÓNDE ESTAMOS?
                   hr.raya
                   //- hr.title.ml-2
-              .row.de-flex.justify-content-center
-                  .col-sm-8.col-md-6.col-lg-3.pc-version
+              .row.de-flex.justify-content-left
+                  .col-sm-8.col-md-6.col-lg-3.pl-1.pr-1.pc-version
                       img(src="./img/icon/ab-9.png", alt="")
-                  .col-sm-8.col-md-6.col-lg-3.d-flex.justify-content-center.mobile-version
+                  .col-sm-8.col-md-6.col-lg-3.pl-1.pr-1.d-flex.justify-content-center.mobile-version
                       img(src="./img/icon/ab-9.png", alt="")
-                  .col-sm-8.col-md-6.col-lg-7
-                      .cont.pt-5
-                          img.logo-blue-intext(src="./img/logo-blue.png", alt="")
+                  .col-sm-8.col-md-6.col-lg-6
+                      .cont.pt-3
+                          img.logo-blue-intext.mr-2(src="./img/logoBlue.svg", alt="")
                           p.text__p.tradeGothic.color1 es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
     hr.transparent

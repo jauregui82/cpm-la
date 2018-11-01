@@ -104,16 +104,11 @@
 }
 .img-tomate{
   width: 100%;
-  top: 0;
-  left: -18%;
-  max-width: 500px;
   position: absolute;
   z-index: 1;
-  @include media-breakpoint-up(lg){
-    top: 24%;
-    left: -27%;
-    max-width: 466px;
-  }
+  top: 24%;
+  left: -21%;
+  max-width: 17rem;
   @include media-breakpoint-down(lg){
     max-width: 362px;
     left: -27%;
@@ -135,17 +130,12 @@
 }
 .img-atun{
   width: 100%;
-  top: 0;
-  right:-18%;
-  max-width: 500px;
   position: absolute;
   z-index: 1;
 
-  @include media-breakpoint-up(lg){
-    top: 3%;
+    top: -2%;
     right: -54%;
     max-width: 736px;
-  }
   @include media-breakpoint-down(lg){
     max-width: 629px;
   }
@@ -264,15 +254,15 @@
   width: 100%;
   top: 7rem;
   left: -9rem;
-  max-width: 272px;
+  max-width: 239px;
   position: absolute;
   z-index: 1;
 }
 .img-cebolla{
   width: 100%;
-  bottom: -11rem;
-  left: -20rem;
-  max-width: 335px;
+  bottom: -18rem;
+  left: -24rem;
+  max-width: 455px;
   overflow: hidden;
   position: absolute;
   z-index: 1;
@@ -295,9 +285,9 @@
   background-size: 100% 100%;
   display: inline-block;
   width: 100%;
-  padding: 3% 3% 0 8%;
-  max-width: 1200px;
-  height: 63.5rem;
+  padding: 3% 3% 0 3%;
+  max-width: 1041px;
+  height: 53.5rem;
   // @include media-breakpoint-up(xl){
   //   width: 70%;
   // }
@@ -334,7 +324,7 @@
   }
   &__table-about{
     width: 35%;
-    top: 0;
+    top: 2%;
     left: -12rem;
     @include media-breakpoint-down(lg){
       left: -13rem;
@@ -345,10 +335,10 @@
     }
   }
   &__solido-about{
-    max-width: 22.3rem;
+    max-width: 20.3rem;
     width: 100%;
-    top: -1%;
-    right: 0%;
+    top: 3.5%;
+    right: 8%;
     @include media-breakpoint-down(lg){
       max-width: 19.3rem;
       right: -2rem;
@@ -368,9 +358,9 @@
   }
   &__plato-about{
     width: 100%;
-    bottom: -19%;
-    right: -10rem;
-    max-width: 523px;
+    bottom: -18%;
+    right: -10.6rem;
+    max-width: 555px;
     @include media-breakpoint-down(lg){
       bottom: -18%;
       right: -9rem;
@@ -392,9 +382,9 @@
   }
   &__limon-about{
     width: 100%;
-    top: 0rem;
-    left: -24rem;
-    max-width: 450px;
+    top: 7rem;
+    left: -9rem;
+    max-width: 239px;
     @include media-breakpoint-down(lg){
       width: 100%;
       top: 4rem;
@@ -407,9 +397,9 @@
   }
   &__pimenton-about{
     width: 100%;
-    bottom: -18rem;
-    right: -21rem;
-    max-width: 500px;
+    bottom: -16rem;
+    right: -7rem;
+    max-width: 21rem;
     @include media-breakpoint-down(lg){
       bottom: -12rem;
       right: -10rem;
@@ -421,9 +411,9 @@
   }
   &__perejil-about{
     width: 100%;
-    bottom: -4rem;
-    left: -34rem;
-    max-width: 500px;
+    bottom: 5rem;
+    left: -19rem;
+    max-width: 21rem;
     @include media-breakpoint-down(lg){
       width: 100%;
       bottom: 6rem;
@@ -443,19 +433,19 @@
   z-index: 1;
 
   &__salad{
-    width: 30%;
-    top: 4%;
-    left: -15%;
+    width: 34%;
+    top: -3%;
+    left: -27%;
   }
   &__plato{
-    width: 31%;
-    top: 4%;
-    right: -23%;
+    width: 52%;
+    top: -2%;
+    right: -34%;
   }
   &__table{
-    width: 30%;
-    top: 72%;
-    left: -19%;
+    width: 43%;
+    top: 54%;
+    left: -30%;
     @include media-breakpoint-down(sm){
       width: 33%;
       top: 83%;
@@ -463,27 +453,16 @@
     }
   }
   &__ajies{
-    width: 30%;
-    bottom: -9%;
-    left: -22%;
+    width: 43%;
+    bottom: -10%;
+    left: -55%;
     z-index: 0;
   }
   &__limon{
-    width: 20%;
-    top: 0%;
-    right: -23%;
+    width: 40%;
+    right: -43%;
+    top: -2%;
     z-index: 0;
-  }
-  @include media-breakpoint-up(xl) {
-    &__limon{
-      width: 30%;
-      right: -39%;
-    }
-    &__ajies{
-      width: 35%;
-      bottom: -5%;
-      left: -41%;
-    }
   }
 
 }

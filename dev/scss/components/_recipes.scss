@@ -1,5 +1,6 @@
 .recipes-sec{
   margin-top: 10rem;
+  padding: 0rem 4rem 0 6rem;
   @include media-breakpoint-down(md){
     margin-top: 4rem;
   }
@@ -17,7 +18,7 @@
   // height: 53vh;
   text-align: center;
   position: relative;
-  max-width: 1246px;
+  max-width: 1041px;
   // left: 14%;
   @include media-breakpoint-down(lg){
     // width: 90%
@@ -32,7 +33,7 @@
 .img-text-rec{
   width: 100%;
   height: 0%;
-  max-width: 52rem;
+  max-width: 43rem;
   @include media-breakpoint-down(lg){
     max-width: 38rem;
   }
@@ -56,7 +57,7 @@
 .img-bg{
   &__cebolla-rec{
     width: 16%;
-    top: -4%;
+    top: 8%;
     left: -7%;
     @include media-breakpoint-down(md){
       top: 21%;
@@ -65,7 +66,7 @@
   &__plato-rec{
     width: 100%;
     bottom: -45%;
-    left: -20%;
+    left: -27%;
     max-width: 467px;
     @include media-breakpoint-down(lg){
       width: 100%;
@@ -84,15 +85,15 @@
     }
   }
   &__salad-rec{
-    width: 37%;
-    top: -115px;
-    right: -24%;
+    width: 56%;
+    top: -13%;
+    right: -40%;
     @include media-breakpoint-down(md){
       width: 40%;
     }
   }
   &__lata-rec{
-    width: 24%;
+    width: 30%;
     bottom: -35%;
     right: 20%;
     @include media-breakpoint-down(md){
@@ -123,8 +124,8 @@
   }
   &__tomate-rec{
     width: 18%;
-    bottom: 0vh;
-    left: -4%;
+    bottom: -17%;
+    left: -6.4%;
   }
   &__tomate-rec2{
     width: 18%;

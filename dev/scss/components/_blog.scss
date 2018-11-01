@@ -4,7 +4,7 @@
     background-size: 100% 100%;
     display: inline-block;
     width: 100%;
-    max-width: 1250px;
+    max-width: 1164px;
     position: relative;
     @include media-breakpoint-down(lg){
       width: 90%
@@ -27,11 +27,21 @@
   .text-box-blog {
     padding: 3% 19% 0 20%;
   }
+  .blog-sec{
+    margin-top: 3rem;
+    padding: 0rem 4rem 0 6rem;
+    @include media-breakpoint-down(md){
+      margin-top: 4rem;
+    }
+    @include media-breakpoint-down(sm){
+      margin-top: 0rem;
+    }
+  }
   .img-bg{
     &__trozos-blog{
-      left: -6.2%;
-      top: 3.3rem;
-      max-width: 22.3rem;
+      left: -10.2%;
+      top: 1.3rem;
+      max-width: 20.3rem;
       @include media-breakpoint-down(lg){
         max-width: 19.3rem;
         left: -17.2%;
@@ -53,9 +63,9 @@
     }
     &__salad-blog{
       width: 100%;
-      top: 3rem;
-      right: -15rem;
-      max-width: 31rem;
+      top: 1rem;
+      right: -17rem;
+      max-width: 33rem;
       @include media-breakpoint-down(lg){
         right: -16rem;
         max-width: 27rem;
@@ -87,9 +97,10 @@
     right: -17vw;
   }
   &__lata-blog{
-    width: 20%;
-    top: 0;
-    right: -6vw;
+    width: 100%;
+    top: 18%;
+    right: -10%;
+    max-width: 20.3rem;
     @include media-breakpoint-down(lg){
       display: none;
     }
@@ -99,9 +110,9 @@
   }
   &__sda-blog{
     width: 100%;
-    top: 22rem;
-    left: -24rem;
-    max-width: 37rem;
+    top: 17rem;
+    left: -19rem;
+    max-width: 33rem;
     @include media-breakpoint-down(lg){
       top: 24rem;
       left: -17rem;
