@@ -11,9 +11,9 @@ block main
   section.py-5.mt-5
     .container-fluid.d-flex.justify-content-center
       .section-box-cont.p-3.text-center
-        img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="")
-        img.img-bg.img-bg__plato(src="./img/contact/plato.png", alt="")
-        img.img-bg.img-bg__table(src="./img/contact/table.png", alt="")
+        img.img-bg.img-bg__salad(src="./img/contact/salad.png", alt="",data-aos="fade-right", data-aos-delay="10")
+        img.img-bg.img-bg__plato(src="./img/contact/plato.png", alt="",data-aos="fade-left", data-aos-delay="100")
+        img.img-bg.img-bg__table(src="./img/contact/table.png", alt="",data-aos="fade-right", data-aos-delay="200")
         .text-justify.text-box-cont
           h1.tradeGothic.color1.position-relative CONTÁCTANOS
           hr.raya
@@ -21,15 +21,15 @@ block main
           span.d-flex.justify-content-center
             img.img-box-contact(src="./img/contact/ini.png", alt="")
           //- h1 Nutrición del mar <br> peruano a tu hogar .text-center
-          .row.mb-5.mt-5
+          .row.mb-5.mt-3
             .col-sm-10.offset-sm-2.col-md-8
               .text-justify.text-box-home.text-justify
-                img.logo-blue-intext(src="./img/logo-blue.png", alt="")
-                p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+                img.logo-blue-intext.mr-2(src="./img/logo-blue.png", alt="")
+                p.tradeGothic.color1.text-box.home.text__p es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
                 br
-                p.tradeGothic.color1.text-box.home.float-left Si tienes un negocio y quieres distribuir productos
-                img.logo-blue-intext.ml-2(src="./img/logo-blue.png", alt="")
-                p.tradeGothic.color1.text-box.home es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+                p.tradeGothic.color1.text-box.home.float-left.text__p Si tienes un negocio y quieres distribuir productos
+                img.logo-blue-intext.mr-2.ml-2(src="./img/logo-blue.png", alt="")
+                p.tradeGothic.color1.text-box.home.text__p es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
 
   section.section-form.mt-5
     .container-fluid.mt-5
@@ -54,8 +54,8 @@ block main
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
                 form#comments
-                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="")
-                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="")
+                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
+                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
                   .form-row.d-flex.justify-content-center
                     .form-group.col-md-12
                       label( for="inputName") Nombres
@@ -111,8 +111,8 @@ block main
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body">
                 form#distribute.mb-5
-                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="")
-                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="")
+                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
+                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
                   .form-row.d-flex.justify-content-center
                     .form-group.col-md-12
                       label( for="inputNames") Nombres y Apellidos

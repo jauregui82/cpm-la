@@ -5,8 +5,57 @@
     bottom: 0;
     background: rgba(7, 30, 70, 0.9999);
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     height: 100vh;
+  }
+  &__fondo{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  &__animate{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__img{
+  zoom: 1.6;
+  }
+}
+.spinner {
+  margin: 20px auto 0;
+  // width: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 26px;
+  height: 26px;
+  background-color: #ffff;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
   }
 }
 .mobile-version{
@@ -32,6 +81,14 @@
 // texts
 .text{
   &__p{
+    font-size: 16.6px;
+    line-height: 1.2;
+    -webkit-text-stroke: 0.3px;
+    @include media-breakpoint-down(sm){
+      font-size: 16px;
+    }
+  }
+  &__p-2{
     font-size: 16.6px;
     line-height: 1.2;
     @include media-breakpoint-down(sm){
@@ -141,6 +198,7 @@ h1.tradeGothic{
   position: absolute;
   bottom: 4%;
   left: 50%;
+  width: 60%;
   transform: translateX(-50%);
   // left: 10%;
 }

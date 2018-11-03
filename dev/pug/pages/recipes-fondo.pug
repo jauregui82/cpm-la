@@ -11,12 +11,11 @@ block main
   section.py-5.mt-5
       .container-fluid.d-flex.justify-content-center
         div.section-box-recipes.p-3.text-justify
-            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
-            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
-            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
-            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="", data-aos="fade-left", data-aos-delay="50")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="", data-aos="fade-right", data-aos-delay="150")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="", data-aos="fade-up-right", data-aos-delay="100")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="", data-aos="fade-up", data-aos-delay="50")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="", data-aos="fade-up", data-aos-delay="250")
             .text-justify.text-box-product
               h1.tradeGothic.color1.position-relative RECETAS
               hr.raya
@@ -29,10 +28,10 @@ block main
                         img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
                         |puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
   section.mb-5.position-relative
-    img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="")
-    img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="")
-    img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="")
-    img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="")
+    img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="", data-aos="fade-up-right", data-aos-delay="50")
+    img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="", data-aos="fade-up-right", data-aos-delay="150")
+    img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="", data-aos="fade-left", data-aos-delay="50")
+    img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="", data-aos="fade-left", data-aos-delay="250")
     .container-fluid
       .container.recipes-sec
          .row
@@ -41,10 +40,11 @@ block main
                 .col-xs-12
                   //-Tabs nav
                   div.position-relative
-                    div(class="btn white pointer d-flex align-items-center collapse_icon" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                    //- div(class="btn white pointer d-flex align-items-center collapse_icon" data-toggle="collapse" href="#entradas" role="button" aria-expanded="false" aria-controls="entradas")
+                    div(class="white  d-flex align-items-center")
                       .row.position-relative
-                        img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
-                        .col-7
+                        //- img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
+                        .col-12
                           h1.color1.tradeGothic PLATOS DE FONDO
                           hr.raya
                     .row

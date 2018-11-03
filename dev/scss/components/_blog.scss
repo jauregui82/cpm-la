@@ -4,7 +4,7 @@
     background-size: 100% 100%;
     display: inline-block;
     width: 100%;
-    max-width: 1164px;
+    max-width: 1141px;
     position: relative;
     @include media-breakpoint-down(lg){
       width: 90%
@@ -14,22 +14,22 @@
     }
   }
   .img-text-pro{
-    width: 100%;
+    width: 52%;
     height: 0%;
-    max-width: 39rem;
-    @include media-breakpoint-down(lg){
-      max-width: 31rem
-    }
+
+    // @include media-breakpoint-down(lg){
+    //   max-width: 31rem
+    // }
     @include media-breakpoint-down(sm){
       max-width: 24rem;
     }
   }
   .text-box-blog {
-    padding: 3% 19% 0 20%;
+    padding: 3% 21% 0 18%;
   }
   .blog-sec{
     margin-top: 3rem;
-    padding: 0rem 4rem 0 6rem;
+    padding: 2% 5% 0 9%;
     @include media-breakpoint-down(md){
       margin-top: 4rem;
     }
@@ -39,57 +39,72 @@
   }
   .img-bg{
     &__trozos-blog{
-      left: -10.2%;
-      top: 1.3rem;
-      max-width: 20.3rem;
+      left: -12.2%;
+      top: 2.3%;
+      max-width: 28.7%;
       @include media-breakpoint-down(lg){
-        max-width: 19.3rem;
-        left: -17.2%;
-        top: 3.3rem;
+        // max-width: 19.3rem;
+        // left: -17.2%;
+        // top: 3.3rem;
       }
       @include media-breakpoint-down(md){
-        max-width: 15.3rem;
-        left: -7.2%;
-        top: 6.3rem;
+        // left: -4.2%;
+        // top: 14.3%;
       }
       @include media-breakpoint-down(sm){
-        max-width: 10.3rem;
+        // max-width: 10.3rem;
       }
       @include media-breakpoint-down(xs){
-        left: -9.2%;
-        top: -5.7rem;
-        max-width: 9.3rem;
+        // left: -9.2%;
+        // top: -5.7rem;
+        // max-width: 9.3rem;
       }
+    }
+    &__salad-blog-1{
+      width: 44%;
+      top: 0%;
+      right: -26%;
     }
     &__salad-blog{
-      width: 100%;
-      top: 1rem;
-      right: -17rem;
-      max-width: 33rem;
-      @include media-breakpoint-down(lg){
-        right: -16rem;
-        max-width: 27rem;
-      }
-      @include media-breakpoint-down(md){
-        right: -11rem;
-        max-width: 17rem;
-        top: 3rem;
-      }
-      @include media-breakpoint-down(xs){
-        right: -12rem;
-        top: 12rem;
-      }
+      width: 45%;
+      top: -8.4%;
+      right: -28%;
+
+      // @include media-breakpoint-down(lg){
+      //   right: -16rem;
+      //   max-width: 27rem;
+      // }
+      // @include media-breakpoint-down(md){
+      //   right: -11rem;
+      //   max-width: 17rem;
+      //   top: 3rem;
+      // }
+      // @include media-breakpoint-down(xs){
+      //   right: -12rem;
+      //   top: 12rem;
+      // }
     }
   &__club-blog{
-    width: 100%;
-    top: 34rem;
-    left: -41rem;
-    max-width: 50rem;
+    width: 60%;
+    top: 42%;
+    left: -43%;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+    // max-width: 42rem;
+  }
+  &__tomate-blog-1{
+    width: 22%;
+    bottom: 17%;
+    left: -6.4%;
   }
   &__tomate-blog{
     width: 20%;
-    bottom: 0vh;
-    right: -18vw;
+    bottom: 32%;
+    right: -18%;
+    @include media-breakpoint-down(md){
+      display: none;
+    }
   }
   &__salad2-blog{
     width: 40%;
@@ -109,14 +124,12 @@
     }
   }
   &__sda-blog{
-    width: 100%;
-    top: 17rem;
-    left: -19rem;
-    max-width: 33rem;
+    width: 42%;
+    top: 51%;
+    left: -26%;
     @include media-breakpoint-down(lg){
-      top: 24rem;
-      left: -17rem;
-      max-width: 31rem;
+      top: 65%;
+      left: -21%;
     }
     @include media-breakpoint-down(md){
       max-width: 27rem;

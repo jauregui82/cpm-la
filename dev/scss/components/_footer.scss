@@ -97,10 +97,11 @@
   // display: none;
   position: fixed;
   bottom: 0rem;
-  background: rgba(158, 158, 158, 0.9294117647058824);
+  // background: rgba(158, 158, 158, 0.9294117647058824);
+  background: rgba(6, 30, 72, 0.85);
   width: 100%;
   // height: 9rem;
-  z-index: 9;
+  z-index: 999;
   &__content{
     text-align: center;
   }

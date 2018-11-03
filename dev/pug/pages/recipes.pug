@@ -11,25 +11,24 @@ block main
     section.py-5.mt-5
       .container-fluid.d-flex.justify-content-center
         div.section-box-recipes.p-3.text-justify
-            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
-            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
-            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
-            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="", data-aos="fade-left", data-aos-delay="50")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="", data-aos="fade-right", data-aos-delay="150")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="", data-aos="fade-up-right", data-aos-delay="100")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="", data-aos="fade-up", data-aos-delay="50")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="", data-aos="fade-up", data-aos-delay="250")
             .text-justify.text-box-product
               h1.tradeGothic.color1.position-relative RECETAS
               hr.raya
             .content-box-rec
               span.d-flex.justify-content-center.position-relative
                   img.img-text-rec(src="./img/recipes/text.png", alt="")
-              .row.pt-5.mb-5
+              .row.pt-4.mb-5
                   .offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
                       p.text__p.tradeGothic.color1 Con
                         img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
                         |puedes preparar muchos platos deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
     section.mb-5.position-relative.pc-version
-      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
+      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="", data-aos="fade-up-right", data-aos-delay="100")
       .container-fluid
         .container.recipes-sec
           .row
@@ -37,23 +36,26 @@ block main
               .recipes-grid__content
                 a(href="recipes-entradas.html")
                   img.recipes-grid__img-vertical(src="./img/recipes/rec-ent.png", alt="")
-                  .fondo-box-img.fondo-box-img
-                    h2.recipes-grid__text ENTRADAS
+                  .fondo-box-rec-img.fondo-box-rec-img__1
+                    .tex-box-rec-img.tradeGothic.white
+                      h2 ENTRADAS
               .row
                 .col.pt-4
                   .recipes-grid__content
                     a(href="recipes-snack.html")
                       img.recipes-grid__img-vertical(src="./img/recipes/rec-snack.png", alt="")
-                      .fondo-box-img.fondo-box-img
-                        h2.recipes-grid__text NIÑOS &amp; SNACKS
+                      .fondo-box-rec-img.fondo-box-rec-img__2
+                        .tex-box-rec-img.tradeGothic.white
+                          h2 NIÑOS &amp; SNACKS
             .col-4
               .recipes-grid__content
                 a(href="recipes-fondo.html")
                   img.recipes-grid__img-horizontal(src="./img/recipes/rec-fond.png", alt="")
-                  .fondo-box-img.fondo-box-img
-                    h2.recipes-grid__text-horizontal PLATOS <br>DE<br> FONDO
+                  .fondo-box-rec-img.fondo-box-rec-img__hori.fondo-box-rec-img__3
+                    .tex-box-rec-img.tradeGothic.white
+                      h2  PLATOS <br> DE <br> FONDO
     section.mb-5.position-relative.mobile-version
-      img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="")
+      //- img.img-bg.img-bg__tomate-rec(src="./img/recipes/tomate.png", alt="", data-aos="fade-up-right", data-aos-delay="100")
       .container-fluid
         .container.recipes-sec
           .row

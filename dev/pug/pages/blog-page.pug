@@ -9,30 +9,32 @@ block main
 
     //- section.section-info-icons.py-5.mt-5
     section.section-info-icons.py-5.mt-5.mb-5
-        div.section-box-blog.p-3.text-justify
-            img.img-bg.img-bg__salad-blog(src="./img/blog/ensalada-blog.png", alt="")
-            img.img-bg.img-bg__trozos-blog(src="./img/blog/trozos.png", alt="")
-            img.img-bg.img-bg__club-blog(src="./img/blog/club-blog.png", alt="")
-            img.img-bg.img-bg__tomate-blog(src="./img/blog/tomate-blog.png", alt="")
-            //- img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-            //- img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
-            //- img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
-            .text-justify.text-box-product
-                h1.tradeGothic.color1.position-relative BLOG SALUDABLE
-                hr.raya
-                .slider-content
-                  .slide#img.img_blog
-                  .slide-text.w-100.d-flex.justify-content-end
-                    .white.tradeGothic.pr-2
-                      span.border-right#title_blog &nbsp;
-                .row.pt-5.pb-5
-                    .col
-                        div.tradeGothic.color1.text__p#content_blog
+      .container-fluid
+        .container
+          div.section-box-blog.text-justify
+              img.img-bg.img-bg__salad-blog(src="./img/blog/ensalada-blog.png", alt="",data-aos="fade-left", data-aos-delay="10")
+              img.img-bg.img-bg__trozos-blog(src="./img/blog/trozos.png", alt="",data-aos="fade-right", data-aos-delay="100")
+              img.img-bg.img-bg__club-blog(src="./img/blog/club-blog.png", alt="",data-aos="fade-right", data-aos-delay="150")
+              img.img-bg.img-bg__tomate-blog(src="./img/blog/tomate-blog.png", alt="",data-aos="fade-up-left", data-aos-delay="250")
+              //- img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+              //- img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+              //- img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+              .text-justify.text-box-blog
+                  h1.tradeGothic.color1.position-relative BLOG SALUDABLE
+                  hr.raya
+                  .slider-content
+                    .slide#img.img_blog
+                    .slide-text.w-100.d-flex.justify-content-end
+                      .white.tradeGothic.pr-2
+                        span.border-right#title_blog &nbsp;
+                  .row.pt-5.pb-5
+                      .col
+                          div.tradeGothic.color1.text__p#content_blog
 
-                        .mt-5.mb-5.d-flex.justify-content-end.align-items-center.tradeGothic.color1
-                          a(href="blog.html")
-                            .row.d-flex.align-items-center
-                              .col
-                                img.img-back(src="./img/icon/arrow-left.png", alt="")
-                              .col
-                                h4.mt-1 Regresar
+                          .mt-5.mb-5.d-flex.justify-content-end.align-items-center.tradeGothic.color1
+                            a(href="blog.html")
+                              .row.d-flex.align-items-center
+                                .col
+                                  img.img-back(src="./img/icon/arrow-left.png", alt="")
+                                .col
+                                  h4.mt-1 Regresar

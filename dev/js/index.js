@@ -39,11 +39,6 @@ $(window).on('load', function () {
 
 function hideLoadin() {
   $(".loading__content").attr("data-aos", "zoom-out-down")
-  // $(".img-solido1").attr("data-aos", "fade-right");
-  // $(".img-pimenton").attr("data-aos", "fade-up-left");
-  // $(".img-croque").attr("data-aos", "fade-down-left");
-  // $(".img-salad").attr("data-aos", "fade-up-left");
-  // $(".img-plato").attr("data-aos", "fade-up-right");
   return true;
 }
 

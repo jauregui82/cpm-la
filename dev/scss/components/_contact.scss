@@ -8,7 +8,7 @@
   // height: 53vh;
   text-align: center;
   position: relative;
-  max-width:1041px;
+  max-width:1062px;
 
   // left: 14%;
   @include media-breakpoint-down(lg){
@@ -137,6 +137,9 @@ form#distribute{
   width: 7.4vh;
   margin-right: 3px;
   float: right;
+  @include media-breakpoint-down(sm){
+    width: 24.4%;
+  }
 }
 .text-box-cont{
   padding: 3% 19% 0 14%;
@@ -151,7 +154,7 @@ form#distribute{
   &__contenedor {
     background: #061e48;
     color: #fff;
-    padding: 2% 1% 2% 7%;
+    padding: 2% 1% 2% 2.1rem;
     border-radius: 8px;
     font-family: Trade Gothic LT Std,sans-serif;
     width: 100%;
@@ -160,6 +163,14 @@ form#distribute{
     text-align: left;
     p {
       padding-left: 1rem;
+    }
+    @include media-breakpoint-down(sm){
+      padding: 2% 1% 2% 2.7rem;
+    }
+    h5{
+      @include media-breakpoint-down(sm){
+        font-size: 14px;
+      }
     }
   }
 }
