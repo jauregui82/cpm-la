@@ -247,3 +247,13 @@
     -webkit-text-stroke: 0.3px;
   }
 }
+.th{
+  &__g{
+    min-width: 2.7rem;
+    position: relative;
+    bottom: -0.7rem;
+  }
+  &__valor{
+    max-width: 2rem;
+  }
+}
