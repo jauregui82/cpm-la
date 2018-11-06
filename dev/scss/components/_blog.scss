@@ -12,6 +12,12 @@
     @include media-breakpoint-down(md){
       width: 100%
     }
+    &__page{
+      @include media-breakpoint-down(sm){
+        width: 127%;
+        left: -13%;
+      }
+    }
   }
   .img-text-pro{
     width: 52%;
@@ -26,15 +32,20 @@
   }
   .text-box-blog {
     padding: 3% 21% 0 18%;
+    @include media-breakpoint-down(xs){
+      padding: 3% 11% 0 9%;
+    }
   }
   .blog-sec{
     margin-top: 3rem;
-    padding: 2% 5% 0 9%;
+    // padding: 2% 5% 0 9%;
+    padding: 2% 11% 0 15%;
     @include media-breakpoint-down(md){
       margin-top: 4rem;
     }
     @include media-breakpoint-down(sm){
       margin-top: 0rem;
+      padding: 2% 5% 0 4%;
     }
   }
   .img-bg{
@@ -52,9 +63,11 @@
         // top: 14.3%;
       }
       @include media-breakpoint-down(sm){
-        // max-width: 10.3rem;
+        display: none;
       }
       @include media-breakpoint-down(xs){
+        // left: 3.8%;
+        // top: -10.7%;
         // left: -9.2%;
         // top: -5.7rem;
         // max-width: 9.3rem;
@@ -147,5 +160,11 @@
 .img_blog{
   img{
     width: 100%;
+  }
+}
+#title_blog{
+  font-size: 16px;
+  @include media-breakpoint-down(sm){
+    font-size: 14px;
   }
 }

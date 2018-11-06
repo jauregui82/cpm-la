@@ -125,7 +125,7 @@
   &__contenedor{
     background: map-get($my-colors, color1 );
     color: #fff;
-    padding: 2% 1% 2% 20%;
+    padding: 5% 1% 2% 20%;
     border-radius: 8px;
     font-family: $TradeGothic;
     transition: transform 1s;
@@ -135,9 +135,11 @@
     text-align: left;
     h4{
       margin: 0;
+      font-size: 16.6px;
     }
     p{
-      font-size: 14px;
+      font-size: 12px;
+      -webkit-text-stroke: 0px;
     }
   }
   &__fa{
@@ -148,8 +150,8 @@
   &__cont-img{
     position: absolute;
     top: 9%;
-    width: 3.6rem;
-    left: -7%;
+    width: 3.9rem;
+    left: -11%;
   }
   &__cont-img-1{
     position: absolute;
@@ -158,6 +160,16 @@
     left: -16%;
     @include media-breakpoint-down(lg){
       width: 4.5rem;
+      left: -7%;
+    }
+  }
+  &__cont-img-2{
+    position: absolute;
+    top: 5%;
+    width: 4.5rem;
+    left: -16%;
+    @include media-breakpoint-down(lg){
+      width: 3.5rem;
       left: -7%;
     }
   }
@@ -183,6 +195,7 @@
   }
   @include media-breakpoint-down(md){
     max-width: 31.5rem;
+    top: -2rem;
   }
 
 }
@@ -223,4 +236,14 @@
       position: absolute;
       top: -2rem;
     }
+}
+.table{
+  &__title{
+    font-size: 12px;
+    -webkit-text-stroke: 0.2px;
+  }
+  &__body{
+    font-size: 13px;
+    -webkit-text-stroke: 0.3px;
+  }
 }

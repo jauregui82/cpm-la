@@ -8,26 +8,13 @@
   margin-right: -2px;
   float: left;
     @include media-breakpoint-down(sm){
-      width: 4.3rem;
+      width: 4.2rem;
       margin-right: 2%;
       margin-left: 6%;
       float: left;
     }
 }
-.logo-blue-intext-equipo{
-  max-width: 18rem;
-  position: absolute;
-  bottom: 4%;
-  left: 50%;
-  transform: translateX(-50%);
-  @include media-breakpoint-down(sm){
-    max-width: 4.1rem;
-  }
-  @include media-breakpoint-down(xs){
-    margin-bottom: 1rem;
-    margin-top: 1.4rem;
-  }
-}
+
 .logo-blue-intext1{
   // width: 5.9rem;
   width: 4.2rem;

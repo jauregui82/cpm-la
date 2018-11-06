@@ -5,25 +5,7 @@
     margin: 4rem 0 0 0rem;
   }
 }
-.section-box-home{
-  background-image: url(../img/home/hoja.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-  padding: 2%;
-  // width: 80vw;
-  width: 100%;
-  /* max-width: 783px; */
-  /* max-height: 400px; */
-  // height: 56vh;
-  text-align: center;
-  position: relative;
-  // left: 12%;
-  @include media-breakpoint-up(lg){
-    // margin: 0% 10% 0% 10%;
-    // width: 70vw;
-  }
-}
+
 .fondo-row{
   background-image: url(../img/sections/papel.png);
   background-repeat: no-repeat;
@@ -32,246 +14,13 @@
   left: 50%;
   position: relative;
   transform: translateX(-48%);
-}
-.img-plato{
-  left: -37.2%;
-  top: 14rem;
-  max-width: 37.3rem;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  @include media-breakpoint-down(lg){
-    max-width: 35.3rem;
-    left: -39.2%;
-  }
-  @include media-breakpoint-down(md){
-    max-width: 31.3rem;
-    left: -55.2%;
-  }
   @include media-breakpoint-down(sm){
-    max-width: 25.3rem;
-    left: -51.2%;
-    top: 23rem;
-  }
-  @include media-breakpoint-down(xs){
-   display: none;
-  }
-}
-.img-croque{
-  right: -22.2%;
-  top: -21.6%;
-  width: 35.6%;
-  position: absolute;
-  z-index: 1;
-  @include media-breakpoint-down(lg){
-    max-width: 21.6rem;
-  }
-  @include media-breakpoint-down(md){
-    max-width: 17.6rem;
-  }
-  @include media-breakpoint-down(xs){
-    max-width: 12.6rem;
-    right: -22.2%;
-    top: -5.9rem;
-  }
-}
-.img-salad{
-  right: -28.2%;
-  bottom: -74.7%;
-  position: absolute;
-  z-index: 1;
-  width: 50%;
-  @include media-breakpoint-down(lg){
-    right: -31.2%;
-    bottom: -50.7%;
-  }
-  @include media-breakpoint-down(md){
-    right: -32.2%;
-    bottom: -22.7%;
-  }
-  @include media-breakpoint-down(sm){
-    max-width: 26.6rem;
-    bottom: -15.4rem;
-    right: -59.2%;
-  }
-  @include media-breakpoint-down(xs){
-    display: none;
-  }
-}
-.img-tomate{
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 24%;
-  left: -21%;
-  max-width: 17rem;
-  @include media-breakpoint-down(lg){
-    max-width: 362px;
-    left: -27%;
-  }
-  @include media-breakpoint-down(md){
-    max-width: 256px;
-    left: -29%;
-    top: 46%;
-  }
-  @include media-breakpoint-down(sm){
-    max-width: 200px;
-    left: -30%;
-    top: 46%;
-  }
-  @include media-breakpoint-down(xs){
-    display: none;
-   }
-
-}
-.img-atun{
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-
-    top: -2%;
-    right: -54%;
-    max-width: 736px;
-  @include media-breakpoint-down(lg){
-    max-width: 629px;
-  }
-  @include media-breakpoint-down(md){
-    top: 24%;
-    right: -54%;
-    max-width: 501px;
-  }
-  @include media-breakpoint-down(sm){
-    top: 32%;
-    right: -54%;
-    max-width: 347px;
-  }
-  @include media-breakpoint-down(xs){
-   display: none;
+    width: 124%;
   }
 }
 
 
 
-//
-
-.img-solido1{
-  left: -11.8%;
-  top: -23.1%;
-  width: 29%;
-  position: absolute;
-  @include media-breakpoint-down(lg){
-    max-width: 19.3rem;
-  }
-  @include media-breakpoint-down(md){
-    max-width: 15.3rem;
-  }
-  @include media-breakpoint-down(xs){
-    max-width: 10.3rem;
-    left: -5.2%;
-    top: -4.7rem;
-  }
-  // z-index: 1;
-}
-.img-filete{
-  left: -11rem;
-  bottom: -38%;
-  max-width: 20.3rem;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-    @include media-breakpoint-down(lg){
-      max-width: 19.3rem;
-      left: -6.9rem;
-      bottom: -29%;
-    }
-    @include media-breakpoint-down(md){
-      max-width: 15.3rem;
-      left: -6.9rem;
-      bottom: -24%;
-    }
-    @include media-breakpoint-down(xs){
-      max-width: 8.1rem;
-      left: -3.7rem;
-      bottom: 10%;
-    }
-  }
-  .img-solido-blue{
-    right: -12.4rem;
-    bottom: -38%;
-    max-width: 20.3rem;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    @include media-breakpoint-down(lg){
-      max-width: 19.3rem;
-      right: -7.9rem;
-      bottom: -29%;
-    }
-    @include media-breakpoint-down(md){
-      max-width: 15.3rem;
-      right: -7.9rem;
-      bottom: -24%;
-    }
-    @include media-breakpoint-down(xs){
-      max-width: 10.3rem;
-      right: -1.9rem;
-      bottom: -7%;
-    }
-    @include media-breakpoint-down(xs){
-      max-width: 8.1rem;
-      right: -3.7rem;
-      bottom: 10%;
-    }
-  }
-
-  .img-pimenton{
-    width: 100%;
-    right: 3.3rem;
-    bottom: 5.9rem;
-    max-width: 9.5rem;
-    position: absolute;
-    z-index: 1;
-    @include media-breakpoint-down(lg){
-      right: 3.3rem;
-      bottom: 7.9rem;
-      max-width: 6.5rem;
-    }
-    @include media-breakpoint-down(md){
-      right: 1.3rem;
-      bottom: 9.9rem;
-    }
-    @include media-breakpoint-down(sm){
-      display: none;
-    }
-  }
-
-.img-limon{
-  width: 100%;
-  top: 7rem;
-  left: -9rem;
-  max-width: 239px;
-  position: absolute;
-  z-index: 1;
-}
-.img-cebolla{
-  width: 100%;
-  bottom: -18rem;
-  left: -24rem;
-  max-width: 455px;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-  @include media-breakpoint-down(sm){
-    display: none;
-  }
-}
-.img-plato-atun{
-  width: 100%;
-  bottom: -30%;
-  right: -37%;
-  max-width: 462px;
-  position: absolute;
-}
 
 // about
 .section-box-about{
@@ -302,21 +51,7 @@
   }
 }
 .img-bg{
-  &__100peru{
-    width: 100%;
-    max-width: 365px;
-    bottom: 5.7rem;
-    left: 3.7rem;
-    @include media-breakpoint-down(md){
-      bottom: 5.7rem;
-      left: 2rem;
-    }
-    @include media-breakpoint-down(xs){
-      bottom: 8.7rem;
-      left: 0.8rem;
-      max-width: 253px;
-    }
-  }
+
   &__lata{
 
   }
@@ -377,88 +112,46 @@
     }
   }
   &__limon-about{
-    width: 100%;
-    top: 7rem;
-    left: -9rem;
-    max-width: 239px;
-    @include media-breakpoint-down(lg){
-      width: 100%;
-      top: 4rem;
-      left: -8rem;
-      max-width: 266px;
-    }
-    @include media-breakpoint-down(md){
-      top: 17rem;
+    width: 21%;
+    top: 33%;
+    left: -12.7%;
+    // @include media-breakpoint-down(lg){
+    //   width: 100%;
+    //   top: 4rem;
+    //   left: -8rem;
+    //   max-width: 266px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
     }
   }
   &__pimenton-about{
-    width: 100%;
-    bottom: -16rem;
-    right: -7rem;
-    max-width: 21rem;
-    @include media-breakpoint-down(lg){
-      bottom: -12rem;
-      right: -10rem;
-      max-width: 386px;
-    }
-    @include media-breakpoint-down(md){
-      bottom: -17rem;
+    width: 31%;
+    bottom: -77%;
+    right: -10%;
+    // @include media-breakpoint-down(lg){
+    //   bottom: -12rem;
+    //   right: -10rem;
+    //   max-width: 386px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
     }
   }
   &__perejil-about{
-    width: 100%;
-    bottom: 5rem;
-    left: -19rem;
-    max-width: 21rem;
-    @include media-breakpoint-down(lg){
-      width: 100%;
-      bottom: 6rem;
-      left: -18rem;
-      max-width: 350px;
-    }
-    @include media-breakpoint-down(md){
-      bottom: -3rem;
+    width: 30%;
+    bottom: 42%;
+    left: -26%;
+    // @include media-breakpoint-down(lg){
+    //   width: 100%;
+    //   bottom: 6rem;
+    //   left: -18rem;
+    //   max-width: 350px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
     }
   }
 }
 
 
-// contac
-.img-bg{
-  position: absolute;
-  z-index: 1;
-
-  &__salad{
-    width: 34%;
-    top: -5%;
-    left: -27%;
-  }
-  &__plato{
-    width: 47%;
-    top: -2%;
-    right: -31%;
-  }
-  &__table{
-    width: 42%;
-    top: 57%;
-    left: -29%;
-    @include media-breakpoint-down(sm){
-      width: 33%;
-      top: 83%;
-      left: -19%;
-    }
-  }
-  &__ajies{
-    width: 43%;
-    bottom: -10%;
-    left: -55%;
-    z-index: 0;
-  }
-  &__limon{
-    width: 40%;
-    right: -43%;
-    top: -2%;
-    z-index: 0;
-  }
-
-}

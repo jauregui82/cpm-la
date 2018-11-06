@@ -174,3 +174,42 @@ form#distribute{
     }
   }
 }
+// contac
+.img-bg{
+  position: absolute;
+  z-index: 1;
+
+  &__salad{
+    width: 34%;
+    top: -5%;
+    left: -27%;
+  }
+  &__plato{
+    width: 47%;
+    top: -2%;
+    right: -31%;
+  }
+  &__table{
+    width: 42%;
+    top: 57%;
+    left: -29%;
+    // @include media-breakpoint-down(sm){
+    //   width: 33%;
+    //   top: 83%;
+    //   left: -19%;
+    // }
+  }
+  &__ajies{
+    width: 43%;
+    bottom: -10%;
+    left: -55%;
+    z-index: 0;
+  }
+  &__limon{
+    width: 40%;
+    right: -43%;
+    top: -2%;
+    z-index: 0;
+  }
+
+}

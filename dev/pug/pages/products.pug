@@ -72,7 +72,7 @@ block main
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
                                     div(class="btn white no-pointer btn-product__contenedor")
-                                      .btn-product__cont-img-1
+                                      .btn-product__cont-img-2
                                         img(src="./img/produts/pro-5.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
@@ -85,7 +85,7 @@ block main
                                       h4 Ver Recetas
                                 .row.mt-2.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                    div(class="btn white pointer mb-3 btn-product__contenedor" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
                                       .btn-product__cont-img
                                         img(src="./img/icon/pro-3.png", alt="")
                                       i.fa.fa-chevron-circle-down.btn-product__fa
@@ -126,29 +126,41 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
-                                                      th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th( scope="col")
+                                                      th.text-right( scope="col") 100 g
+                                                  tbody.table__body
                                                     tr
-                                                      td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td Proteínas (g)
+                                                      td.text-center
+                                                      td.text-right 23.96
                                                     tr
-                                                      td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td Grasa (g)
+                                                      td.text-center
+                                                      td.text-right 3.06
                                                     tr
-                                                      td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td Energía Total (Kcal)
+                                                      td.text-center
+                                                      td.text-right 123.6
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center
+                                                      td.text-right 36.22
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center
+                                                      td.text-right <3
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center
+                                                      td.text-right 193.14
                                                 hr.hr-card
-                                                |(*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab 2
                               div(class="tab-pane fade" id="pills-f-claro" role="tabpanel" aria-labelledby="pills-f-claro-tab")
                                 .row
@@ -217,27 +229,41 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
-                                                      td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td Proteínas (g)
+                                                      td.text-center 25.15
+                                                      td.text-right 34%
                                                     tr
-                                                      td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td Grasa (g)
+                                                      td.text-center 9.85
+                                                      td.text-right 15%
                                                     tr
-                                                      td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td Energía Total (Kcal)
+                                                      td.text-center 189.3
+                                                      td.text-right 9%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 16.1
+                                                      td.text-right
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  <3
+                                                      td.text-right
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  180
+                                                      td.text-right
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-3
                               div(class="tab-pane fade" id="pills-filete" role="tabpanel" aria-labelledby="pills-filete-tab")
                                 .row
@@ -306,27 +332,89 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 341.1
+                                                      td.text-right 17%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 28.9
+                                                      td.text-right 44%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 4.7
+                                                      td.text-right 24%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center  17.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center  6.6
+                                                      td.text-right
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center  0.1
+                                                      td.text-right
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center  0.1
+                                                      td.text-right
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center  21.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center  289.0
+                                                      td.text-right 12%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center  20.3
+                                                      td.text-right 41%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center  7.1
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  225.0
+                                                      td.text-right 23%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-4
                               div(class="tab-pane fade" id="pills-lomos" role="tabpanel" aria-labelledby="pills-lomos-tab")
                                 .row
@@ -395,27 +483,89 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 287.4
+                                                      td.text-right 14%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 22.3
+                                                      td.text-right 34%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 4.2
+                                                      td.text-right 21%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center  12.3
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center  5.4
+                                                      td.text-right
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center  0.7
+                                                      td.text-right
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center  0.1
+                                                      td.text-right
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center  0.6
+                                                      td.text-right
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center  21.3
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center  290.0
+                                                      td.text-right 12%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center  21.7
+                                                      td.text-right 43%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center  11.0
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  0.7
+                                                      td.text-right 4%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  241.0
+                                                      td.text-right 24%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-5
                               div(class="tab-pane fade" id="pills-lomos-l" role="tabpanel" aria-labelledby="pills-lomos-l-tab")
                                 .row
@@ -484,27 +634,89 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 341.1
+                                                      td.text-right 17%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 28.9
+                                                      td.text-right 44%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 4.7
+                                                      td.text-right 24%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center  17.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center  6.6
+                                                      td.text-right
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center  0.1
+                                                      td.text-right
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center  0.1
+                                                      td.text-right
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center  21.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center  289.0
+                                                      td.text-right 12%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center  20.3
+                                                      td.text-right 41%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center  7.1
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  225.0
+                                                      td.text-right 23%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-6
                               div(class="tab-pane fade" id="pills-trozos" role="tabpanel" aria-labelledby="pills-trozos-tab")
                                 .row
@@ -573,32 +785,94 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 242.4
+                                                      td.text-right 12%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 17.9
+                                                      td.text-right 28%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 2.9
+                                                      td.text-right 15%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center  10.5
+                                                      td.text-right
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center  4.2
+                                                      td.text-right
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center  0.2
+                                                      td.text-right
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center  0.2
+                                                      td.text-right
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center  20.9
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center  340.0
+                                                      td.text-right 14%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center  0.3
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center  0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center  0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center  20.0
+                                                      td.text-right 40%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center  11.0
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  1.0
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  215.0
+                                                      td.text-right 22%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-7
                               div(class="tab-pane fade" id="pills-grated" role="tabpanel" aria-labelledby="pills-grated-tab")
                                 .row
                                   .col-md-12.col-lg-6
-                                      img.slider-product__img(src="./img/produts/pro-7.png")
+                                      img.slider-product__img(src="./img/produts/pro-8.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
                                           h2.color1.tradeGothic
@@ -609,7 +883,7 @@ block main
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
                                     div(class="btn white no-pointer btn-product__contenedor")
                                       .btn-product__cont-img-1
-                                        img(src="./img/produts/pro-7.png", alt="")
+                                        img(src="./img/produts/pro-8.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
                                       h4 Presentación
                                       p.text__p Lata con abre fácil de 170g
@@ -662,27 +936,42 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores1
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor Diario
+                                                  tbody.table__body
                                                     tr
-                                                      td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td Proteínas (g)
+                                                      td.text-center 25.15
+                                                      td.text-right 34%
                                                     tr
-                                                      td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td Grasa (g)
+                                                      td.text-center 9.85
+                                                      td.text-right 15%
                                                     tr
-                                                      td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td Energía Total (Kcal)
+                                                      td.text-center 189.25
+                                                      td.text-right 9%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 16
+                                                      td.text-right
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center  <3
+                                                      td.text-right
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center  180
+                                                      td.text-right
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+
                           span.cambiarpestana.tabs-prev-top.slider-product__prev(data-accion="prev")
                           span.cambiarpestana.tabs-next-top.slider-product__next(data-accion="next")
     //- tabs-caballa
@@ -776,27 +1065,84 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores2
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 341.1
+                                                      td.text-right 17%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 28.9
+                                                      td.text-right 44%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 4.7
+                                                      td.text-right 24%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 17.0
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 6.6
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.1
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.1
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 21.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 289.0
+                                                      td.text-right 12%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 20.3
+                                                      td.text-right 41%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 7.1
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 225.0
+                                                      td.text-right 23%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+
                               //- tab-5
                               div(class="tab-pane fade" id="pills-lomos-c" role="tabpanel" aria-labelledby="pills-lomos-c-tab")
                                 .row
@@ -865,27 +1211,84 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores2
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 259.3
+                                                      td.text-right 13%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 19.3
+                                                      td.text-right 30%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 3.9
+                                                      td.text-right 20%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 10.1
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 4.9
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.7
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.2
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.5
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 20.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 441.0
+                                                      td.text-right 18%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 21.2
+                                                      td.text-right 42%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 18.0
+                                                      td.text-right 2%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 0.9
+                                                      td.text-right 5%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 209.0
+                                                      td.text-right 21%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+
                               //- tab-6
                               div(class="tab-pane fade" id="pills-trozos-c" role="tabpanel" aria-labelledby="pills-trozos-c-tab")
                                 .row
@@ -954,27 +1357,83 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores2
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
                                                     tr
                                                       td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td.text-center 92.0
+                                                      td.text-right 5%
                                                     tr
                                                       td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td.text-center 3.4
+                                                      td.text-right 5%
                                                     tr
                                                       td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td.text-center 1.0
+                                                      td.text-right 5%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 1.1
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 1.0
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.7
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.2
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.4
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 41.8
+                                                      td.text-right 14%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 367.0
+                                                      td.text-right 15%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 15.3
+                                                      td.text-right 31%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 29.0
+                                                      td.text-right 3%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 152.0
+                                                      td.text-right 15%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-7
                               div(class="tab-pane fade" id="pills-grated-c" role="tabpanel" aria-labelledby="pills-grated-c-tab")
                                 .row
@@ -1043,26 +1502,38 @@ block main
                                       .col
                                           .collapse.multi-collapse#valores2
                                               .card.card-body.card-product
-                                                b Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
                                                 hr.hr-card
                                                 table
-                                                  thead
+                                                  thead.table__body
                                                     tr
                                                       th( scope="col")
                                                       th( scope="col") 100 g
-                                                      th( scope="col") % Valor <br>Diario
-                                                  tbody
+                                                      th.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
                                                     tr
-                                                      td Energía (Kcal)
-                                                      td 341.1
-                                                      td 17%
+                                                      td Proteínas (g)
+                                                      td.text-center 20.23
+                                                      td.text-right 34%
                                                     tr
-                                                      td Grasa Total (g)
-                                                      td 28.9
-                                                      td 44%
+                                                      td Grasa (g)
+                                                      td.text-center 11.86
+                                                      td.text-right 15%
                                                     tr
-                                                      td • G. Saturada (g)
-                                                      td 4.7
-                                                      td 24%
+                                                      td Energía Total (Kcal)
+                                                      td.text-center 187.66
+                                                      td.text-right 9%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 38.29
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center <3
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 127.37
+
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                           span.cambiarpestana2.tabs-prev-top.slider-product__prev(data-accion="prev2")
                           span.cambiarpestana2.tabs-next-top.slider-product__next(data-accion="next2")
