@@ -12,6 +12,9 @@
     @include media-breakpoint-down(md){
       width: 100%
     }
+    @include media-breakpoint-down(xs){
+      top: -1.4rem;
+    }
     &__page{
       @include media-breakpoint-down(sm){
         width: 127%;
@@ -28,6 +31,9 @@
     // }
     @include media-breakpoint-down(sm){
       max-width: 24rem;
+    }
+    @include media-breakpoint-down(xs){
+      width: 80%;
     }
   }
   .text-box-blog {

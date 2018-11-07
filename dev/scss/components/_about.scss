@@ -115,6 +115,16 @@
       position: absolute;
       right: -10%;
       top: 20%;
+      @include media-breakpoint-down (sm){
+        right: 48%;
+        top: 6rem;
+        transform: rotate(90deg);
+      }
+    }
+    &__arrow2{
+      @include media-breakpoint-down (sm){
+        top: 7.6rem;
+      }
     }
     &__text{
       color: map-get($my-colors, color1 );
@@ -155,7 +165,7 @@
     max-width: 136px;
   }
   @include media-breakpoint-down(xs){
-    top: -0.3rem;
+    top: -0.5rem;
     left: 9.5rem;
     max-width: 136px;
   }

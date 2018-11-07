@@ -46,9 +46,9 @@
   @include media-breakpoint-down(sm){
     height: 70rem;
   }
-  @include media-breakpoint-down(xs){
-    height: 81rem;
-  }
+  // @include media-breakpoint-down(xs){
+  //   height: 70rem;
+  // }
 }
 .img-bg{
 

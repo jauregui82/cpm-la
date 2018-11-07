@@ -3,15 +3,37 @@
 // }
 
 // jauregui
+.logo-blue-intext-line{
+  width: 4.3rem;
+  margin-right: -2px;
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+    @include media-breakpoint-down(sm){
+      width: 4.2rem;
+      margin-right: 2%;
+      margin-left: 6%;
+      bottom: 3px;
+    }
+}
 .logo-blue-intext{
   width: 4.3rem;
   margin-right: -2px;
   float: left;
     @include media-breakpoint-down(sm){
-      width: 4.2rem;
+      width: 4.1rem;
       margin-right: 2%;
       margin-left: 6%;
-      float: left;
+      position: relative;
+      bottom: 3px;
+    }
+    @include media-breakpoint-down(sm){
+      margin-left: 0;
+    }
+    &__hm{
+      @include media-breakpoint-down(sm){
+        margin-left: 6%;
+      }
     }
 }
 
@@ -20,12 +42,22 @@
   width: 4.2rem;
   margin-right: 3px;
   float: left;
+  @include media-breakpoint-down(sm){
+    width: 3.8rem;
+    position: relative;
+    bottom: 0px;
+  }
 }
 .logo-blue-intext2{
   width: 4.9rem;
   margin-right: 3px;
   margin-left: 10px;
   display: inline;
+  @include media-breakpoint-down(sm){
+    width: 4.1rem;
+    position: relative;
+    bottom: 2px;
+  }
 }
 // .mobile-version{
 //   @include media-breakpoint-up(md){

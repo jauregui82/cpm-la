@@ -54,6 +54,7 @@
   @include media-breakpoint-down(xs){
     max-width: 109%;
     padding: 0% 10% 0;
+    height: 22.4rem;
   }
   // width: 50%;
 }
@@ -67,7 +68,8 @@
     padding: 0 6% 0 6%;
   }
   @include media-breakpoint-down(xs){
-    font-size: 15.9px;
+    font-size: 15px;
+    padding: 0;
   }
 }
 .logo-blue-intext-equipo{
@@ -83,7 +85,7 @@
   }
   @include media-breakpoint-down(xs){
     width: 76%;
-    bottom: -0.9rem;
+    bottom: 2.6rem;
     margin-bottom: 1rem;
     margin-top: 1.4rem;
   }
@@ -414,7 +416,10 @@ div.contenedor:hover{
     top: 46%;
   }
   @include media-breakpoint-down(xs){
-    display: none;
+    max-width: 119px;
+    left: -21%;
+    top: 4%;
+    z-index: 0;
    }
 
 }
@@ -485,15 +490,15 @@ div.contenedor:hover{
       bottom: -24%;
       left: -7.1rem;
     }
-    @include media-breakpoint-down(xs){
-      max-width: 10.3rem;
-      right: -1.9rem;
-      bottom: -7%;
-    }
+    // @include media-breakpoint-down(xs){
+    //   max-width: 10.3rem;
+    //   right: -1.9rem;
+    //   bottom: -7%;
+    // }
     @include media-breakpoint-down(xs){
       bottom: 11%;
       max-width: 8.1rem;
-      left: -2.3rem;
+      left: -4.7rem;
     }
   }
   .img-solido-blue{
@@ -513,14 +518,14 @@ div.contenedor:hover{
       right: -7.9rem;
       bottom: -24%;
     }
-    @include media-breakpoint-down(xs){
-      max-width: 10.3rem;
-      right: -1.9rem;
-      bottom: -7%;
-    }
+    // @include media-breakpoint-down(xs){
+    //   max-width: 10.3rem;
+    //   right: -1.9rem;
+    //   bottom: -7%;
+    // }
     @include media-breakpoint-down(xs){
       right: -2.1rem;
-      bottom: 11%;
+      bottom: -17%;
       max-width: 8.1rem;
     }
   }
@@ -567,8 +572,25 @@ div.contenedor:hover{
     // }
     @include media-breakpoint-down(xs){
       width: 77%;
-      bottom: 37.7%;
-      left: 12.2%;
+      bottom: 33.7%;
+      left: 6.1%;
     }
+  }
+}
+.slick-next{
+  @include media-breakpoint-down(xs){
+    right: -50px;
+  }
+}
+.slick-prev {
+  @include media-breakpoint-down(xs){
+  left: -50px;
+  }
+}
+.slide-index{
+  &__next{
+  }
+  &__prev{
+    left: -50px;
   }
 }

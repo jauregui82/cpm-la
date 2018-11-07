@@ -24,8 +24,8 @@
   @include media-breakpoint-down(lg){
     // width: 90%
   }
-  @include media-breakpoint-down(md){
-    // width: 100%
+  @include media-breakpoint-down(xs){
+    top: -1.4rem;
   }
 }
 .text-box-recipes {

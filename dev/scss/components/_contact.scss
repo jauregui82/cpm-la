@@ -17,9 +17,15 @@
   @include media-breakpoint-down(md){
     width: 100%
   }
+  @include media-breakpoint-down(xs){
+    top: -1.4rem;
+  }
 }
 .contact-section{
   padding: 0 16% 0 22%;
+  @include media-breakpoint-down(lg){
+    padding: 0 16% 0 16.4%;
+  }
   @include media-breakpoint-down(md){
     padding: 0 10% 0 11%;
   }
@@ -29,6 +35,9 @@
 }
 .contact-section-title{
   margin: 0 0 0 17%;
+  @include media-breakpoint-down(lg){
+    margin: 0 0 0 8%;
+  }
   @include media-breakpoint-down(md){
     margin: 0 0 0 11%;
   }
@@ -36,7 +45,8 @@
     margin: 0 0 0 13%;
   }
   @include media-breakpoint-down(xs){
-    margin: 0 0 0 4%;
+    margin: 0;
+    padding: 0;
   }
 }
 .container-btn-contact{
@@ -54,6 +64,9 @@
   }
   @include media-breakpoint-down(sm){
     max-width: 21rem;
+  }
+  @include media-breakpoint-down(xs){
+    max-width: 14rem;
   }
 }
 
@@ -149,6 +162,12 @@ form#distribute{
 }
 .section-form{
   padding: 0 0rem 0 6.4rem;
+  @include media-breakpoint-up(md){
+    margin-top: 3rem;
+  }
+  @include media-breakpoint-down(md){
+    padding: 0%;
+  }
 }
 .btn-contact{
   &__contenedor {
@@ -163,6 +182,9 @@ form#distribute{
     text-align: left;
     p {
       padding-left: 1rem;
+    }
+    @include media-breakpoint-down(lg){
+      padding: 2% 1% 2% 2.5rem;
     }
     @include media-breakpoint-down(sm){
       padding: 2% 1% 2% 2.7rem;
@@ -183,6 +205,9 @@ form#distribute{
     width: 34%;
     top: -5%;
     left: -27%;
+    @include media-breakpoint-down(xs){
+      left: -18%;
+    }
   }
   &__plato{
     width: 47%;
@@ -193,11 +218,9 @@ form#distribute{
     width: 42%;
     top: 57%;
     left: -29%;
-    // @include media-breakpoint-down(sm){
-    //   width: 33%;
-    //   top: 83%;
-    //   left: -19%;
-    // }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
   }
   &__ajies{
     width: 43%;
@@ -212,4 +235,12 @@ form#distribute{
     z-index: 0;
   }
 
+}
+.contact-content{
+  margin-bottom: 3rem;
+  @include media-breakpoint-down(sm){
+    position: relative;
+    top: -4rem;
+    margin-bottom: 0;
+  }
 }

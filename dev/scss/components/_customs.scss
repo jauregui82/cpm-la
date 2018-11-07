@@ -129,6 +129,10 @@
   border-top: 6px solid map-get($my-colors, color1 );
   width: 10rem;
   display: inline-block;
+  @include media-breakpoint-down (sm){
+    border-top: 3px solid map-get($my-colors, color1 );
+    width: 5.2rem;
+  }
 }
 .hr-card{
   margin-top: 1rem;

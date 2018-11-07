@@ -10,6 +10,10 @@
   @include media-breakpoint-down(md){
     height: 36rem;
   }
+  @include media-breakpoint-down(xs){
+    height: 33rem;
+    top: -1.4rem
+  }
 }
 .img-mapa{
   @include media-breakpoint-down(sm){
@@ -17,6 +21,12 @@
     position: relative;
     transform: translateX(-50%);
     margin-top: 1rem;
+  }
+  @include media-breakpoint-down(xs){
+    left: 41%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    width: 50%;
   }
 }
 .content_box_prod{
@@ -30,6 +40,9 @@
     width: 20%;
     top: 9%;
     left: -10%;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
   }
   &__pasta-pro{
     width: 100%;
@@ -106,14 +119,16 @@
     }
   }
   &__next{
-    // @include media-breakpoint-down(sm){
-      right: -4%;
-    // }
+    right: -4%;
+    @include media-breakpoint-down(xs){
+      right: -13%;
+    }
   }
   &__prev{
-    // @include media-breakpoint-down(sm){
-      left: -7%;
-    // }
+    left: -7%;
+    @include media-breakpoint-down(xs){
+      left: -14%;
+    }
   }
 }
 .content-btn-pro{
@@ -160,7 +175,7 @@
     left: -16%;
     @include media-breakpoint-down(lg){
       width: 4.5rem;
-      left: -7%;
+      left: -12%;
     }
   }
   &__cont-img-2{
@@ -169,17 +184,24 @@
     width: 4.5rem;
     left: -16%;
     @include media-breakpoint-down(lg){
-      width: 3.5rem;
-      left: -7%;
+      width: 4rem;
+      left: -9%;
     }
   }
 }
 .logo-blue-box-product{
   display: inline;
-  width: 5.4rem;
+  width: 4.3rem;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   padding-bottom: 0.2rem;
+  @include media-breakpoint-down(xs){
+    width: 4.2rem;
+    margin-right: 2%;
+    margin-left: 1%;
+    position: relative;
+    bottom: 0;
+  }
 }
 .text-box-product {
   padding: 3% 19% 0% 15%;
@@ -196,6 +218,9 @@
   @include media-breakpoint-down(md){
     max-width: 31.5rem;
     top: -2rem;
+  }
+  @include media-breakpoint-down(xs){
+    margin: 1.5rem;
   }
 
 }
@@ -249,11 +274,17 @@
 }
 .th{
   &__g{
-    min-width: 2.7rem;
-    position: relative;
-    bottom: -0.7rem;
+    @include media-breakpoint-up(md){
+      min-width: 2.7rem;
+      position: relative;
+      bottom: -0.7rem;
+      padding-bottom: 0.6rem;
+    }
   }
   &__valor{
-    max-width: 2rem;
+    @include media-breakpoint-up(md){
+      max-width: 2.6rem;
+      padding-bottom: 0.6rem;
+    }
   }
 }

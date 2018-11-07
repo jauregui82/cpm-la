@@ -25,127 +25,127 @@ block main
             .col-sm-10.offset-sm-2.col-md-8
               .text-justify.text-box-home.text-justify
                 img.logo-blue-intext.mr-2(src="./img/logo-blue.png", alt="")
-                p.tradeGothic.color1.text-box.home.text__p es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+                p.tradeGothic.color1.text-box.home.text__p.text-left es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
                 br
-                p.tradeGothic.color1.text-box.home.float-left.text__p Si tienes un negocio y quieres distribuir productos
-                img.logo-blue-intext.mr-2.ml-2(src="./img/logo-blue.png", alt="")
-                p.tradeGothic.color1.text-box.home.text__p es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+                span.tradeGothic.color1.text-box.home.float-left.text__p.text-left.float-left Si tienes un negocio y quieres distribuir productos
+                  img.logo-blue-intext-line.mr-2.ml-2(src="./img/logo-blue.png", alt="")
+                  |es una marca creada por peruanos y para peruanos. Por esa razón, el contacto con la gente es muy importante para nosotros.
+  .contact-content
+    section.section-form
+      .container-fluid.mt-5
+        .container.contact-section-title
+          h1.tradeGothic.color1 ¿POR QUÉ CONTÁCTARNOS?
+          hr.raya
 
-  section.section-form.mt-5
-    .container-fluid.mt-5
-      .container.contact-section-title
-        h1.tradeGothic.color1 ¿POR QUÉ CONTÁCTARNOS?
-        hr.raya
+    section.contact-section
+      .container-fuid
+        .container
+          <div id="accordion">
+            <div class="card-contact mb-4">
+              .row
+                .col-md-8.col-lg-7.container-btn-contact.pr-0
+                  <div class="card-header-1" id="headingOne">
+                    div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                      .btn-recipes__cont-img
+                        img(src="./img/icon/cont-1.png", alt="")
+                      i.fa.fa-chevron-circle-down.btn-recipes__fa
+                      h5.mb-0 Quiero dar un comentario
+                  </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  form#comments
+                    img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
+                    img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
+                    .form-row.d-flex.justify-content-center
+                      .form-group.col-md-12
+                        label( for="inputName") Nombres
+                        input(type="text" class="form-control" id="inputName")
+                      .form-group.col-md-6
+                        label( for="inputLastName") Apellido Paterno
+                        input(type="text" class="form-control" id="inputLastName")
 
-  section.contact-section
-    .container-fuid
-      .container
-        <div id="accordion">
-          <div class="card-contact mb-4">
-            .row
-              .col-md-8.col-lg-7.container-btn-contact
-                <div class="card-header-1" id="headingOne">
-                  div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
-                    .btn-recipes__cont-img
-                      img(src="./img/icon/cont-1.png", alt="")
-                    i.fa.fa-chevron-circle-down.btn-recipes__fa
-                    h5.mb-0 Quiero dar un comentario
+                      .form-group.col-md-6
+                        label(for="InputLasName_m") Apellido Materno
+                        input(type="text" class="form-control" id="InputLasName_m")
+
+                      .form-group.col-md-6
+                        label( for="inputEmail") E-mail
+                        input(type="text" class="form-control" id="inputEmail")
+
+                      .form-group.col-md-6
+                        label(for="InputPhone") Teléfono
+                        input(type="text" class="form-control" id="InputPhone")
+
+                      .form-group.col-md-6
+                        label( for="inputArea") ¿Con qué área deseas comunicarte?
+                        input(type="text" class="form-control" id="inputArea")
+
+                      .form-group.col-md-6
+                        label(for="InputLasAddress") Dirección domiciliaria
+                        input(type="text" class="form-control" id="InputLasAddress")
+
+                      .form-group.col-md-12
+                        label(for="comments") Escríbenos tu comentario
+                        textarea(class="form-control" id="comments" rows="3")
+                      .form-group.col-md-12
+                        .custom-control.custom-checkbox
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">
+                            p.tradeGothic Conozco y acepto que he leído el tratamiento de protección de mis datos personales detallado en los términos y condiciones de la página web &nbsp;
+                              a.tradeGothic.color1(href="http://clientes.la-agencia.pe/campomar/") www.campomar.com.pe
+                      button(type="submit" class="btn btn-contac white tradeGothic") Enviar
                 </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                form#comments
-                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
-                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
-                  .form-row.d-flex.justify-content-center
-                    .form-group.col-md-12
-                      label( for="inputName") Nombres
-                      input(type="text" class="form-control" id="inputName")
-                    .form-group.col-md-6
-                      label( for="inputLastName") Apellido Paterno
-                      input(type="text" class="form-control" id="inputLastName")
+              </div>
+            </div>
+            <div class="card-contact">
+              .row
+                .col-md-8.col-lg-7.container-btn-contact.pr-0
+                  <div class="card-header-1" id="headingOne">
+                    div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
+                      .btn-recipes__cont-img
+                        img(src="./img/icon/cont-2.png", alt="")
+                      i.fa.fa-chevron-circle-down.btn-recipes__fa
+                      h5.mb-0 Quiero distribuir productos
+                      img.logo-blue-button.ml-2(src="./img/logo.png", alt="")
+                  </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  form#distribute.mb-5
+                    img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
+                    img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
+                    .form-row.d-flex.justify-content-center
+                      .form-group.col-md-12
+                        label( for="inputNames") Nombres y Apellidos
+                        input(type="text" class="form-control" id="inputNames")
+                      .form-group.col-md-6
+                        label( for="inputCompany") Nombre de la empresa
+                        input(type="text" class="form-control" id="inputCompany")
 
-                    .form-group.col-md-6
-                      label(for="InputLasName_m") Apellido Materno
-                      input(type="text" class="form-control" id="InputLasName_m")
+                      .form-group.col-md-6
+                        label(for="InputRuc") RUC
+                        input(type="text" class="form-control" id="InputRuc")
 
-                    .form-group.col-md-6
-                      label( for="inputEmail") E-mail
-                      input(type="text" class="form-control" id="inputEmail")
+                      .form-group.col-md-6
+                        label( for="inputEmail") E-mail
+                        input(type="text" class="form-control" id="inputEmail")
 
-                    .form-group.col-md-6
-                      label(for="InputPhone") Teléfono
-                      input(type="text" class="form-control" id="InputPhone")
+                      .form-group.col-md-6
+                        label(for="InputNumber") Teléfono
+                        input(type="text" class="form-control" id="InputNumber")
 
-                    .form-group.col-md-6
-                      label( for="inputArea") ¿Con qué área deseas comunicarte?
-                      input(type="text" class="form-control" id="inputArea")
+                      .form-group.col-md-12
+                        label(for="comments2") Comentario adicional
+                        textarea(class="form-control" id="comments2" rows="3")
+                      .form-group.col-md-12
+                        .custom-control.custom-checkbox
+                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label class="custom-control-label" for="customCheck2">
+                            p.tradeGothic Conozco y acepto que he leído el tratamiento de protección de mis datos personales detallado en los términos y condiciones de la página web &nbsp;
+                              a.tradeGothic.color1(href="http://clientes.la-agencia.pe/campomar/")  www.campomar.com.pe
 
-                    .form-group.col-md-6
-                      label(for="InputLasAddress") Dirección domiciliaria
-                      input(type="text" class="form-control" id="InputLasAddress")
-
-                    .form-group.col-md-12
-                      label(for="comments") Escríbenos tu comentario
-                      textarea(class="form-control" id="comments" rows="3")
-                    .form-group.col-md-12
-                      .custom-control.custom-checkbox
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">
-                          p.tradeGothic Conozco y acepto que he leído el tratamiento de protección de mis datos personales detallado en los términos y condiciones de la página web &nbsp;
-                            a.tradeGothic(href="http://clientes.la-agencia.pe/campomar/") www.campomar.com.pe
-                    button(type="submit" class="btn btn-contac white tradeGothic") Enviar
+                      button(type="submit" class="btn btn-contac white tradeGothic") Enviar
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-contact">
-            .row
-              .col-md-8.col-lg-7.container-btn-contact
-                <div class="card-header-1" id="headingOne">
-                  div(class="btn white pointer btn-contact__contenedor d-flex align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo")
-                    .btn-recipes__cont-img
-                      img(src="./img/icon/cont-2.png", alt="")
-                    i.fa.fa-chevron-circle-down.btn-recipes__fa
-                    h5.mb-0 Quiero distribuir productos
-                    img.logo-blue-button.ml-2(src="./img/logo.png", alt="")
-                </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                form#distribute.mb-5
-                  img.img-bg.img-bg__ajies(src="./img/contact/ajies.png", alt="",data-aos="fade-right", data-aos-delay="200")
-                  img.img-bg.img-bg__limon(src="./img/contact/limon.png", alt="",data-aos="fade-left", data-aos-delay="50")
-                  .form-row.d-flex.justify-content-center
-                    .form-group.col-md-12
-                      label( for="inputNames") Nombres y Apellidos
-                      input(type="text" class="form-control" id="inputNames")
-                    .form-group.col-md-6
-                      label( for="inputCompany") Nombre de la empresa
-                      input(type="text" class="form-control" id="inputCompany")
-
-                    .form-group.col-md-6
-                      label(for="InputRuc") RUC
-                      input(type="text" class="form-control" id="InputRuc")
-
-                    .form-group.col-md-6
-                      label( for="inputEmail") E-mail
-                      input(type="text" class="form-control" id="inputEmail")
-
-                    .form-group.col-md-6
-                      label(for="InputNumber") Teléfono
-                      input(type="text" class="form-control" id="InputNumber")
-
-                    .form-group.col-md-12
-                      label(for="comments2") Escríbenos tu comentario
-                      textarea(class="form-control" id="comments2" rows="3")
-                    .form-group.col-md-12
-                      .custom-control.custom-checkbox
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">
-                          p.tradeGothic Conozco y acepto que he leído el tratamiento de protección de mis datos personales detallado en los términos y condiciones de la página web &nbsp;
-                            a.tradeGothic(href="http://clientes.la-agencia.pe/campomar/")  www.campomar.com.pe
-
-                    button(type="submit" class="btn btn-contac white tradeGothic") Enviar
-              </div>
-            </div>
-          </div>
-        </div>
-  hr.transparent
+  //- hr.transparent
