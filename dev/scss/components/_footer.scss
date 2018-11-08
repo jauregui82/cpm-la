@@ -122,16 +122,24 @@
 }
 
 .centrar{
-  @include media-breakpoint-down(md){
-    &__1-footer{
+  &__1-footer{
+    @include media-breakpoint-down(md){
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
-    &__2-footer{
+  }
+  &__2-footer{
+    @include media-breakpoint-down(md){
       position: relative;
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
+.logo{
+  &__footer{
+    position: relative;
+    top: -1rem;
   }
 }

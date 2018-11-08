@@ -263,6 +263,16 @@
     }
 }
 .table{
+  tr{
+    td{
+      border-color: #fff;
+      padding: 0;
+    }
+    th{
+      border-color: #fff;
+      padding: 0;
+    }
+  }
   &__title{
     font-size: 12px;
     -webkit-text-stroke: 0.2px;
@@ -271,15 +281,42 @@
     font-size: 13px;
     -webkit-text-stroke: 0.3px;
   }
+  &__ingredientes{
+    width: 80%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-36%);
+    @include media-breakpoint-down(xs){
+      width: 100%;
+      transform: translateX(-32%);
+    }
+  }
 }
 .th{
   &__g{
     @include media-breakpoint-up(md){
       min-width: 2.7rem;
       position: relative;
-      bottom: -0.7rem;
+      // bottom: -0.7rem;
       padding-bottom: 0.6rem;
     }
+    // /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+    //   /* Portrait and Landscape */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    //   text-align: right !important;
+
+    // }
+
+    // /* Portrait */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    //   text-align: right !important;
+    // }
+
+    // /* Landscape */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    //   text-align: right !important;
+    // }
   }
   &__valor{
     @include media-breakpoint-up(md){

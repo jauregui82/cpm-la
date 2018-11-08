@@ -119,6 +119,7 @@ $(document).ready(function () {
         if ($(pill).find('a').hasClass('active')) {
           if (index == cantidadPestana) {
             $('.pills-tab li').first().find('a').tab('show');
+            // $('.row__next').addClass('hide');
           }
           else {
             $(pill).next().find('a').tab('show');
