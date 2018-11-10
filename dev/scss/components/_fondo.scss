@@ -24,24 +24,24 @@
 
 // about
 .section-box-about{
-  background-image: url(../img/sections/papel2.png);
+  background-image: url(../img/sections/papel.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   width: 100%;
   padding: 3% 3% 0 3%;
   max-width: 1041px;
-  height: 53.5rem;
+  height: 59rem;
   // @include media-breakpoint-up(xl){
   //   width: 70%;
   // }
   @include media-breakpoint-down(lg){
-    padding: 3% 1% 0 0%;
+    padding: 1rem 5.4rem 0 3.7rem;
     max-width: 927px;
   }
   @include media-breakpoint-down(md){
-    max-width: 686px;
-    height: 64rem;
+    max-width: 800px;
+    height: 58rem;
   }
   @include media-breakpoint-down(sm){
     height: 70rem;

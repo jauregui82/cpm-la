@@ -9,6 +9,11 @@
     padding: 0 2% 0 2%;
   }
 }
+.linea{
+  width: 2px;
+  background: map-get($my-colors, color1 );
+  opacity: 0.5;
+}
 .section-box-recipes {
   background-image: url(../img/sections/hoja-blog.png);
   background-repeat: no-repeat;

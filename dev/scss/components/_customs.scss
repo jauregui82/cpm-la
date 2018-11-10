@@ -81,7 +81,7 @@
 // texts
 .text{
   &__p{
-    font-size: 16.6px;
+    font-size: 16px;
     line-height: 1.2;
     -webkit-text-stroke: 0.3px;
     @include media-breakpoint-down(sm){
@@ -89,7 +89,7 @@
     }
   }
   &__p-2{
-    font-size: 16.6px;
+    font-size: 16px;
     line-height: 1.2;
     @include media-breakpoint-down(sm){
       font-size: 16px;
@@ -124,7 +124,8 @@
 }
 .raya{
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
+  margin-left: 1px;
   border: 0;
   border-top: 6px solid map-get($my-colors, color1 );
   width: 10rem;

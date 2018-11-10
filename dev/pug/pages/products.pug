@@ -10,9 +10,9 @@ block main
     //- section.section-info-icons.py-5.mt-5
     section.py-5.mt-5.d-flex.justify-content-center
         div.section-box-products.p-3.text-justify
-          img.img-bg.img-bg__pasta-pro(src="./img/produts/pasta.png", alt="", data-aos="fade-left", data-aos-delay="50")
-          img.img-bg.img-bg__limon-pro(src="./img/produts/limon.png", alt="", data-aos="fade-right", data-aos-delay="100")
-          img.img-bg.img-bg__ceviche-pro(src="./img/produts/ceviche.png", alt="", data-aos="fade-right", data-aos-delay="250")
+          img.img-bg.img-bg__pasta-pro(src="./img/produts/pasta.png", alt="")
+          img.img-bg.img-bg__limon-pro(src="./img/produts/limon.png", alt="")
+          img.img-bg.img-bg__ceviche-pro(src="./img/produts/ceviche.png", alt="")
           .text-justify.text-box-product
             h1.tradeGothic.color1.position-relative PRODUCTOS
             hr.raya
@@ -21,9 +21,9 @@ block main
                 img.img-llevamos(src="./img/produts/text.png", alt="")
             .row.box-product
                 .col-sm-10.offset-sm-1.offset-md-2.col-md-5.mb-4
-                    p.text__p.tradeGothic.color1.text-left <b>Saludables, prácticos y deliciosos!</b> En
+                    p.text__p.tradeGothic.color1.text-justify <b>Saludables, prácticos y deliciosos!</b> En
                       img.logo-blue-box-product(src="./img/logo-blue.png", alt="")
-                      |contamos con una amplia variedad de conservas <b>a base de atún y caballa 100% peruana</b> y elaboradas bajo los más altos estándares de calidad.<br><br> Descubre los beneficios de cada uno.
+                      |contamos&nbsp; con&nbsp; una&nbsp; amplia&nbsp; variedad&nbsp; de&nbsp; conservas&nbsp; <b>a base de atún y caballa 100% peruana</b>   y elaboradas bajo los más altos estándares de calidad.<br><br> Descubre los beneficios de cada uno.
                 .offset-sm-4.offset-md-0.col-sm-4.col-sm-8.col-md-4
                   .position-relative
                     img.img-mapa.box-product__img(src="./img/produts/mapa.png", alt="")
@@ -31,8 +31,8 @@ block main
     section.mb-5.section-product
       .container-fluid
         .container.position-relative
-          img.img-bg.img-bg__cebolla-pro(src="./img/produts/cebolla.png", alt="", data-aos="fade-right", data-aos-delay="250")
-          img.img-bg.img-bg__palta-pro(src="./img/produts/palta.png", alt="", data-aos="fade-left", data-aos-delay="50")
+          img.img-bg.img-bg__cebolla-pro(src="./img/produts/cebolla.png", alt="")
+          img.img-bg.img-bg__palta-pro(src="./img/produts/palta.png", alt="")
           .row
               .col-sm-12.col-md-10.col-lg-12.sm-mx-auto
                   .row
@@ -65,13 +65,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-5.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Filete de Atún Artesanal
                                           p.text__p.color1.tradeGothic Seleccionado a mano. Elaborado con aceite vegetal en envase de vidrio. <br><br>
                                           p.text__p.color1.tradeGothic ¡Una experiencia gourmet! Atún Artesanal Campomar está hecho con nuestra receta especial, que resalta el sabor de nuestro producto estrella y hará de tus platos una experiencia inolvidable<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-2
                                         img(src="./img/produts/pro-5.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -169,13 +169,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-6.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Filete de Atún Claro
                                           p.text__p.color1.tradeGothic Filete de atún aleta amarilla elaborado con aceite vegetal en lata litografiada.  <br><br>
                                           p.text__p.color1.tradeGothic Lo tiene todo: increíble textura y es rico en vitaminas del grupo B. Además, el exquisito sabor del atún aleta amarilla le dará un toque único a tus preparaciones.<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-6.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -273,13 +273,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-7.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Filete de atún
                                           p.text__p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada y hecho a base de exquisito atún del mar peruano. <br><br>
                                           p.text__p.color1.tradeGothic Una gran fuente de vitaminas, es el complemento perfecto para toda alimentación saludable y, sobre todo, ¡deliciosa!<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-7.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -425,13 +425,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-4.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Lomos de Atún
                                           p.text__p.color1.tradeGothic Seleccionado a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
                                           p.text__p.color1.tradeGothic ¡Un clásico de toda la vida! Disfrútalo en tus guisos o pruébalo en tu sándwich favorito. ¡Trozos grandes y jugosos que harán de tus recetas platillos espectaculares!<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-4.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -577,13 +577,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-11.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Lomos de Atún Light
                                           p.text__p.color1.tradeGothic Lomos de atún seleccionado a mano y elaborados con agua y sal. <br><br>
                                           p.text__p.color1.tradeGothic Delicioso y saludable. Son la opción perfecta para quienes quieren disfrutar un producto exquisito pero sin culpas.<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-11.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -729,13 +729,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-3.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Trozos de Atún
                                           p.text__p.color1.tradeGothic Elaborados con aceite vegetal en lata litografiada <br><br>
                                           p.text__p.color1.tradeGothic Llegando del trabajo o del colegio. De día o de noche. En un desayuno nutritivo o para disfrutar en la cena. Son el aliado ideal para una comida rápida y deliciosa en cualquier momento. <br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-3.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -881,13 +881,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-8.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Grated de Atún
                                           p.text__p.color1.tradeGothic Elaborado con aceite vegetal. <br><br>
                                           p.text__p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial.<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-8.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -985,7 +985,7 @@ block main
     section.mt-5.mb-3.section-product
       .container-fluid
         .container.position-relative
-          img.img-bg.img-bg__tomate-pro(src="./img/produts/tomate.png", alt="", data-aos="fade-right", data-aos-delay="250")
+          img.img-bg.img-bg__tomate-pro(src="./img/produts/tomate.png", alt="")
           .row
               .col.sm-mx-auto
                   .row
@@ -1011,13 +1011,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-10.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Sólido de Caballa
                                           p.text__p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada. <br><br>
                                           p.text__p.color1.tradeGothic Has de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial con nuestro exquisito <b> Sólido de Caballa.</b>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-10.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -1158,13 +1158,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-2.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Lomitos de Caballa
                                           p.text__p.color1.tradeGothic Seleccionados a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
                                           p.text__p.color1.tradeGothic ¡Absolutamente jugosos! Son la alternativa perfecta para los que quieran disfrutar de una comida rápida, exquisita y nutritiva.<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-2.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -1305,13 +1305,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-1.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Trozos de Caballa
                                           p.text__p.color1.tradeGothic Elaborados con aceite vegetal <br><br>
                                           p.text__p.color1.tradeGothic Todo el sabor de la caballa peruana, con el toque especial de nuestra receta y la suavidad del aceite. Descubre nuestros Trozos de Caballa en todo tipo de preparaciones que la familia adorará. <br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-1.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa
@@ -1451,13 +1451,13 @@ block main
                                       img.slider-product__img(src="./img/produts/pro-9.png")
                                   .col-md-12.col-lg-6
                                       .slider-product__text
-                                          h2.color1.tradeGothic
+                                          h3.color1.tradeGothic
                                             b Grated de Caballa
                                           p.text__p.color1.tradeGothic Elaborado con agua y sal.<br><br>
                                           p.text__p.color1.tradeGothic Perfecto para salir de problemas de manera nutritiva, deliciosa, ¡y saludable! Prueba nuestro <b>Grated de Caballa</b> y disfruta de un producto delicioso y rendidor.<br><br>
                                 .row.mt-5.d-flex.justify-content-center
                                   .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-                                    div(class="btn white no-pointer btn-product__contenedor")
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
                                       .btn-product__cont-img-1
                                         img(src="./img/produts/pro-9.png", alt="")
                                       //- i.fa.fa-chevron-circle-down.btn-product__fa

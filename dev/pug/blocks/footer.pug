@@ -1,4 +1,4 @@
-.cookies#cookies_content
+.cookies#cookies_content.d-none
   .cookies__content
     .row.d-flex.justify-content-center
       .col-xs-10.col-sm-8.mt-3
@@ -7,85 +7,32 @@
         span.btn.btn-white-footer.tradeGothic.color1.mb-2#btn_acepto  ACEPTO
 footer.footer.bg-color1
   .container.pt-3.pb-4.white
-    //- .row
-    //-   .col-xs-7.col-sm-8.xs-mx-auto.col-md-12
     .row.d-flex.justify-content-center
-      //- .col-sm-6.col-md-3.mb-3.md-mb-0.d-flex.justify-content-center.d-sm-inline
       .col-xs-9.col-sm-8.col-md-8.col-lg-2.d-flex.align-items-center.centrar__1-footer
         a.pc-version.logo__footer(href="./")
           img(src="./img/logo.svg", alt="Logo")
-      //- .col-sm-6.col-md-6.mb-6.md-mb-0
       .col-xs-hide.col-sm-10.col-md-8.col-lg-8.col-xl-7.pl-0.pr-0
-        //- p.footer__info.xs-center.sm-left.pt-3
-        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-        //-     |NOSOTROS &nbsp;|
-        //- p.footer__info.xs-center.sm-left.pt-3
-        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-        //-     |NOSOTROS &nbsp;|
-        //- p.footer__info.xs-center.sm-left.pt-3
-        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-        //-     |NOSOTROS &nbsp;|
-        //- p.footer__info.xs-center.sm-left.pt-3
-        //-   a.white(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-        //-     |NOSOTROS
-        div.d-flex.align-items-center.mt-3
-          //- ul.footer__menu.d-flex.flex-column.flex-md-row.justify-content-center.tradeGothic
-          ul.footer__menu.d-inherit.tradeGothic.ul-footer
-            li.hide_md
-              a.centro.ml-0(href="./index.html", class=`${paginaActual==="home" ? "active": ""}`)
-                span &nbsp; INICIO&nbsp;|
-            li.hide_md
-              a.centro.ml-0(href="./about.html", class=`${paginaActual==="about" ? "active": ""}`)
-                span &nbsp; NOSOTROS&nbsp;|
-            li.hide_md
-              a.centro.ml-0(href="./products.html", class=`${paginaActual==="products" ? "active": ""}`)
-                span &nbsp; PRODUCTOS&nbsp;|
-            li.hide_md
-              a.centro.ml-0(href="./recipes.html", class=`${paginaActual==="recipes" ? "active": ""}`)
-                span &nbsp; RECETAS&nbsp;|
-            li.hide_md
-              a.centro.ml-0(href="./blog.html", class=`${paginaActual==="blog" ? "active": ""}`)
-                span &nbsp; BLOG&nbsp;|
-            li.hide_md
-              a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
-                span TÉRMINOS Y CONDICIONES
-
+        //- div.d-flex.align-items-center.mt-3
+        //-   ul.footer__menu.d-inherit.tradeGothic.ul-footer
+        //-     li.hide_md
+        //-       a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
+        //-         span TÉRMINOS Y CONDICIONES
         .footer__info.xs-center.white.d-flex.justify-content-center.mt-1.pl-2
           div.pc-version
-            span.float-left.tradeGothic.hide_md Síguenos en:
+            span TÉRMINOS Y CONDICIONES
+            span.float-left.tradeGothic.hide_md.d-none Síguenos en:
             .img-fa-content.ml-2.mr-2.float-left
-              .img-fa.hide_md
-                a.hide_md(href="#")
+              .img-fa.hide_md.d-none
+                a.hide_md.d-none(href="#")
                   img(src="./img/icon/fa-youtube.png", alt="")
-              .img-fa.hide_md
-                a.hide_md(href="#")
+              .img-fa.hide_md.d-none
+                a.hide_md.d-none(href="#")
                   img(src="./img/icon/fa-facebook.png", alt="")
-              .img-fa.hide_md
-                a.hide_md(href="#")
+              .img-fa.hide_md.d-none
+                a.hide_md.d-none(href="#")
                   img(src="./img/icon/fa-instagram.png", alt="")
             span.tradeGothic.hide_md 01 - 2487523 | Av. Manuel Olguín 501 Surco
-          //- .row.ml-0.mr-0.mobile-version
-          //-   .col-12
-          //-     a.mobile-version.white.tradeGothic(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
-          //-       span TÉRMINOS Y CONDICIONES
-          //-   .col-12.mt-2
-          //-     .row.ml-0.mr-0
-          //-       .col-12.d-flex.justify-content-center
-          //-         span.float-left.tradeGothic Síguenos en:
-          //-         .img-fa-content.ml-2.mr-2.float-left
-          //-           .img-fa
-          //-             a(href="#")
-          //-               img(src="./img/icon/fa-youtube.png", alt="")
-          //-           .img-fa
-          //-             a(href="#")
-          //-               img(src="./img/icon/fa-facebook.png", alt="")
-          //-           .img-fa
-          //-             a(href="#")
-          //-               img(src="./img/icon/fa-instagram.png", alt="")
-          //-       .col-12
-          //-         span.tradeGothic.white
-          //-           a.white(href="tel:+51012487523") 01 - 2487523 &nbsp;
-          //-           | | Av. Manuel Olguín 501 Surco
+            //- mobile version
           .row.ml-0.mr-0.mobile-version.d-flex.justify-content-center
             .col-12.text-center
               span
@@ -113,9 +60,3 @@ footer.footer.bg-color1
               br
               img.footer__logos(src="./img/home/dolphin.png", alt="")
               img.footer__logos(src="./img/home/escudo.png", alt="")
-
-      //-         //- |Síguenos en: 01 - 2487523 | Av. Manuel Olguín 501 Surco
-      //- .col-xs-9.col-sm-8.col-sm-align-self-center.col-md-8.col-lg-2.centrar__1-footer
-      //-   img.footer__logos(src="./img/home/dolphin.png", alt="")
-      //-   img.footer__logos(src="./img/home/escudo.png", alt="")
-

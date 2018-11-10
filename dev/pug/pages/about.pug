@@ -10,9 +10,9 @@ block main
     //- section.section-info-icons.py-5.mt-5
     section.section-info-about.py-5.mt-2.d-flex.justify-content-center
         div.section-box-about.text-justify
-            img.img-bg.img-bg__solido-about(src="./img/home/img/solido.png", alt="",data-aos="fade-left", data-aos-delay="100")
-            img.img-bg.img-bg__table-about(src="./img/about/tabla.png", alt="", data-aos="fade-right", data-aos-delay="50")
-            img.img-bg.img-bg__plato-about(src="./img/about/plato.png", alt="", data-aos="fade-left", data-aos-delay="200")
+            img.img-bg.img-bg__solido-about(src="./img/home/img/solido.png", alt="")
+            img.img-bg.img-bg__table-about(src="./img/about/tabla.png", alt="")
+            img.img-bg.img-bg__plato-about(src="./img/about/plato.png", alt="")
             .text-left.text-box-about
               h1.tradeGothic.color1.position-relative NOSOTROS
               hr.raya
@@ -28,14 +28,14 @@ block main
               .position-relative.mt-5
                 h1.tradeGothic.color1 BENEFICIOS DE
                 img.logo-blue-about(src="./img/logoBlue.svg", alt="")
-                hr.raya
+                hr.raya.mb-2
             //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
             .container.inline.containerSlider
                 .row
                     .col-lg-10.sm-mx-auto
                         .row.mb-5
                             .col-xs-12
-                                div.position-relative
+                                .tab-nav.position-relative
                                   ul(class="nav nav-pills pills-tab mb-3 slider-about__tabs" role="tablist")
                                       li.nav-item
                                           a(class="nav-link slider-about__nav-link slide-tabs text__p active" id="pills-calidad-tab" data-toggle="pill" href="#pills-calidad" role="tab" aria-controls="pills-calidad" aria-selected="true")
@@ -111,15 +111,15 @@ block main
         .container-fluid
             .container.about
                 .text-justify
-                    h2.tradeGothic.color1.position-relative BENEFICIOS DE CONSUMIR PESCADO
+                    h1.tradeGothic.color1.position-relative BENEFICIOS DE CONSUMIR PESCADO
                     hr.raya
                     //- hr.title.ml-2
-                .row
-                    .col-md-6.col-lg-3.pl-1.pr-1
+                .row.row-content-ab
+                    .col-md-6.col-lg-3.pl-1.pr-1.mb-md-2
                         .beneficios__content.bg-ab-orange.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-11.png", alt="")
                             p.text__p-2.white <b>Rico en minerales</b> esenciales como el hierro, el magnesio, el fósforo y el potasio.
-                    .col-md-6.col-lg-3.pl-1.pr-1
+                    .col-md-6.col-lg-3.pl-1.pr-1.mb-md-2
                         .beneficios__content.bg-ab-purple.text-center
                             img.mb-3.beneficios__img(src="./img/icon/ab-12.png", alt="")
                             p.text__p-2.white Posee grandes cantidades de yodo, que <b>protege los sistemas nervioso, digestivo y muscular</b>
@@ -134,13 +134,13 @@ block main
     section.mt-5
         .container-fluid
             .container.about.position-relative
-              img.img-bg.img-bg__limon-about(src="./img/about/limon.png", alt="", data-aos="fade-right", data-aos-delay="50")
-              img.img-bg.img-bg__pimenton-about(src="./img/about/pimenton.png", alt="", data-aos="fade-left", data-aos-delay="150")
+              img.img-bg.img-bg__limon-about(src="./img/about/limon.png", alt="")
+              img.img-bg.img-bg__pimenton-about(src="./img/about/pimenton.png", alt="")
               .text-justify
-                  h2.tradeGothic.color1.position-relative EL PESCADO ES PARA TODOS
+                  h1.tradeGothic.color1.position-relative EL PESCADO ES PARA TODOS
                   hr.raya
                   //- hr.title.ml-2
-              .row
+              .row.row-content-ab
                   .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img(src="./img/icon/ab-1.png", alt="")
@@ -168,14 +168,14 @@ block main
                           .position-relative.mt-4
                             h4 ADULTOS MAYORES
                           p.text__p.beneficios__text Ayuda a prevenir la aparición de enfermedades cerebrales y fortalece el sistema circulatorio.
-    section
+    section.sec-3-ab
         .container-fluid
             .container.about
               .text-justify
-                  h2.tradeGothic.color1.position-relative ¿CÓMO LO HACEMOS?
+                  h1.tradeGothic.color1.position-relative ¿CÓMO LO HACEMOS?
                   hr.raya
                   //- hr.title.ml-2
-              .row
+              .row.row-content-ab
                   .col-md-6.col-lg-3.pl-1.pr-1
                       .beneficios__content.text-center
                           img.beneficios__img.ab-5(src="./img/icon/ab-5.png", alt="")
@@ -203,24 +203,24 @@ block main
                           .position-relative.mt-4
                             h4 DISFRUTAMOS
                           .text-center.float-left
-                            p.text__p.float-left.mr-2.color1.tradeGothic Finalmente, nuestras Conservas
+                            p.text__p.float-left.mr-0.color1.tradeGothic Finalmente, nuestras Conservas
                               img.logo-blue-intext2(src="./img/logo-blue.png", alt="")
                               |<b>están presentes en las mesas de todos los peruanos</b> llevando calidad y nutrición. ¡Disfrútalas en deliciosos platos que también tú puedes preparar!
     section.mt-3
         .container-fluid
             .container.about.position-relative
-              img.img-bg.img-bg__perejil-about(src="./img/about/perejil.png", alt="", data-aos="fade-right", data-aos-delay="250")
+              img.img-bg.img-bg__perejil-about(src="./img/about/perejil.png", alt="")
               .text-justify
-                  h2.tradeGothic.color1.position-relative ¿DÓNDE ESTAMOS?
+                  h1.tradeGothic.color1.position-relative ¿DÓNDE ESTAMOS?
                   hr.raya
                   //- hr.title.ml-2
               .row.de-flex.justify-content-left
-                  .col-sm-8.col-md-6.col-lg-3.pl-1.pr-1.pc-version
+                  .col-sm-12.col-md-6.col-lg-3.pl-1.pr-1.pc-version
+                      img.img-latas-ab(src="./img/icon/ab-9.png", alt="")
+                  .col-sm-12.col-md-6.col-lg-3.pl-1.pr-1.d-flex.justify-content-center.mobile-version
                       img(src="./img/icon/ab-9.png", alt="")
-                  .col-sm-8.col-md-6.col-lg-3.pl-1.pr-1.d-flex.justify-content-center.mobile-version
-                      img(src="./img/icon/ab-9.png", alt="")
-                  .col-sm-8.col-md-6.col-lg-6
+                  .col-sm-12.col-md-6.col-lg-7
                       .cont.pt-3
                           img.logo-blue-intext.mr-2(src="./img/logo-blue.png", alt="")
-                          p.text__p.tradeGothic.color1 es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
+                          p.text__p.tradeGothic.color1.text-latas-ab es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
     hr.transparent
