@@ -307,7 +307,7 @@ div.recipes-grid__content:hover{
   top: 0px;
   overflow: hidden;
   // display: none;
-  transition: all 1s ease;
+  transition: all 1.25s ease;
   &__hori{
     width: 90.9%;
   }
@@ -327,6 +327,10 @@ div.recipes-grid__content:hover{
 div.recipes-grid__content:hover{
   .fondo-box-rec-img{
     // display: block;
-    height: 0%;
+    // height: 50%;
+    // width: 50%;
+    // border-radius : 50% ;
+    // left: calc(50% - 50%);
+    transform: scale(0.0);
   }
 }

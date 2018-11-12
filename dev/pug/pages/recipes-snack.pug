@@ -44,8 +44,15 @@ block main
                       .row.position-relative
                         //- img.img-icon-up(src="./img/icon/arrow-down.png", alt="")
                         .col-12
-                          h1.color1.tradeGothic NIÑOS &amp; SNACKS
-                          hr.raya
+                          //- h1.color1.tradeGothic NIÑOS &amp; SNACKS
+                          //- hr.raya
+                          ul#nav-categories.nav.nav-pills.nav-categories
+                            li
+                              a.item-nav.active(href='javascript:0', data-category='1') Entradas
+                            li
+                              a.item-nav(href='javascript:0', data-category='2') Platos de Fondo
+                            li
+                              a.item-nav(href='javascript:0', data-category='3') Niños & Snacks
                     .row
                       .col
                           .collapse.multi-collapse#entradas

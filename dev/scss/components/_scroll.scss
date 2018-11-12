@@ -1,0 +1,138 @@
+:root{
+	--color1: #061e48;
+}
+
+
+.main{
+	background-attachment: fixed;
+}
+
+.input-mailing{
+	padding-left: .75rem;
+	padding-right: .75rem;
+}
+
+.input-mailing:focus {
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+@media (min-width: 992px){
+
+	.nav-menu .logo{
+		max-width: unset;
+		height: 55px;
+		transition: all .4s;
+	}
+
+	.nav-menu .menu li a{
+		transition: padding .4s;
+	}
+
+	.nav-menu.scroll-nav .logo{
+		height: 40px;
+	}
+
+	.nav-menu.scroll-nav .menu li a{
+		font-size: 1rem;
+		padding: .85rem .75rem;
+	}
+}
+
+
+.nav-categories{
+	margin-bottom: 1.25rem;
+}
+
+.nav-categories li{
+	display: block;
+	/*display: inline-block;*/
+	/*height: 40px;*/
+}
+
+.nav-categories li a{
+  font-family: Trade Gothic LT Std,sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+	color: var(--color1);
+	margin-right: 1.25rem;
+	padding-bottom: .25rem;
+  line-height: 2.5rem;
+  position: relative;
+}
+
+.nav-categories li a.active{
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+.nav-categories li a.active:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color1);
+}
+
+/*.nav-categories li a:focus{
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+
+.nav-categories li a:focus:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color1);
+}*/
+
+.my-pagination,
+.my-pagination .number{
+	color: var(--color1);
+	position: relative;
+}
+
+.my-pagination span{
+	font-size: 1.75rem;
+	font-family: Trade Gothic LT Std, sans-serif;
+	margin-left: .25rem;
+	margin-right: .25rem;
+}
+
+.my-pagination .number.active:before{
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--color1);
+}
+
+.my-pagination .img-icon-tabs{
+  width: 37px;
+  height: 37px;
+	margin-left: .25rem;
+	margin-right: .25rem;
+	margin-top: .15rem;
+}
+
+
+.my-pagination .icon-left{
+	margin-left: .25rem;
+	margin-right: .65rem;
+}
+
+.my-pagination .icon-right{
+	margin-left: .65rem;
+	margin-right: .25rem;
+}
+
+
