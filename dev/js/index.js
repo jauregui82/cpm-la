@@ -3,7 +3,7 @@ import { handleShowElement } from "./modules/general";
 import toggleMenu from "./modules/menu";
 import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
-import { handlePagination, handlePaginationRecipes } from "./modules/pagination";
+import { handlePagination, handlePaginationRecipes,  handlePaginationNews } from "./modules/pagination";
 
 // import {
 //   handleItemArticle as handleItemArticleProducts,
@@ -16,11 +16,9 @@ import { handlePagination, handlePaginationRecipes } from "./modules/pagination"
 // import 'aos/dist/aos.css';
 
 
-// handleShowNextSibling();
-// handleShowElement;
-
 handlePagination();
 
+window.handlePaginationNews= handlePaginationNews;
 window.handlePaginationRecipes= handlePaginationRecipes;
 window.handleShowElement = handleShowElement;
 window.toggleMenu = toggleMenu;
@@ -40,7 +38,7 @@ $(window).on('load', function () {
     setTimeout(function () {
       hideLoadin();
       $(".loading__content").hide();
-      AOS.init();
+      // AOS.init();
     }, 1000);
   }
 
