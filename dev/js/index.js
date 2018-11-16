@@ -3,6 +3,7 @@ import { handleShowElement } from "./modules/general";
 import toggleMenu from "./modules/menu";
 import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
+import { handlePagination, handlePaginationRecipes } from "./modules/pagination";
 
 // import {
 //   handleItemArticle as handleItemArticleProducts,
@@ -17,18 +18,24 @@ import { MenuScroll } from "./modules/menu-scroll";
 
 // handleShowNextSibling();
 // handleShowElement;
-MenuScroll();
+
+handlePagination();
+
+window.handlePaginationRecipes= handlePaginationRecipes;
 window.handleShowElement = handleShowElement;
 window.toggleMenu = toggleMenu;
 window.sliderWrapper = sliderWrapper;
 window.sliderMultipleItems = sliderMultipleItems;
 
-// window.handleItemArticleProducts = handleItemArticleProducts;
-// window.handleItemMenuMapProducts = handleItemMenuMapProducts;
-// window.handleItemsMenuTerms = handleItemsMenuTerms;
-// console.log('123456');
+
+$(window).on('scroll', function () {
+  MenuScroll();
+});
+
 
 $(window).on('load', function () {
+  MenuScroll();
+
   if (hideLoadin() == true) {
     setTimeout(function () {
       hideLoadin();

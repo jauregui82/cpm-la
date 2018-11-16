@@ -26,8 +26,10 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-strip-comments": "^2.5.2",
     "gulp-watch": "^4.3.11",
-    "node-sass": "^4.9.3",
+    "install": "^0.12.2",
+    "npm": "^6.4.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },

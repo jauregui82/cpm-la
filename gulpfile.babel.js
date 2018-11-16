@@ -42,7 +42,7 @@ gulp.task('styles', () => {
     .pipe(postcss(postcssPlugins))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./public/css'))
-    .pipe(server.stream({ match: '**/*.css' }))
+    .pipe(server.stream({match: '**/*.css'}))
 });
 
 gulp.task('pug', () => {
@@ -61,7 +61,7 @@ gulp.task('scripts', () => {
   browserify('./dev/js/index.js')
     .transform(babelify)
     .bundle()
-    .on('error', function (err) {
+    .on('error', function(err){
       console.error(err);
       this.emit('end')
     })
@@ -82,21 +82,21 @@ gulp.task('scripts', () => {
     .pipe(server.stream())
 });
 
-gulp.task("images", () => {
+gulp.task("images", ()=> {
   gulp.src("./dev/img/**/*")
-    .pipe(
-      cache(
-        imagemin({
-          optimizationLevel: 5,
-          progressive: true,
-          interlaced: true
-        })
-      )
+  .pipe(
+    cache(
+      imagemin({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+      })
     )
-    .pipe(gulp.dest("./public/img/"))
+  )
+  .pipe(gulp.dest("./public/img/"))
 });
 
-gulp.task('default', ["styles", "scripts", "pug"], () => {
+gulp.task('default', ["styles", "scripts" , "pug"], () => {
   server.init({
     server: {
       baseDir: './public'
@@ -104,8 +104,8 @@ gulp.task('default', ["styles", "scripts", "pug"], () => {
   });
 
   watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
-  watch('./dev/js/**/*.js', () => gulp.start('scripts'));
-  watch('./dev/pug/**/*.pug', () => gulp.start('pug'));
+  watch('./dev/js/**/*.js', () => gulp.start('scripts') );
+  watch('./dev/pug/**/*.pug', () => gulp.start('pug') );
 
-  watch("./public/*.html").on("change", server.reload);
+  // watch("./public/*.html").on("change", server.reload);
 });
