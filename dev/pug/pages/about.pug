@@ -18,8 +18,9 @@ block main
               hr.raya
               br
               //- hr.title.ml-2
-              img.logo-blue-intext.mr-1(src="./img/logo-blue.png", alt="")
-              p.tradeGothic.color1.text-box.home es una marca <b>creada por y para peruanos</b> dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
+              p.tradeGothic.color1.text__p
+                img.logo-blue-intext.logo-blue-intext__hm(src="./img/logo-blue.png", alt="")
+                |es una marca <b>creada por y para peruanos</b> dedicada a la pesca, producción y comercialización de conservas de pescado proveniente de nuestro mar con <b>gran valor nutricional,</b> las cuales ofrecemos en una amplia variedad de deliciosas presentaciones. <br><br> Elaboramos conservas a base de especies de nuestro mar, siempre bajo los más <b>altos estándares de calidad</b> y cumpliendo nuestro compromiso con la <b> pesca responsable, el respeto al medio ambiente</b> y con llegar a todos los hogares del Perú brindando nutrición.
               //- .row.mt-5
               //-   .col-xs-8.col-sm-10.col-md-9.col-lg-8
               //-     h1.tradeGothic.color1 BENEFICIOS DE
@@ -27,7 +28,7 @@ block main
               //-     hr.raya
               .position-relative.mt-5
                 h1.tradeGothic.color1 BENEFICIOS DE
-                img.logo-blue-about(src="./img/logoBlue.svg", alt="")
+                  img.logo-blue-about(src="./img/logoBlue.svg", alt="")
                 hr.raya.mb-2
             //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
             .container.inline.containerSlider
@@ -49,7 +50,7 @@ block main
                                           a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-practicidad-tab" data-toggle="pill" href="#pills-practicidad" role="tab" aria-controls="pills-practicidad" aria-selected="false") PRACTICIDAD &nbsp;|
                                       li.nav-item
                                           a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-origen-tab" data-toggle="pill" href="#pills-origen" role="tab" aria-controls="pills-origen" aria-selected="false") ORIGEN
-                                  .tab-content#pills-tabContent.pl-5.pr-5
+                                  .tab-content#pills-tabContent.pl-sm-4.pr-sm-5.pl-md-5.pr-md-5.pl-3.pr-3
                                       div(class="tab-pane fade show active" id="pills-calidad" role="tabpanel" aria-labelledby="pills-calidad-tab")
                                         .row
                                           .col-sm-12.col-md-5.mb-3
@@ -202,11 +203,11 @@ block main
                           img.beneficios__img.ab-4(src="./img/icon/ab-8.png", alt="")
                           .position-relative.mt-4
                             h4 DISFRUTAMOS
-                          .text-center.float-left
-                            p.text__p.float-left.mr-0.color1.tradeGothic Finalmente, nuestras Conservas
-                              img.logo-blue-intext2(src="./img/logo-blue.png", alt="")
+                          .text-center
+                            p.text__p.mr-0.color1.tradeGothic Finalmente, nuestras Conservas
+                              img.logo-blue-intext.logo-blue-intext__hm.ml-1(src="./img/logo-blue.png", alt="")
                               |<b>están presentes en las mesas de todos los peruanos</b> llevando calidad y nutrición. ¡Disfrútalas en deliciosos platos que también tú puedes preparar!
-    section.mt-3
+    section.mt-5
         .container-fluid
             .container.about.position-relative
               img.img-bg.img-bg__perejil-about(src="./img/about/perejil.png", alt="")
@@ -221,6 +222,7 @@ block main
                       img(src="./img/icon/ab-9.png", alt="")
                   .col-sm-12.col-md-6.col-lg-7
                       .cont.pt-3
-                          img.logo-blue-intext.mr-2(src="./img/logo-blue.png", alt="")
-                          p.text__p.tradeGothic.color1.text-latas-ab es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
+                        p.text__p.tradeGothic.color1.text-latas-ab
+                          img.logo-blue-intext.logo-blue-intext__hm(src="./img/logo-blue.png", alt="")
+                          |es una marca creada para todos los peruanos. Por eso, encuéntranos en todos los mercados mayoristas, bodegas y tus lugares de compra favoritos. ¡Llevemos juntos calidad y nutrición a todos los hogares del Perú!
     hr.transparent

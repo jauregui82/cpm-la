@@ -83,7 +83,7 @@
   &__p{
     font-size: 16px;
     line-height: 1.2;
-    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke: 0.2px;
     @include media-breakpoint-down(sm){
       font-size: 15px;
     }
@@ -215,7 +215,7 @@ h1.tradeGothic{
 
 .border-mail{
   border: solid 1px map-get($my-colors, color1);
-  height: 2.4rem;
+  height: 2.5rem;
 }
 .input-mailing{
   width: 100%;

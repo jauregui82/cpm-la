@@ -1,0 +1,519 @@
+extends ../templates/template
+
+append config
+  -titulo = "RECETAS-NIÑOS & SNACK"
+  -paginaActual = "recipes-snack"
+  -show_logos= false
+
+block main
+
+  section.py-5.mt-5
+      .container-fluid.d-flex.justify-content-center
+        div.section-box-recipes.p-3.text-justify
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            .text-justify.text-box-product
+              h1.tradeGothic.color1.position-relative RECETAS
+              hr.raya
+            .content-box-rec
+              span.d-flex.justify-content-center.position-relative
+                  img.img-text-rec(src="./img/recipes/text.png", alt="")
+              .row.pt-5.mb-5
+                  .offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
+                      p.text__p.tradeGothic.color1 Con
+                        img.logo-blue-box-product(src="./img/logoBlue.svg", alt="")
+                        |puedes preparar muchos platos <br>deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
+  section.mb-5.position-relative
+    img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="")
+    img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="")
+    img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="")
+    img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="")
+    .container-fluid
+      .container.recipes-sec
+         .row.justify-content-center
+            .col-10.sm-mx-auto
+              .row
+                .col-xs-12
+                  //-Tabs nav
+                  div.position-relative
+                    div(class="white  d-flex align-items-center")
+                      .row.position-relative
+                        .col-12
+                          ul#nav-categories.nav.nav-pills.nav-categories
+                            li
+                              a.item-nav.active(href='javascript:0', data-category='1') Entradas
+                            li
+                              a.item-nav(href='javascript:0', data-category='2') Platos de Fondo
+                            li
+                              a.item-nav(href='javascript:0', data-category='3') Niños & Snacks
+                    .row
+                      .col
+                          .collapse.multi-collapse#entradas
+                            ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                                li.nav-item
+                                  a(class="text__p nav-link slide-tabs active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Tomates rellenos de caballa &nbsp;|
+                                li.nav-item
+                                  a(class="text__p nav-link slide-tabs" id="pills-pastel-caballa-tab" data-toggle="pill" href="#pills-pastel-caballa" role="tab" aria-controls="pills-pastel-caballa" aria-selected="false") Cuatro estaciones con caballa  &nbsp;|
+                    .tab-content#pills-tabContent
+                        //- tab-1
+                        //- hr.hr-recipes
+                        div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
+                          ul(class="nav nav-interno mb-3 hide" role="tablist")
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#pasta-colorida-con-trozos-de-atun") Pasta colorida con trozos de atún &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""  href="#zapallito-italiano-relleno-de-atun") Zapallito italiano relleno de atún &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#ensalada-campomar") Ensalada Campomar &nbsp;|
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-01.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Tomates rellenos de caballa</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 06 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 1 unidad de Grated de Caballa
+                                            li
+                                              p 1/4 de taza de mayonesa
+                                            li
+                                              p 1 cebolla picada en cuadraditos
+                                            li
+                                              p 1 tallo de apio cortado en cuadraditos
+                                            li
+                                              p 6 tomates pequeños
+                                            li
+                                              p 6 aceitunas
+                                            li
+                                              p Sal y pimienta al gusto
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Poner en un tazón el Grated Caballav y mezclar suavemente con la mayonesa, las cebollas, el apio, la sal y la pimienta. Reservar.
+                                            li
+                                              p Cortar la parte superior de los tomates, y retirar las semillas con una cuchara pequeña. LLenar los tomates con la mezcla de caballa.
+                                            li
+                                              p Decorar los bordes de los tomates con las aceitunas cortadas en tiras y servir.
+                          //- tab-2
+                          hr.hr-recipes#pasta-colorida-con-trozos-de-atun
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-02.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Pasta colorida con trozos de atún</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Filete de Atún
+                                            li
+                                              p 500 g de fideos de verduras
+                                            li
+                                              p 3 zanahorias sancochadas
+                                            li
+                                              p 5 cucharadas de mantequilla
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar los fideos, escurrirlos y reservar. Derretir la mantequilla en una olla a fuego bajo y agregar los fideos.
+                                            li
+                                              p Incorporar el Filete de Atún Campomarb , laszanahorias cortadas en rodajas.
+                                            li
+                                              p Salpimentar al gusto y servir
+                          //- tab-3
+                          hr.hr-recipes#club-sandwich-de-caballa
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-03.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Club sándwich de caballa</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 1 unidad de Trozos de Caballa
+                                            li
+                                              p 3 rebanadas de pan de molde grande
+                                            li
+                                              p Mayonesa
+                                            li
+                                              p Mantequilla
+                                            li
+                                              p Tomate
+                                            li
+                                              p Lechuga
+                                            li
+                                              p Queso
+                                            li
+                                              p Tocino
+                                            li
+                                              p Palta
+
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Freír el tocino y reservar.
+                                            li
+                                              p Untar un poco de mantequilla en cada rebanada y dorarlas sobre una plancha.
+                                            li
+                                              p Untar rebanada base con mayonesa, colocar la lechuga, unas rodajas de tomate y el tocino encima.
+                                            li
+                                              p Poner otra rebanada y agregar los Trozos de Caballa Campomar mezclados con un poco de mayonesa. Agregar el queso y la palta.
+                                            li
+                                              p Tapar con la tercera rebanada de pan untada de mayonesa.
+                                            li
+                                              p Cortar en cuatro triángulos y servir con papas fritas.
+                          //- tab-4
+                          hr.hr-recipes
+                          .row.d-flex.justify-content-center#zapallito-italiano-relleno-de-atun
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-04.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Zapallito italiano relleno de atún</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 30 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes4" role="button" aria-expanded="false" aria-controls="ingredientes4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Grated de Atún
+                                            li
+                                              p 2 zapallitos italianos
+                                            li
+                                              p 1 cebolla
+                                            li
+                                              p 300 g de langostinos
+                                            li
+                                              p 1 cucharada de harina
+                                            li
+                                              p 1 vaso de leche
+                                            li
+                                              p Queso rayado (tipo de queso de preferencia)
+                                            li
+                                              p Aceite de oliva extra virgen
+                                            li
+                                              p Sal y pimienta al gusto
+
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores4" role="button" aria-expanded="false" aria-controls="valores4")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores4
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Lavar los zapallitos, cortar las puntas y retirar las pepas con una cuchara. Reservar.
+                                            li
+                                              p Freír la cebolla picada finamente en una sartén
+                                            li
+                                              p con el aceite de oliva.
+                                            li
+                                              p Incorporar el Grated de Atún cuando la cebolla comience a dorar. Cocinar por 3 minutos.
+                                            li
+                                              p Añadir la harina, cocinar durante 2 minutos. Incorporar la leche poco a poco, mezclando.
+                                            li
+                                              p Por último, añadir los langostinos pelados y trozados. Salpimentar al gusto. Rellenar los zapallitos con la mezcla, agregar el queso por encima y llevar al horno a 180°C por 25 minutos. Servir.
+                        //- tab--1
+                        //- hr.hr-recipes
+                        div(class="tab-pane fade" id="pills-pastel-caballa" role="tabpanel" aria-labelledby="pills-pastel-caballa-tab")
+                          ul(class="nav nav-interno mb-3 hide" role="tablist")
+                            li.nav-item
+                                a(class="text__p nav-link slide-tabs " id=""  href="#tornillos-con-atun-en-ensalada") Tornillos con atún en ensalada &nbsp;|
+                            li.nav-item
+                                  a(class="text__p nav-link slide-tabs " id=""   href="#girasoles-con-croquetas-de-atun") Girasoles con croquetas de atún
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-05.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Cuatro estaciones con caballa</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 10 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes1" role="button" aria-expanded="false" aria-controls="ingredientes1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Lomos de Caballa
+                                            li
+                                              p Lechuga
+                                            li
+                                              p 250 g de aceitunas verdes
+                                            li
+                                              p 8 huevos
+                                            li
+                                              p 2 cucharadas de aceite de oliva
+                                            li
+                                              p 2 limones
+                                            li
+                                              p Sal y pimienta al gust
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores1" role="button" aria-expanded="false" aria-controls="valores1")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores1
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar los huevos, pelarlos y cortarlos en cuatro.
+                                            li
+                                              p Partir la lechuga en trozos pequeños con la mano.
+                                            li
+                                              p En un tazón, echar los Lomos de Caballa Campomar, añadir el jugo de los limones, y salpimentar al gusto.
+                                            li
+                                              p Servir formando cuatro divisiones: los huevos, la lechuga, las aceitunas y los filetes de caballa.
+                          //- tab-2
+                          hr.hr-recipes#tornillos-con-atun-en-ensalada
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-06.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Tornillos con atún en ensalada</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 15 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 2 unidades de Lomos de Atún Light
+                                            li
+                                              p 250 g de fideos tornillo
+                                            li
+                                              p 200 g de aceitunas verdes despepitadas
+                                            li
+                                              p 200 g de aceitunas negras despepitadas
+                                            li
+                                              p 500 g de tomates en picado en cuadraditos
+                                            li
+                                              p Hojas de lechuga
+                                            li
+                                              p Aceite de oliva
+                                            li
+                                              p 2 limones
+                                            li
+                                              p Sal al gusto
+
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores2
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Sancochar los fideos y dejar enfriar.
+                                            li
+                                              p En un recipiente, colocar las aceitunas cortadas en rodajas, la lechuga picada, los tomates y los Lomos de Atún Light Campomar.
+                                            li
+                                              p Exprimir los limones y echar el jugo y el aceite de oliva, la sal y los fideos.
+                                            li
+                                              p Mezclar y servir.
+                          //- tab-3
+                          hr.hr-recipes#girasoles-con-croquetas-de-atun
+                          .row.d-flex.justify-content-center
+                            .col-xs-12.col-sm-6
+                                img.recipes.recipes__img(src="./img/recipes/rec/rec-3-07.jpg")
+                            .col.d-flex.align-items-center
+                                .slider-about__text
+                                  h3.color1.tradeGothic <b>Girasoles con croquetas de atún</b>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-2.png", alt="")
+                                    p.color1.tradeGothic.text__p.pt-4 20 min.<br><br>
+                                  span.d-flex.align-items-center
+                                    img.img-icon-left.mr-2(src="./img/icon/rec-3.png", alt="")
+                                    p.color1.tradeGothic.text__p 04 porc.
+                          .row.mt-5.d-flex.justify-content-center
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#ingredientes3" role="button" aria-expanded="false" aria-controls="ingredientes3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/pro-3.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Ingredientes
+                              .row
+                                .col
+                                    .collapse.multi-collapse#ingredientes3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p 1 unidad de Lomos de Atún
+                                            li
+                                              p 500 g de papas
+                                            li
+                                              p 1 huevo
+                                            li
+                                              p 3 cucharadas de harina
+                                            li
+                                              p 1 cucharadita de ajo molido
+                                            li
+                                              p Aceite
+                                            li
+                                              p Mayonesa
+                                            li
+                                              p Aceitunas sin pepa
+                                            li
+                                              p Sal y pimienta al gusto
+                            .col-lg-4.col-md-5.mt-2
+                              div(class="btn white pointer btn-recipes__contenedor d-flex align-items-center" data-toggle="collapse" href="#valores3" role="button" aria-expanded="false" aria-controls="valores3")
+                                .btn-recipes__cont-img
+                                  img(src="./img/icon/rec-1.png", alt="")
+                                i.fa.fa-chevron-circle-down.btn-recipes__fa
+                                p.text__p Preparación
+                              .row
+                                .col
+                                    .collapse.multi-collapse#valores3
+                                        .card.card-body.card-product.card-recipes
+                                          ul.ul-recipes
+                                            li
+                                              p Freír las papas en tiras.
+                                            li
+                                              p En un recipiente, mezclar los Lomos de Atún Campomar, el huevo, la harina, el ajo, la sal y la pimienta. Armas unas croquetas y freír.
+                                            li
+                                              p Servir las papas y las croquetas de atún formando unos “girasoles”.
+              .row.d-flex.justify-content-center.mt-5
+                .col.d-flex.justify-content-end.cambiarpestana.position-relative(data-accion="prev")
+                  .row
+                    .col-4
+                      img.img-icon-tabs(src="./img/icon/arrow-left.png", alt="")
+                    .col-8
+                      h3.color1.tradeGothic  Anterior
+                  .linea
+                .col.d-flex.justify-content-start.cambiarpestana.position-relative(data-accion="next")
+                  .row
+                    .col-8
+                      h3.color1.tradeGothic Siguiente
+                    .col-4
+                      img.img-icon-tabs(src="./img/icon/arrow-right.png", alt="")

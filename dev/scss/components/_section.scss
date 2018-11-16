@@ -17,23 +17,24 @@
     }
 }
 .logo-blue-intext{
-  width: 4.3rem;
-  margin-right: -2px;
-  float: left;
+  width: 4.9rem;
+  margin-right: 3px;
+  display: inline;
+  padding-bottom: 4px;
     @include media-breakpoint-down(sm){
       width: 4.1rem;
-      margin-right: 2%;
-      margin-left: 6%;
-      position: relative;
-      bottom: 3px;
+      // margin-right: 2%;
+      // margin-left: 6%;
+      // position: relative;
+      // bottom: 3px;
     }
     @include media-breakpoint-down(sm){
-      margin-left: 0;
+      // margin-left: 0;
     }
     &__hm{
       @include media-breakpoint-down(sm){
-        margin-right: 0;
-        margin-left: 6%;
+        // margin-right: 0;
+        // margin-left: 6%;
       }
     }
 }

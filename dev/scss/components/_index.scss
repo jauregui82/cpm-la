@@ -20,7 +20,10 @@
 .box-index{
   &__horizontal{
     // max-width: 295px;
-    max-width: 82%;
+    max-width: 85%;
+    @include media-breakpoint-down(lg){
+      max-width: 87%;
+    }
   }
 
 }
@@ -133,6 +136,7 @@ div>.section-box-home-cel{
   }
 }
 .section-box-home-cel{
+  transition: all 1s;
   background-image: url(../img/home/cel2.png);
   background-repeat: no-repeat;
   // background-size: 581px 336px;
@@ -161,23 +165,23 @@ div>.section-box-home-cel{
     &:before {
       content: "";
       position: absolute;
-      height: 0;
+      height: 77.2%;
       width: 74%;
       background: rgba(7,31,72,.3);
       border-radius: 5px;
       transition: all 1s ease;
+      @include media-breakpoint-down(md){
+        height: 79.1%;
+      }
+      @include media-breakpoint-down(sm){
+        height: 78.7%;
+      }
     }
   }
 }
 .section-box-home-cel:hover{
   .video-content:before {
-    height: 77.2%;
-    @include media-breakpoint-down(md){
-      height: 79.1%;
-    }
-    @include media-breakpoint-down(sm){
-      height: 78.7%;
-    }
+    transform: scale(0.0);
   }
 }
 
@@ -188,6 +192,7 @@ div>.section-box-home-cel{
   margin-top: 17%;
 }
 .text-pantalla{
+  transition: all 1s;
   position: absolute;
   top: 16rem;
   cursor: pointer;
@@ -206,6 +211,7 @@ div>.section-box-home-cel{
   }
 }
 .link-pantalla{
+  transition: all 1s;
   opacity: .2;
   width: 7rem;
   margin: 0;
@@ -227,22 +233,28 @@ div>.section-box-home-cel{
 
 
 .img-nutri{
-  max-width: 42rem;
+  transition: all 1s;
+  // max-width: 42rem;
+  height: 15.7rem;
   position: relative;
   top: -1.3rem;
   left: -2%;
   @include media-breakpoint-down(lg){
-    max-width: 655px;
+    height: 12.6rem;
   }
   @include media-breakpoint-down(md){
-    max-width: 551px;
+    height: 10.9rem;
+    top: 0.4rem;
   }
   @include media-breakpoint-down(sm){
     max-width: 456px;
   }
   @include media-breakpoint-down(xs){
-    max-width: 308px;
+    // max-width: 308px;
     height: 136px;
+  }
+  @media (max-width: 340px){
+    height: 106px;
   }
 }
 
@@ -309,16 +321,16 @@ div.contenedor:hover{
 .btn-mailing{
   height: 2rem;
   position: relative;
-  top: -2.8px;
+  top: -1.5px;
   line-height: 1;
   right: 8%;
   width: 121%;
   @include media-breakpoint-down(lg){
     right: 35%;
-    width: 160%;
+    width: 152%;
   }
   @include media-breakpoint-down(md){
-    width: 143%;
+    width: 149%;
     font-size: 15px;
   }
   @include media-breakpoint-down(sm){
@@ -336,16 +348,28 @@ div.contenedor:hover{
 
 // imagen de fondo
 .img-plato{
+  transition: all 1s;
   left: -37.2%;
   top: 46%;
   width: 54%;
   position: absolute;
   z-index: 1;
   @include media-breakpoint-down(xs){
-    display: none;
+    left: -32.2%;
+    top: 56%;
+    width: 54%;
+  }
+  @media (max-width: 480px) {
+    left: -30.2%;
+    top: 66%;
+  }
+  @media (max-width: 340px) {
+    left: -25.2%;
+    top: 83%;
   }
 }
 .img-croque{
+  transition: all 1s;
   right: -22.2%;
   top: -21.6%;
   width: 35.6%;
@@ -366,6 +390,7 @@ div.contenedor:hover{
   }
 }
 .img-pimenton{
+  transition: all 1s;
   width: 100%;
   right: 3.3rem;
   bottom: 5.9rem;
@@ -386,16 +411,28 @@ div.contenedor:hover{
   }
 }
 .img-salad{
+  transition: all 1s;
   right: -28.2%;
   top: 61%;
   position: absolute;
   z-index: 1;
   width: 50%;
   @include media-breakpoint-down(xs){
-    display: none;
+    // display: none;
+    right: -23.2%;
+    top: 56%;
+  }
+  @media (max-width: 480px) {
+    right: -25.2%;
+    top: 70%;
+  }
+  @media (max-width: 340px) {
+    right: -23.2%;
+    top: 86%;
   }
 }
 .img-tomate{
+  transition: all 1s;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -425,6 +462,7 @@ div.contenedor:hover{
 
 }
 .img-atun{
+  transition: all 1s;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -455,6 +493,7 @@ div.contenedor:hover{
 //
 
 .img-solido1{
+  transition: all 1s;
   left: -11.8%;
   top: -23.1%;
   width: 29%;
@@ -475,6 +514,7 @@ div.contenedor:hover{
   // z-index: 1;
 }
 .img-filete{
+  transition: all 1s;
   left: -27%;
   bottom: -38%;
   width: 49.6%;
@@ -503,6 +543,7 @@ div.contenedor:hover{
     }
   }
   .img-solido-blue{
+    transition: all 1s;
     right: -12.4rem;
     bottom: -38%;
     max-width: 20.3rem;
@@ -532,6 +573,7 @@ div.contenedor:hover{
   }
 
   .img-limon{
+    transition: all 1s;
     width: 100%;
     top: 7rem;
     left: -9rem;
@@ -540,6 +582,7 @@ div.contenedor:hover{
     z-index: 1;
   }
   .img-cebolla{
+    transition: all 1s;
     width: 100%;
     bottom: -18rem;
     left: -24rem;
@@ -552,6 +595,7 @@ div.contenedor:hover{
     }
   }
   .img-plato-atun{
+    transition: all 1s;
     width: 100%;
     bottom: -30%;
     right: -37%;
@@ -563,6 +607,7 @@ div.contenedor:hover{
   }
 
 .img-bg{
+  transition: all 1s;
   &__100peru{
     width: 57%;
     bottom: 23.7%;
