@@ -1,4 +1,4 @@
-.cookies#cookies_content.d-none
+.cookies#cookies_content
   .cookies__content
     .row.d-flex.justify-content-center
       .col-xs-10.col-sm-8.mt-3
@@ -6,7 +6,7 @@
         br
         span.btn.btn-white-footer.tradeGothic.color1.mb-2#btn_acepto  ACEPTO
 footer.footer.bg-color1
-  .container.pt-3.pb-4.white
+  .container.pt-3.pb-3.white
     .row.d-flex.justify-content-center
       .col-xs-9.col-sm-8.col-md-8.col-lg-2.d-flex.align-items-center.centrar__1-footer
         a.pc-version.logo__footer(href="./")
@@ -19,7 +19,8 @@ footer.footer.bg-color1
         //-         span TÉRMINOS Y CONDICIONES
         .footer__info.xs-center.white.d-flex.justify-content-center.mt-1.pl-2
           div.pc-version
-            span TÉRMINOS Y CONDICIONES
+            a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
+              span.white TÉRMINOS Y CONDICIONES
             span.float-left.tradeGothic.hide_md.d-none Síguenos en:
             .img-fa-content.ml-2.mr-2.float-left
               .img-fa.hide_md.d-none
@@ -31,7 +32,7 @@ footer.footer.bg-color1
               .img-fa.hide_md.d-none
                 a.hide_md.d-none(href="#")
                   img(src="./img/icon/fa-instagram.png", alt="")
-            span.tradeGothic.hide_md 01 - 2487523 | Av. Manuel Olguín 501 Surco
+            span.tradeGothic.hide_md - 01 - 2487523 | Av. Manuel Olguín 501 Surco
             //- mobile version
           .row.ml-0.mr-0.mobile-version.d-flex.justify-content-center
             .col-12.text-center
