@@ -236,3 +236,156 @@
     padding-right: 1.4rem;
   }
 }
+
+
+
+// about
+.section-box-about{
+  background-image: url(../img/sections/papel.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 100%;
+  padding: 3% 3% 0 3%;
+  max-width: 1041px;
+  height: 59rem;
+  // @include media-breakpoint-up(xl){
+  //   width: 70%;
+  // }
+  @include media-breakpoint-down(lg){
+    padding: 1rem 5.4rem 0 3.7rem;
+    max-width: 927px;
+  }
+  @include media-breakpoint-down(md){
+    max-width: 800px;
+    height: 58rem;
+    padding: 1rem 1.4rem 0 0.8rem;
+  }
+  @include media-breakpoint-down(sm){
+    height: 70rem;
+  }
+  @include media-breakpoint-down(xs){
+  }
+  @media (max-width: 405px) {
+    height: 73rem;
+  }
+  @media (max-width: 340px) {
+    height: 80rem;
+  }
+}
+.img-bg{
+  transition: all 1s;
+
+  &__lata{
+
+  }
+  &__table-about{
+    width: 35%;
+    top: 2%;
+    left: -12rem;
+    @include media-breakpoint-down(lg){
+      left: -13rem;
+      max-width: 29rem;
+    }
+    @include media-breakpoint-down(md){
+      left: -11.2rem;
+    }
+    @include media-breakpoint-down(sm){
+      left: -9.2rem;
+    }
+  }
+  &__solido-about{
+    // max-width: 20.3rem;
+    // width: 100%;
+    // top: 3.5%;
+    // right: 8%;
+    width: 24%;
+    top: 3.5%;
+    right: 8%;
+    @include media-breakpoint-down(lg){
+      max-width: 19.3rem;
+      right: 4%;
+      // top: -3%;
+    }
+    @include media-breakpoint-down(md){
+      max-width: 15.3rem;
+      right: -1.6%;
+      // top: -4.6%;
+    }
+    @include media-breakpoint-down(sm){
+      top: 1.6%;
+    }
+    @include media-breakpoint-down(xs){
+      // display: none;
+    }
+  }
+  &__plato-about{
+    width: 38%;
+    bottom: -16%;
+    right: -10.6%;
+    @include media-breakpoint-down(lg){
+      bottom: -12%;
+    }
+    @include media-breakpoint-down(md){
+      bottom: 0%;
+    }
+    @include media-breakpoint-down(sm){
+      width: 57%;
+      bottom: -2%;
+      right: -15.6%;
+    }
+    // @include media-breakpoint-down(xs){
+    //   display: none;
+    // }
+    @media (max-width: 480px) {
+      right: -30.2%;
+      bottom: 1%;
+    }
+    @media (max-width: 340px) {
+      right: -27.2%;
+      bottom: 1%;
+      width: 78%;
+    }
+  }
+  &__limon-about{
+    width: 21%;
+    top: 33%;
+    left: -12.7%;
+    // @include media-breakpoint-down(lg){
+    //   width: 100%;
+    //   top: 4rem;
+    //   left: -8rem;
+    //   max-width: 266px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
+  }
+  &__pimenton-about{
+    width: 31%;
+    bottom: -77%;
+    right: -10%;
+    // @include media-breakpoint-down(lg){
+    //   bottom: -12rem;
+    //   right: -10rem;
+    //   max-width: 386px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
+  }
+  &__perejil-about{
+    width: 30%;
+    bottom: 42%;
+    left: -26%;
+    // @include media-breakpoint-down(lg){
+    //   width: 100%;
+    //   bottom: 6rem;
+    //   left: -18rem;
+    //   max-width: 350px;
+    // }
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
+  }
+}

@@ -45,33 +45,48 @@
     }
   }
   &__pasta-pro{
-    width: 100%;
+    width: 53%;
     top: -4%;
     right: -37%;
-    max-width: 34rem;
+    // max-width: 34rem;
     @include media-breakpoint-down(lg){
-      max-width: 525px;
+      // max-width: 525px;
       right: -31%;
     }
     @include media-breakpoint-down(md){
-      max-width: 439px;
+      // max-width: 439px;
       right: -38%;
     }
     @include media-breakpoint-down(sm){
-      display: none;
+      right: -30%;
+      top: 72%;
+    }
+    @include media-breakpoint-down(xs){
+      right: -30%;
+      top: 79%;
+      width: 64%;
+    }
+    @media(max-width: 570px){
+      top: 69%;
+    }
+    @media(max-width: 380px){
+      top: 80%;
+      width: 72%;
     }
   }
   &__ceviche-pro{
-      width: 100%;
-      bottom: -28%;
-      left: -31%;
-      max-width: 31rem;
+    width: 51%;
+    bottom: -28%;
+    left: -31%;
     @include media-breakpoint-down(lg){
-      max-width: 361px;
-      left: -9rem;
-      bottom: -4rem;
+      width: 50%;
+      // bottom: -4rem;
     }
     @include media-breakpoint-down(md){
+      bottom: -14%;
+      left: -27%;
+    }
+    @include media-breakpoint-down(sm){
       display: none;
     }
   }

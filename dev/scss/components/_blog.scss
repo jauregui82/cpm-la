@@ -60,29 +60,35 @@
       top: 2.3%;
       max-width: 28.7%;
       @include media-breakpoint-down(lg){
-        // max-width: 19.3rem;
-        // left: -17.2%;
-        // top: 3.3rem;
+        max-width: 27.7%;
+        left: -6.2%;
       }
       @include media-breakpoint-down(md){
+        max-width: 26.7%;
         // left: -4.2%;
         // top: 14.3%;
       }
-      @include media-breakpoint-down(sm){
-        display: none;
-      }
       @include media-breakpoint-down(xs){
-        // left: 3.8%;
-        // top: -10.7%;
-        // left: -9.2%;
-        // top: -5.7rem;
-        // max-width: 9.3rem;
+        left: 3.8%;
+        top: -21.7%;
+      }
+      @media (max-width: 450px) {
+        top: -14.7%;
       }
     }
     &__salad-blog-1{
       width: 44%;
       top: 0%;
       right: -26%;
+      @include media-breakpoint-down(lg){
+        width: 44%;
+      }
+      @include media-breakpoint-down(sm){
+        top: -15%;
+      }
+      @include media-breakpoint-down(xs){
+        top: -15%;
+      }
     }
     &__salad-blog{
       width: 45%;
@@ -154,7 +160,8 @@
       max-width: 27rem;
     }
     @include media-breakpoint-down(xs){
-      display: none;
+      top: 84%;
+      left: -17%;
     }
   }
 
