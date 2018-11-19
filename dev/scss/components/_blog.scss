@@ -76,6 +76,27 @@
         top: -14.7%;
       }
     }
+    &__trozos-blog2{
+      left: -12.2%;
+      top: 2.3%;
+      max-width: 28.7%;
+      @include media-breakpoint-down(lg){
+        max-width: 27.7%;
+        left: -6.2%;
+      }
+      @include media-breakpoint-down(md){
+        max-width: 26.7%;
+        // left: -4.2%;
+        // top: 14.3%;
+      }
+      @include media-breakpoint-down(xs){
+        left: 50.8%;
+        top: -8.7%;
+      }
+      @media (max-width: 450px) {
+        top: -6.7%;
+      }
+    }
     &__salad-blog-1{
       width: 44%;
       top: 0%;
