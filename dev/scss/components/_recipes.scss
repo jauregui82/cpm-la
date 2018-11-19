@@ -67,6 +67,11 @@
     @include media-breakpoint-down(md){
       top: 21%;
     }
+    @include media-breakpoint-down(xs){
+      top: 13%;
+      width: 17%;
+      left: -2%;
+    }
   }
   &__plato-rec{
     width: 100%;

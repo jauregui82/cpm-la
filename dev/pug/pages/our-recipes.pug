@@ -1,1202 +1,1197 @@
 extends ../templates/template
 
 append config
-	-titulo = "NUESTRA RECETA"
-	-paginaActual = "recipes"
+  -titulo = "NUESTRA RECETA"
+  -paginaActual = "recipes"
 
 block main
 
-	section.py-5.mt-5
-			.container-fluid.d-flex.justify-content-center
-				div.section-box-recipes.p-3.text-justify
-						img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
-						img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
-						img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
-						img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
-						img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
-						.text-justify.text-box-product
-							h1.tradeGothic.color1.position-relative RECETAS
-							hr.raya
-						.content-box-rec
-							span.d-flex.justify-content-center.position-relative
-									img.img-text-rec(src="./img/recipes/text.png", alt="")
-							.row.pt-5.mb-5
-									.offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
-											p.text__p.tradeGothic.color1 Con
-												img.logo-blue-box-product(src="./img/logoBlue.svg", alt="")
-												|puedes preparar muchos platos <br>deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
-	section.mb-5.position-relative
-		img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="")
-		img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="")
-		img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="")
-		img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="")
-		.container-fluid
-			.container.recipes-sec
-				.row.justify-content-center
-					.col-10.sm-mx-auto
-						.row
-							.col-xs-12
-								//-Tabs nav
-								div.position-relative
-									.white.d-flex.align-items-center
-										.row.position-relative
-											.col-12
-												ul#nav-categories.nav.nav-pills.nav-categories
-													li
-														a.item-nav.active(href='javascript:0', data-category='1') ENTRADAS
-													li
-														a.item-nav(href='javascript:0', data-category='2') PLATOS DE FONDO
-													li
-														a.item-nav(href='javascript:0', data-category='3') NIUÑOS & SNACKS
+  section.py-5.mt-5
+      .container-fluid.d-flex.justify-content-center
+        div.section-box-recipes.p-3.text-justify
+            img.img-bg.img-bg__salad-rec(src="./img/recipes/salad.png", alt="")
+            img.img-bg.img-bg__cebolla-rec(src="./img/recipes/cebolla.png", alt="")
+            img.img-bg.img-bg__plato-rec(src="./img/recipes/plato1.png", alt="")
+            img.img-bg.img-bg__lata-rec(src="./img/recipes/lata.png", alt="")
+            img.img-bg.img-bg__limon-rec(src="./img/recipes/limon.png", alt="")
+            .text-justify.text-box-product
+              h1.tradeGothic.color1.position-relative RECETAS
+              hr.raya
+            .content-box-rec
+              span.d-flex.justify-content-center.position-relative
+                  img.img-text-rec(src="./img/recipes/text.png", alt="")
+              .row.pt-5.mb-5
+                  .offset-lg-2.offset-md-1.offset-sm-1.col-sm-10.col-lg-5
+                      p.text__p.tradeGothic.color1 Con
+                        img.logo-blue-box-product(src="./img/logoBlue.svg", alt="")
+                        |puedes preparar muchos platos <br>deliciosos, desde ensaladas hasta guisos y platos de fondo.<br><br> ¡Descúbrelos!
+  section.mb-5.position-relative
+    img.img-bg.img-bg__tomate-rec2(src="./img/recipes/tomate.png", alt="")
+    img.img-bg.img-bg__palta-rec(src="./img/recipes/palta.png", alt="")
+    img.img-bg.img-bg__tenedor-rec(src="./img/recipes/tenedor.png", alt="")
+    img.img-bg.img-bg__tomate2-rec(src="./img/recipes/tomate2.png", alt="")
+    .container-fluid
+      .container.recipes-sec
+        .row.justify-content-center
+          .col-10.sm-mx-auto
+            .row
+              .col-xs-12
+                //-Tabs nav
+                div.position-relative
+                  .white.d-flex.align-items-center
+                    .row.position-relative
+                      .col-12
+                        ul#nav-categories.nav.nav-pills.nav-categories
+                          li
+                            a.item-nav.active(href='javascript:0', data-category='1') ENTRADAS
+                          li
+                            a.item-nav(href='javascript:0', data-category='2') PLATOS DE FONDO
+                          li
+                            a.item-nav(href='javascript:0', data-category='3') NIUÑOS & SNACKS
 
-									#container-recipes.container-products
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-01.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Tomates rellenos de caballa
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 20 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 06 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes1.collapse.multi-collapse
-																	.mt-2.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Grated de Caballa
-																			li
-																				p 1/4 de taza de mayonesa
-																			li
-																				p 1 cebolla picada en cuadraditos
-																			li
-																				p 1 tallo de apio cortado en cuadraditos
-																			li
-																				p 6 tomates pequeños
-																			li
-																				p 6 aceitunas
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores1.collapse.multi-collapse
-																	.mt-2.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Poner en un tazón el Grated Caballav y mezclar suavemente con la mayonesa, las cebollas, el apio, la sal y la pimienta. Reservar.
-																			li
-																				p
-																					| Cortar la parte superior de los tomates, y retirar las semillas con una cuchara pequeña. LLenar los tomates con la mezcla de caballa.
-																			li
-																				p Decorar los bordes de los tomates con las aceitunas cortadas en tiras y servir.
-											hr.hr-recipes
+                  #container-recipes.container-products
+                    .row.d-flex.justify-content-center.item-recipe(data-category='1')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-01.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Cebiche de filete de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 15 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | 4 unidades de
+                                          b Filete de Atún
+                                          |  Campomar
+                                      li
+                                        p 2 ajíes amarillos picados
+                                      li
+                                        p 4 tomates pelados y picados
+                                      li
+                                        p 2 cebollas picadas
+                                      li
+                                        p 12 limones
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Mezclar el
+                                          b Filete de Atún
+                                          |  Campomar con los ajíes, los tomates y las cebollas.
+                                      li
+                                        p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
+                                      li
+                                        p Salpimentar y servir en plato hondo.
+                                      li
+                                        p Decorar con papa sancochada y lechugas (opcional)
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-02.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Pasta colorida con trozos de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 20 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Filete de Atún
-																			li
-																				p 500 g de fideos de verduras
-																			li
-																				p 3 zanahorias sancochadas
-																			li
-																				p 5 cucharadas de mantequilla
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Sancochar los fideos, escurrirlos y reservar. Derretir la mantequilla en una olla a fuego bajo y agregar los fideos.
-																			li
-																				p Incorporar el Filete de Atún Campomarb , laszanahorias cortadas en rodajas.
-																			li
-																				p Salpimentar al gusto y servir
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='1')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-02.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Ensalada Templada de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 40 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Filete de Atún  Artesanal
+                                      li
+                                        p 20 aceitunas negras
+                                      li
+                                        p 1 cebolla grande cortada en juliana
+                                      li
+                                        p 12 tomates cherry
+                                      li
+                                        p Perejil al gusto
+                                      li
+                                        p 2 limones
+                                      li
+                                        p Arroz (opcional)
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
+                                      li
+                                        p Agregar el jugo de los limones y salpimentar al gusto.
+                                      li
+                                        p Mezclar, decorar con perejil y servir
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-03.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Club sándwich de caballa
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 10 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Trozos de Caballa
-																			li
-																				p 3 rebanadas de pan de molde grande
-																			li
-																				p Mayonesa
-																			li
-																				p Mantequilla
-																			li
-																				p Tomate
-																			li
-																				p Lechuga
-																			li
-																				p Queso
-																			li
-																				p Tocino
-																			li
-																				p Palta
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Freír el tocino y reservar.
-																			li
-																				p Untar un poco de mantequilla en cada rebanada y dorarlas sobre una plancha.
-																			li
-																				p
-																					| Untar rebanada base con mayonesa, colocar la lechuga, unas rodajas de tomate y el tocino encima.
-																			li
-																				p
-																					| Poner otra rebanada y agregar los Trozos de Caballa Campomar mezclados con un poco de mayonesa. Agregar el queso y la palta.
-																			li
-																				p Tapar con la tercera rebanada de pan untada de mayonesa.
-																			li
-																				p Cortar en cuatro triángulos y servir con papas fritas.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='1')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-03.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Ensalada Caprichosa con atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 10 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Filete de Atún Claro
+                                      li
+                                        p 12 tomates cherry
+                                      li
+                                        p 1 lechuga
+                                      li
+                                        p 1 pepino
+                                      li
+                                        p 1 taza de alverjitas
+                                      li
+                                        p 1 limón
+                                      li
+                                        p Aceite de oliva
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Sancochar las alverjitas y el choclo.
+                                      li
+                                        p
+                                          | Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
+                                      li
+                                        p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
+                                      li
+                                        p Mover y servir.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-04.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Zapallito italiano relleno de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 30 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Grated de Atún
-																			li
-																				p 2 zapallitos italianos
-																			li
-																				p 1 cebolla
-																			li
-																				p 300 g de langostinos
-																			li
-																				p 1 cucharada de harina
-																			li
-																				p 1 vaso de leche
-																			li
-																				p Queso rayado (tipo de queso de preferencia)
-																			li
-																				p Aceite de oliva extra virgen
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Lavar los zapallitos, cortar las puntas y retirar las pepas con una cuchara. Reservar.
-																			li
-																				p Freír la cebolla picada finamente en una sartén
-																			li
-																				p con el aceite de oliva.
-																			li
-																				p
-																					| Incorporar el Grated de Atún cuando la cebolla comience a dorar. Cocinar por 3 minutos.
-																			li
-																				p
-																					| Añadir la harina, cocinar durante 2 minutos. Incorporar la leche poco a poco, mezclando.
-																			li
-																				p
-																					| Por último, añadir los langostinos pelados y trozados. Salpimentar al gusto. Rellenar los zapallitos con la mezcla, agregar el queso por encima y llevar al horno a 180°C por 25 minutos. Servir.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='1')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-04.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Ensalada Campomar
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 15 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Filete de Atún Light
+                                      li
+                                        p 1/2 taza de alverjitas
+                                      li
+                                        p 1/4 de taza de habas
+                                      li
+                                        p 2 papas
+                                      li
+                                        p 2 zanahorias
+                                      li
+                                        p Hojas de Lechuga
+                                      li
+                                        p 2 cucharadas de mayonesa
+                                      li
+                                        p 1 limón
+                                      li
+                                        p Perejil al gusto
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
+                                      li
+                                        p Agregar el Filete de Atún Light
+                                      li
+                                        p
+                                          | Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
+                                      li
+                                        p Decorar con lechugas
+                      hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='2')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-2-01.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Lomo saltado de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 25 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 06 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Filete de Atún Artesanal
+                                      li
+                                        p 2 cucharadas de aceite
+                                      li
+                                        p 4 cucharadas de pisco
+                                      li
+                                        p 2 cebollas cortadas en juliana
+                                      li
+                                        p 2 ajíes amarillos sin venas ni pepas en tiras finas
+                                      li
+                                        p 3 tomates con piel y pepas en octavos
+                                      li
+                                        p 1/4 de taza de sillao
+                                      li
+                                        p 4 cucharadas de vinagre blanco
+                                      li
+                                        p 2 cucharadas de culantro picado
+                                      li
+                                        p 4 tazas de papas fritas
+                                      li
+                                        p 4 tazas de arroz con choclo
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Calentar el aceite en una sartén a fuego alto. Agregar el Filete de Atún Artesanal Campomar y saltear durante dos minutos.
+                                      li
+                                        p
+                                          | Verter el pisco, flambear durante 30 segundos y sazonar con sal y pimienta. Retirar del fuego y resrvar en un recipiente.
+                                      li
+                                        p
+                                          | En la misma sartén añadir la cebolla, el ají amarillo y el tomate, y cocinar durante dos minutos. Incorporar el atún salteado, el sillao y el vinagre, y cocinar durante dos minutos más.
+                                      li
+                                        p Retirar del fuego.
+                                      li
+                                        p
+                                          | Esparcir el culantro picado. Mezclar el lomo saltado con las papas fritas y servir junto con el arroz con choclo.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-05.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Cuatro estaciones con caballa
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 10 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Lomos de Caballa
-																			li
-																				p Lechuga
-																			li
-																				p 250 g de aceitunas verdes
-																			li
-																				p 8 huevos
-																			li
-																				p 2 cucharadas de aceite de oliva
-																			li
-																				p 2 limones
-																			li
-																				p Sal y pimienta al gust
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Sancochar los huevos, pelarlos y cortarlos en cuatro.
-																			li
-																				p Partir la lechuga en trozos pequeños con la mano.
-																			li
-																				p
-																					| En un tazón, echar los Lomos de Caballa Campomar, añadir el jugo de los limones, y salpimentar al gusto.
-																			li
-																				p
-																					| Servir formando cuatro divisiones: los huevos, la lechuga, las aceitunas y los filetes de caballa.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='2')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-2-02.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Causa de caballa
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 20 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 06 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidades de Sólido de Caballa
+                                      li
+                                        p 1/2 kg de papa amarilla
+                                      li
+                                        p 2 cucharadas de ají amarillo molido
+                                      li
+                                        p 2 limones
+                                      li
+                                        p Sal
+                                      li
+                                        p 1/2 taza de aceite vegetal
+                                      li
+                                        p 1/2 cebolla picada
+                                      li
+                                        p 1 rama de apio picada
+                                      li
+                                        p 200 g de mayonesa light
+                                      li
+                                        p Sal y pimienta al gusto
+                                      li
+                                        p Aceitunas sin pepa
+                                      li
+                                        p 1 palta
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Para la masa: sancochar la papa amarilla y prensar 3 veces.
+                                      li
+                                        p
+                                          | Una vez prensada, dejar enfriar, agregar el limón, la sal, el ají molido y un chorro de aceite.
+                                      li
+                                        p Dejar reposar al menos 5 minutos.
+                                      li
+                                        p
+                                          | Para el relleno: en un recipiente agregar la cebolla, el apio, la mayonesa, el limón el Sólido de Caballa Campomar0, y salpimentar. Para el armado: poner la primera capa de masa, seguida del relleno, la palta y, finamente, la capa de masa restante en cima. Decorar con aceitunas picadas, mayonesa y perejil.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-06.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Tornillos con atún en ensalada
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 15 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Lomos de Atún Light
-																			li
-																				p 250 g de fideos tornillo
-																			li
-																				p 200 g de aceitunas verdes despepitadas
-																			li
-																				p 200 g de aceitunas negras despepitadas
-																			li
-																				p 500 g de tomates en picado en cuadraditos
-																			li
-																				p Hojas de lechuga
-																			li
-																				p Aceite de oliva
-																			li
-																				p 2 limones
-																			li
-																				p Sal al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Sancochar los fideos y dejar enfriar.
-																			li
-																				p
-																					| En un recipiente, colocar las aceitunas cortadas en rodajas, la lechuga picada, los tomates y los Lomos de Atún Light Campomar.
-																			li
-																				p Exprimir los limones y echar el jugo y el aceite de oliva, la sal y los fideos.
-																			li
-																				p Mezclar y servir.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='2')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-2-03.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Papa rellena con atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 30 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 06 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Grated de Atún Campomar
+                                      li
+                                        p 1 kg de papas
+                                      li
+                                        p 1 huevo duro cortado en cuadrados
+                                      li
+                                        p 1/4 taza de aceite
+                                      li
+                                        p 1 cucharadita de ajos molidos
+                                      li
+                                        p 1/2 taza de harina
+                                      li
+                                        p 8 aceitunas pequeñas
+                                      li
+                                        p 1 cucharada de perejil picado
+                                      li
+                                        p 50 g de pasas (opcional)
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Sancochar las papas, pelarlas y prensarlas. Salpimentar al gusto.
+                                      li
+                                        p
+                                          | Hacer un aderezo con los ajos y la cebolla. Agregar los huevos, las pasas, las aceitunas y el Grated de Atún Campomar . Añadir el perejil.
+                                      li
+                                        p
+                                          | Armar las papas con esta preparación haciendo medianos bollos rellenos, enharinarlas y freírlas en aceite bien caliente. Servir acompañado de arroz blanco y salsa criolla.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='1')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-3-07.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Girasoles con croquetas de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 20 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Lomos de Atún
-																			li
-																				p 500 g de papas
-																			li
-																				p 1 huevo
-																			li
-																				p 3 cucharadas de harina
-																			li
-																				p 1 cucharadita de ajo molido
-																			li
-																				p Aceite
-																			li
-																				p Mayonesa
-																			li
-																				p Aceitunas sin pepa
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Freír las papas en tiras.
-																			li
-																				p
-																					| En un recipiente, mezclar los Lomos de Atún Campomar, el huevo, la harina, el ajo, la sal y la pimienta. Armas unas croquetas y freír.
-																			li
-																				p Servir las papas y las croquetas de atún formando unos “girasoles”.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='2')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-2-04.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Coliflor saltada con filete de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 15 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Filete de Atún Campomar
+                                      li
+                                        p 1 coliflor mediana cortada en ramos chicos
+                                      li
+                                        p 1 cebolla cortada en cuadraditos
+                                      li
+                                        p 1 cucharada de ajos molidos
+                                      li
+                                        p 1 cucharada de kión molido
+                                      li
+                                        p 1/4 de taza de aceite
+                                      li
+                                        p 1 kg de papas cortadas y peladas
+                                      li
+                                        p 1 cucharada de sillao
+                                      li
+                                        p 1 ají verde cortado en cuadraditos
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Hacer un aderezo con los ajos, la cebolla y el ají picado.
+                                      li
+                                        p Agregar el Filete de Atún Campomar, la coliflor y el kión.
+                                      li
+                                        p Cocinar hasta que la coliflor esté tierna.
+                                      li
+                                        p Condimentar al gusto y retirar del fuego.
+                                      li
+                                        p Aparte, freír las papas y agregar a la preparación anterior.
+                                      li
+                                        p Servir con arroz blanco
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='2')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-2-01.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Lomo saltado de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 25 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 06 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Filete de Atún Artesanal
-																			li
-																				p 2 cucharadas de aceite
-																			li
-																				p 4 cucharadas de pisco
-																			li
-																				p 2 cebollas cortadas en juliana
-																			li
-																				p 2 ajíes amarillos sin venas ni pepas en tiras finas
-																			li
-																				p 3 tomates con piel y pepas en octavos
-																			li
-																				p 1/4 de taza de sillao
-																			li
-																				p 4 cucharadas de vinagre blanco
-																			li
-																				p 2 cucharadas de culantro picado
-																			li
-																				p 4 tazas de papas fritas
-																			li
-																				p 4 tazas de arroz con choclo
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Calentar el aceite en una sartén a fuego alto. Agregar el Filete de Atún Artesanal Campomar y saltear durante dos minutos.
-																			li
-																				p
-																					| Verter el pisco, flambear durante 30 segundos y sazonar con sal y pimienta. Retirar del fuego y resrvar en un recipiente.
-																			li
-																				p
-																					| En la misma sartén añadir la cebolla, el ají amarillo y el tomate, y cocinar durante dos minutos. Incorporar el atún salteado, el sillao y el vinagre, y cocinar durante dos minutos más.
-																			li
-																				p Retirar del fuego.
-																			li
-																				p
-																					| Esparcir el culantro picado. Mezclar el lomo saltado con las papas fritas y servir junto con el arroz con choclo.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='2')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-2-05.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Ají de caballa
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 40 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes5', role='button', aria-expanded='false', aria-controls='ingredientes5')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes5.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Grated de Caballa
+                                      li
+                                        p 1 kg de papas
+                                      li
+                                        p 1/2 taza de leche
+                                      li
+                                        p 3 cucharadas de ají verde molido
+                                      li
+                                        p 1 cucharada de ajo molido
+                                      li
+                                        p 1/2 taza de cebolla picada en cuadraditos
+                                      li
+                                        p 1 taza de harina
+                                      li
+                                        p 1 sobrecito de palillo
+                                      li
+                                        p 1 ramito de hierba buena
+                                      li
+                                        p 1 huevo duro
+                                      li
+                                        p 4 aceitunas
+                                      li
+                                        p Aceite
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores5', role='button', aria-expanded='false', aria-controls='valores5')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores5.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Sancochar, pelar y cortar las papas en rodajas.
+                                      li
+                                        p Disolver la harina en agua y agregar la mitad de la leche.
+                                      li
+                                        p Hacer un aderezo con los condimentos, el ajo, el ají, el palillo y la cebolla.
+                                      li
+                                        p En la misma olla, agregar la harina de a pocos y mover diez minutos.
+                                      li
+                                        p
+                                          | Añadir la hierba buena, el Grated de Caballa y el resto de la leche. Salpimentar al gusto.
+                                      li
+                                        p
+                                          | Servir acompañado de las papas, las aceitunas, el huevo duro en rodajas, y arroz blanco.
+                      hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-01.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Tomates rellenos de caballa
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 20 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 06 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes1.collapse.multi-collapse
+                                  .mt-2.card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Grated de Caballa
+                                      li
+                                        p 1/4 de taza de mayonesa
+                                      li
+                                        p 1 cebolla picada en cuadraditos
+                                      li
+                                        p 1 tallo de apio cortado en cuadraditos
+                                      li
+                                        p 6 tomates pequeños
+                                      li
+                                        p 6 aceitunas
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores1.collapse.multi-collapse
+                                  .mt-2.card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Poner en un tazón el Grated Caballav y mezclar suavemente con la mayonesa, las cebollas, el apio, la sal y la pimienta. Reservar.
+                                      li
+                                        p
+                                          | Cortar la parte superior de los tomates, y retirar las semillas con una cuchara pequeña. LLenar los tomates con la mezcla de caballa.
+                                      li
+                                        p Decorar los bordes de los tomates con las aceitunas cortadas en tiras y servir.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='2')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-2-02.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Causa de caballa
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 20 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 06 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidades de Sólido de Caballa
-																			li
-																				p 1/2 kg de papa amarilla
-																			li
-																				p 2 cucharadas de ají amarillo molido
-																			li
-																				p 2 limones
-																			li
-																				p Sal
-																			li
-																				p 1/2 taza de aceite vegetal
-																			li
-																				p 1/2 cebolla picada
-																			li
-																				p 1 rama de apio picada
-																			li
-																				p 200 g de mayonesa light
-																			li
-																				p Sal y pimienta al gusto
-																			li
-																				p Aceitunas sin pepa
-																			li
-																				p 1 palta
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Para la masa: sancochar la papa amarilla y prensar 3 veces.
-																			li
-																				p
-																					| Una vez prensada, dejar enfriar, agregar el limón, la sal, el ají molido y un chorro de aceite.
-																			li
-																				p Dejar reposar al menos 5 minutos.
-																			li
-																				p
-																					| Para el relleno: en un recipiente agregar la cebolla, el apio, la mayonesa, el limón el Sólido de Caballa Campomar0, y salpimentar. Para el armado: poner la primera capa de masa, seguida del relleno, la palta y, finamente, la capa de masa restante en cima. Decorar con aceitunas picadas, mayonesa y perejil.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-02.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Pasta colorida con trozos de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 20 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Filete de Atún
+                                      li
+                                        p 500 g de fideos de verduras
+                                      li
+                                        p 3 zanahorias sancochadas
+                                      li
+                                        p 5 cucharadas de mantequilla
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Sancochar los fideos, escurrirlos y reservar. Derretir la mantequilla en una olla a fuego bajo y agregar los fideos.
+                                      li
+                                        p Incorporar el Filete de Atún Campomarb , laszanahorias cortadas en rodajas.
+                                      li
+                                        p Salpimentar al gusto y servir
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='2')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-2-03.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Papa rellena con atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 30 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 06 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Grated de Atún Campomar
-																			li
-																				p 1 kg de papas
-																			li
-																				p 1 huevo duro cortado en cuadrados
-																			li
-																				p 1/4 taza de aceite
-																			li
-																				p 1 cucharadita de ajos molidos
-																			li
-																				p 1/2 taza de harina
-																			li
-																				p 8 aceitunas pequeñas
-																			li
-																				p 1 cucharada de perejil picado
-																			li
-																				p 50 g de pasas (opcional)
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Sancochar las papas, pelarlas y prensarlas. Salpimentar al gusto.
-																			li
-																				p
-																					| Hacer un aderezo con los ajos y la cebolla. Agregar los huevos, las pasas, las aceitunas y el Grated de Atún Campomar . Añadir el perejil.
-																			li
-																				p
-																					| Armar las papas con esta preparación haciendo medianos bollos rellenos, enharinarlas y freírlas en aceite bien caliente. Servir acompañado de arroz blanco y salsa criolla.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-03.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Club sándwich de caballa
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 10 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Trozos de Caballa
+                                      li
+                                        p 3 rebanadas de pan de molde grande
+                                      li
+                                        p Mayonesa
+                                      li
+                                        p Mantequilla
+                                      li
+                                        p Tomate
+                                      li
+                                        p Lechuga
+                                      li
+                                        p Queso
+                                      li
+                                        p Tocino
+                                      li
+                                        p Palta
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Freír el tocino y reservar.
+                                      li
+                                        p Untar un poco de mantequilla en cada rebanada y dorarlas sobre una plancha.
+                                      li
+                                        p
+                                          | Untar rebanada base con mayonesa, colocar la lechuga, unas rodajas de tomate y el tocino encima.
+                                      li
+                                        p
+                                          | Poner otra rebanada y agregar los Trozos de Caballa Campomar mezclados con un poco de mayonesa. Agregar el queso y la palta.
+                                      li
+                                        p Tapar con la tercera rebanada de pan untada de mayonesa.
+                                      li
+                                        p Cortar en cuatro triángulos y servir con papas fritas.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='2')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-2-04.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Coliflor saltada con filete de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 15 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Filete de Atún Campomar
-																			li
-																				p 1 coliflor mediana cortada en ramos chicos
-																			li
-																				p 1 cebolla cortada en cuadraditos
-																			li
-																				p 1 cucharada de ajos molidos
-																			li
-																				p 1 cucharada de kión molido
-																			li
-																				p 1/4 de taza de aceite
-																			li
-																				p 1 kg de papas cortadas y peladas
-																			li
-																				p 1 cucharada de sillao
-																			li
-																				p 1 ají verde cortado en cuadraditos
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Hacer un aderezo con los ajos, la cebolla y el ají picado.
-																			li
-																				p Agregar el Filete de Atún Campomar, la coliflor y el kión.
-																			li
-																				p Cocinar hasta que la coliflor esté tierna.
-																			li
-																				p Condimentar al gusto y retirar del fuego.
-																			li
-																				p Aparte, freír las papas y agregar a la preparación anterior.
-																			li
-																				p Servir con arroz blanco
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-04.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Zapallito italiano relleno de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 30 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Grated de Atún
+                                      li
+                                        p 2 zapallitos italianos
+                                      li
+                                        p 1 cebolla
+                                      li
+                                        p 300 g de langostinos
+                                      li
+                                        p 1 cucharada de harina
+                                      li
+                                        p 1 vaso de leche
+                                      li
+                                        p Queso rayado (tipo de queso de preferencia)
+                                      li
+                                        p Aceite de oliva extra virgen
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores4.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p
+                                          | Lavar los zapallitos, cortar las puntas y retirar las pepas con una cuchara. Reservar.
+                                      li
+                                        p Freír la cebolla picada finamente en una sartén
+                                      li
+                                        p con el aceite de oliva.
+                                      li
+                                        p
+                                          | Incorporar el Grated de Atún cuando la cebolla comience a dorar. Cocinar por 3 minutos.
+                                      li
+                                        p
+                                          | Añadir la harina, cocinar durante 2 minutos. Incorporar la leche poco a poco, mezclando.
+                                      li
+                                        p
+                                          | Por último, añadir los langostinos pelados y trozados. Salpimentar al gusto. Rellenar los zapallitos con la mezcla, agregar el queso por encima y llevar al horno a 180°C por 25 minutos. Servir.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='2')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-2-05.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Ají de caballa
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 40 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes5', role='button', aria-expanded='false', aria-controls='ingredientes5')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes5.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Grated de Caballa
-																			li
-																				p 1 kg de papas
-																			li
-																				p 1/2 taza de leche
-																			li
-																				p 3 cucharadas de ají verde molido
-																			li
-																				p 1 cucharada de ajo molido
-																			li
-																				p 1/2 taza de cebolla picada en cuadraditos
-																			li
-																				p 1 taza de harina
-																			li
-																				p 1 sobrecito de palillo
-																			li
-																				p 1 ramito de hierba buena
-																			li
-																				p 1 huevo duro
-																			li
-																				p 4 aceitunas
-																			li
-																				p Aceite
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores5', role='button', aria-expanded='false', aria-controls='valores5')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores5.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Sancochar, pelar y cortar las papas en rodajas.
-																			li
-																				p Disolver la harina en agua y agregar la mitad de la leche.
-																			li
-																				p Hacer un aderezo con los condimentos, el ajo, el ají, el palillo y la cebolla.
-																			li
-																				p En la misma olla, agregar la harina de a pocos y mover diez minutos.
-																			li
-																				p
-																					| Añadir la hierba buena, el Grated de Caballa y el resto de la leche. Salpimentar al gusto.
-																			li
-																				p
-																					| Servir acompañado de las papas, las aceitunas, el huevo duro en rodajas, y arroz blanco.
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-05.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Cuatro estaciones con caballa
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 10 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Lomos de Caballa
+                                      li
+                                        p Lechuga
+                                      li
+                                        p 250 g de aceitunas verdes
+                                      li
+                                        p 8 huevos
+                                      li
+                                        p 2 cucharadas de aceite de oliva
+                                      li
+                                        p 2 limones
+                                      li
+                                        p Sal y pimienta al gust
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores1.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Sancochar los huevos, pelarlos y cortarlos en cuatro.
+                                      li
+                                        p Partir la lechuga en trozos pequeños con la mano.
+                                      li
+                                        p
+                                          | En un tazón, echar los Lomos de Caballa Campomar, añadir el jugo de los limones, y salpimentar al gusto.
+                                      li
+                                        p
+                                          | Servir formando cuatro divisiones: los huevos, la lechuga, las aceitunas y los filetes de caballa.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='3')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-01.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Cebiche de filete de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 15 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes1', role='button', aria-expanded='false', aria-controls='ingredientes1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| 4 unidades de
-																					b Filete de Atún
-																					|  Campomar
-																			li
-																				p 2 ajíes amarillos picados
-																			li
-																				p 4 tomates pelados y picados
-																			li
-																				p 2 cebollas picadas
-																			li
-																				p 12 limones
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores1', role='button', aria-expanded='false', aria-controls='valores1')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores1.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Mezclar el
-																					b Filete de Atún
-																					|  Campomar con los ajíes, los tomates y las cebollas.
-																			li
-																				p Exprimir los limones y agregar el jugo a la preparación. Mezclar suavemente.
-																			li
-																				p Salpimentar y servir en plato hondo.
-																			li
-																				p Decorar con papa sancochada y lechugas (opcional)
-											hr.hr-recipes
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-06.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Tornillos con atún en ensalada
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 15 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 2 unidades de Lomos de Atún Light
+                                      li
+                                        p 250 g de fideos tornillo
+                                      li
+                                        p 200 g de aceitunas verdes despepitadas
+                                      li
+                                        p 200 g de aceitunas negras despepitadas
+                                      li
+                                        p 500 g de tomates en picado en cuadraditos
+                                      li
+                                        p Hojas de lechuga
+                                      li
+                                        p Aceite de oliva
+                                      li
+                                        p 2 limones
+                                      li
+                                        p Sal al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores2.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Sancochar los fideos y dejar enfriar.
+                                      li
+                                        p
+                                          | En un recipiente, colocar las aceitunas cortadas en rodajas, la lechuga picada, los tomates y los Lomos de Atún Light Campomar.
+                                      li
+                                        p Exprimir los limones y echar el jugo y el aceite de oliva, la sal y los fideos.
+                                      li
+                                        p Mezclar y servir.
+                      hr.hr-recipes
 
-										.row.d-flex.justify-content-center.item-recipe(data-category='3')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-02.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Ensalada Templada de atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 40 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes2', role='button', aria-expanded='false', aria-controls='ingredientes2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Filete de Atún  Artesanal
-																			li
-																				p 20 aceitunas negras
-																			li
-																				p 1 cebolla grande cortada en juliana
-																			li
-																				p 12 tomates cherry
-																			li
-																				p Perejil al gusto
-																			li
-																				p 2 limones
-																			li
-																				p Arroz (opcional)
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores2', role='button', aria-expanded='false', aria-controls='valores2')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores2.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| En un recipiente colocar la cebolla, las aceitunas, los tomates cortados por la mitad, el Filete de Atún Artesanal Campomar y el arroz (opcional).
-																			li
-																				p Agregar el jugo de los limones y salpimentar al gusto.
-																			li
-																				p Mezclar, decorar con perejil y servir
-											hr.hr-recipes
-
-										.row.d-flex.justify-content-center.item-recipe(data-category='3')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-03.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Ensalada Caprichosa con atún
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 10 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 2 unidades de Filete de Atún Claro
-																			li
-																				p 12 tomates cherry
-																			li
-																				p 1 lechuga
-																			li
-																				p 1 pepino
-																			li
-																				p 1 taza de alverjitas
-																			li
-																				p 1 limón
-																			li
-																				p Aceite de oliva
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores3.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p Sancochar las alverjitas y el choclo.
-																			li
-																				p
-																					| Mezclar todos los ingredientes junto con el Filete de Atún Claro Campomar en un recipiente.
-																			li
-																				p Añadir el jugo de limón, el aceite de oliva y salpimentar al gusto.
-																			li
-																				p Mover y servir.
-											hr.hr-recipes
-
-										.row.d-flex.justify-content-center.item-recipe(data-category='3')
-											.col-12
-												.row
-													.col-xs-12.col-sm-6
-														img.recipes.recipes__img(src='./img/recipes/rec/rec-04.jpg')
-													.col.d-flex.align-items-center
-														.slider-about__text
-															h3.color1.tradeGothic
-																b Ensalada Campomar
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
-																p.color1.tradeGothic.text__p.pt-4
-																	| 15 min.
-																	br
-																	br
-															span.d-flex.align-items-center
-																img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
-																p.color1.tradeGothic.text__p 04 porc.
-												.row.mt-5
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes4', role='button', aria-expanded='false', aria-controls='ingredientes4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/pro-3.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Ingredientes
-														.row
-															.col
-																#ingredientes4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p 1 unidad de Filete de Atún Light
-																			li
-																				p 1/2 taza de alverjitas
-																			li
-																				p 1/4 de taza de habas
-																			li
-																				p 2 papas
-																			li
-																				p 2 zanahorias
-																			li
-																				p Hojas de Lechuga
-																			li
-																				p 2 cucharadas de mayonesa
-																			li
-																				p 1 limón
-																			li
-																				p Perejil al gusto
-																			li
-																				p Sal y pimienta al gusto
-													.col-lg-4.col-md-5.mt-2
-														.btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores4', role='button', aria-expanded='false', aria-controls='valores4')
-															.btn-recipes__cont-img
-																img(src='./img/icon/rec-1.png', alt='')
-															i.fa.fa-chevron-circle-down.btn-recipes__fa
-															p.text__p Preparación
-														.row
-															.col
-																#valores4.collapse.multi-collapse
-																	.card.card-body.card-product.card-recipes
-																		ul.ul-recipes
-																			li
-																				p
-																					| Sancochar las alverjitas, las habas, las papas, las zanahorias y cortarlas en cuadraditos.
-																			li
-																				p Agregar el Filete de Atún Light
-																			li
-																				p
-																					| Mezclar todos los ingredientes en un recipiente, añadir el jugo de limón y salpimentar al gusto.
-																			li
-																				p Decorar con lechugas
-											hr.hr-recipes
-
-
-
-				.row
-					.col-5.mt-4.mx-auto
-						#pagination-recipes.d-flex.justify-content-center.my-pagination
+                    .row.d-flex.justify-content-center.item-recipe(data-category='3')
+                      .col-12
+                        .row
+                          .col-xs-12.col-sm-6
+                            img.recipes.recipes__img(src='./img/recipes/rec/rec-3-07.jpg')
+                          .col.d-flex.align-items-center
+                            .slider-about__text
+                              h3.color1.tradeGothic
+                                b Girasoles con croquetas de atún
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-2.png', alt='')
+                                p.color1.tradeGothic.text__p.pt-4
+                                  | 20 min.
+                                  br
+                                  br
+                              span.d-flex.align-items-center
+                                img.img-icon-left.mr-2(src='./img/icon/rec-3.png', alt='')
+                                p.color1.tradeGothic.text__p 04 porc.
+                        .row.mt-5
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#ingredientes3', role='button', aria-expanded='false', aria-controls='ingredientes3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/pro-3.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Ingredientes
+                            .row
+                              .col
+                                #ingredientes3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p 1 unidad de Lomos de Atún
+                                      li
+                                        p 500 g de papas
+                                      li
+                                        p 1 huevo
+                                      li
+                                        p 3 cucharadas de harina
+                                      li
+                                        p 1 cucharadita de ajo molido
+                                      li
+                                        p Aceite
+                                      li
+                                        p Mayonesa
+                                      li
+                                        p Aceitunas sin pepa
+                                      li
+                                        p Sal y pimienta al gusto
+                          .col-lg-4.col-md-5.mt-2
+                            .btn.white.pointer.btn-recipes__contenedor.d-flex.align-items-center(data-toggle='collapse', href='#valores3', role='button', aria-expanded='false', aria-controls='valores3')
+                              .btn-recipes__cont-img
+                                img(src='./img/icon/rec-1.png', alt='')
+                              i.fa.fa-chevron-circle-down.btn-recipes__fa
+                              p.text__p Preparación
+                            .row
+                              .col
+                                #valores3.collapse.multi-collapse
+                                  .card.card-body.card-product.card-recipes
+                                    ul.ul-recipes
+                                      li
+                                        p Freír las papas en tiras.
+                                      li
+                                        p
+                                          | En un recipiente, mezclar los Lomos de Atún Campomar, el huevo, la harina, el ajo, la sal y la pimienta. Armas unas croquetas y freír.
+                                      li
+                                        p Servir las papas y las croquetas de atún formando unos “girasoles”.
+                      hr.hr-recipes
+        .row
+          .col-12.mt-4.mx-auto
+            #pagination-recipes.d-flex.justify-content-center.my-pagination

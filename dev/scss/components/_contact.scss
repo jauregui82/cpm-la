@@ -63,11 +63,15 @@
     max-width: 31rem;
   }
   @include media-breakpoint-down(sm){
-    max-width: 21rem;
+    max-width: 24rem;
   }
-  @include media-breakpoint-down(xs){
-    max-width: 14rem;
+  @media (max-width: 420px) {
+    max-width: 19rem;
+
   }
+  // @include media-breakpoint-down(xs){
+  //   max-width: 14rem;
+  // }
 }
 
 .btn-contac{
@@ -205,6 +209,15 @@ form#distribute{
     width: 34%;
     top: -5%;
     left: -27%;
+    @include media-breakpoint-down(lg){
+      left: -18%;
+    }
+    @include media-breakpoint-down(md){
+      left: -19%;
+    }
+    @include media-breakpoint-down(sm){
+      left: -21%;
+    }
     @include media-breakpoint-down(xs){
       left: -18%;
     }
@@ -213,13 +226,48 @@ form#distribute{
     width: 47%;
     top: -2%;
     right: -31%;
+    @include media-breakpoint-down(lg){
+      right: -30%;
+    }
+    @include media-breakpoint-down(md){
+      right: -29%;
+    }
+    @include media-breakpoint-down(sm){
+      right: -28%;
+    }
+    @include media-breakpoint-down(xs){
+      right: -31%;
+    }
   }
   &__table{
     width: 42%;
     top: 57%;
     left: -29%;
+    @include media-breakpoint-down(lg){
+      left: -18%;
+    }
+    @include media-breakpoint-down(md){
+      left: -19%;
+    }
+    @include media-breakpoint-down(sm){
+      left: -21%;
+    }
     @include media-breakpoint-down(xs){
-      display: none;
+      left: -18%;
+      top: 81%;
+    }
+    @media (max-width:570px) {
+      left: -14%;
+      top: 79%;
+      width: 28%;
+    }
+    @media (max-width:480px) {
+      top: 80%;
+      width: 31%;
+    }
+    @media (max-width:380px) {
+      top: 86%;
+      width: 39%;
     }
   }
   &__ajies{
