@@ -1,13 +1,27 @@
 
 var listRecipes = null, listNews = null;
+var categoryRecipeActive = 1;
+
 if (window.location.hash == '#1') {
-  var categoryRecipeActive = 1;
+  categoryRecipeActive = 1;
 }
 else if (window.location.hash == '#2') {
-  var categoryRecipeActive = 2;
+  categoryRecipeActive = 2;
 }
 else if (window.location.hash == '#3') {
-  var categoryRecipeActive = 3;
+  categoryRecipeActive = 3;
+}
+
+const selectNavCategory = ()=>{
+  let list_item = Array.prototype.slice.apply(document.querySelectorAll('.item-nav'));
+  list_item.map((item) => {
+    item.classList.remove('active');
+
+    if(item.dataset.category == categoryRecipeActive){
+      item.classList.add('active');
+    }
+
+  });
 }
 
 const handlePagination = () => {
@@ -20,6 +34,7 @@ const handlePagination = () => {
 
     handlePaginationRecipes();
     handleNavCategoriesRecipes();
+    selectNavCategory();
     handlePaginationNews();
   });
 
@@ -100,6 +115,8 @@ const handlePaginationRecipes = (current_page = 1) => {
 				`;
       }
     }
+
+    // window.location.hash == categoryRecipeActive;
   }
 }
 
@@ -120,6 +137,7 @@ const handleNavCategoriesRecipes = () => {
 
         categoryRecipeActive = data_id;
         handlePaginationRecipes();
+        window.location.hash = categoryRecipeActive;
       }
     });
   }
