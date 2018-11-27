@@ -3,7 +3,7 @@ import { handleShowElement } from "./modules/general";
 import toggleMenu from "./modules/menu";
 import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
-import { handlePagination, handlePaginationRecipes,  handlePaginationNews } from "./modules/pagination";
+import { handlePagination, handlePaginationRecipes, handlePaginationNews } from "./modules/pagination";
 
 // import {
 //   handleItemArticle as handleItemArticleProducts,
@@ -18,8 +18,8 @@ import { handlePagination, handlePaginationRecipes,  handlePaginationNews } from
 
 handlePagination();
 
-window.handlePaginationNews= handlePaginationNews;
-window.handlePaginationRecipes= handlePaginationRecipes;
+window.handlePaginationNews = handlePaginationNews;
+window.handlePaginationRecipes = handlePaginationRecipes;
 window.handleShowElement = handleShowElement;
 window.toggleMenu = toggleMenu;
 window.sliderWrapper = sliderWrapper;
@@ -34,6 +34,10 @@ $(window).on('scroll', function () {
 $(window).on('load', function () {
   MenuScroll();
 
+  console.log('cargo la pagina')
+
+  // water();
+
   if (hideLoadin() == true) {
     setTimeout(function () {
       hideLoadin();
@@ -44,12 +48,95 @@ $(window).on('load', function () {
 
 });
 
+//quitar br de kos titulos del blog
+function strip_html_tags(str) {
+  if ((str === null) || (str === ''))
+    return false;
+  else
+    str = str.toString();
+
+  $('#title_blog').text(str.replace(/<[^>]*>/g, ''));
+
+}
+
+// function water() {
+//   var cnt = document.getElementById("count");
+//   var water = document.getElementById("water");
+//   var percent = cnt.innerText;
+//   var interval;
+//   interval = setInterval(function () {
+//     percent++;
+//     cnt.innerHTML = percent;
+//     water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+//     if (percent == 100) {
+//       clearInterval(interval);
+//       water.style.transform = 'translate(0px,100%)';
+//       percent == 0;
+//       cnt.innerHTML = 0;
+//     }
+//   }, 60);
+// }
+function water() {
+  var cnt = document.getElementById("count");
+  var water = document.getElementById("water");
+  var percent = cnt.innerText;
+  var interval;
+  interval = setInterval(function () {
+    percent++;
+    cnt.innerHTML = percent;
+    water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+    if (percent == 100) {
+      clearInterval(interval);
+      water.style.transform = 'translate(0px,70%)';
+      percent == 0;
+      cnt.innerHTML = 0;
+    }
+  }, 60);
+}
 function hideLoadin() {
   $(".loading__content").attr("data-aos", "zoom-out-down")
   return true;
 }
 
+function explorador() {
+  // Opera 8.0+
+  var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+  // Firefox 1.0+
+  var isFirefox = typeof InstallTrigger !== 'undefined';
+
+  // Safari 3.0+ "[object HTMLElementConstructor]"
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+  // Internet Explorer 6-11
+  var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+  // Edge 20+
+  var isEdge = !isIE && !!window.StyleMedia;
+
+  // Chrome 1+
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+  // Blink engine detection
+  var isBlink = (isChrome || isOpera) && !!window.CSS;
+
+  if (isIE) {
+    $('#content-logo').removeClass('xs-m-auto');
+    $('#logo-site').attr('src', './img/logo.png');
+    // $('#loadig-ie').css('display', 'block');
+    // alert('Internet explorer')
+  } else {
+    if ($(window).on('load')) {
+      $('#loadig-ot').css('display', 'block');
+      // water()
+    }
+  }
+
+}
 $(document).ready(function () {
+  explorador();
+
+  strip_html_tags($('#title_blog').text());
   var vh = window.innerHeight;
   var vw = window.innerWidth;
   if (vw < 991) {

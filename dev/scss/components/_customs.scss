@@ -19,7 +19,7 @@
     transform: translateX(-50%);
   }
   &__img{
-  zoom: 1.6;
+  // zoom: 1.6;
   }
 }
 .spinner {
@@ -86,6 +86,14 @@
     -webkit-text-stroke: 0.2px;
     @include media-breakpoint-down(sm){
       font-size: 15px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.2;
+      -webkit-text-stroke: 0.2px;
+      @include media-breakpoint-down(sm){
+        font-size: 15px;
+      }
     }
   }
   &__p-2{
@@ -203,8 +211,14 @@ h1.tradeGothic{
   position: absolute;
   bottom: 4%;
   left: 50%;
-  width: 60%;
+  width: 68%;
   transform: translateX(-50%);
+  div{
+    letter-spacing: 0.8px;
+  }
+  // a{
+  //   font-weight: bold;
+  // }
   // left: 10%;
 }
 .slide-img>img{

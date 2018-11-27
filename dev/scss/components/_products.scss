@@ -22,11 +22,14 @@
     transform: translateX(-50%);
     margin-top: 1rem;
   }
+  @include media-breakpoint-down(sm){
+    width: 10rem;
+  }
   @include media-breakpoint-down(xs){
     left: 41%;
     transform: translateX(-50%);
     margin-top: 1rem;
-    width: 50%;
+    width: 8rem;
   }
 }
 .content_box_prod{
@@ -166,6 +169,7 @@
     h4{
       margin: 0;
       font-size: 16.6px;
+      font-weight: bold;
     }
     p{
       font-size: 12px;
@@ -186,6 +190,7 @@
     h4{
       margin: 0;
       font-size: 16.6px;
+      font-weight: bold;
     }
     p{
       font-size: 12px;

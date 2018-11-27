@@ -277,6 +277,12 @@ div.recipes-grid__content:hover{
 }
 .card-recipes{
   padding-left: 2.7rem;
+  ul{
+    list-style: unset;
+    li{
+      font-size: 14px;
+    }
+  }
 }
 .img-icon-tabs{
   width: 4rem;

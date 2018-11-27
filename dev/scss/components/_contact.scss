@@ -264,6 +264,9 @@ form#distribute{
     @media (max-width:480px) {
       top: 80%;
       width: 31%;
+      left: unset;
+      right: -11%;
+      transform: rotate(180deg);
     }
     @media (max-width:380px) {
       top: 86%;

@@ -15,6 +15,17 @@
 		// padding-top: 4.5rem;
 		// padding-top: var(--height-nav);
 		margin-top: var(--height-nav);
-		min-height: calc(100vh - 16.5rem);
+		// min-height: calc(100vh - 16.5rem);
+		// min-height: calc(100vh - -10.5rem);
+  }
+	@include media-breakpoint-up(md) {
+    // min-height: calc(100vh - -10.5rem);
+    // max-height: 232rem;
+  }
+	@include media-breakpoint-up(sm) {
+    // min-height: calc(100vh - -140rem);
+  }
+	@include media-breakpoint-up(xs) {
+    // min-height: calc(100vh - -130rem);
   }
 }

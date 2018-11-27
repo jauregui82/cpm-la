@@ -44,7 +44,7 @@
   }
   .blog-sec{
     margin-top: 3rem;
-    padding: 2% 5% 0 9%;
+    padding: 2% 7% 0 12.8%;
     // padding: 2% 11% 0 15%;
     @include media-breakpoint-down(md){
       margin-top: 4rem;
@@ -198,7 +198,15 @@
 }
 #title_blog{
   font-size: 16px;
+  font-weight: bold;
+  border-right: 4px solid #fff;
   @include media-breakpoint-down(sm){
     font-size: 14px;
+  }
+}
+#content_blog{
+  ul{
+    list-style: unset;
+    padding-left: 1rem;
   }
 }

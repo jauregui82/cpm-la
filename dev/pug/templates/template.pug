@@ -21,14 +21,15 @@ html(lang="es")
     //- Windows Phone
     meta(name='msapplication-navbutton-color', content=`${theme_color}`)
 
-    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+    //- link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+    link(rel="stylesheet", href="./lib/css/fontawesome.css")
 
     //- Slick
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?ver=4.9.7")
+    link(rel="stylesheet", href="./lib/css/slick.css")
     //- slick theme
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css?ver=4.9.7")
+    link(rel="stylesheet", href="./lib/css/slick-theme.css")
     //-owl
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css")
+    //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css")
 
     //- ui
     //- link(rel="stylesheet", href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css")
@@ -37,10 +38,12 @@ html(lang="es")
     //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
 
     //- Fancybox
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css")
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="./lib/css/fancybox.css")
 
     //- AOS Animate
-    link(rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+    //- link(rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css")
+    link(rel="stylesheet" href="./lib/css/aos.css")
 
     //- Style
     link(rel="stylesheet", href="./css/styles.css")
@@ -50,11 +53,31 @@ html(lang="es")
       .loading__fondo
         .loading__animate
           img.loading__img(src="./img/logo.svg", alt="")
-          <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-          </div>
+          //- spiner
+          .spinner#loading-ie
+            .bounce1
+            .bounce2
+            .bounce3
+
+          //- //- waves
+          //- #loadig-ot
+          //-   svg(version='1.1', xmlns='https://www.w3.org/2000/svg', xmlns:xlink='https://www.w3.org/1999/xlink', x='0px', y='0px', style='display: none;')
+          //-     symbol#wave
+          //-       path(d='M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z')
+          //-       path(d='M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z')
+          //-       path(d='M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z')
+          //-       path(d='M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z')
+          //-   .water-jar
+          //-     .water-filling
+          //-       img.loading__img(src="./img/logo.svg", alt="")
+          //-       .centerNum.d-none
+          //-         #count.percentNum 0
+          //-         .percentB %
+          //-     #water.water
+          //-       svg.water_wave.water_wave_back(viewBox='0 0 560 20')
+          //-         use(xlink:href='#wave')
+          //-       svg.water_wave.water_wave_front(viewBox='0 0 560 20')
+          //-         use(xlink:href='#wave')
 
     //- menu
     include ../blocks/menu
@@ -70,20 +93,25 @@ html(lang="es")
 
     //- JQuery
     //- script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="  crossorigin="anonymous"></script>
+    //- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="  crossorigin="anonymous"></script>
+    <script src="lib/js/jquery.js"></script>
     //- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    //- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
     //- Fancybox
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js")
+    script(src="lib/js/fancybox.js")
     //- ui
     //- script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
     //- slick
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?ver=4.9.7")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js?ver=4.9.7")
+    script(src="lib/js/slick.js")
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js")
     //- Wow
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
     //- AOS animate
-    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    //- script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    script(src="lib/js/aos.js")
     //- Scrips
     script(src="js/scripts.min.js")
 

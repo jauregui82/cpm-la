@@ -80,8 +80,7 @@
         }
         @include media-breakpoint-down(sm){
           margin-top: 0rem;
-          left: 50%;
-          transform: translateX(-50%);
+          left: calc(50% - 24%);
           position: relative;
           max-width: 146px;
         }
@@ -118,13 +117,16 @@
       height: 100%;
       @include media-breakpoint-up(lg){
         max-width: 169px;
-        max-height: 206px;
+        max-height: 226px;
       }
       @include media-breakpoint-down(md){
         padding: 10% 5% 10% 5%;
       }
       p{
         font-size: 16px;
+        @include media-breakpoint-down(sm){
+          font-size: 15px;
+        }
       }
       div{
         h4{
@@ -148,6 +150,9 @@
       }
       p{
         font-size: 16px;
+        @include media-breakpoint-down(sm){
+          font-size: 15px;
+        }
       }
       div{
         h4{
@@ -263,6 +268,8 @@
   }
   @include media-breakpoint-down(sm){
     height: 70rem;
+    position: relative;
+    left: 2%;
   }
   @include media-breakpoint-down(xs){
   }
@@ -313,7 +320,7 @@
       // top: -4.6%;
     }
     @include media-breakpoint-down(sm){
-      top: 1.6%;
+      top: -2.4%;
     }
     @include media-breakpoint-down(xs){
       // display: none;

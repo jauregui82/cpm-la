@@ -1,4 +1,4 @@
-.cookies#cookies_content
+.cookies#cookies_content.d-none
   .cookies__content
     .row.d-flex.justify-content-center
       .col-xs-10.col-sm-8.mt-3
@@ -6,7 +6,7 @@
         br
         span.btn.btn-white-footer.tradeGothic.color1.mb-2#btn_acepto  ACEPTO
 footer.footer.bg-color1
-  .container.pt-3.pb-3.white
+  .container.pt-4.pb-2.white
     .row.d-flex.justify-content-center
       .col-xs-9.col-sm-8.col-md-8.col-lg-2.d-flex.align-items-center.centrar__1-footer
         a.pc-version.logo__footer(href="./")
@@ -17,10 +17,10 @@ footer.footer.bg-color1
         //-     li.hide_md
         //-       a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
         //-         span TÉRMINOS Y CONDICIONES
-        .footer__info.xs-center.white.d-flex.justify-content-center.mt-1.pl-2
-          div.pc-version
-            a.centrar__1-footer(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
-              span.white TÉRMINOS Y CONDICIONES
+        .footer__info.xs-center.white.d-flex.justify-content-around.mt-1.pl-2
+          a.centrar__1-footer.pc-version.pt-2(href="./terms.html", class=`${paginaActual==="terms" ? "active": ""}`)
+            span.white TÉRMINOS Y CONDICIONES
+          div.pc-version.pt-2
             span.float-left.tradeGothic.hide_md.d-none Síguenos en:
             .img-fa-content.ml-2.mr-2.float-left
               .img-fa.hide_md.d-none
@@ -33,6 +33,10 @@ footer.footer.bg-color1
                 a.hide_md.d-none(href="#")
                   img(src="./img/icon/fa-instagram.png", alt="")
             span.tradeGothic.hide_md  (01) - 2487523 | Av. Manuel Olguín 501 Surco
+          div.pc-version
+            img.footer__logos(src="./img/home/dolphin.png", alt="")
+            img.footer__logos(src="./img/home/escudo.png", alt="")
+
             //- mobile version
           .row.ml-0.mr-0.mobile-version.d-flex.justify-content-center
             .col-12.text-center
@@ -59,5 +63,6 @@ footer.footer.bg-color1
                 a.white(href="tel:+51012487523") 01 - 2487523 &nbsp;
                 | | Av. Manuel Olguín 501 Surco
               br
-              img.footer__logos(src="./img/home/dolphin.png", alt="")
-              img.footer__logos(src="./img/home/escudo.png", alt="")
+              .pt-2
+                img.footer__logos(src="./img/home/dolphin.png", alt="")
+                img.footer__logos(src="./img/home/escudo.png", alt="")

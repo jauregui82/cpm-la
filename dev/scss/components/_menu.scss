@@ -29,6 +29,11 @@
     max-width: 1440px;
 	}
 }
+#home-menu{
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 
 .menu{
 	color: #fff;
