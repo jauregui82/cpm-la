@@ -142,6 +142,10 @@
 .my-pagination .icon-left{
 	margin-left: .25rem;
 	margin-right: .65rem;
+
+	&:before {
+	  background-image: url(../img/sections/arrow-left.png);
+	}
 }
 
 .my-pagination .icon-right{

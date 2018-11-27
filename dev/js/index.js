@@ -5,6 +5,8 @@ import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
 import { handlePagination, handlePaginationRecipes, handlePaginationNews } from "./modules/pagination";
 
+import { handleLoadRecipes, handleNavCategoriesRecipes  } from "./modules/recipes";
+
 // import {
 //   handleItemArticle as handleItemArticleProducts,
 //   handleItemMenuMap as handleItemMenuMapProducts
@@ -16,10 +18,15 @@ import { handlePagination, handlePaginationRecipes, handlePaginationNews } from 
 // import 'aos/dist/aos.css';
 
 
-handlePagination();
+// handlePagination();
 
 window.handlePaginationNews = handlePaginationNews;
-window.handlePaginationRecipes = handlePaginationRecipes;
+
+// window.handlePaginationRecipes = handlePaginationRecipes;
+window.handleLoadRecipes = handleLoadRecipes;
+window.handleNavCategoriesRecipes = handleNavCategoriesRecipes;
+
+
 window.handleShowElement = handleShowElement;
 window.toggleMenu = toggleMenu;
 window.sliderWrapper = sliderWrapper;
@@ -33,6 +40,8 @@ $(window).on('scroll', function () {
 
 $(window).on('load', function () {
   MenuScroll();
+  handleLoadRecipes();
+  handleNavCategoriesRecipes();
 
   console.log('cargo la pagina')
 
@@ -76,6 +85,7 @@ function strip_html_tags(str) {
 //     }
 //   }, 60);
 // }
+
 function water() {
   var cnt = document.getElementById("count");
   var water = document.getElementById("water");
@@ -93,6 +103,7 @@ function water() {
     }
   }, 60);
 }
+
 function hideLoadin() {
   $(".loading__content").attr("data-aos", "zoom-out-down")
   return true;
@@ -135,7 +146,7 @@ function explorador() {
 }
 $(document).ready(function () {
   explorador();
-
+  water();
   strip_html_tags($('#title_blog').text());
   var vh = window.innerHeight;
   var vw = window.innerWidth;

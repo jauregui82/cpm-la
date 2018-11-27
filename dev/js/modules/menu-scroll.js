@@ -8,12 +8,23 @@ const MenuScroll = () => {
   // console.log(altura);
 
   if (altura > 85) {
-    // console.log(altura);
-    // console.log(altura);
     nav_menu.addClass('scroll-nav');
   } else {
     nav_menu.removeClass('scroll-nav');
   }
+
+  // var footer = $('footer');
+
+  // var altura_footer = $(window).scrollTop();
+  // // console.log(altura_footer);
+  // console.log($('body' ).height() - footer.scrollTop());
+
+  // if (altura_footer > ($('body' ).height() - footer.scrollTop())) {
+  //   console.log('ok');
+  //   // nav_menu.addClass('scroll-nav');
+  // } else {
+  //   // nav_menu.removeClass('scroll-nav');
+  // }
 }
 
 export {

@@ -17,7 +17,8 @@
     }
 }
 .logo-blue-intext{
-  width: 4.9rem;
+  // width: 4.9rem;
+  width: 4.8rem;
   margin-right: 3px;
   display: inline;
   padding-bottom: 4px;
@@ -51,7 +52,8 @@
   }
 }
 .logo-blue-intext2{
-  width: 4.9rem;
+  // width: 4.9rem;
+  width: 4.8rem;
   margin-right: 3px;
   margin-left: 10px;
   display: inline;
@@ -486,3 +488,13 @@ div[id*='table-show']{
 
 
 
+// CHECKBOX
+
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+	background-color: map-get($my-colors, color3);
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+	background-color: map-get($my-colors, color3);
+}

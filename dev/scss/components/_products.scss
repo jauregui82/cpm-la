@@ -342,6 +342,32 @@
       width: 100%;
       transform: translateX(-32%);
     }
+
+    tr{
+      // margin-top: .5rem;
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      td{
+        width: 100%;
+        display: block;
+      }
+
+      .box-img{
+        max-width: 40px;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+      }
+
+      img{
+        display: inline-block;
+      }
+      span{
+        margin-left: .65rem;
+      }
+    }
   }
 }
 .th{

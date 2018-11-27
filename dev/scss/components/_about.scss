@@ -45,7 +45,8 @@
 }
 .slider-about{
     &__nav-link{
-      padding: .5rem 0.3rem;
+      // padding: .5rem 0.3rem;
+      padding: 0 0.3rem;
     }
     &__img{
         // display: inline;
@@ -71,6 +72,8 @@
         width: 100%;
         max-width: 200px;
         transform: rotate(-17deg);
+        margin-left: auto;
+        margin-right: auto;
         // float: left;
         @include media-breakpoint-up(lg){
           margin-top: 2rem;
@@ -168,7 +171,8 @@
     }
     &__arrow{
       position: absolute;
-      right: -10%;
+      // right: -10%;
+      right: -12.5%;
       top: 20%;
       @include media-breakpoint-down (sm){
         right: 48%;
