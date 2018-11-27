@@ -18,12 +18,12 @@ import { handleLoadRecipes, handleNavCategoriesRecipes  } from "./modules/recipe
 // import 'aos/dist/aos.css';
 
 
-handlePagination();
+// handlePagination();
 
 window.handlePaginationNews = handlePaginationNews;
-window.handlePaginationRecipes = handlePaginationRecipes;
 
-// window.handleLoadRecipes = handleLoadRecipes;
+// window.handlePaginationRecipes = handlePaginationRecipes;
+window.handleLoadRecipes = handleLoadRecipes;
 window.handleNavCategoriesRecipes = handleNavCategoriesRecipes;
 
 
@@ -40,8 +40,8 @@ $(window).on('scroll', function () {
 
 $(window).on('load', function () {
   MenuScroll();
-  // handleLoadRecipes();
-  // handleNavCategoriesRecipes();
+  handleLoadRecipes();
+  handleNavCategoriesRecipes();
 
   console.log('cargo la pagina')
 
