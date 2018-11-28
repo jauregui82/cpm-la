@@ -26,7 +26,7 @@ const handleLoadRecipes = (current_page = 1)=>{
 
 	if(container_recipes != null){
 
-		let container_pagination= document.querySelector('#pagination-recipes');
+		let pagination_recipes= document.querySelector('#pagination-recipes');
 
 		let elems= listRecipesArray;
 		let items= elems;
@@ -48,51 +48,52 @@ const handleLoadRecipes = (current_page = 1)=>{
       container_recipes.appendChild(nuevo);
     });
 
-		container_pagination.innerHTML='';
+		pagination_recipes.innerHTML='';
 
-		if(current_page <= total_pages){
+    if (current_page <= total_pages) {
 
-			if(current_page == 1){
-				if(total_pages == 1){
+      if (current_page == 1) {
+        if (total_pages == 1) {
 
-					container_pagination.innerHTML +=`
+          pagination_recipes.innerHTML += `
 						<span>Página</span>
-						<span class="number active">${ current_page }</span>
+						<span class="number active">${ current_page}</span>
 						<span>de</span>
-						<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages })'><span class="number">${ total_pages }</span></a>
+						<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages})'><span class="number">${total_pages}</span></a>
 					`;
-				}
-				else{
-					container_pagination.innerHTML +=`
+        }
+        else {
+          pagination_recipes.innerHTML += `
 						<span>Página</span>
-						<span class="number active">${ current_page }</span>
+						<span class="number active">${ current_page}</span>
 						<span>de</span>
-						<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages })'><span class="number">${ total_pages }</span></a>
-						<a href='javascript:void(0);' onclick='handleLoadRecipes(${ current_page + 1 })' class="page-button page-next" href="#"></a>
+						<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages})'><span class="number">${total_pages}</span></a>
+						<a href='javascript:void(0);' class='icon-right' onclick='handleLoadRecipes(${ current_page + 1})'><img class="img-icon-tabs" src="./img/icon/arrow-right.png" alt=""></a>
 					`;
-				}
-			}
+        }
+      }
 
-			else if(current_page == total_pages){
-				container_pagination.innerHTML +=`
-					<a href='javascript:void(0);' onclick='handleLoadRecipes(${ current_page - 1 })' class="page-button page-prev" href="#"></a>
+      else if (current_page == total_pages) {
+        pagination_recipes.innerHTML += `
+					<a href='javascript:void(0);' class='icon-left' onclick='handleLoadRecipes(${ current_page - 1})'><img class="img-icon-tabs" src="./img/icon/arrow-left.png" alt=""></a>
 					<span>Página</span>
-					<span class="number active">${ current_page }</span>
+					<span class="number active">${ current_page}</span>
 					<span>de</span>
-					<span class="number">${ total_pages }</span>
+					<span class="number">${ total_pages}</span>
 				`;
-			}
-			else{
-				container_pagination.innerHTML +=`
-					<a href='javascript:void(0);' onclick='handleLoadRecipes(${ current_page - 1 })' class="page-button page-prev" href="#"></a>
+      }
+
+      else {
+        pagination_recipes.innerHTML += `
+					<a href="javascript:void(0);" class='icon-left' onclick='handleLoadRecipes(${ current_page - 1})'><img class="img-icon-tabs" src="./img/icon/arrow-left.png" alt=""></a>
 					<span>Página</span>
-					<span class="number active">${ current_page }</span>
+					<span class="number active">${ current_page}</span>
 					<span>de</span>
-					<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages })'><span class="number">${ total_pages }</span></a>
-					<a href='javascript:void(0);' onclick='handleLoadRecipes(${ current_page + 1 })' class="page-button page-next" href="#"></a>
+					<a href='javascript:void(0);' onclick='handleLoadRecipes(${ total_pages})'><span class="number">${total_pages}</span></a>
+					<a href='javascript:void(0);' class='icon-right' onclick='handleLoadRecipes(${ current_page + 1})'><img class="img-icon-tabs" src="./img/icon/arrow-right.png" alt=""></a>
 				`;
-			}
-		}
+      }
+    }
 
 	}
 }

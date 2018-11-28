@@ -165,7 +165,8 @@ div>.section-box-home-cel{
     &:before {
       content: "";
       position: absolute;
-      height: 77.2%;
+      // height: 77.2%;
+      height: 0;
       width: 74%;
       background: rgba(7,31,72,.3);
       border-radius: 5px;
@@ -181,7 +182,15 @@ div>.section-box-home-cel{
 }
 .section-box-home-cel:hover{
   .video-content:before {
-    transform: scale(0.0);
+    // transform: scale(0.0);
+    height: 77.2%;
+
+    @include media-breakpoint-down(md){
+      height: 79.1%;
+    }
+    @include media-breakpoint-down(sm){
+      height: 78.7%;
+    }
   }
 }
 
@@ -292,7 +301,8 @@ div>.section-box-home-cel{
 .fondo-box-img{
   position: absolute;
   width: 100%;
-  height: 99%;
+  // height: 99%;
+  height: 0;
   top: 4px;
   overflow: hidden;
   // display: none;
@@ -314,7 +324,9 @@ div.contenedor:hover{
   .fondo-box-img{
     // display: block;
     // height: 99%;
-    transform: scale(0.0);
+
+    // transform: scale(0.0);
+    height: 99%;
   }
 }
 
