@@ -1,14 +1,17 @@
-var categoryRecipeActive = 1;
+// var categoryRecipeActive = 1;
 
-if (window.location.hash == '#1') {
-  categoryRecipeActive = 1;
-}
-else if (window.location.hash == '#2') {
-  categoryRecipeActive = 2;
-}
-else if (window.location.hash == '#3') {
-  categoryRecipeActive = 3;
-}
+// if (window.location.hash == '#1') {
+//   categoryRecipeActive = 1;
+//   activeItemNav();
+// }
+// else if (window.location.hash == '#2') {
+//   categoryRecipeActive = 2;
+//   activeItemNav();
+// }
+// else if (window.location.hash == '#3') {
+//   categoryRecipeActive = 3;
+//   activeItemNav();
+// }
 
 var listRecipes = document.querySelectorAll('.item-recipe');
 var container_recipes = document.getElementById('container-recipes');
@@ -110,6 +113,21 @@ const findPos = (obj)=> {
     }
 }
 
+const activeItemNav = () =>{
+
+  let list_item = Array.prototype.slice.apply(document.querySelectorAll('.item-nav'));
+  list_item.map((item) => {
+    item.classList.remove('active');
+  });
+
+  list_item.map((item) => {
+    if(item.dataset.category== categoryRecipeActive){
+      item.classList.add('active');
+    }
+  });
+
+}
+
 const handleNavCategoriesRecipes = () => {
   // let nav_categories = document.querySelector('#nav-categories');
   // console.log(nav_categories.scrollIntoView());
@@ -139,6 +157,7 @@ const handleNavCategoriesRecipes = () => {
 }
 
 export{
+  activeItemNav,
   handleLoadRecipes,
   handleNavCategoriesRecipes
 }
