@@ -147,7 +147,8 @@
   }
   &__tomate-rec2{
     width: 18%;
-    top: 50vh;
+    // top: 50vh;
+    top: 126%;
     left: -3vw;
     @include media-breakpoint-down(md){
       display: none;
@@ -163,7 +164,8 @@
   }
   &__tenedor-rec{
     width: 100%;
-    top: 26vh;
+    // top: 26vh;
+    top: 108%;
     right: -19rem;
     max-width: 664px;
     @include media-breakpoint-down(lg){
@@ -180,7 +182,8 @@
   }
   &__tomate2-rec{
     width: 32%;
-    bottom: -5%;
+    // bottom: -5%;
+    bottom: -11%;
     right: -10.5%;
     @include   media-breakpoint-down(sm){
       display: none;
@@ -214,7 +217,10 @@
     width: 100%;
   }
   &__img-horizontal{
-    width: 90.6%;
+    width: 90.5%;
+    @include media-breakpoint-down(lg){
+      width: 91.9%;
+    }
   }
   &__text{
     position: absolute;

@@ -37,13 +37,21 @@
 	&__info{
 		font-family: $TradeGothic;
 		font-size: 0.675rem;
-    font-weight: bold;
     span{
       // font-size: 1rem;
       font-size: 14px;
+      font-weight: 500;
     }
+    // a{
+    //   font-weight: bold;
+    //   // font-weight: bold;
+    // }
   }
 
+  .bold{
+    font-weight: bold!important;
+
+  }
 
 	&__menu{
     a{

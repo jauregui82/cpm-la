@@ -20,9 +20,9 @@
 .box-index{
   &__horizontal{
     // max-width: 295px;
-    max-width: 85%;
+    max-width: 87.2%;
     @include media-breakpoint-down(lg){
-      max-width: 87%;
+      max-width: 89%;
     }
   }
 
@@ -358,6 +358,9 @@ div.contenedor:hover{
   @include media-breakpoint-down(xs){
     right: 3%;
     width: 90%;
+  }
+  &:hover{
+    color: map-get($my-colors , color3 )
   }
 }
 
