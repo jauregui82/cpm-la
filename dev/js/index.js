@@ -197,10 +197,13 @@ $(document).ready(function () {
   var vh = window.innerHeight;
   var vw = window.innerWidth;
   if (vw < 991) {
-    $('.pc-version').css('display', 'none')
+    $('.pc-version').css('display', 'none');
+    $('.prod_recipes').addClass('order-12');
+
   }
   else if (vw > 991) {
     $('.mobile-version').css('display', 'none')
+    $('.prod_recipes').removeClass('order-12');
   }
 
   if (vw < 768) {
@@ -338,10 +341,12 @@ $(window).resize(function () {
   if (vw < 991) {
     $('.pc-version').css('display', 'none')
     $('.mobile-version').css('display', '')
+    $('.prod_recipes').addClass('order-12');
   }
   else if (vw > 991) {
     $('.mobile-version').css('display', 'none')
     $('.pc-version').css('display', '')
+    $('.prod_recipes').removeClass('order-12');
   }
   if (vw < 768) {
     $('.rm_container').removeClass('container');
