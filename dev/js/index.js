@@ -5,7 +5,7 @@ import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
 import { handlePagination, handlePaginationRecipes, handlePaginationNews } from "./modules/pagination";
 
-import { handleLoadRecipes, handleNavCategoriesRecipes } from "./modules/recipes";
+import { activeItemNav, handleLoadRecipes, handleNavCategoriesRecipes } from "./modules/recipes";
 
 // import {
 //   handleItemArticle as handleItemArticleProducts,
@@ -32,16 +32,51 @@ window.toggleMenu = toggleMenu;
 window.sliderWrapper = sliderWrapper;
 window.sliderMultipleItems = sliderMultipleItems;
 
+window.categoryRecipeActive = 1;
+
 
 $(window).on('scroll', function () {
   MenuScroll();
 });
 
 
+// var categoryRecipeActive = 1;
+
+// if (window.location.hash == '#1') {
+//   categoryRecipeActive = 1;
+//   activeItemNav();
+// }
+// else if (window.location.hash == '#2') {
+//   categoryRecipeActive = 2;
+//   activeItemNav();
+// }
+// else if (window.location.hash == '#3') {
+//   categoryRecipeActive = 3;
+//   activeItemNav();
+// }
+
+
+
 $(window).on('load', function () {
   MenuScroll();
   handleLoadRecipes();
   handleNavCategoriesRecipes();
+
+  if (window.location.hash == '#1') {
+    categoryRecipeActive = 1;
+    activeItemNav();
+  }
+  else if (window.location.hash == '#2') {
+    categoryRecipeActive = 2;
+    activeItemNav();
+  }
+  else if (window.location.hash == '#3') {
+    categoryRecipeActive = 3;
+    activeItemNav();
+  }
+
+
+
 
   console.log('cargo la pagina')
 
