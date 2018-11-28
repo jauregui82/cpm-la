@@ -5,7 +5,7 @@ import { sliderWrapper, sliderMultipleItems } from "./modules/slick";
 import { MenuScroll } from "./modules/menu-scroll";
 import { handlePagination, handlePaginationRecipes, handlePaginationNews } from "./modules/pagination";
 
-import { handleLoadRecipes, handleNavCategoriesRecipes  } from "./modules/recipes";
+import { handleLoadRecipes, handleNavCategoriesRecipes } from "./modules/recipes";
 
 // import {
 //   handleItemArticle as handleItemArticleProducts,
@@ -86,22 +86,29 @@ function strip_html_tags(str) {
 //   }, 60);
 // }
 
-function water() {
+function water(e) {
   var cnt = document.getElementById("count");
   var water = document.getElementById("water");
   var percent = cnt.innerText;
-  var interval;
-  interval = setInterval(function () {
-    percent++;
-    cnt.innerHTML = percent;
-    water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
-    if (percent == 100) {
-      clearInterval(interval);
-      water.style.transform = 'translate(0px,70%)';
-      percent == 0;
-      cnt.innerHTML = 0;
-    }
-  }, 60);
+  if (e == true) {
+    water.style.transform = 'translate(0px,142%)';
+    $('.water_wave').css('width', '600%');
+    // $('.water-jar.water_wave').css('width', '600%!important');
+  } else {
+
+    var interval;
+    interval = setInterval(function () {
+      percent++;
+      cnt.innerHTML = percent;
+      water.style.transform = 'translate(0' + ',' + (100 - percent) + '%)';
+      if (percent == 100) {
+        clearInterval(interval);
+        water.style.transform = 'translate(0px,70%)';
+        percent == 0;
+        cnt.innerHTML = 0;
+      }
+    }, 60);
+  }
 }
 
 function hideLoadin() {
@@ -130,23 +137,27 @@ function explorador() {
 
   // Blink engine detection
   var isBlink = (isChrome || isOpera) && !!window.CSS;
+  var ie = false;
 
   if (isIE) {
     $('#content-logo').removeClass('xs-m-auto');
     $('#logo-site').attr('src', './img/logo.png');
+    ie = true;
+    water(ie)
+
     // $('#loadig-ie').css('display', 'block');
     // alert('Internet explorer')
   } else {
     if ($(window).on('load')) {
       $('#loadig-ot').css('display', 'block');
-      // water()
+      water(ie)
     }
   }
 
 }
 $(document).ready(function () {
   explorador();
-  water();
+  // water();
   strip_html_tags($('#title_blog').text());
   var vh = window.innerHeight;
   var vw = window.innerWidth;
