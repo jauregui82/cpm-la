@@ -27,7 +27,7 @@ Array.prototype.forEach.call(listRecipes, (el, i)=>{
 
 // console.log(listRecipes);
 
-const handleLoadRecipes = (current_page = 1)=>{
+const handleLoadRecipes = (current_page = 1, scrolltop= true)=>{
 
   if(container_recipes != null){
     let pagination_recipes= document.querySelector('#pagination-recipes');
@@ -99,7 +99,9 @@ const handleLoadRecipes = (current_page = 1)=>{
       }
     }
 
-    window.scrollTo(0, findPos(nav_categories));
+    if(scrolltop){
+      window.scrollTo(0, findPos(nav_categories));
+    }
   }
 }
 
@@ -129,15 +131,9 @@ const activeItemNav = () =>{
 }
 
 const handleNavCategoriesRecipes = () => {
-  // let nav_categories = document.querySelector('#nav-categories');
-  // console.log(nav_categories.scrollIntoView());
 
   if (nav_categories != null) {
     nav_categories.addEventListener('click', (e) => {
-      // findPos(nav_categories);
-      // console.log(findPos(nav_categories));
-      // console.log(nav_categories.scrollIntoView());
-      // console.log(e.target);
       let elem = e.target;
       if (elem.classList.contains('item-nav')) {
         let data_id = elem.dataset.category;
@@ -148,9 +144,9 @@ const handleNavCategoriesRecipes = () => {
         elem.classList.add('active');
 
         categoryRecipeActive = data_id;
-        handleLoadRecipes();
+        handleLoadRecipes(1, false);
         window.location.hash = categoryRecipeActive;
-        window.scrollTo(0, findPos(nav_categories));
+        // window.scrollTo(0, findPos(nav_categories));
       }
     });
   }
