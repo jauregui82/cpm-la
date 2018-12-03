@@ -124,9 +124,12 @@ form#distribute{
     font-family: $TradeGothic;
     color: map-get($my-colors, color1 );
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     @include media-breakpoint-down(lg){
-      font-size: 1.1rem;
+      font-size: 1rem;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 0.9rem;
     }
   }
   input.form-control{
@@ -139,7 +142,7 @@ form#distribute{
     background: #ffffff69;
     border: solid 2px map-get($my-colors, color1);
     height: 70%;
-    margin-bottom: 7rem;
+    // margin-bottom: 7rem;
   }
   input.form-control:focus{
     background: #ffffff69;
@@ -294,4 +297,9 @@ form#distribute{
     top: -4rem;
     margin-bottom: 0;
   }
+}
+
+.error{
+  color: red!important;
+  font-size: 14px!important;
 }

@@ -117,7 +117,10 @@
     position: relative;
     transform: translateX(-50%);
     @include media-breakpoint-down(sm){
-      max-width: 277px;
+      max-width: 280px;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
     }
   }
   &__img-content{
@@ -125,16 +128,26 @@
     @include media-breakpoint-down(md){
       height: 216px;
     }
+    @include media-breakpoint-down(sm){
+      padding-top: 1rem;
+    }
   }
   &__text-content{
     height: 224px;
     @include media-breakpoint-down(md){
       height: 164px;
     }
+    @include media-breakpoint-down(xs){
+      height: 184px;
+      padding: 0 0.5rem 0 0.7rem;
+    }
   }
   &__text{
     padding-top: 1.2rem;
     padding-right: 2rem;
+    @include media-breakpoint-down(xs){
+      padding-right: 0rem;
+    }
   }
   &__nav{
     padding: .5rem 0.2rem;
@@ -269,6 +282,9 @@
 }
 .text-box-product {
   padding: 3% 19% 0% 15%;
+  @include media-breakpoint-down(xs){
+    padding: 3% 19% 0 7%;
+  }
 }
 .img-llevamos {
   width: 100%;
@@ -412,6 +428,67 @@
     @include media-breakpoint-up(md){
       max-width: 2.6rem;
       padding-bottom: 0.6rem;
+    }
+  }
+}
+
+.nav_slides, .nav_slides2, .nav_slides_ab{
+  color: map-get($my-colors, color1 );
+  .slick-list{
+    overflow: none!important;
+    .slick-track{
+      transform:none!important;
+      margin: 0;
+      width: 100%!important;
+    }
+  }
+}
+.nav-item, .nav-item2, .nav_slides_ab{
+  font-family: $TradeGothic;
+  // display: contents!important;
+  width: auto!important;
+  padding: 0.1rem 0 0.2rem 0!important;
+
+}
+.nav-item, .nav-item2{
+  @include media-breakpoint-down(sm){
+    line-height: 1.1;
+  }
+}
+.nav-item.slick-active{
+  font-weight: bold;
+}
+.nav-item2.slick-active{
+  font-weight: bold;
+}
+.nav-item-ab.slick-active{
+  font-weight: bold;
+}
+.nav-item-ab{
+  width: auto!important;
+  @include media-breakpoint-down(sm){
+    padding: 0!important;
+    font-size: 15px;
+  }
+}
+.nav_slides{
+  @include media-breakpoint-down(xs){
+    height: 67px;
+  }
+}
+.slide-product{
+  .slick-arrow{
+      top: 20%;
+    @include media-breakpoint-down(sm){
+      top: 14%;
+    }
+  }
+}
+.slide-product2{
+  .slick-arrow{
+      top: 20%;
+    @include media-breakpoint-down(sm){
+      top: 14%;
     }
   }
 }

@@ -117,8 +117,12 @@
       right: 37%;
     }
     @include media-breakpoint-down(xs){
+      width: 33%;
       bottom: -18%;
       right: 37%;
+    }
+    @media (max-width: 450px) {
+      width: 40%;
     }
   }
   &__limon-rec{
@@ -136,8 +140,7 @@
       right: 4rem;
     }
     @include media-breakpoint-down(xs){
-      bottom: -17%;
-      right: 11%;
+      display: none;
     }
   }
   &__tomate-rec{

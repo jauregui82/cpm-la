@@ -12,8 +12,8 @@ block main
         div.section-box-about.text-justify
             img.img-bg.img-bg__solido-about(src="./img/home/img/solido.png", alt="")
             img.img-bg.img-bg__table-about(src="./img/about/tabla.png", alt="")
-            img.img-bg.img-bg__plato-about(src="./img/about/plato.png", alt="")
             .text-left.text-box-about
+              img.img-bg.img-bg__plato-about(src="./img/about/plato.png", alt="")
               h1.tradeGothic.color1.position-relative NOSOTROS
               hr.raya
               // br
@@ -30,83 +30,75 @@ block main
                 h1.tradeGothic.color1.mb-0 BENEFICIOS DE
                   img.logo-blue-about(src="./img/logoBlue.svg", alt="")
                 hr.raya
-            //-   span.btn.btn-blue.white.tradeGothic CONÓCENOS
-            .container.inline.containerSlider
-                .row
-                    .col-lg-10.sm-mx-auto
-                        .row.mb-5
-                            .col-xs-12
-                                .tab-nav.position-relative
-                                  ul(class="nav nav-pills pills-tab mb-3 slider-about__tabs" role="tablist")
-                                      li.nav-item
-                                          a(class="nav-link slider-about__nav-link slide-tabs text__p active" id="pills-calidad-tab" data-toggle="pill" href="#pills-calidad" role="tab" aria-controls="pills-calidad" aria-selected="true")
-                                            |CALIDAD &nbsp; |
-                                            //- hr.border__right
-                                      li.nav-item
-                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-sabor-tab" data-toggle="pill" href="#pills-sabor" role="tab" aria-controls="pills-sabor" aria-selected="false") SABOR &nbsp;|
-                                      li.nav-item
-                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-nutricion-tab" data-toggle="pill" href="#pills-nutricion" role="tab" aria-controls="pills-nutricion" aria-selected="false") NUTRICIÓN &nbsp;|
-                                      li.nav-item
-                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-practicidad-tab" data-toggle="pill" href="#pills-practicidad" role="tab" aria-controls="pills-practicidad" aria-selected="false") PRACTICIDAD &nbsp;|
-                                      li.nav-item
-                                          a(class="nav-link slider-about__nav-link slide-tabs text__p" id="pills-origen-tab" data-toggle="pill" href="#pills-origen" role="tab" aria-controls="pills-origen" aria-selected="false") ORIGEN
-                                  .tab-content#pills-tabContent.pl-sm-4.pr-sm-5.pl-md-5.pr-md-5.pl-3.pr-3
-                                      div(class="tab-pane fade show active" id="pills-calidad" role="tabpanel" aria-labelledby="pills-calidad-tab")
-                                        .row
-                                          .col-sm-12.col-md-5.mb-3
-                                              img.slider-about__img(src="./img/about/s-ab-1.png")
-                                          .col-sm-12.col-md-7
-                                              .slider-about__text
-                                                  h2.color1.tradeGothic
-                                                    b CALIDAD
-                                                  p.text__p.color1.tradeGothic Nos encargamos de todas las etapas del proceso: desde la pesca, pasando por la elaboración, hasta llegar a tu hogar. <br><br>
-                                                  p.text__p.color1.tradeGothic Seleccionamos cuidadosamente todos los productos de nuestra pesca para asegurar un producto de máxima calidad. <br><br>
-                                                  p.text__p.color1.tradeGothic Contamos con importantes certificaciones, como “Dolphin Safe”, que garantizan una labor de pesca responsable.<br><br>
-                                                  img(src="./img/icon/dolphin-transp.png", alt="")
-                                      div(class="tab-pane fade" id="pills-sabor" role="tabpanel" aria-labelledby="pills-sabor-tab")
-                                        .row
-                                          .col-sm-12.col-md-5.mb-3
-                                              img.slider-about__img(src="./img/about/s-ab-2.png")
-                                          .col-sm-12.col-md-7
-                                              .slider-about__text
-                                                  h2.color1.tradeGothic
-                                                    b SABOR
-                                                  p.text__p.color1.tradeGothic Nuestras conservas tienen ese toque especial que tanto nos gusta a los peruanos. <br><br>
-                                                  p.text__p.color1.tradeGothic Son perfectas para preparar los más exquisitos platos de nuestra gastronomía. <br><br>
-                                      div(class="tab-pane fade" id="pills-nutricion" role="tabpanel" aria-labelledby="pills-nutricion-tab")
-                                        .row
-                                          .col-sm-12.col-md-5.mb-3
-                                              img.slider-about__img(src="./img/about/s-ab-3.png")
-                                          .col-sm-12.col-md-7
-                                              .slider-about__text
-                                                  h2.color1.tradeGothic
-                                                    b NUTRICIÓN
-                                                  p.text__p.color1.tradeGothic Rico en ácidos grasos y omegas como EPA y DHA. ¡Perfecto para los niños!  <br><br>
-                                                  p.text__p.color1.tradeGothic ¡Recomendado por nutricionistas como parte de una alimentación saludable! <br><br>
-                                                  p.text__p.color1.tradeGothic Un producto natural y sin añadidos artificiales.<br><br>
-                                      div(class="tab-pane fade" id="pills-practicidad" role="tabpanel" aria-labelledby="pills-practicidad-tab")
-                                        .row
-                                          .col-sm-12.col-md-5.mb-3
-                                              img.slider-about__img(src="./img/about/s-ab-4.png")
-                                          .col-sm-12.col-md-7
-                                              .slider-about__text
-                                                  h2.color1.tradeGothic
-                                                    b PRACTICIDAD
-                                                  p.text__p.color1.tradeGothic Cuando quieras y donde quieras, Campomar está listo para consumir. <br><br>
-                                                  p.text__p.color1.tradeGothic Disfruta de una comida rápida y deliciosa y dile adiós a la comida chatarra.<br><br>
-                                      div(class="tab-pane fade" id="pills-origen" role="tabpanel" aria-labelledby="pills-origen-tab")
-                                        .row
-                                          .col-sm-12.col-md-5.mb-3
-                                              img.slider-about__img2(src="./img/about/s-ab-5.png")
-                                          .col-sm-12.col-md-7
-                                              .slider-about__text
-                                                  h2.color1.tradeGothic
-                                                    b ORIGEN
-                                                  p.text__p.color1.tradeGothic ¡Hecho por peruanos y para peruanos!  <br><br>
-                                                  p.text__p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad.  <br><br>
-                                                  p.text__p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!.<br><br>
-                                  span.slider-about__arrows.slider-about__prev.cambiarpestana.tabs-prev(data-accion="prev")
-                                  span.slider-about__arrows.cambiarpestana.tabs-next(data-accion="next")
+
+                .nav_slides_ab
+                  .nav-item-ab(slide="slide_1")
+                    |CALIDAD &nbsp;|&nbsp;
+                  .nav-item-ab(slide="slide_2")
+                    |SABOR &nbsp;|&nbsp;
+                  .nav-item-ab(slide="slide_3")
+                    |NUTRICIÓN &nbsp;|&nbsp;
+                  .nav-item-ab(slide="slide_4")
+                    |PRACTICIDAD &nbsp;|&nbsp;
+                  .nav-item-ab(slide="slide_5")
+                    |ORIGEN
+                .slide-ab
+                  div(class="slide-ab__item" id="pills-calidad")
+                    .row
+                      .col-sm-12.col-md-5.mb-3.slide-ab_content-img
+                          img.slider-about__img(src="./img/about/s-ab-1.png")
+                      .col-sm-12.col-md-7.slide-ab_content-text
+                          .slider-about__text
+                              h2.color1.tradeGothic
+                                b CALIDAD
+                              p.text__p.color1.tradeGothic Nos encargamos de todas las etapas del proceso: desde la pesca, pasando por la elaboración, hasta llegar a tu hogar. <br><br>
+                              p.text__p.color1.tradeGothic Seleccionamos cuidadosamente todos los productos de nuestra pesca para asegurar un producto de máxima calidad. <br><br>
+                              p.text__p.color1.tradeGothic Contamos con importantes certificaciones, como “Dolphin Safe”, que garantizan una labor de pesca responsable.<br><br>
+                              img(src="./img/icon/dolphin-transp.png", alt="")
+                  div(class="slide-ab__item" id="pills-sabor")
+                    .row
+                      .col-sm-12.col-md-5.mb-3.slide-ab_content-img
+                          img.slider-about__img(src="./img/about/s-ab-2.png")
+                      .col-sm-12.col-md-7.slide-ab_content-text
+                          .slider-about__text
+                              h2.color1.tradeGothic
+                                b SABOR
+                              p.text__p.color1.tradeGothic Nuestras conservas tienen ese toque especial que tanto nos gusta a los peruanos. <br><br>
+                              p.text__p.color1.tradeGothic Son perfectas para preparar los más exquisitos platos de nuestra gastronomía. <br><br>
+                  div(class="slide-ab__item" id="pills-nutricion" rol)
+                    .row
+                      .col-sm-12.col-md-5.mb-3.slide-ab_content-img
+                          img.slider-about__img(src="./img/about/s-ab-3.png")
+                      .col-sm-12.col-md-7.slide-ab_content-text
+                          .slider-about__text
+                              h2.color1.tradeGothic
+                                b NUTRICIÓN
+                              p.text__p.color1.tradeGothic Rico en ácidos grasos y omegas como EPA y DHA. ¡Perfecto para los niños!  <br><br>
+                              p.text__p.color1.tradeGothic ¡Recomendado por nutricionistas como parte de una alimentación saludable! <br><br>
+                              p.text__p.color1.tradeGothic Un producto natural y sin añadidos artificiales.<br><br>
+                  div(class="slide-ab__item" id="pills-practicidad")
+                    .row
+                      .col-sm-12.col-md-5.mb-3.slide-ab_content-img
+                          img.slider-about__img(src="./img/about/s-ab-4.png")
+                      .col-sm-12.col-md-7.slide-ab_content-text
+                          .slider-about__text
+                              h2.color1.tradeGothic
+                                b PRACTICIDAD
+                              p.text__p.color1.tradeGothic Cuando quieras y donde quieras, Campomar está listo para consumir. <br><br>
+                              p.text__p.color1.tradeGothic Disfruta de una comida rápida y deliciosa y dile adiós a la comida chatarra.<br><br>
+                  div(class="slide-ab__item" id="pills-origen" )
+                    .row
+                      .col-sm-12.col-md-5.mb-3.slide-ab_content-img
+                          img.slider-about__img2(src="./img/about/s-ab-5.png")
+                      .col-sm-12.col-md-7.slide-ab_content-text
+                          .slider-about__text
+                              h2.color1.tradeGothic
+                                b ORIGEN
+                              p.text__p.color1.tradeGothic ¡Hecho por peruanos y para peruanos!  <br><br>
+                              p.text__p.color1.tradeGothic Vigilamos todo el proceso de producción para elaborar un producto que cumpla con los más altos estándares de calidad.  <br><br>
+                              p.text__p.color1.tradeGothic Pesca que proviene de nuestro mar, ¡que es garantía de calidad, sabor y nutrición!.<br><br>
+                //- span.slider-about__arrows.slider-about__prev.cambiarpestana.tabs-prev(data-accion="prev")
+                //- span.slider-about__arrows.cambiarpestana.tabs-next(data-accion="next")
                     .mb-5
     section.mt-lg-4
         .container-fluid
@@ -144,24 +136,24 @@ block main
               .row.row-content-ab
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img(src="./img/icon/ab-1.png", alt="")
                           .position-relative.mt-4
                             h4 NIÑOS
-                            img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Ideal para el desarrollo cerebral y aporta nutrientes importantes para el crecimiento.
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img(src="./img/icon/ab-2.png", alt="")
                           .position-relative.mt-4
                             h4 ADOLESCENTES
-                            img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Fundamental para la formación de tejido muscular y ayuda al fortalecimiento de los huesos.
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img.ab-3(src="./img/icon/ab-3.png", alt="")
                           .position-relative.mt-4
                             h4 ADULTOS
-                            img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Perfecto para una buena salud cardiaca, y ayuda controlar los niveles de colesterol y triglicéridos.
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
@@ -179,24 +171,24 @@ block main
               .row.row-content-ab
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow.beneficios__arrow2(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img.ab-5(src="./img/icon/ab-5.png", alt="")
                           .position-relative
                             h4 PESCAMOS
-                            img.beneficios__arrow.beneficios__arrow2(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Nuestros barcos realizan la pesca en el litoral peruano, respetando todas las regulaciones para <b>preservar el ecosistema marino y sus especies.</b>
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow.beneficios__arrow2(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img.mt-1(src="./img/icon/ab-6.png", alt="")
                           .position-relative.mt-4
                             h4 PRODUCIMOS
-                            img.beneficios__arrow.beneficios__arrow2(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text La pesca es trasladada a nuestras plantas de procesamiento ubicadas en Áncash, donde elaboramos las conservas bajo <b>los más estrictos controles de calidad.</b>
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center
+                          img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           img.beneficios__img.ab-3(src="./img/icon/ab-7.png", alt="")
                           .position-relative.mt-4
                             h4 DISTRIBUIMOS
-                            img.beneficios__arrow(src="./img/icon/ab-10.png", alt="")
                           p.text__p.beneficios__text Manteniendo <b>los más altos estándares de calidad,</b> las conservas son almacenadas y luego distribuidas por el país.
                   .col-md-6.col-xl-3
                       .beneficios__content.text-center

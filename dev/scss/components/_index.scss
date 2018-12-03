@@ -162,6 +162,11 @@ div>.section-box-home-cel{
     padding: 0.9rem 2.5rem 1.4rem 2.3rem;
     height: 161px;
   }
+  @media (max-width:370px) {
+    max-width: 241px;
+    padding: 0.7rem 1.9rem 3.1rem 2rem;
+
+  }
   position: relative;
 }
 .video-content{
@@ -199,6 +204,9 @@ div>.section-box-home-cel{
     top: 6rem;
     font-size: 1.1rem;
   }
+  @media (max-width:370px) {
+    top: 5rem;
+  }
 }
 .link-pantalla{
   width: 0;
@@ -217,6 +225,10 @@ div>.section-box-home-cel{
   @include media-breakpoint-down(sm){
     width: 3rem;
     top: 2rem;
+  }
+  @media (max-width:370px) {
+    top: 1.6rem;
+
   }
 }
 .section-box-home-cel:hover{
@@ -269,10 +281,12 @@ div>.section-box-home-cel{
   }
   @include media-breakpoint-down(sm){
     max-width: 456px;
+    top: 0;
   }
   @include media-breakpoint-down(xs){
     // max-width: 308px;
-    height: 136px;
+    height: 111px;
+    top: -1rem;
   }
   @media (max-width: 340px){
     height: 106px;
@@ -352,7 +366,8 @@ div.contenedor:hover{
 .btn-mailing{
   height: 2rem;
   position: relative;
-  top: -1.5px;
+  top: 50%;
+  transform: translateY(-50%);
   line-height: 1;
   right: 8%;
   width: 121%;
@@ -365,7 +380,6 @@ div.contenedor:hover{
     font-size: 15px;
   }
   @include media-breakpoint-down(sm){
-    top: -1.7px;
     line-height: 1;
     right: 8%;
     width: 60%;
@@ -673,4 +687,7 @@ div.contenedor:hover{
   &__prev{
     left: -50px;
   }
+}
+.slide-blog > .slick-list {
+  overflow: hidden;
 }

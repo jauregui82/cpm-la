@@ -42,25 +42,24 @@ block main
                           hr.raya
                         //-Tabs nav
                         div.position-relative
-                          //- ul(class="nav_slides  mb-3")
-                          .nav_slides
-                            .nav-item(slide="slide_1")
-                              |Filete de Atún Artesanal &nbsp;|&nbsp;
-                            .nav-item(slide="slide_2")
-                              |Filete Claro &nbsp;|&nbsp;
-                            .nav-item(slide="slide_3")
-                              |Filete de Atún Regular &nbsp;|&nbsp;
-                            .nav-item(slide="slide_4")
-                              |Lomos &nbsp;|&nbsp;
-                            .nav-item(slide="slide_5")
-                              |Lomos Light &nbsp;|&nbsp;
-                            .nav-item(slide="slide_6")
-                              |Trozos &nbsp;|&nbsp;
-                            .nav-item(slide="slide_7")
-                              |Grated
-                          .slide-product
+                          ul(class="nav nav-pills pills-tab mb-3" role="tablist")
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav active" id="pills-f-atun-tab" data-toggle="pill" href="#pills-f-atun" role="tab" aria-controls="pills-f-atun" aria-selected="true") Filete de Atún Artesanal &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-f-claro-tab" data-toggle="pill" href="#pills-f-claro" role="tab" aria-controls="pills-f-claro" aria-selected="false") Filete Claro &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-filete-tab" data-toggle="pill" href="#pills-filete" role="tab" aria-controls="pills-filete" aria-selected="false") Filete de Atún Regular &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-lomos-tab" data-toggle="pill" href="#pills-lomos" role="tab" aria-controls="pills-lomos" aria-selected="false") Lomos &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-lomos-l-tab" data-toggle="pill" href="#pills-lomos-l" role="tab" aria-controls="pills-lomos-l" aria-selected="false") Lomos Light &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-trozos-tab" data-toggle="pill" href="#pills-trozos" role="tab" aria-controls="pills-trozos" aria-selected="false") Trozos &nbsp;|
+                              li.nav-item
+                                  a(class=" text__p nav-link slide-tabs slider-product__nav" id="pills-grated-tab" data-toggle="pill" href="#pills-grated" role="tab" aria-controls="pills-grated" aria-selected="false") Grated
+                          .tab-content#pills-tabContent
                               //- tab-1
-                              div(class="slide-produt__item" id="pills-f-atun")
+                              div(class="tab-pane fade show active" id="pills-f-atun" role="tabpanel" aria-labelledby="pills-f-atun-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-5.png")
@@ -167,7 +166,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab 2
-                              div(class="slide-produt__item" id="pills-f-claro")
+                              div(class="tab-pane fade" id="pills-f-claro" role="tabpanel" aria-labelledby="pills-f-claro-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-6.png")
@@ -271,7 +270,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-3
-                              div(class="slide-produt__item" id="pills-filete")
+                              div(class="tab-pane fade" id="pills-filete" role="tabpanel" aria-labelledby="pills-filete-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-7.png")
@@ -423,7 +422,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-4
-                              div(class="slide-produt__item" id="pills-lomos")
+                              div(class="tab-pane fade" id="pills-lomos" role="tabpanel" aria-labelledby="pills-lomos-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-4.png")
@@ -575,7 +574,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-5
-                              div(class="slide-produt__item" id="pills-lomos-l")
+                              div(class="tab-pane fade" id="pills-lomos-l" role="tabpanel" aria-labelledby="pills-lomos-l-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-11.png")
@@ -727,7 +726,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-6
-                              div(class="slide-produt__item" id="pills-trozos")
+                              div(class="tab-pane fade" id="pills-trozos" role="tabpanel" aria-labelledby="pills-trozos-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-3.png")
@@ -879,7 +878,7 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
                               //- tab-7
-                              div(class="slide-produt__item" id="pills-grated")
+                              div(class="tab-pane fade" id="pills-grated" role="tabpanel" aria-labelledby="pills-grated-tab")
                                 .row
                                   .col-md-12.col-lg-6.slider-product__img-content
                                       img.slider-product__img(src="./img/produts/pro-8.png")
@@ -983,577 +982,577 @@ block main
                                                 hr.hr-card
                                                 p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
 
-                          //- span.cambiarpestana.tabs-prev-top.slider-product__prev(data-accion="prev")
-                          //- span.cambiarpestana.tabs-next-top.slider-product__next(data-accion="next")
+                          span.cambiarpestana.tabs-prev-top.slider-product__prev(data-accion="prev")
+                          span.cambiarpestana.tabs-next-top.slider-product__next(data-accion="next")
     //- tabs-caballa
-    //- section.mt-5.mb-3.section-product
-    //-   .container-fluid
-    //-     .container.position-relative
-    //-       img.img-bg.img-bg__tomate-pro(src="./img/produts/tomate.png", alt="")
-    //-       .row
-    //-           .col.sm-mx-auto
-    //-               .row
-    //-                   .col-xs-12
-    //-                     h1.color1.tradeGothic CABALLA
-    //-                     hr.raya
-    //-                     //-Tabs nav
-    //-                     div.position-relative
-    //-                       ul(class="nav nav-pills pills-tab2 mb-3" role="tablist")
-    //-                           li.nav-item
-    //-                               a(class="text__p nav-link slide-tabs slider-product__nav active" id="pills-solido-tab" data-toggle="pill" href="#pills-solido" role="tab" aria-controls="pills-solido" aria-selected="false") Sólido &nbsp;|
-    //-                           li.nav-item
-    //-                               a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-lomos-c-tab" data-toggle="pill" href="#pills-lomos-c" role="tab" aria-controls="pills-lomos-c" aria-selected="false") Lomitos &nbsp;|
-    //-                           li.nav-item
-    //-                               a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-trozos-c-tab" data-toggle="pill" href="#pills-trozos-c" role="tab" aria-controls="pills-trozos-c" aria-selected="false") Trozos &nbsp;|
-    //-                           li.nav-item
-    //-                               a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-grated-c-tab" data-toggle="pill" href="#pills-grated-c" role="tab" aria-controls="pills-grated-c" aria-selected="false") Grated
-    //-                       .tab-content#pills-tabContent
-    //-                           //- tab-4
-    //-                           div(class="slide-produt__item show active" id="pills-solido")
-    //-                             .row
-    //-                               .col-md-12.col-lg-6.slider-product__img-content
-    //-                                   img.slider-product__img(src="./img/produts/pro-10.png")
-    //-                               .col-md-12.col-lg-6.slider-product__text-content
-    //-                                   .slider-product__text
-    //-                                       h3.color1.tradeGothic
-    //-                                         b Sólido de Caballa
-    //-                                       p.text__p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada. <br><br>
-    //-                                       p.text__p.color1.tradeGothic Haz de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial con nuestro exquisito Sólido de Caballa.
-    //-                             .row.mt-5.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white no-pointer btn-product__contenedor-pre")
-    //-                                   .btn-product__cont-img-1
-    //-                                     img(src="./img/produts/pro-10.png", alt="")
-    //-                                   //- i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Presentación
-    //-                                   p.text__p Lata con abre fácil de 170g
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-2.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-right.btn-product__fa
-    //-                                   a(href="./recipes.html")
-    //-                                     h4.white Ver Recetas
-    //-                             .row.mt-2.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-3.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Ingredientes
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#ingredientes2
-    //-                                           .card.card-body.card-product
-    //-                                             table.table__ingredientes
-    //-                                               tbody
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     .box-img
-    //-                                                       img(src="./img/icon/fish.png", alt="")
-    //-                                                     span
-    //-                                                       b Atún
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     .box-img
-    //-                                                       img(src="./img/icon/oil.png", alt="")
-    //-                                                     span
-    //-                                                       b Aceite Vegetal
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     .box-img
-    //-                                                       img(src="./img/icon/water.png", alt="")
-    //-                                                     span
-    //-                                                       b Agua
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     .box-img
-    //-                                                       img(src="./img/icon/salt.png", alt="")
-    //-                                                     span
-    //-                                                       b Sal
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-4.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Valores Nutricionales
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#valores2
-    //-                                           .card.card-body.card-product
-    //-                                             b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
-    //-                                             hr.hr-card
-    //-                                             table.table
-    //-                                               thead.table__body
-    //-                                                 tr
-    //-                                                   th( scope="col")
-    //-                                                   th.th__g.text-center( scope="col") 100 g
-    //-                                                   th.th__valor.text-right( scope="col") % Valor <br>Diario
-    //-                                               tbody.table__body
-    //-                                                 tr
-    //-                                                   td Energía (Kcal)
-    //-                                                   td.text-center 341.1
-    //-                                                   td.text-right 17%
-    //-                                                 tr
-    //-                                                   td Grasa Total (g)
-    //-                                                   td.text-center 28.9
-    //-                                                   td.text-right 44%
-    //-                                                 tr
-    //-                                                   td • G. Saturada (g)
-    //-                                                   td.text-center 4.7
-    //-                                                   td.text-right 24%
-    //-                                                 tr
-    //-                                                   td • G. Trans. (g)
-    //-                                                   td.text-center 0.0
-    //-                                                 tr
-    //-                                                   td • G. Poliinsaturada (g)
-    //-                                                   td.text-center 17.0
-    //-                                                 tr
-    //-                                                   td • G. Monoinsaturada (g)
-    //-                                                   td.text-center 6.6
-    //-                                                 tr
-    //-                                                   td • Omega 3 (g)
-    //-                                                   td.text-center 0.1
-    //-                                                 tr
-    //-                                                   td • EPA (G)
-    //-                                                   td.text-center 0.0
-    //-                                                 tr
-    //-                                                   td • DHA (g)
-    //-                                                   td.text-center 0.1
-    //-                                                 tr
-    //-                                                   td Colesterol (mg)
-    //-                                                   td.text-center 21.0
-    //-                                                   td.text-right 7%
-    //-                                                 tr
-    //-                                                   td Sodio (mg)
-    //-                                                   td.text-center 289.0
-    //-                                                   td.text-right 12%
-    //-                                                 tr
-    //-                                                   td Carbohidratos Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Fibra Dietaria (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Azúcares Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td Proteínas (g)
-    //-                                                   td.text-center 20.3
-    //-                                                   td.text-right 41%
-    //-                                                 tr
-    //-                                                   td Calcio (mg)
-    //-                                                   td.text-center 7.1
-    //-                                                   td.text-right 1%
-    //-                                                 tr
-    //-                                                   td Hierro (mg)
-    //-                                                   td.text-center 1.1
-    //-                                                   td.text-right 6%
-    //-                                                 tr
-    //-                                                   td Fósforo (mg)
-    //-                                                   td.text-center 225.0
-    //-                                                   td.text-right 23%
-    //-                                             hr.hr-card
-    //-                                             p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+    section.mt-5.mb-3.section-product
+      .container-fluid
+        .container.position-relative
+          img.img-bg.img-bg__tomate-pro(src="./img/produts/tomate.png", alt="")
+          .row
+              .col.sm-mx-auto
+                  .row
+                      .col-xs-12
+                        h1.color1.tradeGothic CABALLA
+                        hr.raya
+                        //-Tabs nav
+                        div.position-relative
+                          ul(class="nav nav-pills pills-tab2 mb-3" role="tablist")
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs slider-product__nav active" id="pills-solido-tab" data-toggle="pill" href="#pills-solido" role="tab" aria-controls="pills-solido" aria-selected="false") Sólido &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-lomos-c-tab" data-toggle="pill" href="#pills-lomos-c" role="tab" aria-controls="pills-lomos-c" aria-selected="false") Lomitos &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-trozos-c-tab" data-toggle="pill" href="#pills-trozos-c" role="tab" aria-controls="pills-trozos-c" aria-selected="false") Trozos &nbsp;|
+                              li.nav-item
+                                  a(class="text__p nav-link slide-tabs slider-product__nav" id="pills-grated-c-tab" data-toggle="pill" href="#pills-grated-c" role="tab" aria-controls="pills-grated-c" aria-selected="false") Grated
+                          .tab-content#pills-tabContent
+                              //- tab-4
+                              div(class="tab-pane fade show active" id="pills-solido" role="tabpanel" aria-labelledby="pills-solido-tab")
+                                .row
+                                  .col-md-12.col-lg-6.slider-product__img-content
+                                      img.slider-product__img(src="./img/produts/pro-10.png")
+                                  .col-md-12.col-lg-6.slider-product__text-content
+                                      .slider-product__text
+                                          h3.color1.tradeGothic
+                                            b Sólido de Caballa
+                                          p.text__p.color1.tradeGothic Elaborado con aceite vegetal en lata litografiada. <br><br>
+                                          p.text__p.color1.tradeGothic Haz de la cocina un momento inolvidable para todos en casa, y dale a todas tus comidas ese saborcito tan especial con nuestro exquisito Sólido de Caballa.
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-10.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p.text__p Lata con abre fácil de 170g
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      a(href="./recipes.html")
+                                        h4.white Ver Recetas
+                                .row.mt-2.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-3.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes2
+                                              .card.card-body.card-product
+                                                table.table__ingredientes
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        .box-img
+                                                          img(src="./img/icon/fish.png", alt="")
+                                                        span
+                                                          b Atún
+                                                    tr
+                                                      td
+                                                        .box-img
+                                                          img(src="./img/icon/oil.png", alt="")
+                                                        span
+                                                          b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        .box-img
+                                                          img(src="./img/icon/water.png", alt="")
+                                                        span
+                                                          b Agua
+                                                    tr
+                                                      td
+                                                        .box-img
+                                                          img(src="./img/icon/salt.png", alt="")
+                                                        span
+                                                          b Sal
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores2
+                                              .card.card-body.card-product
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table.table
+                                                  thead.table__body
+                                                    tr
+                                                      th( scope="col")
+                                                      th.th__g.text-center( scope="col") 100 g
+                                                      th.th__valor.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td.text-center 341.1
+                                                      td.text-right 17%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td.text-center 28.9
+                                                      td.text-right 44%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td.text-center 4.7
+                                                      td.text-right 24%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 17.0
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 6.6
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.1
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.1
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 21.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 289.0
+                                                      td.text-right 12%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 20.3
+                                                      td.text-right 41%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 7.1
+                                                      td.text-right 1%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 225.0
+                                                      td.text-right 23%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
 
-    //-                           //- tab-5
-    //-                           div(class="slide-produt__item" id="pills-lomos-c")
-    //-                             .row
-    //-                               .col-md-12.col-lg-6.slider-product__img-content
-    //-                                   img.slider-product__img(src="./img/produts/pro-2.png")
-    //-                               .col-md-12.col-lg-6.slider-product__text-content
-    //-                                   .slider-product__text
-    //-                                       h3.color1.tradeGothic
-    //-                                         b Lomitos de Caballa
-    //-                                       p.text__p.color1.tradeGothic Seleccionados a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
-    //-                                       p.text__p.color1.tradeGothic ¡Absolutamente jugosos! Son la alternativa perfecta para los que quieran disfrutar de una comida rápida, exquisita y nutritiva.<br><br>
-    //-                             .row.mt-5.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white no-pointer btn-product__contenedor-pre")
-    //-                                   .btn-product__cont-img-1
-    //-                                     img(src="./img/produts/pro-2.png", alt="")
-    //-                                   //- i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Presentación
-    //-                                   p.text__p Lata con abre fácil de 170g
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-2.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-right.btn-product__fa
-    //-                                   a(href="./recipes.html")
-    //-                                     h4.white Ver Recetas
-    //-                             .row.mt-2.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-3.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Ingredientes
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#ingredientes2
-    //-                                           .card.card-body.card-product
-    //-                                             table.table__ingredientes
-    //-                                               tbody
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/fish.png", alt="")
-    //-                                                   td
-    //-                                                     b Atún
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/oil.png", alt="")
-    //-                                                   td
-    //-                                                     b Aceite Vegetal
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/water.png", alt="")
-    //-                                                   td
-    //-                                                     b Agua
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/salt.png", alt="")
-    //-                                                   td
-    //-                                                     b Sal
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-4.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Valores Nutricionales
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#valores2
-    //-                                           .card.card-body.card-product
-    //-                                             b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
-    //-                                             hr.hr-card
-    //-                                             table.table
-    //-                                               thead.table__body
-    //-                                                 tr
-    //-                                                   th( scope="col")
-    //-                                                   th.th__g.text-center( scope="col") 100 g
-    //-                                                   th.th__valor.text-right( scope="col") % Valor <br>Diario
-    //-                                               tbody.table__body
-    //-                                                 tr
-    //-                                                   td Energía (Kcal)
-    //-                                                   td.text-center 259.3
-    //-                                                   td.text-right 13%
-    //-                                                 tr
-    //-                                                   td Grasa Total (g)
-    //-                                                   td.text-center 19.3
-    //-                                                   td.text-right 30%
-    //-                                                 tr
-    //-                                                   td • G. Saturada (g)
-    //-                                                   td.text-center 3.9
-    //-                                                   td.text-right 20%
-    //-                                                 tr
-    //-                                                   td • G. Trans. (g)
-    //-                                                   td.text-center 0.0
-    //-                                                 tr
-    //-                                                   td • G. Poliinsaturada (g)
-    //-                                                   td.text-center 10.1
-    //-                                                 tr
-    //-                                                   td • G. Monoinsaturada (g)
-    //-                                                   td.text-center 4.9
-    //-                                                 tr
-    //-                                                   td • Omega 3 (g)
-    //-                                                   td.text-center 0.7
-    //-                                                 tr
-    //-                                                   td • EPA (G)
-    //-                                                   td.text-center 0.2
-    //-                                                 tr
-    //-                                                   td • DHA (g)
-    //-                                                   td.text-center 0.5
-    //-                                                 tr
-    //-                                                   td Colesterol (mg)
-    //-                                                   td.text-center 20.0
-    //-                                                   td.text-right 7%
-    //-                                                 tr
-    //-                                                   td Sodio (mg)
-    //-                                                   td.text-center 441.0
-    //-                                                   td.text-right 18%
-    //-                                                 tr
-    //-                                                   td Carbohidratos Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Fibra Dietaria (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Azúcares Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right
-    //-                                                 tr
-    //-                                                   td Proteínas (g)
-    //-                                                   td.text-center 21.2
-    //-                                                   td.text-right 42%
-    //-                                                 tr
-    //-                                                   td Calcio (mg)
-    //-                                                   td.text-center 18.0
-    //-                                                   td.text-right 2%
-    //-                                                 tr
-    //-                                                   td Hierro (mg)
-    //-                                                   td.text-center 0.9
-    //-                                                   td.text-right 5%
-    //-                                                 tr
-    //-                                                   td Fósforo (mg)
-    //-                                                   td.text-center 209.0
-    //-                                                   td.text-right 21%
-    //-                                             hr.hr-card
-    //-                                             p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+                              //- tab-5
+                              div(class="tab-pane fade" id="pills-lomos-c" role="tabpanel" aria-labelledby="pills-lomos-c-tab")
+                                .row
+                                  .col-md-12.col-lg-6.slider-product__img-content
+                                      img.slider-product__img(src="./img/produts/pro-2.png")
+                                  .col-md-12.col-lg-6.slider-product__text-content
+                                      .slider-product__text
+                                          h3.color1.tradeGothic
+                                            b Lomitos de Caballa
+                                          p.text__p.color1.tradeGothic Seleccionados a mano y elaborados con aceite vegetal en lata litografiada. <br><br>
+                                          p.text__p.color1.tradeGothic ¡Absolutamente jugosos! Son la alternativa perfecta para los que quieran disfrutar de una comida rápida, exquisita y nutritiva.<br><br>
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-2.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p.text__p Lata con abre fácil de 170g
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      a(href="./recipes.html")
+                                        h4.white Ver Recetas
+                                .row.mt-2.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-3.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes2
+                                              .card.card-body.card-product
+                                                table.table__ingredientes
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores2
+                                              .card.card-body.card-product
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table.table
+                                                  thead.table__body
+                                                    tr
+                                                      th( scope="col")
+                                                      th.th__g.text-center( scope="col") 100 g
+                                                      th.th__valor.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td.text-center 259.3
+                                                      td.text-right 13%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td.text-center 19.3
+                                                      td.text-right 30%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td.text-center 3.9
+                                                      td.text-right 20%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 10.1
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 4.9
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.7
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.2
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.5
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 20.0
+                                                      td.text-right 7%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 441.0
+                                                      td.text-right 18%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 21.2
+                                                      td.text-right 42%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 18.0
+                                                      td.text-right 2%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 0.9
+                                                      td.text-right 5%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 209.0
+                                                      td.text-right 21%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
 
-    //-                           //- tab-6
-    //-                           div(class="slide-produt__item" id="pills-trozos-c")
-    //-                             .row
-    //-                               .col-md-12.col-lg-6.slider-product__img-content
-    //-                                   img.slider-product__img(src="./img/produts/pro-1.png")
-    //-                               .col-md-12.col-lg-6.slider-product__text-content
-    //-                                   .slider-product__text
-    //-                                       h3.color1.tradeGothic
-    //-                                         b Trozos de Caballa
-    //-                                       p.text__p.color1.tradeGothic Elaborados con aceite vegetal <br><br>
-    //-                                       p.text__p.color1.tradeGothic Todo el sabor de la caballa peruana, con el toque especial de nuestra receta y la suavidad del aceite. Descubre nuestros Trozos de Caballa en todo tipo de preparaciones que la familia adorará. <br><br>
-    //-                             .row.mt-5.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white no-pointer btn-product__contenedor-pre")
-    //-                                   .btn-product__cont-img-1
-    //-                                     img(src="./img/produts/pro-1.png", alt="")
-    //-                                   //- i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Presentación
-    //-                                   p.text__p Lata con abre fácil de 170g
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-2.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-right.btn-product__fa
-    //-                                   a(href="./recipes.html")
-    //-                                     h4.white Ver Recetas
-    //-                             .row.mt-2.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-3.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Ingredientes
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#ingredientes2
-    //-                                           .card.card-body.card-product
-    //-                                             table.table__ingredientes
-    //-                                               tbody
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/fish.png", alt="")
-    //-                                                   td
-    //-                                                     b Atún
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/oil.png", alt="")
-    //-                                                   td
-    //-                                                     b Aceite Vegetal
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/water.png", alt="")
-    //-                                                   td
-    //-                                                     b Agua
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/salt.png", alt="")
-    //-                                                   td
-    //-                                                     b Sal
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-4.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Valores Nutricionales
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#valores2
-    //-                                           .card.card-body.card-product
-    //-                                             b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
-    //-                                             hr.hr-card
-    //-                                             table.table
-    //-                                               thead.table__body
-    //-                                                 tr
-    //-                                                   th( scope="col")
-    //-                                                   th.th__g.text-center( scope="col") 100 g
-    //-                                                   th.th__valor.text-right( scope="col") % Valor <br>Diario
-    //-                                               tbody.table__body
-    //-                                                 tr
-    //-                                                   td Energía (Kcal)
-    //-                                                   td.text-center 92.0
-    //-                                                   td.text-right 5%
-    //-                                                 tr
-    //-                                                   td Grasa Total (g)
-    //-                                                   td.text-center 3.4
-    //-                                                   td.text-right 5%
-    //-                                                 tr
-    //-                                                   td • G. Saturada (g)
-    //-                                                   td.text-center 1.0
-    //-                                                   td.text-right 5%
-    //-                                                 tr
-    //-                                                   td • G. Trans. (g)
-    //-                                                   td.text-center 0.0
-    //-                                                 tr
-    //-                                                   td • G. Poliinsaturada (g)
-    //-                                                   td.text-center 1.1
-    //-                                                 tr
-    //-                                                   td • G. Monoinsaturada (g)
-    //-                                                   td.text-center 1.0
-    //-                                                 tr
-    //-                                                   td • Omega 3 (g)
-    //-                                                   td.text-center 0.7
-    //-                                                 tr
-    //-                                                   td • EPA (G)
-    //-                                                   td.text-center 0.2
-    //-                                                 tr
-    //-                                                   td • DHA (g)
-    //-                                                   td.text-center 0.4
-    //-                                                 tr
-    //-                                                   td Colesterol (mg)
-    //-                                                   td.text-center 41.8
-    //-                                                   td.text-right 14%
-    //-                                                 tr
-    //-                                                   td Sodio (mg)
-    //-                                                   td.text-center 367.0
-    //-                                                   td.text-right 15%
-    //-                                                 tr
-    //-                                                   td Carbohidratos Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Fibra Dietaria (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right 0%
-    //-                                                 tr
-    //-                                                   td • Azúcares Totales (g)
-    //-                                                   td.text-center 0.0
-    //-                                                   td.text-right
-    //-                                                 tr
-    //-                                                   td Proteínas (g)
-    //-                                                   td.text-center 15.3
-    //-                                                   td.text-right 31%
-    //-                                                 tr
-    //-                                                   td Calcio (mg)
-    //-                                                   td.text-center 29.0
-    //-                                                   td.text-right 3%
-    //-                                                 tr
-    //-                                                   td Hierro (mg)
-    //-                                                   td.text-center 1.1
-    //-                                                   td.text-right 6%
-    //-                                                 tr
-    //-                                                   td Fósforo (mg)
-    //-                                                   td.text-center 152.0
-    //-                                                   td.text-right 15%
-    //-                                             hr.hr-card
-    //-                                             p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
-    //-                           //- tab-7
-    //-                           div(class="slide-produt__item" id="pills-grated-c")
-    //-                             .row
-    //-                               .col-md-12.col-lg-6.slider-product__img-content
-    //-                                   img.slider-product__img(src="./img/produts/pro-9.png")
-    //-                               .col-md-12.col-lg-6.slider-product__text-content
-    //-                                   .slider-product__text
-    //-                                       h3.color1.tradeGothic
-    //-                                         b Grated de Caballa
-    //-                                       p.text__p.color1.tradeGothic Elaborado con agua y sal.<br><br>
-    //-                                       p.text__p.color1.tradeGothic Perfecto para salir de problemas de manera nutritiva, deliciosa, ¡y saludable! Prueba nuestro Grated de Caballa y disfruta de un producto delicioso y rendidor.<br><br>
-    //-                             .row.mt-5.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white no-pointer btn-product__contenedor-pre")
-    //-                                   .btn-product__cont-img-1
-    //-                                     img(src="./img/produts/pro-9.png", alt="")
-    //-                                   //- i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Presentación
-    //-                                   p.text__p Lata con abre fácil de 170g
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-2.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-right.btn-product__fa
-    //-                                   a(href="./recipes.html")
-    //-                                     h4.white Ver Recetas
-    //-                             .row.mt-2.d-flex.justify-content-center
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-3.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Ingredientes
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#ingredientes2
-    //-                                           .card.card-body.card-product
-    //-                                             table.table__ingredientes
-    //-                                               tbody
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/fish.png", alt="")
-    //-                                                   td
-    //-                                                     b Atún
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/oil.png", alt="")
-    //-                                                   td
-    //-                                                     b Aceite Vegetal
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/water.png", alt="")
-    //-                                                   td
-    //-                                                     b Agua
-    //-                                                 tr
-    //-                                                   td
-    //-                                                     img(src="./img/icon/salt.png", alt="")
-    //-                                                   td
-    //-                                                     b Sal
-    //-                               .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
-    //-                                 div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
-    //-                                   .btn-product__cont-img
-    //-                                     img(src="./img/icon/pro-4.png", alt="")
-    //-                                   i.fa.fa-chevron-circle-down.btn-product__fa
-    //-                                   h4 Valores Nutricionales
-    //-                                 .row
-    //-                                   .col
-    //-                                       .collapse.multi-collapse#valores2
-    //-                                           .card.card-body.card-product
-    //-                                             b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
-    //-                                             hr.hr-card
-    //-                                             table.table
-    //-                                               thead.table__body
-    //-                                                 tr
-    //-                                                   th( scope="col")
-    //-                                                   th.th__g.text-center( scope="col") 100 g
-    //-                                                   th.th__valor.text-right( scope="col") % Valor <br>Diario
-    //-                                               tbody.table__body
-    //-                                                 tr
-    //-                                                   td Proteínas (g)
-    //-                                                   td.text-center 20.23
-    //-                                                   td.text-right 34%
-    //-                                                 tr
-    //-                                                   td Grasa (g)
-    //-                                                   td.text-center 11.86
-    //-                                                   td.text-right 15%
-    //-                                                 tr
-    //-                                                   td Energía Total (Kcal)
-    //-                                                   td.text-center 187.66
-    //-                                                   td.text-right 9%
-    //-                                                 tr
-    //-                                                   td Calcio (mg)
-    //-                                                   td.text-center 38.29
-    //-                                                 tr
-    //-                                                   td Hierro (mg)
-    //-                                                   td.text-center <3
-    //-                                                 tr
-    //-                                                   td Fósforo (mg)
-    //-                                                   td.text-center 127.37
+                              //- tab-6
+                              div(class="tab-pane fade" id="pills-trozos-c" role="tabpanel" aria-labelledby="pills-trozos-c-tab")
+                                .row
+                                  .col-md-12.col-lg-6.slider-product__img-content
+                                      img.slider-product__img(src="./img/produts/pro-1.png")
+                                  .col-md-12.col-lg-6.slider-product__text-content
+                                      .slider-product__text
+                                          h3.color1.tradeGothic
+                                            b Trozos de Caballa
+                                          p.text__p.color1.tradeGothic Elaborados con aceite vegetal <br><br>
+                                          p.text__p.color1.tradeGothic Todo el sabor de la caballa peruana, con el toque especial de nuestra receta y la suavidad del aceite. Descubre nuestros Trozos de Caballa en todo tipo de preparaciones que la familia adorará. <br><br>
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-1.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p.text__p Lata con abre fácil de 170g
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      a(href="./recipes.html")
+                                        h4.white Ver Recetas
+                                .row.mt-2.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-3.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes2
+                                              .card.card-body.card-product
+                                                table.table__ingredientes
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores2
+                                              .card.card-body.card-product
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table.table
+                                                  thead.table__body
+                                                    tr
+                                                      th( scope="col")
+                                                      th.th__g.text-center( scope="col") 100 g
+                                                      th.th__valor.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
+                                                    tr
+                                                      td Energía (Kcal)
+                                                      td.text-center 92.0
+                                                      td.text-right 5%
+                                                    tr
+                                                      td Grasa Total (g)
+                                                      td.text-center 3.4
+                                                      td.text-right 5%
+                                                    tr
+                                                      td • G. Saturada (g)
+                                                      td.text-center 1.0
+                                                      td.text-right 5%
+                                                    tr
+                                                      td • G. Trans. (g)
+                                                      td.text-center 0.0
+                                                    tr
+                                                      td • G. Poliinsaturada (g)
+                                                      td.text-center 1.1
+                                                    tr
+                                                      td • G. Monoinsaturada (g)
+                                                      td.text-center 1.0
+                                                    tr
+                                                      td • Omega 3 (g)
+                                                      td.text-center 0.7
+                                                    tr
+                                                      td • EPA (G)
+                                                      td.text-center 0.2
+                                                    tr
+                                                      td • DHA (g)
+                                                      td.text-center 0.4
+                                                    tr
+                                                      td Colesterol (mg)
+                                                      td.text-center 41.8
+                                                      td.text-right 14%
+                                                    tr
+                                                      td Sodio (mg)
+                                                      td.text-center 367.0
+                                                      td.text-right 15%
+                                                    tr
+                                                      td Carbohidratos Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Fibra Dietaria (g)
+                                                      td.text-center 0.0
+                                                      td.text-right 0%
+                                                    tr
+                                                      td • Azúcares Totales (g)
+                                                      td.text-center 0.0
+                                                      td.text-right
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 15.3
+                                                      td.text-right 31%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 29.0
+                                                      td.text-right 3%
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center 1.1
+                                                      td.text-right 6%
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 152.0
+                                                      td.text-right 15%
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+                              //- tab-7
+                              div(class="tab-pane fade" id="pills-grated-c" role="tabpanel" aria-labelledby="pills-grated-c-tab")
+                                .row
+                                  .col-md-12.col-lg-6.slider-product__img-content
+                                      img.slider-product__img(src="./img/produts/pro-9.png")
+                                  .col-md-12.col-lg-6.slider-product__text-content
+                                      .slider-product__text
+                                          h3.color1.tradeGothic
+                                            b Grated de Caballa
+                                          p.text__p.color1.tradeGothic Elaborado con agua y sal.<br><br>
+                                          p.text__p.color1.tradeGothic Perfecto para salir de problemas de manera nutritiva, deliciosa, ¡y saludable! Prueba nuestro Grated de Caballa y disfruta de un producto delicioso y rendidor.<br><br>
+                                .row.mt-5.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white no-pointer btn-product__contenedor-pre")
+                                      .btn-product__cont-img-1
+                                        img(src="./img/produts/pro-9.png", alt="")
+                                      //- i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Presentación
+                                      p.text__p Lata con abre fácil de 170g
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-2.png", alt="")
+                                      i.fa.fa-chevron-circle-right.btn-product__fa
+                                      a(href="./recipes.html")
+                                        h4.white Ver Recetas
+                                .row.mt-2.d-flex.justify-content-center
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.mb-3.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#ingredientes2" role="button" aria-expanded="false" aria-controls="ingredientes2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-3.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Ingredientes
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#ingredientes2
+                                              .card.card-body.card-product
+                                                table.table__ingredientes
+                                                  tbody
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/fish.png", alt="")
+                                                      td
+                                                        b Atún
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/oil.png", alt="")
+                                                      td
+                                                        b Aceite Vegetal
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/water.png", alt="")
+                                                      td
+                                                        b Agua
+                                                    tr
+                                                      td
+                                                        img(src="./img/icon/salt.png", alt="")
+                                                      td
+                                                        b Sal
+                                  .col-sm-8.col-md-8.col-lg-5.col-xl-5.content-btn-pro
+                                    div(class="btn white pointer btn-product__contenedor" data-toggle="collapse" href="#valores2" role="button" aria-expanded="false" aria-controls="valores2")
+                                      .btn-product__cont-img
+                                        img(src="./img/icon/pro-4.png", alt="")
+                                      i.fa.fa-chevron-circle-down.btn-product__fa
+                                      h4 Valores Nutricionales
+                                    .row
+                                      .col
+                                          .collapse.multi-collapse#valores2
+                                              .card.card-body.card-product
+                                                b.table__title Tamaño por Porción: 100 g (1/2 lata aprox.) Porciones por envase: 2 aprox
+                                                hr.hr-card
+                                                table.table
+                                                  thead.table__body
+                                                    tr
+                                                      th( scope="col")
+                                                      th.th__g.text-center( scope="col") 100 g
+                                                      th.th__valor.text-right( scope="col") % Valor <br>Diario
+                                                  tbody.table__body
+                                                    tr
+                                                      td Proteínas (g)
+                                                      td.text-center 20.23
+                                                      td.text-right 34%
+                                                    tr
+                                                      td Grasa (g)
+                                                      td.text-center 11.86
+                                                      td.text-right 15%
+                                                    tr
+                                                      td Energía Total (Kcal)
+                                                      td.text-center 187.66
+                                                      td.text-right 9%
+                                                    tr
+                                                      td Calcio (mg)
+                                                      td.text-center 38.29
+                                                    tr
+                                                      td Hierro (mg)
+                                                      td.text-center <3
+                                                    tr
+                                                      td Fósforo (mg)
+                                                      td.text-center 127.37
 
-    //-                                             hr.hr-card
-    //-                                             p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
-    //-                       span.cambiarpestana2.tabs-prev-top.slider-product__prev(data-accion="prev2")
-    //-                       span.cambiarpestana2.tabs-next-top.slider-product__next(data-accion="next2")
+                                                hr.hr-card
+                                                p.table__title (*) Los % de valores diarios están basados en una dieta de 2000 KCal. Valores referenciales.
+                          span.cambiarpestana2.tabs-prev-top.slider-product__prev(data-accion="prev2")
+                          span.cambiarpestana2.tabs-next-top.slider-product__next(data-accion="next2")
     hr.transparent
