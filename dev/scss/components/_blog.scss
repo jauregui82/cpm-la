@@ -10,7 +10,7 @@
       width: 90%
     }
     @include media-breakpoint-down(md){
-      width: 100%
+      width: 100%;
     }
     @include media-breakpoint-down(xs){
       top: -1.4rem;
@@ -20,6 +20,14 @@
         width: 127%;
         left: -13%;
       }
+    }
+  }
+  .blog-mobile{
+    @include media-breakpoint-down(md){
+      // min-height: 66rem;
+    }
+    @include media-breakpoint-down(lg){
+      min-height: 50rem;
     }
   }
   .img-text-pro{
@@ -125,10 +133,9 @@
       //   max-width: 17rem;
       //   top: 3rem;
       // }
-      // @include media-breakpoint-down(xs){
-      //   right: -12rem;
-      //   top: 12rem;
-      // }
+      @include media-breakpoint-down(xs){
+        display: none;
+      }
     }
   &__club-blog{
     width: 60%;
@@ -143,6 +150,9 @@
     width: 22%;
     bottom: 17%;
     left: -6.4%;
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
   }
   &__tomate-blog{
     width: 20%;
@@ -170,8 +180,8 @@
     }
   }
   &__sda-blog{
-    width: 42%;
-    top: 51%;
+    width: 47%;
+    top: 49%;
     left: -26%;
     @include media-breakpoint-down(lg){
       top: 65%;
@@ -181,8 +191,7 @@
       max-width: 27rem;
     }
     @include media-breakpoint-down(xs){
-      top: 84%;
-      left: -17%;
+      display: none;
     }
   }
 
@@ -202,6 +211,10 @@
   border-right: 4px solid #fff;
   @include media-breakpoint-down(sm){
     font-size: 14px;
+    line-height: 1.1;
+  }
+  @media (max-width:992px) {
+    border-right: none;
   }
 }
 #content_blog{

@@ -182,7 +182,7 @@ div>.section-box-home-cel{
   // @include media-breakpoint-down(md){
   //   height: 79.1%;
   // }
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(lg){
     height: 100%;
   }
 
@@ -196,6 +196,10 @@ div>.section-box-home-cel{
   left: 50%;
   transform: translateX(-50%);
   letter-spacing: 3px;
+  @include media-breakpoint-down(lg){
+    top: 15rem;
+    font-size: 1.7rem;
+  }
   @include media-breakpoint-down(md){
     top: 9rem;
     font-size: 1.3rem;
@@ -218,6 +222,10 @@ div>.section-box-home-cel{
   left: 50%;
   cursor: pointer;
   transform: translateX(-50%);
+  @include media-breakpoint-down(lg){
+    width: 8rem;
+    top: 6rem;
+  }
   @include media-breakpoint-down(md){
     width: 5rem;
     top: 3rem;
@@ -343,7 +351,7 @@ div>.section-box-home-cel{
     background: rgba(255, 203, 0, 0.59);
 
   }
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(lg){
     height: 98%;
   }
 }
@@ -376,12 +384,15 @@ div.contenedor:hover{
     width: 152%;
   }
   @include media-breakpoint-down(md){
-    width: 149%;
+    width: 159.2%;
     font-size: 15px;
+  }
+  @media (max-width: 770px) {
+    width: 159.2%;
   }
   @include media-breakpoint-down(sm){
     line-height: 1;
-    right: 8%;
+    right: 3%;
     width: 60%;
     position: absolute;
   }

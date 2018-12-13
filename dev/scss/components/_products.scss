@@ -102,6 +102,9 @@
     width: 67%;
     top: 66%;
     right: -66%;
+    @include media-breakpoint-down(xs){
+      display: none;
+    }
   }
   &__tomate-pro{
     width: 45%;
@@ -467,7 +470,7 @@
 .nav-item-ab{
   width: auto!important;
   @include media-breakpoint-down(sm){
-    padding: 0!important;
+    // padding: 0;
     font-size: 15px;
   }
 }
@@ -478,17 +481,17 @@
 }
 .slide-product{
   .slick-arrow{
-      top: 20%;
+      top: 7rem;
     @include media-breakpoint-down(sm){
-      top: 14%;
+      top: 8rem;
     }
   }
 }
 .slide-product2{
   .slick-arrow{
-      top: 20%;
+      top: 7rem;
     @include media-breakpoint-down(sm){
-      top: 14%;
+      top: 8rem;
     }
   }
 }

@@ -4,7 +4,9 @@
 
 
 .main{
-	// background-attachment: fixed;
+  @include media-breakpoint-down(sm){
+    background-attachment: fixed;
+  }
 }
 
 .input-mailing{

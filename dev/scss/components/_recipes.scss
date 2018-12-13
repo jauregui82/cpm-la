@@ -312,6 +312,21 @@ div.recipes-grid__content:hover{
     height: 100%;
     border: 1px solid #9E9E9E;
   }
+  &__pc{
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  &__mobile{
+    @include media-breakpoint-up(lg){
+      display: none;
+    }
+  }
+  &__mobile{
+    @include media-breakpoint-down(lg){
+      display: block;
+    }
+  }
 
 }
 

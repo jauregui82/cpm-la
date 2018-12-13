@@ -158,8 +158,7 @@
       padding: 14% 0% 0% 0%;
       height: 100%;
       @include media-breakpoint-up(lg){
-        max-width: 169px;
-        // max-height: 206px;
+        max-width: 320px;
       }
       @include media-breakpoint-down(md){
         padding: 10% 5% 10% 5%;
@@ -187,11 +186,13 @@
       // right: -10%;
       right: -12.5%;
       top: 20%;
-      @include media-breakpoint-down (sm){
+      @include media-breakpoint-down (lg){
         right: 48%;
-        // top: 6rem;
-        top: 95%;
+        top: 102%;
         transform: rotate(90deg);
+      }
+      @include media-breakpoint-down (md){
+        top: 95%;
       }
     }
     &__arrow2{
@@ -202,6 +203,14 @@
     &__text{
       color: map-get($my-colors, color1 );
       font-family: $TradeGothic;
+    }
+  }
+  .arrow-end{
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+    @include media-breakpoint-down(sm){
+      display: block;
     }
   }
 
@@ -459,7 +468,40 @@
 // }
 .donde-ab{
   @include media-breakpoint-down(sm){
-    padding: 0;
+    // padding: 0;
   }
 
+}
+
+.nav-item-ab{
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include media-breakpoint-down(sm){
+    padding-left: 0.4rem!important;
+    padding-right: 0.4rem!important;
+  }
+}
+
+.nav-item-ab:first-child{
+  padding-left: 0 !important;
+}
+
+.nav-item-ab:last-child{
+  padding-right: 0 !important;
+}
+
+.nav-item-ab:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #071F48;
+  width: 1px;
+  height: 15px;
+}
+
+.nav-item-ab:last-child:after{
+  display: none;
 }
